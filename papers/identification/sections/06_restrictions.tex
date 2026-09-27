@@ -1,0 +1,95 @@
+\section{Restrictions that survive factor calibration}\label{sec:restrictions}
+An option panel restricts meeting risk through its observation map. A factor specification imposes a second restriction: some variance vectors cannot occur at any calibration. We determine that set for deterministic scales, and the exact support of the random variance vector for square-root stochastic scales. These results concern the scheduled short-rate model of \citet{brace2024sofr}, rather than an extra assumption on the independent announcement model of Section~\ref{sec:prices}.
+
+The distinction between the constructions matters. In Section~\ref{sec:prices}, the forward curve itself jumps at a meeting. Below, each fixed-maturity forward rate is continuous in time; the short rate jumps when its maturity passes a scheduled discontinuity in the forward curve. The conditional variance of that short-rate jump is the quantity compared across models.
+
+A scalar announcement state can coexist with arbitrarily many free meeting-variance parameters; restrictions arise from the specified loadings and scales, not from state dimension alone.
+
+\subsection{All restrictions under deterministic scale recalibration}
+Write $\nu(s)=\#\{i:T_i\leq s\}$, and set $T_0=0$. Factor $j$ has fixed ordinal loadings $\gamma_{i,j}$, constant decay $\kappa_j\geq0$, and deterministic scale $a_j(s)$. Its loading on the short-rate jump at meeting $n$ is
+\[
+g_{nj}(s)=a_j(s)e^{-\kappa_j(T_n-s)}\gamma_{n-\nu(s),j},\qquad s<T_n.
+\]
+Independent Brownian factors and the deterministic HJM drift give
+\begin{equation}\label{eq:detvariance}
+\boldsymbol V_n(t):=\Var_Q(\Delta r_{T_n}\mid\F_t)
+ =\sum_j\int_t^{T_n}g_{nj}(s)^2\,\dd s,\qquad t<T_n.
+\end{equation}
+Bold $\boldsymbol V(t)$ denotes the vector across future meetings; the scalar $V$ in Section~\ref{sec:aggregation} remains a sum of announcement variances.
+
+Fix $t$, all dates, loadings, and decays. Partition the remaining horizon into meeting intervals $I_k=[\max(t,T_k),T_{k+1})$, $k=\nu(t),\ldots,N-1$. Define the nonnegative matrix
+\begin{equation}\label{eq:scale-matrix}
+\mathsf K_{n,(j,k)}(t)=\ind_{\{n>k\}}\gamma_{n-k,j}^2
+ \int_{I_k}e^{-2\kappa_j(T_n-s)}\,\dd s.
+\end{equation}
+Rows correspond to future meetings; columns correspond to factor--interval pairs.
+
+\begin{theorem}[Restrictions surviving all scale choices]\label{thm:scales}
+Allow each $a_j$ to be any nonnegative Borel function bounded on finite horizons. The set of attainable vectors in \eqref{eq:detvariance} is exactly
+\begin{equation}\label{eq:cone}
+\mathcal K(t)=\{\mathsf K(t)\eta:\eta\geq0\}.
+\end{equation}
+Consequently $\omega^\top\boldsymbol V(t)\geq0$ holds under every scale calibration if and only if $\omega^\top\mathsf K(t)\geq0$ componentwise. These inequalities characterize attainability. For one factor with $\gamma_{1,1}\ne0$, $\mathsf K$ is square and lower triangular with positive diagonal, and membership is equivalent to $\mathsf K^{-1}\boldsymbol V\geq0$.
+
+If each factor has constant ordinal loadings, $\gamma_{i,j}=\gamma_j\ne0$, put $\kappa_{\max}=\max_j\kappa_j$. The complete restrictions then reduce to
+\begin{equation}\label{eq:surviving-ratios}
+\boldsymbol V_{\nu(t)+1}(t)\geq0,\qquad
+\boldsymbol V_n(t)\geq e^{-2\kappa_{\max}(T_n-T_{n-1})}
+                         \boldsymbol V_{n-1}(t).
+\end{equation}
+Every vector satisfying these inequalities is attainable using only a factor with decay $\kappa_{\max}$.
+\end{theorem}
+\begin{proof}
+On $I_k$, the vector integrand in \eqref{eq:detvariance} is $a_j(s)^2e^{2\kappa_js}$ times the fixed vector with entries $\ind_{\{n>k\}}e^{-2\kappa_jT_n}\gamma_{n-k,j}^2$. Its integral is a nonnegative multiple of the corresponding column of $\mathsf K$. Every multiple is attained by a constant squared scale on $I_k$. This proves equality with the finitely generated closed cone. Separation gives the dual inequalities. The one-factor diagonal entries are strictly positive.
+
+For constant ordinal loadings, the contribution of factor $j$ satisfies
+\[
+\boldsymbol V_n^{(j)}=e^{-2\kappa_j(T_n-T_{n-1})}\boldsymbol V_{n-1}^{(j)}
+                         +\mathsf K_{n,(j,n-1)}\eta_{j,n-1}.
+\]
+Summing proves necessity of \eqref{eq:surviving-ratios}. For sufficiency, use a fastest-decaying factor and choose its successive squared scales to equal the nonnegative residual in this equation divided by the positive diagonal entry.
+\end{proof}
+
+Refining the scale partition adds no new vectors once it contains all meeting dates. Time-varying scales can remove the equality restrictions of a constant-scale model while leaving exact inequalities. At zero decay and constant ordinal loading, no scale choice can make meeting variance decrease with the meeting index. With consecutive meetings $1/8$ year apart and all decays bounded by $1$ per year, a fall from $400$ to $200$ bp$^2$ is impossible: the second variance must be at least $400e^{-1/4}=311.5$ bp$^2$.
+
+The bound survives joint recalibration of scales and decays in $[0,\bar\kappa]$: replace $\kappa_{\max}$ by $\bar\kappa$ in \eqref{eq:surviving-ratios}, and a factor with decay $\bar\kappa$ attains every allowed vector. Unbounded decays make the closure of the attainable union the nonnegative orthant. Freely varying ordinal loadings gives the entire orthant already at fixed decay, by choosing only $\gamma_{1,1}$ nonzero so that $\mathsf K$ is diagonal. The ratio formula is for constant ordinal loadings; for the general loadings in \citet{brace2024sofr}, use \eqref{eq:scale-matrix} and its dual inequalities.
+
+\subsection{Exact restrictions under stochastic volatility}
+Replace deterministic factor variance by a square-root state $Z_j$, starting from one:
+\begin{equation}\label{eq:svstate}
+\dd Z_j(s)=\vartheta_j(1-Z_j(s))\,\dd s
+                +\alpha_j(s)\sqrt{Z_j(s)}\,\dd U_j(s),\qquad Z_j(0)=1.
+\end{equation}
+Here $\vartheta_j\geq0$ is constant and $\alpha_j\geq0$ is piecewise constant with finitely many pieces on bounded intervals. The Brownian pairs $(W_j,U_j)$ are independent across factors, with $\dd[W_j,U_j]_s=\rho_j(s)\,\dd s$, $|\rho_j(s)|\leq1$. Assume adapted nonnegative continuous solutions, $\E\sup_{s\leq H}Z_j(s)^2<\infty$, and predictable square-integrable noise and forward-loading integrands on each finite horizon. Existence of these solutions is a hypothesis.
+
+The conditional meeting-variance vector has the affine form
+\begin{equation}\label{eq:svmap}
+\boldsymbol V(t)=\boldsymbol c(t)+\mathsf L(t)Z(t),
+\end{equation}
+with deterministic nonnegative coefficients
+\[
+\mathsf L_{nj}(t)=\int_t^{T_n}\mathcal H_{nj}(u)e^{-\vartheta_j(u-t)}\,\dd u,
+\qquad
+\boldsymbol c_n(t)=\sum_j\int_t^{T_n}\mathcal H_{nj}(u)(1-e^{-\vartheta_j(u-t)})\,\dd u.
+\]
+Here $\mathcal H_{nj}$ is the squared effective noise loading for meeting $n$ and factor $j$, including the random HJM drift and its covariance with the forward noise. Appendix~\ref{app:svderivation} gives its explicit expression and derives the map. The diffusion loading alone does not give the actual conditional jump variance when that drift is random.
+
+A containing cone need not be the actual support of a random vector. The square-root transition laws determine which columns of $\mathsf L$ are active and prove equality with a translated cone.
+
+\begin{theorem}[Exact stochastic-volatility support]\label{thm:svsupport}
+Fix $t>0$ and retain the meetings after $t$. Let $J$ contain the factors for which $\alpha_j>0$ on an interval of positive length before $t$. For $j\in J$, let $\ell_j$ be zero if a stochastic piece ends at $t$; otherwise propagate zero through the final deterministic pieces using $x\mapsto1+(x-1)e^{-\vartheta_j h}$. Set $\ell_j=1$ for $j\notin J$. Then
+\begin{align}
+\operatorname{supp}\boldsymbol V(t)&=\boldsymbol c(t)+\mathsf L(t)\ell
+                                      +\mathsf L_J(t)\R_+^J,\label{eq:support}\\
+\operatorname{aff}\operatorname{supp}\boldsymbol V(t)&=\boldsymbol c(t)+\mathsf L(t)\ell
+                                      +\operatorname{range}\mathsf L_J(t),\nonumber\\
+\Cov_Q(\boldsymbol V(t))&=\sum_{j\in J}\Var_Q(Z_j(t))\mathsf L_{\cdot j}(t)
+                                      \mathsf L_{\cdot j}(t)^\top.\nonumber
+\end{align}
+Every variance in this sum is positive. Thus the covariance rank and affine-hull dimension both equal $\rank\mathsf L_J(t)$, and all almost-sure affine equalities are exactly the left-nullspace equalities of $\mathsf L_J(t)$ about the displayed vertex.
+\end{theorem}
+The proof, including the conditional version and boundary atoms, is in Appendix~\ref{app:support}. Its square-root transition input is classical; see \citet{malham2008square}. The result here determines the support of the actual meeting-variance vector with the full kernel \eqref{eq:svkernel}, including deterministic terminal pieces and inactive factors.
+
+Appendix~\ref{app:bgsmapping} gives an equation-by-equation mapping to \citet{brace2024sofr} and applies the theorem to both columns of its Table~2. The constant specification has at most two active support directions; the time-dependent specification has at most three. These are restrictions at fixed parameters. Daily recalibration changes the affine map.
+
+A polyhedral set of candidate meeting variances can be intersected with the deterministic cone by writing its meeting block as $\mathsf K\eta$, $\eta\geq0$. Feasibility and linear risk bounds remain linear programs. This tests the imposed variance restriction together with the chosen observation equations. The scheduled-rate factor model has dependent meeting risks and continuous fixed-maturity forwards; it does not inherit the independent-announcement model's option-pricing map. Testing its restrictions directly against prices requires its own pricer. The empirical analysis below therefore uses the announcement-calendar observation matrices, not a purported empirical test of the factor-support theorem.

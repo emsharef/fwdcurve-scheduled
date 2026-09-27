@@ -1,0 +1,14 @@
+import Standalone.SpliceSeveralFactorsAssembly
+import Novel.SpliceSeveralFactorsSufficiencyProof
+import Novel.SpliceSeveralFactorsMinimalProof
+
+namespace Novel.SpliceSeveralFactorsAssemblyProof
+
+theorem spliceSeveralFactorsAssembly : Standalone.SpliceSeveralFactorsAssembly.statement :=
+  ⟨Novel.SpliceSeveralFactorsCoreProof.spliceSeveralFactorsCore,
+    Novel.SpliceSeveralFactorsAX01Proof.spliceSeveralFactorsAX01,
+    Novel.SpliceSeveralFactorsSufficiencyProof.spliceSeveralFactorsSufficiency,
+    Novel.SpliceSeveralFactorsBlocksProof.spliceSeveralFactorsBlocks,
+    Novel.SpliceSeveralFactorsMinimalProof.spliceSeveralFactorsMinimal⟩
+
+end Novel.SpliceSeveralFactorsAssemblyProof

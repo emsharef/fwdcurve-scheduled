@@ -1,0 +1,9 @@
+import Standalone.SharefFilipovicAssembly
+import Novel.SharefFilipovicItoProof
+import Novel.SharefFilipovicPartBProof
+
+namespace Novel.SharefFilipovicAssemblyProof
+
+theorem sharefFilipovicAssembly : Standalone.SharefFilipovicAssembly.statement := ⟨Novel.SharefFilipovicIndependenceProof.sharefFilipovicIndependence, Novel.SharefFilipovicResidualProof.sharefFilipovicResidual, Novel.SharefFilipovicSplitProof.sharefFilipovicSplit, Novel.SharefFilipovicItoProof.sharefFilipovicIto, Novel.SharefFilipovicPartAProof.sharefFilipovicPartA, Novel.SharefFilipovicMaxFactorsProof.sharefFilipovicMaxFactors, Novel.SharefFilipovicPartBProof.sharefFilipovicPartB⟩
+
+end Novel.SharefFilipovicAssemblyProof

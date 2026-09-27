@@ -1,0 +1,97 @@
+{
+  "standard_chains": 555,
+  "midcurve_chains": 174,
+  "mixture_median_max_error": 0.16091671432103816,
+  "mixture_max_error": 0.9181993003706078,
+  "converged": 555,
+  "held_near_n": 538,
+  "held_near_median": 0.1241648170383769,
+  "held_near_max": 1.3384891296037884,
+  "atm_vs_nearest_sd_median": -0.01943574351251698,
+  "calendar": {
+    "constant": {
+      "median": 0.21488189697265625,
+      "feasible": {
+        "0.25": 43,
+        "0.5": 67,
+        "1.0": 71
+      }
+    },
+    "90day": {
+      "median": 0.006103515625,
+      "feasible": {
+        "0.25": 63,
+        "0.5": 69,
+        "1.0": 76
+      }
+    },
+    "gap": {
+      "median": 7.62939453125e-05,
+      "feasible": {
+        "0.25": 78,
+        "0.5": 78,
+        "1.0": 78
+      }
+    }
+  },
+  "shape_best": {
+    "c": 4.0,
+    "k": 0.75,
+    "train_sd_rmse": 1.4172043845605586,
+    "train_n": 219,
+    "held_n": 37,
+    "held_sd_mae": 3.817735056578752,
+    "held_sd_median": 3.760645436221175
+  },
+  "parallel_grid": {
+    "c": 0.0,
+    "k": 0.25,
+    "train_sd_rmse": 5.405733687174918,
+    "train_n": 219,
+    "held_n": 37,
+    "held_sd_mae": 1.7058379346994634,
+    "held_sd_median": 1.0905305268318948
+  },
+  "shape_dates": 14,
+  "shape_calendar": {
+    "parallel": {
+      "constant": {
+        "median": 3.3189773559570312,
+        "feasible_1": 0
+      },
+      "90day": {
+        "median": 3.3189773559570312,
+        "feasible_1": 0
+      },
+      "gap": {
+        "median": 3.3189773559570312,
+        "feasible_1": 0
+      }
+    },
+    "hump": {
+      "constant": {
+        "median": 1.1359786987304688,
+        "feasible_1": 2
+      },
+      "90day": {
+        "median": 1.0776138305664062,
+        "feasible_1": 5
+      },
+      "gap": {
+        "median": 0.9363937377929688,
+        "feasible_1": 9
+      }
+    }
+  },
+  "profile_dates": 2,
+  "exercise_dates": [
+    "2026-03-30",
+    "2026-06-16",
+    "2026-09-14"
+  ],
+  "exercise_n": 69,
+  "exercise_median": 0.022632717195206098,
+  "exercise_max": 0.3766465668309351,
+  "exercise_convergence_max": 0.0004960880721789351,
+  "european_lattice_error_max": 0.003389951745411679
+}

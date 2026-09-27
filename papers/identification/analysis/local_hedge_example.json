@@ -1,0 +1,17 @@
+{
+  "trade_date": "2026-09-14",
+  "first_expiry": "2026-10-16",
+  "second_expiry": "2026-11-13",
+  "first_weight": -1.3877765149761403,
+  "second_weight": 1.0,
+  "first_strike": "95.75",
+  "second_strike": "95.75",
+  "first_underlying": "2026-12",
+  "second_underlying": "2026-12",
+  "first_futures_hedge": 0.025076817520324517,
+  "second_futures_hedge": -0.01337326895945743,
+  "event_variance_sensitivity": 0.013372000192566376,
+  "intervening_meetings": [
+    "2026-10-28"
+  ]
+}

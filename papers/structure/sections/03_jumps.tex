@@ -1,0 +1,116 @@
+\section{The shape of a scheduled jump}\label{sec:jumps}
+What adjustment to the forward curve is needed when a meeting reveals a random rate change? The answer follows from the bond-price ratio in \eqref{eq:jump}. We first consider a single random level affecting all remaining maturities, and then allow a different level on each meeting interval.
+
+\subsection{The correction required by a random level change}
+Fix meeting $T_n$ and write $\G=\F_{T_n-}$ for the information available immediately before it. Let $u\ge0$ denote time from the meeting to maturity. The announcement reveals a scalar random variable $X$. Suppose it changes every remaining forward rate by $X$, plus a function $h(u)$ already known given $\G$. Thus $h$ is the maturity-dependent correction accompanying the level change. For a bond maturing $\tau$ units of time after the meeting, denote the integrated correction by $\mathcal H(\tau)$:
+\[
+\xi_n(T_n+u)=X+h(u),\qquad \mathcal H(\tau)=\int_0^\tau h(u)\dd u.
+\]
+We assume $h$ is locally integrable. The bond-price ratio is $\exp(-\tau X-\mathcal H(\tau))$. Setting its conditional expectation to one gives
+\[
+ e^{-\mathcal H(\tau)}\E[e^{-\tau X}\mid\G]=1.
+\]
+Consequently the integral of the correction must equal the logarithm of the conditional exponential moment of $X$. Denote that logarithm by
+\[
+\mathcal L_X(\tau)=\log\E[e^{-\tau X}\mid\G].
+\]
+The function $\mathcal L_X$ is the conditional log-Laplace transform. We assume a regular conditional law of $X$ given $\G$ and take the domain $0\le\tau\le H-T_n$. The scheduled-jump condition forces this transform to be finite throughout that domain, since $\mathcal H$ is finite there. For the converse, assume this finiteness. For $\tau$ in the interior, define the expectation under its exponential tilt by
+\[
+\E_\tau[g(X)\mid\G]
+ =\frac{\E[g(X)e^{-\tau X}\mid\G]}{\E[e^{-\tau X}\mid\G]}.
+\]
+The tilt gives greater weight to outcomes with a smaller level change, which produce a larger bond-price ratio. Let $\Var_\tau$ denote variance under the same conditional law.
+
+\begin{proposition}\label{prop:profile}
+The scheduled-jump condition is equivalent to $\mathcal H(\tau)=\mathcal L_X(\tau)$ for every $\tau\in[0,H-T_n]$. On the interior, the correction has the smooth representative
+\begin{equation}
+h(\tau)=\mathcal L_X'(\tau)=-\E_\tau[X\mid\G],\qquad
+h'(\tau)=\mathcal L_X''(\tau)=\Var_\tau(X\mid\G)\ge0.\label{eq:profile}
+\end{equation}
+In particular, for coefficients $h_0,y$ known given $\G$, a straight-line correction $h(u)=h_0+yu$ satisfies the jump condition precisely when the conditional distribution of $X$ is Gaussian with mean $-h_0$ and variance $y\ge0$.
+\end{proposition}
+The first derivative determines the correction; the second says that its slope is a variance and therefore nonnegative. For example, if $X$ is conditionally Gaussian with mean zero and variance $v$, the required correction is $h(u)=vu$. Its integrated value $v\tau^2/2$ exactly cancels the Gaussian exponential moment $\E[e^{-\tau X}\mid\G]=e^{v\tau^2/2}$. Thus uncertainty about a level change produces an upward slope in the announcement profile.
+
+\begin{proof}
+The conditional expectation in \eqref{eq:jump} is $e^{-\mathcal H(\tau)}\E[e^{-\tau X}\mid\G]$. Its equality to one gives the first statement. Finiteness on an open interval permits differentiation on compact subintervals, yielding the conditional mean and variance formulas. If $\mathcal H=h_0\tau+y\tau^2/2$, the conditional transform is the Gaussian transform. Uniqueness of a Laplace transform on an interval gives the stated law, including the degenerate case $y=0$. Conversely that law gives the required transform. Equalities initially imposed at rational maturities extend by continuity; $h=\mathcal L_X'$ is understood almost everywhere when only local integrability was assumed.
+\end{proof}
+
+Other distributions give different correction shapes. The next example makes that correspondence explicit.
+
+\begin{example}[A two-point announcement]\label{ex:binary}
+Let $X=\Delta$ with conditional probability $\pi$ and $X=0$ otherwise, with $0<\pi<1$. Its admissible profile is
+\begin{equation}
+h(\tau)=-\Delta\frac{\pi e^{-\tau\Delta}}{1-\pi+\pi e^{-\tau\Delta}}.
+\end{equation}
+The affine profile with the same value and derivative at zero is $-\pi\Delta+\pi(1-\pi)\Delta^2\tau$. For $\pi=1/2$ and $\Delta>0$, the affine profile exceeds the exact one by
+\[
+g(\tau)=\frac\Delta2\left(\frac{\Delta\tau}{2}-\tanh\frac{\Delta\tau}{2}\right),
+\qquad 0\le g(\tau)\le\frac{\Delta^4\tau^3}{48}.
+\]
+The bound follows by integrating $1-\operatorname{sech}^2 z=\tanh^2z\le z^2$. Thus a shape restriction can distinguish the distributions exactly while their admissible curves are extremely close at small rate scales. Figure~\ref{fig:jumps} quantifies this distinction.
+\end{example}
+
+\subsection{Several maturity intervals}
+A meeting may change near and distant forward rates by different amounts. Keep the announcement date $T_n$ fixed, and let $X_k$ be its random level change on maturity interval $I_k$, for $k\ge n$. Let $y_k$ be the slope of that interval's announcement change, known given $\G$. The jump curve is
+\[
+\xi_n(u)=X_k+y_k(u-T_k),\qquad u\in I_k,\quad k\ge n.
+\]
+Write $\ell_k=T_{k+1}-T_k$ for the interval length. Before reaching a maturity in $I_k$, the bond-price integral has already passed through intervals $I_n,\ldots,I_{k-1}$. Their total contribution and associated bond-price ratio are
+\[
+\mathcal U_k=\sum_{m=n}^{k-1}\left(\ell_mX_m+\frac12y_m\ell_m^2\right),\qquad \mathcal Z_k=e^{-\mathcal U_k},\quad \mathcal Z_n=1.
+\]
+At the first interval, there is no preceding contribution, so $\mathcal U_n=0$ and $\mathcal Z_n=1$. When $\E[\mathcal Z_k\mid\G]=1$, the positive random variable $\mathcal Z_k$ defines a probability measure $Q_k$ by $\mathrm dQ_k=\mathcal Z_k\,\mathrm dQ$. Under this measure, an outcome receives weight equal to the bond-price change contributed by the earlier intervals. Write $\E_k$ for conditional expectations under $Q_k$.
+
+\begin{theorem}[Conditional laws under successive tilts]\label{thm:tilts}
+The scheduled-jump condition holds at all maturities if and only if, for every $k\ge n$, $\E[\mathcal Z_k\mid\G]=1$ and the conditional law of $X_k$ under $Q_k$ is $N(0,y_k)$. In particular, $y_k\ge0$.
+
+If the vector $(X_n,\ldots,X_N)$ is conditionally jointly Gaussian with conditional mean $\bar x$ and covariance $\Sigma$, these conditions reduce to
+\begin{equation}
+y_k=\Sigma_{kk},\qquad
+\bar x_k=\sum_{m=n}^{k-1}\ell_m\Sigma_{km}.\label{eq:gaussjump}
+\end{equation}
+\end{theorem}
+On the first interval, $X_n$ is centered Gaussian under the original pricing measure. On a later interval, it is centered Gaussian under the measure that includes the earlier bond-price changes. For two jointly Gaussian interval changes, for example,
+\[
+\bar x_n=0,\qquad \bar x_{n+1}=\ell_n\Sigma_{n+1,n}.
+\]
+A positive covariance with the first interval therefore requires a positive mean change on the second. This mean compensates for the reweighting introduced by the first interval.
+
+\begin{proof}
+For $T=T_k+v$, $0\le v<\ell_k$, the exponent in \eqref{eq:jump} is $-\mathcal U_k-vX_k-y_kv^2/2$. At $v=0$ the condition normalizes $\mathcal Z_k$. Under that normalized change of measure, the remaining identity is
+\[
+\E_k[e^{-vX_k}\mid\G]=e^{y_kv^2/2}.
+\]
+Laplace-transform uniqueness proves the characterization; the same identity proves sufficiency interval by interval. For a jointly Gaussian vector, exponential tilting by $-\sum_{m<k}\ell_mX_m$ changes the mean of $X_k$ to $\bar x_k-\sum_{m<k}\ell_m\Sigma_{km}$ and leaves its variance unchanged. Formula \eqref{eq:gaussjump} makes this mean zero. Induction over the endpoints gives the normalizations of $\mathcal Z_k$.
+\end{proof}
+
+The measures $Q_k$ differ across intervals, so the Gaussian conclusions concern different weighted distributions. Appendix~\ref{app:proofs} constructs an example satisfying the theorem in which the announcement vector is not jointly Gaussian.
+
+\subsection{Why the pure step family degenerates}
+The results also explain why a curve that remains flat between meetings is too restrictive. Suppose its level coefficients have both Brownian dynamics and scheduled jumps, so the curve, drift, volatility, and jump functions are constant on each maturity interval. On an interval starting at $a\ge t$, the two sides of \eqref{eq:drift} are respectively affine and quadratic in $T-a$. The quadratic coefficient is half the squared norm of the interval volatility. Hence that volatility is zero, and differentiation makes the interval drift zero. Applying this argument successively gives zero drift and volatility everywhere.
+
+At a scheduled jump, Theorem~\ref{thm:tilts} with every $y_k=0$ makes every $X_k$ zero, successively under equivalent measures. Thus the pure step family supports neither a nontrivial diffusion of fixed-maturity forwards nor a nontrivial scheduled curve jump under these hypotheses. Allowing a slope on each interval accommodates the linear drift generated by a step volatility.
+
+Indeed, let $s_k(t)$ be the step volatility on $I_k$, and write its required drift as $\mu_k^L(t)+\mu_k^C(t)(T-T_k)$. Set $m_k(t)=\max(t,T_k)$ and $\mathcal V_k^S(t)=\int_t^{m_k(t)}\sigma(t,u)\dd u$. On $I_k\cap[t,H]$, the volatility primitive is
+\[
+\int_t^T\sigma(t,u)\dd u=\mathcal V_k^S+s_k(T-m_k).
+\]
+Multiplying by $s_k$ as in \eqref{eq:diffdrift}, and writing $T-m_k=(T-T_k)-(m_k-T_k)$, identifies the constant and linear coefficients:
+\begin{equation}
+\mu_k^C=|s_k|^2,\qquad \mu_k^L=s_k\cdot \mathcal V_k^S-|s_k|^2(m_k-T_k).\label{eq:affinedrift}
+\end{equation}
+Equation \eqref{eq:affinedrift} specifies how to evolve a piecewise-linear curve: its slope coefficient $C_k(t)$ acquires drift $\mu_k^C(t)$, while its level coefficient $L_k(t)$ acquires drift $\mu_k^L(t)$ and Brownian sensitivity $s_k(t)$. The quantity $\mathcal V_k^S$ records the integrated volatility before the start of the interval.
+
+\subsection{A curve with both diffusion and announcement jumps}\label{sec:combined}
+The two consistency conditions can be satisfied in one model. Here is a finite-calendar construction. Fix deterministic vectors $s_k$ and nonnegative variances $v_{n,k}$, $1\le n\le k\le N$. Let $X_{n,k}\sim N(0,v_{n,k})$ be independent across $(n,k)$ and independent of the Brownian motion, with $X_{n,k}$ revealed at date $T_n$. On $T\in I_k$, take
+\[
+\sigma(t,T)=s_k,\qquad
+\alpha(t,T)=s_k\cdot\int_t^T\sigma(t,u)\dd u,
+\qquad
+\xi_n(T)=X_{n,k}+v_{n,k}(T-T_k)\quad(n\le k).
+\]
+For any initial curve in $S^+$, \eqref{eq:hjm} then remains in $S^+$. Its slope on $I_k$ is the initial slope plus $|s_k|^2t+\sum_{n:T_n\le t}v_{n,k}$. The continuous dynamics satisfy the drift condition by construction. At a meeting, independence and the Gaussian exponential moment normalize each preceding-interval tilt and give Theorem~\ref{thm:tilts}. Both continuous shocks and announcement shocks can therefore be nonzero.
+
+This example illustrates the distinction between a finite-calendar model and a fixed-size realization across calendars. The example stores a collection of announcement coordinates whose size grows with the calendar. An arbitrary jump from Theorem~\ref{thm:tilts} cannot simply be inserted into the fixed-size state of Section~\ref{sec:realizations}: the state map must also be able to represent the resulting post-jump curve. A stochastic restart would need both that closure property and the jump condition. They are separate requirements. Gaussian announcements with matching shapes are possible in other finite-dimensional constructions, as in \citet[Example 3.10]{fontana2022term}.
+
+For the splice of Section~\ref{sec:splice}, one can keep the block continuous and insert these announcements in the front-end levels and slopes. Between dates the continuous covariance and drift criterion is unchanged; at the dates the front-end jump must satisfy Theorem~\ref{thm:tilts}. This permits combined models on a finite calendar without claiming a uniform state-size theorem for arbitrary announcement shapes.

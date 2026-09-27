@@ -1,0 +1,15 @@
+{
+  "curve_dates": 79,
+  "first_date": "2026-03-30",
+  "last_date": "2026-09-24",
+  "raw_discount_factor_rows": 1450385,
+  "par_rate_rows": 1895,
+  "discount_rows_first_1080_days": 85399,
+  "matched_option_pairs": 20498,
+  "matched_option_dates": 78,
+  "missing_option_pairs": 0,
+  "matched_midcurve_pairs": 2755,
+  "missing_midcurve_pairs": 384,
+  "max_zero_rate_identity_error": 4.9999976381442934e-11,
+  "download_errors": 4
+}

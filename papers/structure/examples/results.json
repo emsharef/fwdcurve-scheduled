@@ -1,0 +1,82 @@
+{
+  "parameters": {
+    "H": 4.0,
+    "t": 2.0,
+    "T": 4.0,
+    "meetings": 32,
+    "eta": 0.0025,
+    "kappa": 0.35,
+    "initial_curve": 0
+  },
+  "jump_gap_bp": 8.138015747073532e-09,
+  "approximation": [
+    {
+      "nodes": 1,
+      "order": 2,
+      "epsilon": 2.0584951959021813,
+      "forward_rmse_bp": 21.89383440156058,
+      "forward_bound_bp": 73.0480203153809,
+      "bond_rmse_bp": 43.780734294726926,
+      "bond_bound_bp": 228.7493425713433
+    },
+    {
+      "nodes": 2,
+      "order": 3,
+      "epsilon": 1.0596830414860996,
+      "forward_rmse_bp": 9.398997874802834,
+      "forward_bound_bp": 37.60404614809681,
+      "bond_rmse_bp": 14.436490352086023,
+      "bond_bound_bp": 117.75679610838674
+    },
+    {
+      "nodes": 3,
+      "order": 4,
+      "epsilon": 0.44553127458700104,
+      "forward_rmse_bp": 3.0900691114292416,
+      "forward_bound_bp": 15.810179038530691,
+      "bond_rmse_bp": 3.6717815553371764,
+      "bond_bound_bp": 49.50946028906451
+    },
+    {
+      "nodes": 4,
+      "order": 5,
+      "epsilon": 0.14229868957006797,
+      "forward_rmse_bp": 0.7903214564434283,
+      "forward_bound_bp": 5.049629256973187,
+      "bond_rmse_bp": 0.7348879633322348,
+      "bond_bound_bp": 15.812877170039075
+    },
+    {
+      "nodes": 6,
+      "order": 7,
+      "epsilon": 0.006510053517098768,
+      "forward_rmse_bp": 0.025897961719852612,
+      "forward_bound_bp": 0.23101658071289735,
+      "bond_rmse_bp": 0.015041205212249395,
+      "bond_bound_bp": 0.7234267367274289
+    },
+    {
+      "nodes": 8,
+      "order": 9,
+      "epsilon": 9.544395536398298e-05,
+      "forward_rmse_bp": 0.00030109008990262566,
+      "forward_bound_bp": 0.003386936245606784,
+      "bond_rmse_bp": 0.0001155246256846849,
+      "bond_bound_bp": 0.010606166137954504
+    },
+    {
+      "nodes": 12,
+      "order": 13,
+      "epsilon": 2.6289637133913857e-10,
+      "forward_rmse_bp": 6.27109326624915e-10,
+      "forward_bound_bp": 9.329173812331735e-09,
+      "bond_rmse_bp": 1.2334369345762634e-10,
+      "bond_bound_bp": 2.9214239716436715e-08
+    }
+  ],
+  "checks": [
+    "12 versus 24 point quadrature on each time interval",
+    "All numerical errors below theorem bounds",
+    "Two-point profile gap bound"
+  ]
+}

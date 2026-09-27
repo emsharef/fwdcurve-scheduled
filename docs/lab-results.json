@@ -1,0 +1,551 @@
+[
+  {
+    "claim": "002",
+    "lab_results": [
+      "Lemma 3"
+    ],
+    "scope": "formalized",
+    "declarations": [
+      "Standalone.LemmaA.statement",
+      "Novel.LemmaAProof.lemmaA"
+    ]
+  },
+  {
+    "claim": "001",
+    "lab_results": [
+      "Lemma 4"
+    ],
+    "scope": "formalized",
+    "declarations": [
+      "Standalone.LemmaB.statement",
+      "Novel.LemmaBProof.lemmaB"
+    ]
+  },
+  {
+    "claim": "003",
+    "lab_results": [
+      "Lemma 5"
+    ],
+    "scope": "formalized",
+    "declarations": [
+      "Standalone.StepJumpsVanish.statement",
+      "Novel.StepJumpsVanishProof.stepJumpsVanish"
+    ]
+  },
+  {
+    "claim": "004",
+    "lab_results": [
+      "Lemma 6"
+    ],
+    "scope": "formalized",
+    "declarations": [
+      "Standalone.StepDriftVanish.statement",
+      "Novel.StepDriftVanishProof.stepDriftVanish"
+    ]
+  },
+  {
+    "claim": "005",
+    "lab_results": [
+      "Theorem 1",
+      "Corollary 2"
+    ],
+    "scope": "Theorem 1 formalized; Corollary 2 is a paper corollary, not a separate Lean target.",
+    "declarations": [
+      "Standalone.Theorem1.statement",
+      "Novel.Theorem1Proof.theorem1",
+      "Novel.Theorem1Proof.theorem1_of_HJMScheduled"
+    ]
+  },
+  {
+    "claim": "006",
+    "lab_results": [
+      "Lemma 7"
+    ],
+    "scope": "formalized",
+    "declarations": [
+      "Standalone.PiecewiseAffineIntegral.statement",
+      "Novel.PiecewiseAffineIntegralProof.piecewiseAffineIntegral"
+    ]
+  },
+  {
+    "claim": "007",
+    "lab_results": [
+      "Proposition 8"
+    ],
+    "scope": "formalized",
+    "declarations": [
+      "Standalone.RampDriftIdentified.statement",
+      "Novel.RampDriftIdentifiedProof.rampDriftIdentified"
+    ]
+  },
+  {
+    "claim": "008",
+    "lab_results": [
+      "Proposition 9"
+    ],
+    "scope": "formalized",
+    "declarations": [
+      "Standalone.JumpLawTiltedGaussian.statement",
+      "Novel.JumpLawTiltedGaussianProof.jumpLawTiltedGaussian"
+    ]
+  },
+  {
+    "claim": "009",
+    "lab_results": [
+      "Proposition 10"
+    ],
+    "scope": "formalized",
+    "declarations": [
+      "Standalone.D2Instance.statement",
+      "Novel.D2InstanceProof.d2Instance"
+    ]
+  },
+  {
+    "claim": "010",
+    "lab_results": [
+      "Theorem 11"
+    ],
+    "scope": "formalized",
+    "declarations": [
+      "Standalone.Theorem2a.statement",
+      "Novel.Theorem2aProof.theorem2a",
+      "Novel.Theorem2aProof.theorem2a_of_HJMScheduled"
+    ]
+  },
+  {
+    "claim": "011",
+    "lab_results": [
+      "Remark 12"
+    ],
+    "scope": "formalized",
+    "declarations": [
+      "Standalone.D3EventVariances.statement",
+      "Novel.D3EventVariancesProof.d3EventVariances"
+    ]
+  },
+  {
+    "claim": "012",
+    "lab_results": [
+      "Proposition 13"
+    ],
+    "scope": "formalized; conditional deterministic Lean scope (assumes the variance-integral representation)",
+    "declarations": [
+      "Standalone.GaussianMeetingVarianceCone.statement",
+      "Novel.GaussianMeetingVarianceConeProof.gaussianMeetingVarianceCone"
+    ]
+  },
+  {
+    "claim": "013",
+    "lab_results": [
+      "Proposition 14"
+    ],
+    "scope": "formalized; conditional Lean scope (stochastic ingredients as explicit hypotheses)",
+    "declarations": [
+      "Standalone.StochasticMeetingVariance.statement",
+      "Novel.StochasticMeetingVarianceProof.stochasticMeetingVariance"
+    ]
+  },
+  {
+    "claim": "014",
+    "lab_results": [
+      "Proposition 15"
+    ],
+    "scope": "formalized in the stated ideal model",
+    "declarations": [
+      "Standalone.BondOptionMeetingVariances.statement",
+      "Novel.BondOptionMeetingVariancesProof.bondOptionMeetingVariances"
+    ]
+  },
+  {
+    "claim": "015",
+    "lab_results": [
+      "Proposition 16"
+    ],
+    "scope": "formalized (Upstream route: AX-03 to AX-05 as cited audited fields of `Upstream.ItoCalculus`, not reproved; the SDE solutions are hypotheses, so the conclusion is conditional on them exactly as the proposition is)",
+    "declarations": [
+      "Standalone.ZeroMeanReversionUpstreamBridge.statement",
+      "Standalone.ZeroMeanReversionVarianceSupport.statement",
+      "Novel.ZeroMeanReversionUpstreamBridgeProof.zeroMeanReversionUpstreamBridge",
+      "Novel.ZeroMeanReversionVarianceSupportProof.zeroMeanReversionVarianceSupport"
+    ]
+  },
+  {
+    "claim": "016",
+    "lab_results": [
+      "Proposition 17"
+    ],
+    "scope": "formalized for the stated ideal prices",
+    "declarations": [
+      "Standalone.BondOptionPriceIntervals.statement",
+      "Novel.BondOptionPriceIntervalsProof.bondOptionPriceIntervals"
+    ]
+  },
+  {
+    "claim": "017",
+    "lab_results": [
+      "Lemma 18",
+      "Proposition 19"
+    ],
+    "scope": "formalized for the stated ideal futures and cash calls",
+    "declarations": [
+      "Standalone.CompoundedFuturesIdentification.statement",
+      "Novel.CompoundedFuturesIdentificationProof.compoundedFuturesIdentification"
+    ]
+  },
+  {
+    "claim": "018",
+    "lab_results": [
+      "Corollary 21"
+    ],
+    "scope": "formalized for the stated ideal cash exercise problem",
+    "declarations": [
+      "Standalone.LateAmericanExercise.statement",
+      "Novel.LateAmericanExerciseProof.lateAmericanExercise"
+    ]
+  },
+  {
+    "claim": "019",
+    "lab_results": [
+      "Corollary 22"
+    ],
+    "scope": "formalized for the stated one-meeting exercise window",
+    "declarations": [
+      "Standalone.CrossMeetingAmerican.statement",
+      "Novel.CrossMeetingAmericanProof.crossMeetingAmerican"
+    ]
+  },
+  {
+    "claim": "020",
+    "lab_results": [
+      "Proposition 20"
+    ],
+    "scope": "formalized for the stated payoffs of the post-window state",
+    "declarations": [
+      "Standalone.PreWindowVarianceAggregates.statement",
+      "Novel.PreWindowVarianceAggregatesProof.preWindowVarianceAggregates"
+    ]
+  },
+  {
+    "claim": "021",
+    "lab_results": [
+      "Proposition 23"
+    ],
+    "scope": "formalized for the stated futures-style contract",
+    "declarations": [
+      "Standalone.FuturesStyleExercise.statement",
+      "Novel.FuturesStyleExerciseProof.futuresStyleExercise"
+    ]
+  },
+  {
+    "claim": "022",
+    "lab_results": [
+      "Proposition 24"
+    ],
+    "scope": "formalized on the stated calendar under (A1) to (A4)",
+    "declarations": [
+      "Standalone.ListedSr3Identification.statement",
+      "Novel.ListedSr3IdentificationProof.listedSr3Identification"
+    ]
+  },
+  {
+    "claim": "024",
+    "lab_results": [
+      "Proposition 25"
+    ],
+    "scope": "formalized on the deterministic cone of Claim 012",
+    "declarations": [
+      "Standalone.SurvivingScaleRestrictions.statement",
+      "Novel.SurvivingScaleRestrictionsProof.survivingScaleRestrictions"
+    ]
+  },
+  {
+    "claim": "023",
+    "lab_results": [
+      "Proposition 26"
+    ],
+    "scope": "formalized conditional on the stated SDE solutions, moment bound and original-integrand admissibility, using audited calculus and predictability fields",
+    "declarations": [
+      "Standalone.PositiveMeanReversionSupport.statement",
+      "Novel.PositiveMeanReversionSupportProof.positiveMeanReversionSupport"
+    ]
+  },
+  {
+    "claim": "025",
+    "lab_results": [
+      "Proposition 27"
+    ],
+    "scope": "formalized conditional on the two supplied calculus structures and audited AX-03 to AX-06, AX-09 to AX-11 interfaces; no Brownian-basis witness for those structures",
+    "declarations": [
+      "Standalone.BoundedVarianceCompletion.statement",
+      "Novel.BoundedVarianceCompletionProof.boundedVarianceCompletion"
+    ]
+  },
+  {
+    "claim": "026",
+    "lab_results": [
+      "Proposition 28"
+    ],
+    "scope": "formalized conditional on the supplied `Upstream.ItoCalculus` (AX-03, AX-04); \"semimartingale\" for M paper-only",
+    "declarations": [
+      "Standalone.SeparableMeetingAssembly.statement",
+      "Novel.SeparableMeetingAssemblyProof.separableMeetingAssembly"
+    ]
+  },
+  {
+    "claim": "028",
+    "lab_results": [
+      "Proposition 29"
+    ],
+    "scope": "formalized conditional on the supplied `Upstream.ItoCalculus` with the AX-06 Brownian premise and solution class, `Upstream.Predictability` (AX-09) and `Upstream.LipschitzMarkovTime` (AX-13, vacuous instance with the amended rule-6 checks); part (d) descriptive",
+    "declarations": [
+      "Standalone.SeparableMeetingMarkovSeveral.statement",
+      "Novel.SeparableMeetingMarkovSeveralProof.separableMeetingMarkovSeveral"
+    ]
+  },
+  {
+    "claim": "029",
+    "lab_results": [
+      "Proposition 30"
+    ],
+    "scope": "formalized conditional on the supplied calculus (standalone restatement of AX-03, AX-04); only the realization data the proof uses are assumed",
+    "declarations": [
+      "Standalone.MeetingLoadingObstruction.statement",
+      "Novel.MeetingLoadingObstructionProof.meetingLoadingObstruction"
+    ]
+  },
+  {
+    "claim": "031",
+    "lab_results": [
+      "Proposition 31"
+    ],
+    "scope": "formalized in the version form, which Proposition 31 and the realization definition (3.139) state (restored by `lean/030-031-restore`)",
+    "declarations": [
+      "Standalone.ExternalScaleAssembly.statement",
+      "Novel.ExternalScaleAssemblyProof.externalScaleAssembly"
+    ]
+  },
+  {
+    "claim": "032",
+    "lab_results": [
+      "Lemma 32",
+      "Proposition 33"
+    ],
+    "scope": "formalized conditional on the supplied calculus (standalone restatement of AX-03, AX-04); (c)'s sufficiency in the one-time sense, the full realization being Proposition 31",
+    "declarations": [
+      "Standalone.RecurrenceNecessityAssembly.statement",
+      "Novel.RecurrenceNecessityAssemblyProof.recurrenceNecessityAssembly"
+    ]
+  },
+  {
+    "claim": "033",
+    "lab_results": [
+      "Proposition 34"
+    ],
+    "scope": "formalized conditional on the supplied calculus (AX-03), consistency in the version form; the t-independence of the enlarged family and (d)'s closing sentence are remarks, not formalized",
+    "declarations": [
+      "Standalone.SpliceCrossTermAssembly.statement",
+      "Novel.SpliceCrossTermAssemblyProof.spliceCrossTermAssembly"
+    ]
+  },
+  {
+    "claim": "035",
+    "lab_results": [
+      "Proposition 35"
+    ],
+    "scope": "formalized conditional on the supplied calculus, with (A, b) controllable, c != 0 and A invertible as standing hypothesis (the reduction is not formalized); consistency in the version form; (d)'s enlargement sentence and the open set of times are remarks, not stated in the paper",
+    "declarations": [
+      "Standalone.SpliceQuasiExponentialAssembly.statement",
+      "Novel.SpliceQuasiExponentialAssemblyProof.spliceQuasiExponentialAssembly"
+    ]
+  },
+  {
+    "claim": "034",
+    "lab_results": [
+      "Lemma 36",
+      "Proposition 37"
+    ],
+    "scope": "formalized conditional on the supplied calculus (AX-03, AX-05), with Assumption 2.1 for the drift of the representation (34.2); AX-14 proved without conditions; the central \u00a74.2 proposition of the source is not used and is recorded as unproved",
+    "declarations": [
+      "Standalone.SharefFilipovicAssembly.statement",
+      "Novel.SharefFilipovicAssemblyProof.sharefFilipovicAssembly"
+    ]
+  },
+  {
+    "claim": "037",
+    "lab_results": [
+      "Proposition 38"
+    ],
+    "scope": "formalized conditional on the supplied calculus (AX-03, AX-05), Assumption 2.1 for the representation drift; analytic-primitive lemma proved",
+    "declarations": [
+      "Standalone.SpliceAffineOverlapAssembly.statement",
+      "Novel.SpliceAffineOverlapAssemblyProof.spliceAffineOverlapAssembly"
+    ]
+  },
+  {
+    "claim": "036",
+    "lab_results": [
+      "Proposition 39"
+    ],
+    "scope": "formalized, deterministic, with a pathwise part (e); uses AX-14 (Lemma 36); existence of an Ito process not shown",
+    "declarations": [
+      "Standalone.CorrelatedFactorsAssembly.statement",
+      "Novel.CorrelatedFactorsAssemblyProof.correlatedFactorsAssembly"
+    ]
+  },
+  {
+    "claim": "038",
+    "lab_results": [
+      "Proposition 40"
+    ],
+    "scope": "formalized, deterministic with a pathwise part (a); independence lemma for distinct real exponents proved",
+    "declarations": [
+      "Standalone.SvenssonSplice.statement",
+      "Novel.SvenssonSpliceProof.svenssonSplice"
+    ]
+  },
+  {
+    "claim": "039",
+    "lab_results": [
+      "Proposition 41"
+    ],
+    "scope": "formalized conditional on the supplied calculus (AX-03), with Claim 035's standing hypotheses; consistency in the version form",
+    "declarations": [
+      "Standalone.SpliceRandomScalesAssembly.statement",
+      "Novel.SpliceRandomScalesAssemblyProof.spliceRandomScalesAssembly"
+    ]
+  },
+  {
+    "claim": "040",
+    "lab_results": [
+      "Lemma 42",
+      "Proposition 43"
+    ],
+    "scope": "formalized conditional on the supplied calculus (AX-03, AX-05), Assumption 2.1 for the representation drift",
+    "declarations": [
+      "Standalone.SpliceStateBlockAssembly.statement",
+      "Novel.SpliceStateBlockAssemblyProof.spliceStateBlockAssembly"
+    ]
+  },
+  {
+    "claim": "041",
+    "lab_results": [
+      "Proposition 44"
+    ],
+    "scope": "formalized conditional on the supplied calculus (AX-03, AX-05), pathwise",
+    "declarations": [
+      "Standalone.SpliceSeveralFactorsAssembly.statement",
+      "Novel.SpliceSeveralFactorsAssemblyProof.spliceSeveralFactorsAssembly"
+    ]
+  },
+  {
+    "claim": "043",
+    "lab_results": [
+      "Proposition 45"
+    ],
+    "scope": "formalized at a parameter point with positive exponents",
+    "declarations": [
+      "Standalone.SplicePolynomialParts.statement",
+      "Novel.SplicePolynomialPartsProof.splicePolynomialParts"
+    ]
+  },
+  {
+    "claim": "044",
+    "lab_results": [
+      "Proposition 47"
+    ],
+    "scope": "formalized conditional on the supplied calculus (AX-03, AX-05), pathwise; the correlated level counted as front end is PM's convention (NOTICES 2026-09-24), stated as such",
+    "declarations": [
+      "Standalone.SpliceExponentZeroAssembly.statement",
+      "Novel.SpliceExponentZeroAssemblyProof.spliceExponentZeroAssembly"
+    ]
+  },
+  {
+    "claim": "045",
+    "lab_results": [
+      "Proposition 48"
+    ],
+    "scope": "formalized, without cited calculus inputs; the numerical gap values are not formalized",
+    "declarations": [
+      "Standalone.JumpShapeAssembly.statement",
+      "Novel.JumpShapeAssemblyProof.jumpShapeAssembly"
+    ]
+  },
+  {
+    "claim": "046",
+    "lab_results": [
+      "Proposition 49"
+    ],
+    "scope": "formalized; (a) and (b) conditional on the explicit hypothesis `GaussLaw`, satisfiable only without diffusion; (c) to (e) unconditional; the practical-identification table and the size 1.9e-9 are not formalized",
+    "declarations": [
+      "Standalone.DiffusionMeetingAssembly.statement",
+      "Novel.DiffusionMeetingAssemblyProof.diffusionMeetingAssembly"
+    ]
+  },
+  {
+    "claim": "047",
+    "lab_results": [
+      "Proposition 50"
+    ],
+    "scope": "formalized; (a) and (b) conditional on the explicit hypothesis `ShapeGaussLaw`, satisfiable only without diffusion; (c) and (d), with (d5), unconditional; the SIFMA-holiday fact behind (d5)'s effective dates, the value of kappa*, the precision table, the linear-programming comparison, the condition numbers and the remark on the identity z/delta = int Q are not formalized",
+    "declarations": [
+      "Standalone.MaturityShapeAssembly.statement",
+      "Novel.MaturityShapeAssemblyProof.maturityShapeAssembly"
+    ]
+  },
+  {
+    "claim": "048",
+    "lab_results": [
+      "Proposition 51"
+    ],
+    "scope": "formalized; deterministic estimates unconditional; (a) under a standard driver of the supplied calculus (AX-03); (b) and (c) also assume a Brownian driver (Lemma 32's hypothesis), no such model constructed; the bounded-recurrence characterization, the growth remark, the non-quasi-exponential remark and the numerical check are not formalized",
+    "declarations": [
+      "Standalone.RecurrentApproxAssembly.statement",
+      "Novel.RecurrentApproxAssemblyProof.recurrentApproxAssembly"
+    ]
+  },
+  {
+    "claim": "049",
+    "lab_results": [
+      "Proposition 52"
+    ],
+    "scope": "formalized; AX-01 as an explicit hypothesis, no Upstream field; the representation's drift and volatility written out; processes not constructed; not formalized: the split of (c) into two conditions, existence of the minimal realization and the block-by-block form, Proposition 45's carry-over in (e) beyond the entries of a-sharp, the Jordan remark, the symbolic check",
+    "declarations": [
+      "Standalone.UnifiedSpliceAssembly.statement",
+      "Novel.UnifiedSpliceAssemblyProof.unifiedSpliceAssembly"
+    ]
+  },
+  {
+    "claim": "050",
+    "lab_results": [
+      "Proposition 53"
+    ],
+    "scope": "formalized; AX-01 explicit, no Upstream field; (a), (b) carry over verbatim from Claim 049's Lean statements; (c) drifts, integrability and maturity-uniform envelopes proved; not formalized: construction of L_m, C_m as stochastic integrals, progressive measurability in (t, T), the localizing times, the Heston remark, the checks",
+    "declarations": [
+      "Standalone.SpliceLocalizationAssembly.statement",
+      "Novel.SpliceLocalizationAssemblyProof.spliceLocalizationAssembly"
+    ]
+  },
+  {
+    "claim": "042",
+    "lab_results": [
+      "Proposition 46"
+    ],
+    "scope": "formalized conditional on the supplied calculus and AX-16 (`Upstream.ExpPolyConsistency`, with the adaptedness premise, F_0-measurable Z_0, added by `lean/splice-varying-exponents-adapted`, re-audited ok; vacuous instance with the amended rule-6 checks); restored 2026-09-24 after the interim revert",
+    "declarations": [
+      "Standalone.SpliceVaryingExponentsAssembly.statement",
+      "Novel.SpliceVaryingExponentsAssemblyProof.spliceVaryingExponentsAssembly"
+    ]
+  },
+  {
+    "claim": "030",
+    "lab_results": [
+      "Proposition 31",
+      "Proposition 33"
+    ],
+    "scope": "formalized (restored by `lean/030-031-restore` after the version-form re-approval); not a separate result in the paper: (a) and (b) are Proposition 31 with psi = 1, (c) is the case lambda = 1 of Proposition 33(c)",
+    "declarations": [
+      "Standalone.RecurrentLoadingAssembly.statement",
+      "Novel.RecurrentLoadingAssemblyProof.recurrentLoadingAssembly"
+    ]
+  }
+]

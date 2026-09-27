@@ -1,0 +1,84 @@
+\section{Factor-model specification and support proofs}\label{app:support}
+\subsection{The full conditional-variance map}\label{app:svderivation}
+Put $\Gamma_{i,j}=\sum_{h=1}^i\gamma_{h,j}$, $\Gamma_{0,j}=0$, and
+\[
+h_j(s,T)=a_j(s)e^{-\kappa_j(T-s)}\Gamma_{\nu(T)-\nu(s),j},
+\qquad \sigma_j(s,T)=h_j(s,T)\sqrt{Z_j(s)}.
+\]
+The HJM drift creates a random contribution to the short-rate jump. Define
+\begin{align}
+b_{nj}(s)&=g_{nj}(s)\int_s^{T_n}h_j(s,x)\,\dd x,&
+R_{nj}(u)&=\int_u^{T_n}b_{nj}(s)e^{-\vartheta_j(s-u)}\,\dd s,\nonumber\\
+\mathcal H_{nj}(u)&=g_{nj}(u)^2+2\rho_j(u)g_{nj}(u)\alpha_j(u)R_{nj}(u)
+                         +\alpha_j(u)^2R_{nj}(u)^2.\label{eq:svkernel}
+\end{align}
+All loadings and coefficients in these expressions are deterministic and fixed.
+
+\begin{proposition}[Conditional variance with leverage]\label{prop:svmap}
+Under these hypotheses the actual conditional short-rate jump variances satisfy
+the affine identity \eqref{eq:svmap},
+where
+\begin{align*}
+\mathsf L_{nj}(t)&=\int_t^{T_n}\mathcal H_{nj}(u)e^{-\vartheta_j(u-t)}\,\dd u,\\
+\boldsymbol c_n(t)&=\sum_j\int_t^{T_n}\mathcal H_{nj}(u)(1-e^{-\vartheta_j(u-t)})\,\dd u.
+\end{align*}
+Both are nonnegative. For fixed parameters the variance vector therefore lies in a translated cone of dimension at most the number of factors.
+\end{proposition}
+\begin{proof}
+The maturity discontinuity of the differentiated HJM equation gives
+\[
+\Delta r_{T_n}=\Delta f_0(T_n)+\sum_j\left[\int_0^{T_n}b_{nj}(s)Z_j(s)\,\dd s
+                  +\int_0^{T_n}g_{nj}(s)\sqrt{Z_j(s)}\,\dd W_j(s)\right].
+\]
+The initial-curve jump $\Delta f_0(T_n)$ is deterministic and drops out of the conditional variance. Since $R'_{nj}=\vartheta_jR_{nj}-b_{nj}$ and $R_{nj}(T_n)=0$, integration by parts replaces the random part of the future drift integral by $\int_t^{T_n}\alpha_jR_{nj}\sqrt{Z_j}\,\dd U_j$. Conditional isometry yields
+\[
+\boldsymbol V_n(t)=\sum_j\int_t^{T_n}\mathcal H_{nj}(u)
+                      \E[Z_j(u)\mid\F_t]\,\dd u.
+\]
+Use $\E[Z_j(u)\mid\F_t]=1+(Z_j(t)-1)e^{-\vartheta_j(u-t)}$. Finally,
+$\mathcal H_{nj}=(g_{nj}+\rho_j\alpha_jR_{nj})^2+(1-\rho_j^2)(\alpha_jR_{nj})^2\geq0$.
+\end{proof}
+Keeping only the integral of $g_{nj}^2\E[Z_j]$ omits both the random drift variance and its leverage covariance. Equation~\eqref{eq:svkernel} supplies the correction needed before drawing conclusions about the cross-meeting restrictions of a stochastic-volatility calibration.
+
+
+\input{sections/h_bgs_mapping}
+\subsection{Proof of the support theorem}
+We prove Theorem~\ref{thm:svsupport} under the solution and integrability hypotheses in Section~\ref{sec:restrictions}. On one coefficient piece of length $h$, starting from $x\geq0$, with $\alpha>0$ and $\vartheta>0$, the square-root transition has Laplace transform
+\begin{equation}\label{eq:cirtransform}
+\E[e^{-uZ(s+h)}\mid\F_s]
+=(1+c_hu)^{-2\vartheta/\alpha^2}
+ \exp\left(-\frac{u e^{-\vartheta h}x}{1+c_hu}\right),
+\qquad c_h=\frac{\alpha^2}{2\vartheta}(1-e^{-\vartheta h}).
+\end{equation}
+This is the classical scaled noncentral chi-square transition; see \citet{malham2008square}, Proposition~1. For $\vartheta=0$ it becomes
+$\exp[-ux/(1+\alpha^2hu/2)]$, and for $\alpha=0$ the transition is the deterministic flow $1+(x-1)e^{-\vartheta h}$.
+
+These formulas apply conditionally to the assumed solutions. One can obtain them directly by applying Itô's formula to the exponential-affine function with terminal value $e^{-uZ}$: its backward coefficients cancel the drift. Stop on bounded state intervals to make the stochastic integral a true martingale, and use bounded convergence for the exponential, which lies in $[0,1]$. Applying the same argument jointly, the independent factor drivers have zero cross variations, and the joint transform is the product of the coordinate transforms. Iteration across the finite common partition proves the conditional product transition law, without assuming an additional independence property of the chosen solutions.
+
+For $\vartheta>0$, the law in \eqref{eq:cirtransform} has positive density on $(0,\infty)$, support $[0,\infty)$, and no atom at zero. This also holds when $x=0$. For $\vartheta=0$ and $x>0$, put $c=\alpha^2h/2$. The transform is that of a sum of a Poisson number of independent exponential variables, with Poisson mean $x/c$ and exponential mean $c$. Its support is $[0,\infty)$ and its zero mass is $e^{-x/c}$; at $x=0$ it is absorbed. A deterministic final piece maps a half-line to $[\ell_j,\infty)$ and preserves any mass at its lower endpoint. Starting from one, any positive-length stochastic piece therefore activates that coordinate, and each active coordinate has strictly positive variance. These facts prove
+\[
+\operatorname{supp}Z(t)=
+ \prod_{j\notin J}\{1\}\ \times\prod_{j\in J}[\ell_j,\infty),
+\]
+with the product interpreted in coordinate order.
+
+Apply the continuous affine map $z\mapsto\boldsymbol c+\mathsf Lz$. Its image is the finitely generated translated cone in \eqref{eq:support}, which is closed. The support of the image law is the closure of the image of the support, so here it equals that cone. Its affine hull is the stated translate of $\operatorname{range}\mathsf L_J$. Coordinate independence gives the covariance formula. For any vector $\omega$,
+\[
+\omega^\top\Cov(\boldsymbol V(t))\omega
+ =\sum_{j\in J}\Var(Z_j(t))(\omega^\top\mathsf L_{\cdot j})^2.
+\]
+All coefficients are positive, hence the covariance kernel is $\ker\mathsf L_J^\top$. This proves both the rank and the exhaustive affine-equality statements.
+
+For completeness, at $0\leq s<t$, the regular conditional version uses
+\[
+J_s=\{j:\alpha_j>0\text{ on a positive-length piece of }(s,t],
+                   \ \vartheta_j>0\text{ or }Z_j(s)>0\}.
+\]
+Compute the lower endpoints from the state $Z(s)$ and the intervening pieces; an inactive coordinate follows its deterministic flow. The same support formula holds with these endpoints and $J_s$, almost surely. Its conditional covariance is the sum of the column outer products weighted by the conditional coordinate variances. In particular, a zero-speed coordinate absorbed at zero supplies no later random direction, whereas positive mean reversion allows a zero coordinate to become active on a later stochastic piece.
+
+Since the columns of $\mathsf L$ are nonnegative, reaching the cone vertex requires every active coordinate with a nonzero column to reach its lower endpoint. The vertex mass is the product of those endpoint masses. Any such coordinate with positive mean reversion makes the product zero. For zero speeds and constant positive $\alpha_j$, starting from one, the vertex mass is
+\[
+\exp\left(-\sum_{\substack{j\in J\\\mathsf L_{\cdot j}\ne0}}
+                            \frac{2}{\alpha_j^2t}\right).
+\]
+This distinguishes a support boundary, which can always be approached, from an atom at that boundary.

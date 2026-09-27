@@ -1,0 +1,164 @@
+\section{Meeting loadings and finite-dimensional realizations}\label{sec:realizations}
+The preceding section asks which curve shapes survive an announcement. We now ask how much information must be stored to describe a curve as continuous shocks accumulate. Throughout this section announcement changes are zero: $\xi_n(T)=0$. The model starts from $f_0=0$, and the drift is determined by \eqref{eq:diffdrift}.
+
+\subsection{Volatility indexed by the number of meetings}
+Let $i(t,T)$ be the number of meetings in $(t,T]$. Choose a sequence of real loadings $a_0,a_1,\ldots$ and a continuous function $\lambda(x)$ of time to maturity $x\ge0$. With one Brownian driver, specify
+\begin{equation}
+\sigma(t,T)=a_{i(t,T)}\lambda(T-t).\label{eq:ordinal}
+\end{equation}
+Before the next meeting, a maturity has loading $a_0$; beyond that meeting it has loading $a_1$; beyond the next two meetings it has loading $a_2$. The function $\lambda$ supplies a smooth adjustment for distance in time. For example, $\lambda(x)=\eta e^{-\kappa x}$ makes the sensitivity decay with maturity between meetings. The sequence $a$ is fixed as the schedule varies. Both $a$ and $\lambda$ are deterministic; we refer to this specification as the constant-scale model.
+
+The curve at time $t$ depends on earlier shocks. A finite-dimensional realization stores their relevant effects in a vector $Y_t$, rather than retaining the entire history. A map $G$ recovers any forward rate from that vector and the remaining calendar. Let $\mathcal D(t)$ be the vector of positive distances $T_n-t$ to meetings still in the future. As time passes these distances decrease; at a meeting one entry disappears. The state is allowed a fixed update, called a restart, at that date.
+
+\begin{definition}\label{def:realization}
+A realization serving every schedule consists of a state process $Y_t$ taking values in a subset of $\R^q$, fixed dynamics between dates, a fixed restart map at dates, and a map $G$ such that
+\[
+f(t,t+x)=G(Y_t,\mathcal D(t))(x)\quad Q\text{-a.s.}
+\]
+for each observation time $t$ and time to maturity $x\ge0$. For each fixed $\mathcal D,x$, the map in the state variable is locally Lipschitz. The dimension, dynamics, restart, and curve map are the same for every finite schedule on $[0,\infty)$ and every finite horizon. In particular, the horizon $H$ used to restrict a particular model is allowed to vary in this definition. All state coordinates, including any clock, count toward $q$; the deterministic future schedule is supplied as $\mathcal D$.
+\end{definition}
+
+The requirement is that a single state size and update rule work for calendars with arbitrarily many meetings. Keeping a separate state for every interval would instead make the dimension grow. Local Lipschitz regularity ensures that small changes in the state produce controlled changes in each recovered rate; it also gives dimension its usual geometric meaning in the necessity proof.
+
+\paragraph{A growing calendar versus one fixed calendar.}
+On one finite calendar the number of past intervals is bounded, so a finite coefficient representation can be obtained by recording the contributions of those intervals separately. The number of stored coefficients then grows with the calendar. The definition instead asks for one state architecture that can be used as the calendar is extended and more meetings occur. This is a structural robustness requirement, stronger than what is needed to price a fixed one- or two-year panel. It does not model the random announcement of new meeting dates or the information in a calendar revision. The finite-horizon approximation in Section~\ref{sec:approximation} addresses the fixed-panel application.
+
+\subsection{The recurrence criterion}
+Assume the nonzero maturity function can be written as a matrix exponential:
+\begin{equation}
+\lambda(x)=c e^{Ax}b,\qquad A\in\R^{d_\lambda\times d_\lambda},\quad c\in\R^{1\times d_\lambda},\quad b\in\R^{d_\lambda}.\label{eq:shape}
+\end{equation}
+Such functions are called quasi-exponential. They include exponentials, polynomials, and their finite sums and products. Their usefulness here is the identity $e^{A(x+\delta)}=e^{Ax}e^{A\delta}$: a change in time to maturity can be represented by a matrix acting on a fixed number of coordinates.
+
+The analogous property for meeting counts is a linear recurrence. We call $a$ recurrent if there are an integer $L\ge1$ and constants $\gamma_0,\ldots,\gamma_{L-1}$ such that
+\[
+a_{i+L}=\sum_{\ell=0}^{L-1}\gamma_\ell a_{i+\ell}\qquad(i\ge0).
+\]
+For instance, $a_i=\theta^i$ obeys $a_{i+1}=\theta a_i$. Equivalently, a recurrent sequence has a matrix representation
+\begin{equation}
+a_i=uM^iv,\qquad M\in\R^{p\times p},\quad u\in\R^{1\times p},\quad v\in\R^p.\label{eq:recurrence}
+\end{equation}
+Multiplication by $M$ advances the meeting count by one, just as multiplication by $e^{A\delta}$ advances time by $\delta$. This parallel is the basis of the construction. The sequence representation is the scalar case of \citet[Proposition 1]{hokalman1966effective}; the matrix-exponential maturity representation is the one used in \citet[Proposition 3.1]{bjork1999minimal}.
+
+\begin{theorem}[Realization criterion]\label{thm:realization}
+For the zero-initial-curve model with volatility \eqref{eq:ordinal}, constant scale, and its own HJM drift, a realization in Definition~\ref{def:realization} exists if and only if $a$ is recurrent. Necessity holds even if only the locally Lipschitz state-to-curve representation is required, without restrictions on the state dynamics.
+
+\end{theorem}
+
+\begin{proposition}[Construction with a stochastic scale]\label{prop:scaledconstruction}
+Suppose the maturity shape has representation \eqref{eq:shape} and the loadings have representation \eqref{eq:recurrence}. Let $Z$ be an existing autonomous diffusion with Lipschitz coefficients and $p'$ coordinates, and let $\psi$ be bounded and Lipschitz. Then the volatility
+\[
+\sigma(t,T)=\psi(Z_t)a_{i(t,T)}\lambda(T-t)
+\]
+and its HJM drift, from zero initial curve, have a realization with state dimension at most
+\begin{equation}
+p'+2d_*+\frac{d_*(d_*+1)}2,\qquad d_*=p d_\lambda.\label{eq:dimension}
+\end{equation}
+The scale process may share Brownian shocks with the curve. Constant scale is obtained by setting $\psi=1$ and omitting $Z$.
+\end{proposition}
+
+The criterion separates two sources of complexity. The smooth maturity dependence has a finite matrix representation by assumption. The theorem says that the dependence on the meeting count must have one too. For $a_i=1-\theta^i$, both the constant sequence and the geometric sequence can be stored in two coordinates. For cumulative harmonic loadings, no fixed number of coordinates suffices; we prove this after the construction.
+
+\subsection{Constructing the state and recovering the curve}
+The state must record both accumulated shocks and the drift they generate. We use a vector $\Xi$ for the shocks and a matrix $\Pi$ and vector $\Theta$ for the two parts of the integrated drift. Combining the $p$ meeting coordinates with the $d_\lambda$ maturity coordinates gives $d_*=p d_\lambda$ coordinates in each vector. With $\otimes$ denoting the Kronecker product, define
+\[
+\widehat A=I_p\otimes A,\quad \widehat M=M\otimes I_{d_\lambda},\quad
+\widehat b=v\otimes b,\quad \widehat c=u\otimes c.
+\]
+The vectors $\Xi,\Theta$ are columns in $\R^{d_*}$, and $\Pi$ is a symmetric $d_*\times d_*$ matrix. Starting all three at zero, evolve them between dates by
+\begin{align}
+\dd\Xi&=\widehat A\Xi\dd t+\psi(Z)\widehat b\dd W,\notag\\
+\dd\Pi&=(\widehat A\Pi+\Pi\widehat A^\top+\psi(Z)^2\widehat b\widehat b^\top)\dd t,\label{eq:state}\\
+\dd\Theta&=(\widehat A\Theta+\Pi\widehat c^\top)\dd t.\notag
+\end{align}
+At each meeting apply
+\begin{equation}
+\Xi\mapsto\widehat M\Xi,\quad
+\Pi\mapsto\widehat M\Pi\widehat M^\top,\quad
+\Theta\mapsto\widehat M\Theta,\label{eq:restart}
+\end{equation}
+leaving $Z$ unchanged. These updates advance the meeting index of every stored shock. To read the curve from the state, let $i(x,\mathcal D)$ count entries of $\mathcal D$ that are at most $x$, and define the row vectors
+\[
+k(x,\mathcal D)=(uM^{i(x,\mathcal D)})\otimes(c e^{Ax}),\qquad
+\mathcal I(x,\mathcal D)=\int_0^x k(y,\mathcal D)\dd y.
+\]
+The row $k(x,\mathcal D)$ selects the meeting and maturity loading at distance $x$; $\mathcal I(x,\mathcal D)$ integrates that row up to the desired maturity. The recovered forward rate is
+\begin{equation}
+G(Z,\Xi,\Pi,\Theta,\mathcal D)(x)
+ =k(x,\mathcal D)\{\Xi+\Pi \mathcal I(x,\mathcal D)^\top+\Theta\}.\label{eq:curvemap}
+\end{equation}
+The term $k\Xi$ is the random contribution from past Brownian shocks. The term $k\Pi \mathcal I^\top$ accounts for the part of the drift integral between today and the maturity; $k\Theta$ accounts for its part between the time of each past shock and today. The following calculation verifies these interpretations and the drift condition.
+
+\begin{proof}[Proof of sufficiency]
+For $s\le t$, let $n(s,t)$ count dates in $(s,t]$ and put
+\[
+w(s,t)=(M^{n(s,t)}v)\otimes(e^{A(t-s)}b).
+\]
+For $T=t+x$, the semigroup and meeting-count identities give
+\[
+\sigma(s,T)=\psi(Z_s)k(x,\mathcal D(t))w(s,t).
+\]
+Writing $\widetilde\sigma(s,u)=a_{i(s,u)}\lambda(u-s)$ and $\mathcal V_a(s,t)=\int_s^t\widetilde\sigma(s,u)\dd u$, define
+\begin{align*}
+\Xi_t&=\int_0^t\psi(Z_s)w(s,t)\dd W_s,\\
+\Pi_t&=\int_0^t\psi(Z_s)^2w(s,t)w(s,t)^\top\dd s,\\
+\Theta_t&=\int_0^t\psi(Z_s)^2w(s,t)\mathcal V_a(s,t)\dd s.
+\end{align*}
+Between meetings $\partial_tw=\widehat Aw$ and $\partial_t\mathcal V_a=\widehat c w$. At a meeting $w$ is multiplied by $\widehat M$ while $\mathcal V_a$ is continuous. On a meeting-free interval beginning at $t_0$, the shock state has the variation-of-constants form
+\[
+\Xi_t=e^{\widehat A(t-t_0)}\Xi_{t_0}
+ +e^{\widehat At}\int_{t_0}^t e^{-\widehat As}\psi(Z_s)\widehat b\dd W_s.
+\]
+The It\^o product rule, with the deterministic differentiable factor $e^{\widehat At}$, gives its equation in \eqref{eq:state}. Differentiating the integral for $\Pi$ adds the upper-endpoint term $\psi(Z_t)^2\widehat b\widehat b^\top$ and the two terms from differentiating $ww^\top$. For $\Theta$, the endpoint is zero because $\mathcal V_a(t,t)=0$; differentiation of $w$ contributes $\widehat A\Theta$, and differentiation of $\mathcal V_a$ contributes $\Pi\widehat c^\top$. The meeting updates follow by multiplying $w$ by $\widehat M$. This proves \eqref{eq:state}--\eqref{eq:restart}. Finally,
+\[
+\int_s^{t+x}\widetilde\sigma(s,u)\dd u
+ =\mathcal V_a(s,t)+\mathcal I(x,\mathcal D(t))w(s,t).
+\]
+Substitution in the integrated differentiated HJM drift gives the $\Pi$ and $\Theta$ terms in \eqref{eq:curvemap}; the stochastic integral gives $\Xi$. The map is polynomial in the state coordinates and hence locally Lipschitz. 
+\end{proof}
+
+For constant scale $\psi=1$, $\Xi$ is random while $\Pi$ and $\Theta$ are deterministic functions of elapsed time and past meetings. All three are retained in the state so that the same equations serve every calendar. At a meeting the state restarts, but the loss of one future date from $\mathcal D$ compensates for this restart in the curve map. Thus the construction has no fixed-maturity curve jump.
+
+\subsection{Why arbitrary loadings require growing dimension}
+The obstruction can be seen by taking $\lambda=1$. Each earlier meeting interval contributes an independent Brownian increment. A later maturity gives that increment a weight determined by the number of intervening meetings. As more maturities are considered, the question is how many independent combinations of these past increments the curve reveals.
+
+Fix nonnegative integers $n,R$ and choose meeting dates $T_j=j$ for $1\le j\le n+R$. Observe at $t=n+1/2$ and use maturities $U_i=n+i+3/4$, $0\le i\le R$. Choose a horizon larger than $n+R+1$. The current-interval increment is $\Delta W_0=W_{n+1/2}-W_n$; the earlier increments are $\Delta W_\ell=W_{n-\ell+1}-W_{n-\ell}$ for $1\le\ell\le n$. Each has strictly positive variance. At these maturities the random part is
+\begin{equation}
+\mathsf H_{R,n}\Delta W,\qquad (\mathsf H_{R,n})_{i\ell}=a_{i+\ell},\quad
+0\le i\le R,\quad0\le\ell\le n,\label{eq:hankel}
+\end{equation}
+The matrix $\mathsf H_{R,n}$ is a Hankel matrix: entries on each anti-diagonal have the same meeting index. Its columns correspond to past intervals and its rows to future maturities. The entries of $\Delta W$ are independent Gaussian increments of positive variance. Thus its rank counts the independent random directions visible in the sampled curve. A projection of rank $q_0$ therefore has a density on $\R^{q_0}$. A locally Lipschitz image of a subset of $\R^q$ has $q_0$-dimensional Lebesgue measure zero if $q_0>q$. Hence any realization implies $\rank \mathsf H_{R,n}\le q$ for all $R,n$.
+
+A uniform Hankel-rank bound gives a recurrence. Fix $q+1$ columns. Their finite initial sections have a nonzero linear dependence, normalized to have coefficient norm one; the corresponding nonempty compact sets of annihilators decrease as more rows are added. Their intersection contains a nonzero vector annihilating every row. Solving for its last nonzero coefficient gives a fixed recurrence. This argument is independent of any Markov assumption on the state.
+
+For a general nonzero shape \eqref{eq:shape}, one first reduces $(A,b)$ to its controllable subspace. The covariance of $\int_0^\delta e^{As}b\dd W_s$ is then positive definite for every $\delta>0$: a zero quadratic form would imply $w_0^\top e^{As}b=0$ throughout an interval and hence $w_0^\top A^kb=0$ for every $k$. Use the same dates, observation time, and maturities, now with $n\ge1$. For earlier interval $[n-\ell,n-\ell+1]$, let $\tau_\ell=n-\ell+1$ and
+\[
+\zeta_\ell=\int_{n-\ell}^{n-\ell+1}e^{A(\tau_\ell-s)}b\dd W_s,
+\qquad
+\zeta_0=\int_n^{n+1/2}e^{A(n+1/2-s)}b\dd W_s.
+\]
+Write $\Gamma_\delta=\int_0^\delta e^{As}bb^\top e^{A^\top s}\dd s$. These Gaussian vectors are independent, with positive-definite covariances $\Gamma_1$ and $\Gamma_{1/2}$. Writing $\bar f_i$ for the deterministic initial-curve and drift contribution gives
+\[
+f(t,U_i)=\bar f_i+a_i c e^{(i+1/4)A}\zeta_0
+ +\sum_{\ell=1}^n a_{i+\ell}c e^{(i+\ell-1/4)A}\zeta_\ell.
+\]
+The coefficients of the earlier-interval vectors form a block Hankel matrix, followed by invertible multiplication of every block by $e^{-A/4}$. Its row-vector entries are
+\[
+h_k=a_kc e^{kA}.
+\]
+The current-interval columns can only increase rank. The same density argument therefore bounds the block Hankel row rank by $q$, for every $n,R$. Varying the horizon is legitimate by Definition~\ref{def:realization}; the unit spacing stays fixed as rows and columns are added. Compactness gives scalars $\gamma'_0,\ldots,\gamma'_q$, not all zero, with $\sum_i \gamma'_i h_{i+\ell}=0$ for every $\ell\ge1$. Multiplication on the right by $e^{-\ell A}$ gives
+\[
+\sum_i \gamma'_i a_{i+\ell}c e^{iA}=0.
+\]
+Some coordinate of these row coefficients is nonzero, because $c\ne0$ and $e^{iA}$ is invertible. That coordinate supplies a scalar recurrence for the tail of $a$. One extra shift incorporates its initial entry, yielding a recurrence of order at most $q+1$. This proves necessity in Theorem~\ref{thm:realization}.
+
+\begin{example}[Cumulative harmonic loadings]\label{ex:harmonic}
+The sequence $a_0=0$, $a_i=\sum_{j=1}^i1/j$ is not recurrent. A recurrence would pass to its differences $1/(i+1)$. The resulting rational-function identity would express a function with a pole at the final negative integer as a combination whose poles occur only at earlier integers, which is impossible. Thus even an exponential maturity shape does not supply a realization of fixed dimension for every schedule. This concerns an infinite sequence across schedules; it does not prohibit a useful low-order approximation on a specified horizon.
+\end{example}
+
+The equivalence concerns constant-scale models with the maturity shape \eqref{eq:shape}. The construction with a stochastic scale gives a larger class of models in the sufficient direction. The next section uses the constant-scale construction to approximate loadings that fail the exact recurrence criterion.
+
+\subsection{What the dimension bound counts}
+The lower bound counts independent random directions in a vector of forward rates at a fixed time. The upper bound counts coordinates in an autonomous state with fixed meeting updates. These are different quantities. With constant scale, only $\Xi$ is random, but $\Pi$ and $\Theta$ retain the deterministic effects of elapsed time and past meeting spacings. If the entire calendar and calendar time are allowed as external inputs, these two quantities can be precomputed and omitted from the stochastic state. Our definition instead supplies only the future distances and requires schedule-independent state equations, so past-calendar effects must still be represented.
+
+In \citet[Definition 2.1 and Proposition 4.1]{bjork1999minimal}, the deterministic initial-curve and drift correction is outside the realized linear system. Its minimal dimension therefore counts the centered stochastic system, rather than the full autonomous state under our calendar convention. The construction here is consequently an upper bound rather than a minimal realization. It may contain redundant deterministic coordinates, and the Gaussian-rank argument alone does not determine their minimal number. In particular, seven coordinates in the two-loading example of Section~\ref{sec:examples} do not mean seven independent risk factors. Determining the smallest autonomous state under the stated calendar convention remains open.

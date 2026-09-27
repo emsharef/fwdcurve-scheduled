@@ -1,0 +1,65 @@
+\section{Reproducibility, notation, and proof scope}\label{app:implementation}
+The accompanying directory contains the LaTeX source, original data files, extracted panels, and offline Python programs. The example program reproduces the deterministic theoretical illustrations. The empirical program reproduces the historical-sample figures and calibration outputs using NumPy, SciPy, and Matplotlib. A separate decomposition program compares the saved independent-chain and calendar-fit errors. It performs monotone scalar inversion and linear programming, without simulating paths. The input hashes identify the exact versions of the three prepared datasets used in the analysis.
+
+The synthetic example uses exact Gaussian cash prices. Its background volatility remains constant through the end of accrual. Discount factors and forward-measure means are fixed at their generating values. Its bounds are exact for the extracted variance observations; the additional structural restrictions tying those fixed means to candidate variances are not imposed. The empirical analysis uses the normal diagnostic \eqref{eq:normalproxy} and the smile-based ATM proxy \eqref{eq:smileatm}, with the selection rule and background schedules stated in Section~\ref{sec:empirical}. Puts and calls enter according to the selected out-of-the-money side; no European parity equation is imposed on the American settlements.
+
+The data provenance records source locations, units, strike decoding, contract mappings, archive coverage, and missing inputs. Calendar ranks use only meetings after the valuation date and no later than the last retained expiry. The analysis is repeated separately by date; it imposes neither temporal smoothing nor a physical-measure time-series law. Market observations across dates share contracts and are not treated as independent statistical replications.
+
+For the minimum-error calculation, all strike intervals at an expiry are intersected before the feasibility problem is solved. Bisection terminates when the premium-tolerance bracket is below 0.0001 bp. The code verifies price inversion, the linear constraints at both optimized endpoints, and price residuals at the reported feasible tolerance. The local calendar-hedge sensitivity is also checked by finite differences. Infeasible training sets do not generate prediction intervals. No held-out price is used to choose its training tolerance.
+
+\subsection{Smile, loading, and exercise calculations}\label{app:empiricalmethod}
+The extension program fits the mixture \eqref{eq:mixture} separately by chain. To scale the optimization, divide displacements and standard deviations by the closest-strike implied normal standard deviation, floored at 1 bp. In these units constrain $d\in[-2,2]$ and $\log s_j\in[-3,1.5]$. Use starts $(0,0,0)$, $(0.5,-0.5,0.2)$, and $(-0.5,-0.5,0.2)$ for $(d,\log s_1,\log s_2)$, retaining the converged solution with smallest squared price residual. All 555 standard fits converge. These bounds and local optimization are part of the interpolation specification; global optimality or identification of mixture parameters is not asserted. The omitted-closest-strike calculation uses the same starts and bounds and never fits to the withheld premium. Its scale uses only training strikes.
+
+The loading calculation integrates the maturity average analytically and uses 20-point Gauss--Legendre quadrature in shock time, separately on each background cell. For every candidate shape, weighted nonnegative least squares gives the date-specific allocation. The original 37-shape grid includes the parallel case $\chi=0$. The free-long-end grid uses
+\begin{align*}
+\kappa&\in\{0.25,0.5,0.75,1,1.25,1.5,2,3,4\},\\
+\chi_1&\in\{0,0.5,1,2,4,8,12,16\},\qquad
+\chi_2\in\{0,0.25,0.5,1,2,4,8\}.
+\end{align*}
+Removing eight duplicates of the parallel shape leaves 496 shapes. Its pure-hump subset has 64 distinct shapes. When the selected amplitude reaches a grid boundary, the sensitivity grid uses both amplitudes in $\{0,1,2,4,8,12,16,24,32,48,64\}$ and the same decay grid: 1,081 distinct shapes. This is a discrete grid check, not a continuous global optimum or parameter confidence region. Shape selection and date-specific fitting exclude all S3 observations in both searches. The additional family itself was chosen after the original S3 failure, so that comparison reuses an examined sample. The subsequent all-product interval analysis is separate; its fit counts and ranges are not held-out results. Shape-profile endpoints are the smallest lower and largest upper endpoints across feasible shapes on the original grid.
+
+The American tree uses increments $-\sqrt{3\cV_{\rm ATM}/n}$, $0$, and $+\sqrt{3\cV_{\rm ATM}/n}$ with probabilities $1/6$, $2/3$, and $1/6$. Each step discounts by $D^{1/n}$. Backward induction takes the maximum of discounted continuation and intrinsic value for the American claim, and continuation alone for the European claim. Their difference on the same grid isolates exercise value. At zero discount rate the code checks that the exercise premium vanishes. The European price is also compared with the analytic normal formula. This benchmark holds the normal variance rate and discount rate constant and does not model scheduled jumps.
+
+For the empirical proxies, uncertainty about smile interpolation, exercise, the forward-measure mean, and the loading shape is not combined into a statistical confidence set. The reported intervals answer explicit sensitivity questions conditional on those choices. A listed-contract structural estimation would require a joint smile and exercise model, the appropriate stochastic discounting, and a convention-matched independent curve. Neither the mixture fit nor its good local interpolation test supplies those additional ingredients.
+
+\input{sections/i_shape_profile}
+\input{sections/j_atm_additivity}
+\FloatBarrier
+\input{sections/k_final_sensitivities}
+\subsection{Proof scope and notation}
+The arguments in Appendix~\ref{app:pricing} use standard Brownian integration, stochastic Fubini for bounded deterministic integrands, and elementary Gaussian conditioning. They assume a probability space carrying the independent Brownian motion and Gaussian meeting variables specified in Section~\ref{sec:prices}. The rank, interval, and polytope arguments are finite-dimensional results independent of a stochastic-calculus construction.
+
+The mathematical arguments are supplied in this manuscript. The accompanying source map identifies the corresponding Lean statements and their explicit hypotheses; it also distinguishes the general American stopping argument and Corollary~\ref{cor:generalaggregate}, which are proved here, from the narrower formalized statements. The numerical analysis is separate from those formal proofs.
+
+\begin{longtable}{p{.19\textwidth}p{.72\textwidth}}
+\caption{Notation used in the main results.}\label{tab:notation}\\
+\toprule Symbol & Meaning\\\midrule\endfirsthead
+\toprule Symbol & Meaning\\\midrule\endhead
+$t,T,H,T_n$ & Observation time, maturity, finite horizon, and meeting dates.\\
+$Q,\F_t,W$ & Pricing measure, information at $t$, and Brownian driver.\\
+$X_n,v_n,\xi_n(T)$ & Announcement level, its variance, and the full forward-curve announcement change.\\
+$f_0(T),f(t,T)$ & Initial and time-$t$ instantaneous forward rates for maturity $T$.\\
+$\alpha(t,T),\sigma(t,T)$ & Forward drift and Brownian sensitivity in the general model.\\
+$\sigma(s),u_j,n_b$ & Continuous volatility; its squared value on background cell $j$; number of cells.\\
+$r_t,B_t,P(t,T)$ & Short rate, bank account, and zero-coupon bond price.\\
+$S,[a,b],\delta$ & Option expiry, futures accrual window, and window length $b-a$.\\
+$R,G_t,F_t$ & Accrual accumulation, its conditional expectation, and futures rate $(G_t-1)/\delta$.\\
+$D,m,q$ & Discount factor $P(0,S)$, option forward-measure mean, and log variance.\\
+$p,z$ & Futures convexity exponent and the mean adjustment $\log G_0-\log m$.\\
+$\cV(S)$ & Accumulated rate variance; $q/\delta^2$ before accrual in the parallel model.\\
+$\cV_{\mathrm N},\theta_{\mathrm N}$ & Variance and meeting/background parameters of the separate empirical normal diagnostic.\\
+$\widehat{\cV}_{\rm ATM},\widehat c_{\rm ATM},\theta_{\rm ATM}$ & Mixture-interpolated ATM normal variance, its ATM premium, and the parameters of its additive working schedule.\\
+$\widehat{\cV}_{2,\ell},\zeta$ & Fitted mixture second moment and additional relative moment allowance in Appendix~\ref{app:finalsensitivities}.\\
+$\chi,\kappa$ in \eqref{eq:humpshape} & Hump amplitude and loading decay; $\chi_1,\chi_2$ in \eqref{eq:levelshape} allow a separate long-end level.\\
+$\mathcal I$ & Inverse of the fixed-mean at-the-money cash-price formula.\\
+$\theta,\mathsf A$ & Nonnegative variance parameters and variance observation matrix.\\
+$E,\Lambda_E$ & Indices of meeting-free expiry gaps and their background exposure matrix.\\
+$\phi,\beta_\ell,\mathsf D_{\ell j}$ & Known maturity shape, its average over window $\ell$, and weighted background exposure.\\
+$V,M_1;V_A,M_{1,A}$ & Pre-cutoff meeting totals and date-weighted totals; their extensions including continuous variance.\\
+$\Theta,\Pi(V,M_1)$ & Price-tolerance feasible set and exact aggregate-compatible polytope.\\
+$\boldsymbol V(t)$ & Vector of conditional short-rate jump variances in the factor model.\\
+$\mathsf K,\eta$ & Deterministic scale-exposure matrix and its nonnegative interval weights.\\
+$Z_j,\vartheta_j,\alpha_j,\rho_j$ & Square-root variance state, mean-reversion speed, volatility of volatility, and leverage correlation.\\
+$\mathsf L,\boldsymbol c,J,\ell$ & Stochastic variance loading matrix, deterministic offset, active factor set, and support endpoints.\\
+\bottomrule
+\end{longtable}

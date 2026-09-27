@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-27",
+  "platform": "macOS-26.3.1-arm64-arm-64bit-Mach-O",
+  "python": "3.13.6",
+  "tectonic": "0.17.0",
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "numerical_reproduction": "All six analysis stages rerun with --refit; six summary benchmarks and three input hashes passed.",
+  "examples": "Both papers' synthetic figures, exact rational structural checks, and calendar checks passed.",
+  "papers": {
+    "structure_pages": 35,
+    "identification_pages": 51,
+    "lab_pages": 102,
+    "verification_supplement_pages": 2,
+    "compilation": "All four PDFs built from this repository; no overfull boxes or undefined references."
+  },
+  "formal": "Standalone full lake build passed, including Audit: 6,307 declarations checked. Dependency cache reused; project proof modules rebuilt in this repository.",
+  "mapping": {
+    "publication_results": 22,
+    "lab_entries": 49
+  },
+  "source_downloads": "All 505 successful manifest entries checked against the existing source bytes; no new network download was needed for this verification.",
+  "packaging": "Original manuscript source and all Lean source files retain their input SHA-256 hashes. The obsolete market excerpt was removed from the second paper's synthetic-example program; active numerical analysis and publication LaTeX were retained."
+}

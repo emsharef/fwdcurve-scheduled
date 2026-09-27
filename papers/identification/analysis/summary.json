@@ -1,0 +1,175 @@
+{
+  "dates": 78,
+  "chains": 555,
+  "selected_strikes": 4100,
+  "first_date": "2026-03-30",
+  "last_date": "2026-09-14",
+  "chains_per_date": {
+    "min": 6.0,
+    "q25": 7.0,
+    "median": 7.0,
+    "q75": 8.0,
+    "max": 8.0
+  },
+  "held_strike_error": {
+    "min": 0.06180063179219175,
+    "q25": 0.5394826969829838,
+    "median": 1.0001837431421774,
+    "q75": 1.8193296002123818,
+    "max": 3.851180148000039
+  },
+  "smile_min_tolerance": {
+    "min": 0.05512237548828125,
+    "q25": 0.39282989501953125,
+    "median": 0.7465362548828125,
+    "q75": 1.302332878112793,
+    "max": 2.336883544921875
+  },
+  "discount_effect": {
+    "min": 0.0002254688627444379,
+    "q25": 0.04570816173484826,
+    "median": 0.1648775841089224,
+    "q75": 0.4903866287850148,
+    "max": 1.7808045246457656
+  },
+  "backgrounds": {
+    "constant": {
+      "min_tolerance": {
+        "min": 0.4523591995239258,
+        "q25": 0.9034041166305542,
+        "median": 1.6828548908233643,
+        "q75": 1.9373964071273804,
+        "max": 2.5851688385009766
+      },
+      "nearest_min_tolerance": {
+        "min": 5.626678466796875e-05,
+        "q25": 0.0007919073104858398,
+        "median": 0.24707865715026855,
+        "q75": 0.4679253101348877,
+        "max": 2.5067625045776367
+      },
+      "feasible_025": 0,
+      "feasible_050": 4,
+      "feasible_100": 23,
+      "full_rank_dates": 0,
+      "identified_meetings": {
+        "min": 0.0,
+        "q25": 4.0,
+        "median": 4.0,
+        "q75": 5.0,
+        "max": 6.0
+      }
+    },
+    "90day": {
+      "min_tolerance": {
+        "min": 0.4523591995239258,
+        "q25": 0.8917883634567261,
+        "median": 1.4491567611694336,
+        "q75": 1.7184715270996094,
+        "max": 2.3368663787841797
+      },
+      "nearest_min_tolerance": {
+        "min": 5.292892456054688e-05,
+        "q25": 5.924701690673828e-05,
+        "median": 6.771087646484375e-05,
+        "q75": 0.1194387674331665,
+        "max": 1.368596076965332
+      },
+      "feasible_025": 0,
+      "feasible_050": 4,
+      "feasible_100": 24,
+      "full_rank_dates": 0,
+      "identified_meetings": {
+        "min": 0.0,
+        "q25": 1.0,
+        "median": 3.0,
+        "q75": 3.0,
+        "max": 4.0
+      }
+    },
+    "gap": {
+      "min_tolerance": {
+        "min": 0.4523591995239258,
+        "q25": 0.7804405689239502,
+        "median": 1.4108681678771973,
+        "q75": 1.7184715270996094,
+        "max": 2.3368663787841797
+      },
+      "nearest_min_tolerance": {
+        "min": 5.292892456054688e-05,
+        "q25": 5.7816505432128906e-05,
+        "median": 6.151199340820312e-05,
+        "q75": 6.532669067382812e-05,
+        "max": 8.20159912109375e-05
+      },
+      "feasible_025": 0,
+      "feasible_050": 5,
+      "feasible_100": 30,
+      "full_rank_dates": 0,
+      "identified_meetings": {
+        "min": 0.0,
+        "q25": 0.0,
+        "median": 0.0,
+        "q75": 0.0,
+        "max": 0.0
+      }
+    }
+  },
+  "held_expiry": {
+    "0.5": {
+      "training_feasible": 4,
+      "outside": 0,
+      "max_outside_bp": 0,
+      "median_prediction_width_bp": 1.3904083450719384
+    },
+    "1.0": {
+      "training_feasible": 26,
+      "outside": 0,
+      "max_outside_bp": 0,
+      "median_prediction_width_bp": 3.2525703997315594
+    }
+  },
+  "activity_screen_dates": 78,
+  "activity_screen_tolerance": {
+    "min": 0.3827214241027832,
+    "q25": 0.7855074405670166,
+    "median": 1.4098410606384277,
+    "q75": 1.7940069437026978,
+    "max": 2.566417694091797
+  },
+  "midcurve_observations": 165,
+  "midcurve_dates": 14,
+  "midcurve_abs_error": {
+    "min": 0.20610936451516793,
+    "q25": 2.294598969769151,
+    "median": 3.4384666876928804,
+    "q75": 4.614170874295217,
+    "max": 8.762181789648006
+  },
+  "futures_curve_observations": 309,
+  "futures_curve_gap": {
+    "min": -1.7369817930388414,
+    "q25": 0.010998523868668841,
+    "median": 0.05098481607519745,
+    "q75": 0.24894930714287888,
+    "max": 1.9884607344958227
+  },
+  "negative_futures_curve_gaps": 56,
+  "midcurve_by_product": {
+    "S0": {
+      "chains": 70,
+      "median_sd_ratio": 1.386943058738174,
+      "median_signed_price_error_bp": -4.562638335700952
+    },
+    "S2": {
+      "chains": 58,
+      "median_sd_ratio": 1.2208860228819105,
+      "median_signed_price_error_bp": -2.825856302827251
+    },
+    "S3": {
+      "chains": 37,
+      "median_sd_ratio": 1.2251662452001282,
+      "median_signed_price_error_bp": -2.660437426013683
+    }
+  }
+}

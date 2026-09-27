@@ -1,0 +1,1670 @@
+{
+  "eris_03-March_directory.html": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/03-March/",
+    "file": "raw/free_supplement/eris_03-March_directory.html",
+    "kind": "directory",
+    "expected_date": "",
+    "retrieved_utc": "2026-09-27T00:18:21.221294+00:00",
+    "bytes": 39403,
+    "sha256": "1f39ffc7a03936622ffe4e5951afa23cecee68509e04bb2a982c403a9f5c9074",
+    "error": ""
+  },
+  "eris_04-April_directory.html": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/",
+    "file": "raw/free_supplement/eris_04-April_directory.html",
+    "kind": "directory",
+    "expected_date": "",
+    "retrieved_utc": "2026-09-27T00:18:22.528247+00:00",
+    "bytes": 38917,
+    "sha256": "cde7a681fb438ba2e10cd2a2bd35153938d595c13a511fd6e4939e5a8e5b9958",
+    "error": ""
+  },
+  "eris_05-May_directory.html": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/",
+    "file": "raw/free_supplement/eris_05-May_directory.html",
+    "kind": "directory",
+    "expected_date": "",
+    "retrieved_utc": "2026-09-27T00:18:23.707253+00:00",
+    "bytes": 35595,
+    "sha256": "1ab499c9767588af7a9ae207737a4a88a2a83974cc09caf9c0e99f6630c04508",
+    "error": ""
+  },
+  "eris_06-June_directory.html": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/",
+    "file": "raw/free_supplement/eris_06-June_directory.html",
+    "kind": "directory",
+    "expected_date": "",
+    "retrieved_utc": "2026-09-27T00:18:25.028045+00:00",
+    "bytes": 40868,
+    "sha256": "88217c9e461896219eaab3902e48130b7baa9261706eb149bbe70a9213816380",
+    "error": ""
+  },
+  "Eris_20260330_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/03-March/Eris_20260330_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260330_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-03-30",
+    "retrieved_utc": "2026-09-27T00:18:26.457976+00:00",
+    "bytes": 1263410,
+    "sha256": "0ef58ff71f981c027354950bca6ef8a7242a58b75bc42c54f21116992d834e49",
+    "error": ""
+  },
+  "Eris_20260330_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/03-March/Eris_20260330_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260330_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-03-30",
+    "retrieved_utc": "2026-09-27T00:18:27.230600+00:00",
+    "bytes": 4396,
+    "sha256": "377f97ebe04ed5ff7f9ae7674c370c26e81fbabf0a0aaef50976ce5b870a9926",
+    "error": ""
+  },
+  "Eris_20260331_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/03-March/Eris_20260331_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260331_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-03-31",
+    "retrieved_utc": "2026-09-27T00:18:28.520622+00:00",
+    "bytes": 1263410,
+    "sha256": "ec3f929a8b32d81eff27b125d182c7a4eaecb2060dac559951e0dc87f908157e",
+    "error": ""
+  },
+  "Eris_20260331_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/03-March/Eris_20260331_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260331_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-03-31",
+    "retrieved_utc": "2026-09-27T00:18:29.292379+00:00",
+    "bytes": 4396,
+    "sha256": "758beacec1f6ea02ec7e10f37a1a4ce21a67c1780fa41e0ac46e197b9911c905",
+    "error": ""
+  },
+  "Eris_20260401_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260401_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260401_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-01",
+    "retrieved_utc": "2026-09-27T00:18:30.610229+00:00",
+    "bytes": 1263709,
+    "sha256": "cb5823a2d9ab4d9165c04ec169e6c5d01b058eec7d40ea133a10cc64c0a652e8",
+    "error": ""
+  },
+  "Eris_20260401_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260401_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260401_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-01",
+    "retrieved_utc": "2026-09-27T00:18:31.396074+00:00",
+    "bytes": 4396,
+    "sha256": "1896e1bfe0a124086a00d280e038ead1559d4bf47cb925832dc8023b74fa26d5",
+    "error": ""
+  },
+  "Eris_20260402_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260402_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260402_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-02",
+    "retrieved_utc": "2026-09-27T00:18:32.739050+00:00",
+    "bytes": 1263630,
+    "sha256": "9d6a14a32eae4a685e6156cdc61bd3baa01d60bfb7e4fd7301c57db95b73ed8b",
+    "error": ""
+  },
+  "Eris_20260402_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260402_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260402_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-02",
+    "retrieved_utc": "2026-09-27T00:18:33.514738+00:00",
+    "bytes": 4396,
+    "sha256": "81bd2ad7315e03558b52e4c53dbf45b50aeb56a8647bde5b4f4b13089638a3d5",
+    "error": ""
+  },
+  "Eris_20260403_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260403_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260403_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-03",
+    "retrieved_utc": "2026-09-27T00:18:34.841002+00:00",
+    "bytes": 1263551,
+    "sha256": "a3f4824e373cb41bcf59a67364f9dcf468731aa22b01f3f2303f05e84a32f328",
+    "error": ""
+  },
+  "Eris_20260403_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260403_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260403_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-03",
+    "retrieved_utc": "2026-09-27T00:18:35.615550+00:00",
+    "bytes": 4396,
+    "sha256": "0f033b4b58b13688254b85433c360a48e116ca99e0589e03adaa4d34c97e04d0",
+    "error": ""
+  },
+  "Eris_20260406_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260406_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260406_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-06",
+    "retrieved_utc": "2026-09-27T00:18:36.957007+00:00",
+    "bytes": 1263410,
+    "sha256": "fc856b072ed7ec1acee70e8b42c262d5abccee06c9f67f7236667c87ac772fac",
+    "error": ""
+  },
+  "Eris_20260406_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260406_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260406_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-06",
+    "retrieved_utc": "2026-09-27T00:18:37.735159+00:00",
+    "bytes": 4396,
+    "sha256": "103501b21c46426531fc72c65ab7e901a207944384524aa3f45cbb5a2582cfee",
+    "error": ""
+  },
+  "Eris_20260407_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260407_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260407_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-07",
+    "retrieved_utc": "2026-09-27T00:18:39.117613+00:00",
+    "bytes": 1263410,
+    "sha256": "94aa477fb54444e29c5cee0290e8583abe951f8ca91dd8e1b0a208ba4ea2add8",
+    "error": ""
+  },
+  "Eris_20260407_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260407_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260407_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-07",
+    "retrieved_utc": "2026-09-27T00:18:39.966986+00:00",
+    "bytes": 4396,
+    "sha256": "3fa342e18c29a8865425ebd584f7e8cb8f51e5c7b7bb889ff6fd2789ee1d139c",
+    "error": ""
+  },
+  "Eris_20260408_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260408_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260408_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-08",
+    "retrieved_utc": "2026-09-27T00:18:41.307122+00:00",
+    "bytes": 1263410,
+    "sha256": "6f65dea954d3e6f3191e9fbd80e9b69d9c97e4b00ecf3ea23f054505a8785c96",
+    "error": ""
+  },
+  "Eris_20260408_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260408_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260408_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-08",
+    "retrieved_utc": "2026-09-27T00:18:42.095449+00:00",
+    "bytes": 4396,
+    "sha256": "807316161cae691c9595245652af2ab1674197456904245dd536d462e61d4422",
+    "error": ""
+  },
+  "Eris_20260409_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260409_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260409_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-09",
+    "retrieved_utc": "2026-09-27T00:18:43.421845+00:00",
+    "bytes": 1263662,
+    "sha256": "807d9a79c39eabc6ca2d2e11c5a8fb7387e69fac9964a8103a6a11de4856b1c6",
+    "error": ""
+  },
+  "Eris_20260409_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260409_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260409_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-09",
+    "retrieved_utc": "2026-09-27T00:18:44.232676+00:00",
+    "bytes": 4396,
+    "sha256": "9dffc9b7fe820636800ec53e572a278cb792d4256e9f7587bd6108e39d154f78",
+    "error": ""
+  },
+  "Eris_20260410_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260410_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260410_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-10",
+    "retrieved_utc": "2026-09-27T00:18:45.560606+00:00",
+    "bytes": 1263583,
+    "sha256": "dac48cd65f7637bad0ffc11c5d80a84babcb6169e189d871a087a9f1d909a4f7",
+    "error": ""
+  },
+  "Eris_20260410_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260410_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260410_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-10",
+    "retrieved_utc": "2026-09-27T00:18:46.372610+00:00",
+    "bytes": 4396,
+    "sha256": "81b85d9d6171465c14c316cf60d81c7c7967ba39f62fb72fba9cbcba520ba8d0",
+    "error": ""
+  },
+  "Eris_20260413_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260413_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260413_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-13",
+    "retrieved_utc": "2026-09-27T00:18:47.672062+00:00",
+    "bytes": 1263410,
+    "sha256": "89b31270e03a3cee2ddf36c50899e7fdc5cb2f8570f576cec4baed54a23055f4",
+    "error": ""
+  },
+  "Eris_20260413_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260413_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260413_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-13",
+    "retrieved_utc": "2026-09-27T00:18:48.435360+00:00",
+    "bytes": 4396,
+    "sha256": "1e4fb926b9b63c1b5c917037d28904ad1599a3dab3f31ac91fd50364826baff4",
+    "error": ""
+  },
+  "Eris_20260414_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260414_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260414_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-14",
+    "retrieved_utc": "2026-09-27T00:18:49.803282+00:00",
+    "bytes": 1263410,
+    "sha256": "68377a8b8fb0783afb8a0194658900ef78e0603049bb460b05a04403c4521eb5",
+    "error": ""
+  },
+  "Eris_20260414_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260414_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260414_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-14",
+    "retrieved_utc": "2026-09-27T00:18:50.556265+00:00",
+    "bytes": 4396,
+    "sha256": "f625bf8e824aa81daa91e6ca12bb2564f1793d013d99f3095a9095412d282c14",
+    "error": ""
+  },
+  "Eris_20260415_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260415_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260415_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-15",
+    "retrieved_utc": "2026-09-27T00:18:51.865302+00:00",
+    "bytes": 1263583,
+    "sha256": "adfe8b5c0c19d56f777ba05420d65db25c4045c6f16ff161fe8855dbb7f81cb6",
+    "error": ""
+  },
+  "Eris_20260415_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260415_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260415_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-15",
+    "retrieved_utc": "2026-09-27T00:18:52.662446+00:00",
+    "bytes": 4396,
+    "sha256": "17623aa9de2108edf961c7ad08a29638968d666848e74b1fd7ba8a78ad0aae2a",
+    "error": ""
+  },
+  "Eris_20260416_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260416_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260416_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-16",
+    "retrieved_utc": "2026-09-27T00:18:54.100326+00:00",
+    "bytes": 1263662,
+    "sha256": "b3910fda354a852643b503a124df17d64ac46f09e922bf57235fc8a154d79971",
+    "error": ""
+  },
+  "Eris_20260416_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260416_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260416_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-16",
+    "retrieved_utc": "2026-09-27T00:18:54.888385+00:00",
+    "bytes": 4396,
+    "sha256": "d5466a43fd849a77e54b1f429fd7d2c6d776411bccd3ac35aa90688ca04b903e",
+    "error": ""
+  },
+  "Eris_20260417_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260417_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260417_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-17",
+    "retrieved_utc": "2026-09-27T00:18:56.199541+00:00",
+    "bytes": 1263583,
+    "sha256": "7fc2857db42f05ca119e1eca514260d94f3f32d6b835922ffa99e7372a9d7922",
+    "error": ""
+  },
+  "Eris_20260417_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260417_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260417_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-17",
+    "retrieved_utc": "2026-09-27T00:18:56.988526+00:00",
+    "bytes": 4394,
+    "sha256": "ae6bd8932404cc4438b7ca61c1116a9208c6ed7a1e2cb6d42a52ec132debac49",
+    "error": ""
+  },
+  "Eris_20260421_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260421_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260421_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-21",
+    "retrieved_utc": "2026-09-27T00:18:58.331593+00:00",
+    "bytes": 1263410,
+    "sha256": "5065ed31ae2afb1f6ddd47b88cc0a026de9684b02087f7f1d3cf6d09ef25a82d",
+    "error": ""
+  },
+  "Eris_20260421_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260421_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260421_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-21",
+    "retrieved_utc": "2026-09-27T00:18:59.102342+00:00",
+    "bytes": 4396,
+    "sha256": "832c2d085ae8ae6f1bdb2e9fbb550fdd51f4eca3f802e5f367a91bf6c142ceaa",
+    "error": ""
+  },
+  "Eris_20260422_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260422_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260422_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-22",
+    "retrieved_utc": "2026-09-27T00:19:00.500474+00:00",
+    "bytes": 1263410,
+    "sha256": "a1a00c105fb8ce587f8fa9af52315b3874fd23772ab2621f1da8c3a0e12fd45a",
+    "error": ""
+  },
+  "Eris_20260422_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260422_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260422_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-22",
+    "retrieved_utc": "2026-09-27T00:19:01.311855+00:00",
+    "bytes": 4396,
+    "sha256": "af964b2eced5d0a8b6bc0e5acd8d0bc426598b766c9cdce6cf4fb8a859618db5",
+    "error": ""
+  },
+  "Eris_20260423_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260423_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260423_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-23",
+    "retrieved_utc": "2026-09-27T00:19:02.704620+00:00",
+    "bytes": 1263662,
+    "sha256": "1baf4a912f1f5c51875508a1faca2b878e3d3f1f55b1539028123bbf5b612952",
+    "error": ""
+  },
+  "Eris_20260423_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260423_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260423_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-23",
+    "retrieved_utc": "2026-09-27T00:19:03.501831+00:00",
+    "bytes": 4396,
+    "sha256": "071827855cd001286d649cba12294b99d25a9c679e545dc032b0ca6e39753403",
+    "error": ""
+  },
+  "Eris_20260424_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260424_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260424_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-24",
+    "retrieved_utc": "2026-09-27T00:19:04.867166+00:00",
+    "bytes": 1263583,
+    "sha256": "235eaefe3699f42d2ddd654f9296aeb833fc60adacab4cbae1b9a8497dc87bc9",
+    "error": ""
+  },
+  "Eris_20260424_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260424_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260424_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-24",
+    "retrieved_utc": "2026-09-27T00:19:05.646270+00:00",
+    "bytes": 4396,
+    "sha256": "1fa26e32358ac6f01f12dff14fa204c46ae8bfb1f2a3a541caed2f2eccd16839",
+    "error": ""
+  },
+  "Eris_20260427_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260427_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260427_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-27",
+    "retrieved_utc": "2026-09-27T00:19:06.981415+00:00",
+    "bytes": 1263410,
+    "sha256": "9d932957297ff2cc2cb24572d0b36772067268c4fd51bac6a5fa8c24ace93d5d",
+    "error": ""
+  },
+  "Eris_20260427_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260427_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260427_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-27",
+    "retrieved_utc": "2026-09-27T00:19:07.752523+00:00",
+    "bytes": 4396,
+    "sha256": "241175e84cbe1bf2c97891e859115b97147541de9763eed0bd268844eef00372",
+    "error": ""
+  },
+  "Eris_20260428_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260428_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260428_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-28",
+    "retrieved_utc": "2026-09-27T00:19:09.100448+00:00",
+    "bytes": 1263410,
+    "sha256": "e72e294eb88a44008da41edc27f05ccbfc4d7f639af25354ce22a7be8301fe8a",
+    "error": ""
+  },
+  "Eris_20260428_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260428_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260428_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-28",
+    "retrieved_utc": "2026-09-27T00:19:09.874961+00:00",
+    "bytes": 4396,
+    "sha256": "3ca5427bf7b4e3c7e67af469a063a56b7e0f7a6ae352227b574f45aad5d4db1d",
+    "error": ""
+  },
+  "Eris_20260429_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260429_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260429_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-29",
+    "retrieved_utc": "2026-09-27T00:19:11.195338+00:00",
+    "bytes": 1263457,
+    "sha256": "5818749e5815295ac946abcff5065cf9c3e8a12cf4a2c2ee3fc8730520c3c6f0",
+    "error": ""
+  },
+  "Eris_20260429_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260429_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260429_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-29",
+    "retrieved_utc": "2026-09-27T00:19:12.011745+00:00",
+    "bytes": 4396,
+    "sha256": "63d24e331ebe51b022a1467ba676481eed1b37ff2786014a1b5f18ba1849f289",
+    "error": ""
+  },
+  "Eris_20260430_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260430_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260430_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-04-30",
+    "retrieved_utc": "2026-09-27T00:19:13.347565+00:00",
+    "bytes": 1263741,
+    "sha256": "233a84ffe627321900f1b4f8c790680dcb40ca2e8c20266be5fc9cf0ff68925a",
+    "error": ""
+  },
+  "Eris_20260430_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/04-April/Eris_20260430_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260430_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-04-30",
+    "retrieved_utc": "2026-09-27T00:19:14.152038+00:00",
+    "bytes": 4396,
+    "sha256": "99941d6a353b82b3cd48463e5bb2995b340e70e19912a016024c663071c1c005",
+    "error": ""
+  },
+  "Eris_20260505_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260505_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260505_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-05-05",
+    "retrieved_utc": "2026-09-27T00:19:15.502057+00:00",
+    "bytes": 1263489,
+    "sha256": "927b8ed59bea7c89990c1b1f517b06438a050aa8bedff6a6d58b1bee1aeee0a9",
+    "error": ""
+  },
+  "Eris_20260505_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260505_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260505_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-05-05",
+    "retrieved_utc": "2026-09-27T00:19:16.326885+00:00",
+    "bytes": 4396,
+    "sha256": "e77956e95f47941c5843912f061ad1c589d2bda5c9ba83297e3e46110595ff2e",
+    "error": ""
+  },
+  "Eris_20260506_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260506_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260506_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-05-06",
+    "retrieved_utc": "2026-09-27T00:19:17.642585+00:00",
+    "bytes": 1263457,
+    "sha256": "bccede2dcfcac530caeb6e436649b243739e7fdd286523c3c9edddcaeeb328ed",
+    "error": ""
+  },
+  "Eris_20260506_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260506_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260506_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-05-06",
+    "retrieved_utc": "2026-09-27T00:19:18.450364+00:00",
+    "bytes": 4396,
+    "sha256": "eacf29d212769d5c0ff91bd821be46f8b9b95308597a272f514687f962e4f40d",
+    "error": ""
+  },
+  "Eris_20260508_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260508_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260508_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-05-08",
+    "retrieved_utc": "2026-09-27T00:19:19.777493+00:00",
+    "bytes": 1263662,
+    "sha256": "d698ab675297c998fa3b57c5ca828e046cc71f46be455e511a795e472d0ae11e",
+    "error": ""
+  },
+  "Eris_20260508_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260508_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260508_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-05-08",
+    "retrieved_utc": "2026-09-27T00:19:20.578467+00:00",
+    "bytes": 4396,
+    "sha256": "b7ab6129b57c27199dc9ff461af9400720e8af5dd657e7dd0d6ba4bb0f162b90",
+    "error": ""
+  },
+  "Eris_20260511_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260511_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260511_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-05-11",
+    "retrieved_utc": "2026-09-27T00:19:21.920300+00:00",
+    "bytes": 1263489,
+    "sha256": "8acebac8084c8fe62f4dbe46e68d209d8a891fdc5871650b5510c6435c1862cd",
+    "error": ""
+  },
+  "Eris_20260511_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260511_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260511_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-05-11",
+    "retrieved_utc": "2026-09-27T00:19:22.683830+00:00",
+    "bytes": 4396,
+    "sha256": "cc4c0e76845129e121af29bc085a24c6a5100887ca342cd5249784002d8f7c4e",
+    "error": ""
+  },
+  "Eris_20260513_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260513_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260513_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-05-13",
+    "retrieved_utc": "2026-09-27T00:19:23.976384+00:00",
+    "bytes": 1263457,
+    "sha256": "4d170f7b692cca82461ec691fc33818879a4e52e16857574bf45e0c63f07c1c3",
+    "error": ""
+  },
+  "Eris_20260513_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260513_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260513_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-05-13",
+    "retrieved_utc": "2026-09-27T00:19:24.727736+00:00",
+    "bytes": 4396,
+    "sha256": "20d2a1e8591cd6e5e02c2092d0e628239ba01de22ae7c5cab5e767281abf003e",
+    "error": ""
+  },
+  "Eris_20260519_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260519_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260519_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-05-19",
+    "retrieved_utc": "2026-09-27T00:19:26.003936+00:00",
+    "bytes": 1263489,
+    "sha256": "e6e788eb74e722a4fec28c8c9f3e648d5a3488ef0b058ccf7336f9bc661080cc",
+    "error": ""
+  },
+  "Eris_20260519_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260519_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260519_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-05-19",
+    "retrieved_utc": "2026-09-27T00:19:26.769140+00:00",
+    "bytes": 4396,
+    "sha256": "727ecf3b760dc08b9f4875f36e6c7ddcef07f41c558288fdeac54db3a718c4b2",
+    "error": ""
+  },
+  "Eris_20260521_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260521_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260521_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-05-21",
+    "retrieved_utc": "2026-09-27T00:19:28.075059+00:00",
+    "bytes": 1263820,
+    "sha256": "5b4886e4e22e2e902b98afc45f5bee831fa22b1a381a2017c5a43ca80f06ca5d",
+    "error": ""
+  },
+  "Eris_20260521_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260521_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260521_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-05-21",
+    "retrieved_utc": "2026-09-27T00:19:28.839778+00:00",
+    "bytes": 4396,
+    "sha256": "9f9007372f58b54d1cf8b04ff08c63fa30fa62f7c149d90dc70c58b047f3ff5d",
+    "error": ""
+  },
+  "Eris_20260522_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260522_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260522_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-05-22",
+    "retrieved_utc": "2026-09-27T00:19:30.119844+00:00",
+    "bytes": 1263741,
+    "sha256": "82bf66dd79de2c9a3b752351130f3d7c39a695d4bda3d90e96efcfe514482069",
+    "error": ""
+  },
+  "Eris_20260522_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260522_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260522_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-05-22",
+    "retrieved_utc": "2026-09-27T00:19:30.895014+00:00",
+    "bytes": 4396,
+    "sha256": "7d0735f1158f19a933a9423efba70fb40fb3d655eb893718266b5d1dba969f32",
+    "error": ""
+  },
+  "Eris_20260526_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260526_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260526_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-05-26",
+    "retrieved_utc": "2026-09-27T00:19:32.202782+00:00",
+    "bytes": 1263521,
+    "sha256": "4828b00783bc742680f35b65780fc97d70f0e359ee9f38078c345038b9743c9e",
+    "error": ""
+  },
+  "Eris_20260526_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260526_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260526_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-05-26",
+    "retrieved_utc": "2026-09-27T00:19:33.104440+00:00",
+    "bytes": 4396,
+    "sha256": "e0bdb6b22cfce832abc09c11ce86c83f4d41af99ad9db22a1eec4ab2f8d2e920",
+    "error": ""
+  },
+  "Eris_20260527_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260527_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260527_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-05-27",
+    "retrieved_utc": "2026-09-27T00:19:34.419624+00:00",
+    "bytes": 1263489,
+    "sha256": "b2d326b881c109fc58d4baff5e2e7c51a7b123a3b4be169b5f9a3d7f644bfe9b",
+    "error": ""
+  },
+  "Eris_20260527_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260527_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260527_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-05-27",
+    "retrieved_utc": "2026-09-27T00:19:35.193490+00:00",
+    "bytes": 4222,
+    "sha256": "9e4f6ee54f9d59933cb76c8cf2ce6a3e1af79da26b6d97a86c8f62881e11e766",
+    "error": ""
+  },
+  "Eris_20260528_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260528_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260528_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-05-28",
+    "retrieved_utc": "2026-09-27T00:19:36.608894+00:00",
+    "bytes": 1263773,
+    "sha256": "4e4bc5acf95b47955cc26f36f76ad41e2d53030f02632e5dc36773a8437b21c7",
+    "error": ""
+  },
+  "Eris_20260528_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260528_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260528_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-05-28",
+    "retrieved_utc": "2026-09-27T00:19:37.488834+00:00",
+    "bytes": 4396,
+    "sha256": "09b4b845f169b0600c673cbe51b4e1b280aa940341252b2fcde52dddac2f2391",
+    "error": ""
+  },
+  "Eris_20260529_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260529_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260529_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-05-29",
+    "retrieved_utc": "2026-09-27T00:19:38.826693+00:00",
+    "bytes": 1263694,
+    "sha256": "882e516659cc7353fe54c29a176a01878c5f98a1d30c0c315b7a9b7e49b96c02",
+    "error": ""
+  },
+  "Eris_20260529_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/05-May/Eris_20260529_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260529_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-05-29",
+    "retrieved_utc": "2026-09-27T00:19:39.599483+00:00",
+    "bytes": 4396,
+    "sha256": "8f54d787013d6350fea3c37465eb5c6cc40430b6d0ecdc96707311f5743e6a16",
+    "error": ""
+  },
+  "Eris_20260603_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260603_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260603_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-06-03",
+    "retrieved_utc": "2026-09-27T00:19:41.042400+00:00",
+    "bytes": 1263489,
+    "sha256": "f57709e9a022a829aa6b4cf4df2c3d37a832e73a7cb768a96d389ef3e052c86b",
+    "error": ""
+  },
+  "Eris_20260603_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260603_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260603_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-06-03",
+    "retrieved_utc": "2026-09-27T00:19:41.804903+00:00",
+    "bytes": 4396,
+    "sha256": "de6796c9359db36cf5a6f6f11617d0176607859e43fe1797777a976f73d0b722",
+    "error": ""
+  },
+  "Eris_20260609_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260609_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260609_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-06-09",
+    "retrieved_utc": "2026-09-27T00:19:43.114199+00:00",
+    "bytes": 1263489,
+    "sha256": "b27126c54b8914f87feb8ce12dc8c3f60a57cce102c59998f5c8d082fb5eb4a3",
+    "error": ""
+  },
+  "Eris_20260609_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260609_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260609_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-06-09",
+    "retrieved_utc": "2026-09-27T00:19:43.876524+00:00",
+    "bytes": 4396,
+    "sha256": "5928371f089d21390e36523d16b83c52268489f0607dab84e1ef45d3f9d693a3",
+    "error": ""
+  },
+  "Eris_20260610_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260610_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260610_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-06-10",
+    "retrieved_utc": "2026-09-27T00:19:45.159281+00:00",
+    "bytes": 1263457,
+    "sha256": "ddea4667c420c86cec6f0cd1e9f86decf854c260e92f6f225946cc9040755a93",
+    "error": ""
+  },
+  "Eris_20260610_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260610_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260610_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-06-10",
+    "retrieved_utc": "2026-09-27T00:19:45.929737+00:00",
+    "bytes": 4396,
+    "sha256": "25bffc2fbdc66369084a2f06e806e41e24c565551f6831feb6136363d867ca25",
+    "error": ""
+  },
+  "Eris_20260612_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260612_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260612_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-06-12",
+    "retrieved_utc": "2026-09-27T00:19:47.288804+00:00",
+    "bytes": 1263662,
+    "sha256": "4da3a022c528910646258994631aee946943c693bb1c2b31917677c2fb667747",
+    "error": ""
+  },
+  "Eris_20260612_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260612_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260612_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-06-12",
+    "retrieved_utc": "2026-09-27T00:19:48.095213+00:00",
+    "bytes": 4396,
+    "sha256": "0d531b9ba4fd38c978f22865156a1c8a9162305fa1bc0070fb17e8c1105de809",
+    "error": ""
+  },
+  "Eris_20260616_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260616_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260616_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-06-16",
+    "retrieved_utc": "2026-09-27T00:19:49.386093+00:00",
+    "bytes": 1263489,
+    "sha256": "8a4be5b3ceaa5cf42a860715732c67c1479aaa1d120552c174a402dd2f14959b",
+    "error": ""
+  },
+  "Eris_20260616_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260616_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260616_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-06-16",
+    "retrieved_utc": "2026-09-27T00:19:50.160100+00:00",
+    "bytes": 4396,
+    "sha256": "ba50b98af00cffc9aaecc0b19777922520ccc2675fcac475966fbd5ba4e83e30",
+    "error": ""
+  },
+  "Eris_20260618_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260618_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260618_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-06-18",
+    "retrieved_utc": "2026-09-27T00:19:51.468853+00:00",
+    "bytes": 1263741,
+    "sha256": "e6cd06173a8f3bfa6e6da0934b7537ad1347c4af09c26707b5344937191bb5cd",
+    "error": ""
+  },
+  "Eris_20260618_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260618_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260618_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-06-18",
+    "retrieved_utc": "2026-09-27T00:19:52.216933+00:00",
+    "bytes": 4396,
+    "sha256": "dcb78a34c4577c32153d15d8fc2357344373fa94c32b4bf839f54f32290ae7ca",
+    "error": ""
+  },
+  "Eris_20260622_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260622_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260622_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-06-22",
+    "retrieved_utc": "2026-09-27T00:19:53.575243+00:00",
+    "bytes": 1263521,
+    "sha256": "0391b80d8d11d0ac2e92f8d55f0cf5c332e9352190448bd74fd1ab5f745d9a13",
+    "error": ""
+  },
+  "Eris_20260622_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260622_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260622_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-06-22",
+    "retrieved_utc": "2026-09-27T00:19:54.366725+00:00",
+    "bytes": 4396,
+    "sha256": "fdee4830dfa284de3358ca0b5b7a7ee2fb798b3a81ae9f1a8763aa883d50e243",
+    "error": ""
+  },
+  "Eris_20260624_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260624_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260624_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-06-24",
+    "retrieved_utc": "2026-09-27T00:19:55.686293+00:00",
+    "bytes": 1263489,
+    "sha256": "953aebd6821f9f18aa4f0dc706a3b831dad84694ee578f071cda086ded149c75",
+    "error": ""
+  },
+  "Eris_20260624_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260624_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260624_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-06-24",
+    "retrieved_utc": "2026-09-27T00:19:56.442657+00:00",
+    "bytes": 4396,
+    "sha256": "86549d6b87cecaddaef9c7371fc9df35d2fbdd9539175bb00451b98e7fa922fb",
+    "error": ""
+  },
+  "Eris_20260625_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260625_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260625_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-06-25",
+    "retrieved_utc": "2026-09-27T00:19:57.779838+00:00",
+    "bytes": 1263694,
+    "sha256": "4b5bc0a20e0b2fee4b026367d5c8f94ee78945a36092ee40c315f5e16a46845d",
+    "error": ""
+  },
+  "Eris_20260625_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260625_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260625_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-06-25",
+    "retrieved_utc": "2026-09-27T00:19:58.572380+00:00",
+    "bytes": 4396,
+    "sha256": "dde8f89aded0b269204003737cf1c225769b6e2879095e27038b9a5b88605fd0",
+    "error": ""
+  },
+  "Eris_20260629_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260629_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260629_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-06-29",
+    "retrieved_utc": "2026-09-27T00:19:59.913034+00:00",
+    "bytes": 1263521,
+    "sha256": "9ab01a93fdcd003d086082e04899785f943a7790e7a80b53786086d34cdf5983",
+    "error": ""
+  },
+  "Eris_20260629_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/archives/2026/06-June/Eris_20260629_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260629_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-06-29",
+    "retrieved_utc": "2026-09-27T00:20:00.703018+00:00",
+    "bytes": 4396,
+    "sha256": "31fcf2673715f5e3c133d0dfe20e6d4fee89d7a7878edf765d2e8a1fed1ea67a",
+    "error": ""
+  },
+  "Eris_20260701_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260701_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260701_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-07-01",
+    "retrieved_utc": "2026-09-27T00:20:02.017958+00:00",
+    "bytes": 1263852,
+    "sha256": "ffac460fdeaee284c2e8b710497a86f81dc9da11da2782ab03ccbdebdd7e0add",
+    "error": ""
+  },
+  "Eris_20260701_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260701_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260701_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-07-01",
+    "retrieved_utc": "2026-09-27T00:20:02.798647+00:00",
+    "bytes": 4396,
+    "sha256": "0c63e8a3da6b6b7a8902e7c5dc7e353a03981a0e86034ac4b0e5e1913763c4eb",
+    "error": ""
+  },
+  "Eris_20260702_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260702_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260702_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-07-02",
+    "retrieved_utc": "2026-09-27T00:20:04.148824+00:00",
+    "bytes": 1263773,
+    "sha256": "49d1cfbb67a7ea7377e34d1a9631aa98f19d35790263b0557968bf530d3be0f5",
+    "error": ""
+  },
+  "Eris_20260702_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260702_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260702_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-07-02",
+    "retrieved_utc": "2026-09-27T00:20:04.920703+00:00",
+    "bytes": 4396,
+    "sha256": "5fa708ec866d5dfa9a4521b73a7edb1dcff1d4088ebe4e033c079cf37d4dd7f1",
+    "error": ""
+  },
+  "Eris_20260707_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260707_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260707_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-07-07",
+    "retrieved_utc": "2026-09-27T00:20:06.248995+00:00",
+    "bytes": 1263553,
+    "sha256": "a080a96015d80072d2aa5418c596fdd7b2a14aef18802cd573053ad8d0aeb921",
+    "error": ""
+  },
+  "Eris_20260707_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260707_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260707_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-07-07",
+    "retrieved_utc": "2026-09-27T00:20:07.030805+00:00",
+    "bytes": 4396,
+    "sha256": "471a1420528c26a77f528b0bdd5768043b1323ab4c6d119938ed81fa91a78e4f",
+    "error": ""
+  },
+  "Eris_20260708_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260708_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260708_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-07-08",
+    "retrieved_utc": "2026-09-27T00:20:08.369926+00:00",
+    "bytes": 1263521,
+    "sha256": "57e4d6010de2eb2836e6d1a045d9d32ee50fbc368c502a275ee90484e7dd12be",
+    "error": ""
+  },
+  "Eris_20260708_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260708_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260708_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-07-08",
+    "retrieved_utc": "2026-09-27T00:20:09.137132+00:00",
+    "bytes": 4396,
+    "sha256": "903bca7f06d524d0077c3b4e01339e1d6a32acf705dbf64d91f46ec58456ede1",
+    "error": ""
+  },
+  "Eris_20260709_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260709_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260709_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-07-09",
+    "retrieved_utc": "2026-09-27T00:20:10.436606+00:00",
+    "bytes": 1263773,
+    "sha256": "094ba3223f64a873d884a947dd9cbbc25f9c6e3a0935d5221b2c3b92aa855c5b",
+    "error": ""
+  },
+  "Eris_20260709_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260709_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260709_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-07-09",
+    "retrieved_utc": "2026-09-27T00:20:11.201723+00:00",
+    "bytes": 4396,
+    "sha256": "a7f1b02f847a274357e13c123a852d1643718c7fc29c5675d11a1c62c8e8afc0",
+    "error": ""
+  },
+  "Eris_20260713_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260713_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260713_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-07-13",
+    "retrieved_utc": "2026-09-27T00:20:12.524067+00:00",
+    "bytes": 1263521,
+    "sha256": "b730685f998e007f943ffdb5e47ca9e8fe5dd02f4391cf76bab04de5b22e6cf2",
+    "error": ""
+  },
+  "Eris_20260713_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260713_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260713_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-07-13",
+    "retrieved_utc": "2026-09-27T00:20:13.289631+00:00",
+    "bytes": 4396,
+    "sha256": "9f8836daa1cf55dbd016b849e482ae8ff00a0619a509abeaf90bda05a33a14f2",
+    "error": ""
+  },
+  "Eris_20260714_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260714_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260714_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-07-14",
+    "retrieved_utc": "2026-09-27T00:20:14.563420+00:00",
+    "bytes": 1263521,
+    "sha256": "fbcd2eb6890f112925747beb3dd05a69f24bd0a0db33f863cc1f805a668f849a",
+    "error": ""
+  },
+  "Eris_20260714_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260714_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260714_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-07-14",
+    "retrieved_utc": "2026-09-27T00:20:15.333684+00:00",
+    "bytes": 4396,
+    "sha256": "c9216814fb4d1fba4dfd4bf3d5d3fbabb4a58f491ea5abf4e861e5fde65ea1c7",
+    "error": ""
+  },
+  "Eris_20260716_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260716_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260716_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-07-16",
+    "retrieved_utc": "2026-09-27T00:20:16.663306+00:00",
+    "bytes": 1263773,
+    "sha256": "e5b7265504ce35fa069f19b1895093bb5b037bfe0489d78a5c621c6aac98f508",
+    "error": ""
+  },
+  "Eris_20260716_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260716_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260716_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-07-16",
+    "retrieved_utc": "2026-09-27T00:20:17.448778+00:00",
+    "bytes": 4396,
+    "sha256": "9902b075b42d6c3b9b5ae8c29dd05d4fd3bda45c3e156ef330f48804456575ca",
+    "error": ""
+  },
+  "Eris_20260717_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260717_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260717_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-07-17",
+    "retrieved_utc": "2026-09-27T00:20:18.746491+00:00",
+    "bytes": 1263694,
+    "sha256": "a0a0882429684b2c07c59de9ac4f6451648b3b6f291f6b9b37ad0102ffa1d21a",
+    "error": ""
+  },
+  "Eris_20260717_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260717_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260717_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-07-17",
+    "retrieved_utc": "2026-09-27T00:20:19.524957+00:00",
+    "bytes": 4396,
+    "sha256": "74db30c36ebc6aedbe978e7e45b4ca18c0a421e1c4966703bfdcafb0b20e1b40",
+    "error": ""
+  },
+  "Eris_20260721_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260721_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260721_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-07-21",
+    "retrieved_utc": "2026-09-27T00:20:20.793363+00:00",
+    "bytes": 1263521,
+    "sha256": "f6940217d7a18226407fca2d51a36895df5d3cf85eafca1a11a7c2b0a2793425",
+    "error": ""
+  },
+  "Eris_20260721_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260721_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260721_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-07-21",
+    "retrieved_utc": "2026-09-27T00:20:21.563563+00:00",
+    "bytes": 4396,
+    "sha256": "83901f10566090fb185bcb8cca87e8b941eb6cc3cd3e15aa86dbac26fc014f41",
+    "error": ""
+  },
+  "Eris_20260722_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260722_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260722_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-07-22",
+    "retrieved_utc": "2026-09-27T00:20:22.935098+00:00",
+    "bytes": 1263489,
+    "sha256": "673af0968401d298bd3e415f776663e1a3123fd0090c380904a02fa5ba97c8c0",
+    "error": ""
+  },
+  "Eris_20260722_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260722_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260722_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-07-22",
+    "retrieved_utc": "2026-09-27T00:20:23.722166+00:00",
+    "bytes": 4396,
+    "sha256": "acf2bcb520b94073e2ed2105c90427bd7d37a204268da594335471c10db3924a",
+    "error": ""
+  },
+  "Eris_20260723_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260723_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260723_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-07-23",
+    "retrieved_utc": "2026-09-27T00:20:25.012794+00:00",
+    "bytes": 1263773,
+    "sha256": "6e38fdf135ec00ee79a46d783d6dcc2dab4b53ce890344abcc27090328bfa509",
+    "error": ""
+  },
+  "Eris_20260723_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260723_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260723_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-07-23",
+    "retrieved_utc": "2026-09-27T00:20:25.803098+00:00",
+    "bytes": 4396,
+    "sha256": "ab5e0d58745b7d7b1060dbf568bb0cfdf9498a38a16c72cc4ab04772fcc78b5c",
+    "error": ""
+  },
+  "Eris_20260724_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260724_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260724_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-07-24",
+    "retrieved_utc": "2026-09-27T00:20:27.094440+00:00",
+    "bytes": 1263694,
+    "sha256": "5506ad504d546fd49d17a2b6065f55cd88bb837e184e33b9eb4d893fa28e8e6b",
+    "error": ""
+  },
+  "Eris_20260724_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260724_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260724_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-07-24",
+    "retrieved_utc": "2026-09-27T00:20:27.856606+00:00",
+    "bytes": 4396,
+    "sha256": "e9fc244ab79b8a1f17eb34e8a56261e462123092dc5a721a5efe79ca4231c39d",
+    "error": ""
+  },
+  "Eris_20260729_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260729_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260729_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-07-29",
+    "retrieved_utc": "2026-09-27T00:20:29.178007+00:00",
+    "bytes": 1263489,
+    "sha256": "794ea9a485a00a0cce5600f283b8f1650e6ae2425cd99e954d2c75ef3237ec12",
+    "error": ""
+  },
+  "Eris_20260729_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260729_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260729_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-07-29",
+    "retrieved_utc": "2026-09-27T00:20:29.936558+00:00",
+    "bytes": 4396,
+    "sha256": "347ee923d23ced33a4561135083d4e3fcff1cfb1a93e45c3e09f27299bb2bed4",
+    "error": ""
+  },
+  "Eris_20260730_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260730_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260730_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-07-30",
+    "retrieved_utc": "2026-09-27T00:20:31.213988+00:00",
+    "bytes": 1263773,
+    "sha256": "b295138a26a6f465081edf834e286b91be11296836aeb948646257646473cb22",
+    "error": ""
+  },
+  "Eris_20260730_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260730_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260730_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-07-30",
+    "retrieved_utc": "2026-09-27T00:20:31.974446+00:00",
+    "bytes": 4396,
+    "sha256": "2dbb37eb94ec9d431c34fe565ba5cc349d854804ac0b5794cdc2a2b02228b86b",
+    "error": ""
+  },
+  "Eris_20260731_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260731_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260731_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-07-31",
+    "retrieved_utc": "2026-09-27T00:20:33.243526+00:00",
+    "bytes": 1263694,
+    "sha256": "9de506f15ae6fa530e56b2c19bf1f9c2cdce8313ce961598ddbc565f509bbb0f",
+    "error": ""
+  },
+  "Eris_20260731_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260731_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260731_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-07-31",
+    "retrieved_utc": "2026-09-27T00:20:34.012330+00:00",
+    "bytes": 4396,
+    "sha256": "70892198918530c41bf10e53087fb29c85990cd12edb0bc53bb30889ec013743",
+    "error": ""
+  },
+  "Eris_20260803_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260803_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260803_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-08-03",
+    "retrieved_utc": "2026-09-27T00:20:35.337250+00:00",
+    "bytes": 1263521,
+    "sha256": "6b7f3afe21d5ed30bc321b34ee023054d73f5a1f42929ed6c81a5be7a1f0dcad",
+    "error": ""
+  },
+  "Eris_20260803_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260803_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260803_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-08-03",
+    "retrieved_utc": "2026-09-27T00:20:36.103964+00:00",
+    "bytes": 4396,
+    "sha256": "b7613fa39534b557534149d57eb0416d29bd2a124e4aca06f9ec83a36fccbc68",
+    "error": ""
+  },
+  "Eris_20260812_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260812_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260812_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-08-12",
+    "retrieved_utc": "2026-09-27T00:20:37.410790+00:00",
+    "bytes": 1263457,
+    "sha256": "dc0ad5f532216d70578729cb1e7412c2eef6f15d5c2a3bae3cf65e4d167c2191",
+    "error": ""
+  },
+  "Eris_20260812_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260812_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260812_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-08-12",
+    "retrieved_utc": "2026-09-27T00:20:38.163038+00:00",
+    "bytes": 4396,
+    "sha256": "6c796a3e7206056ca877094bb12f2502719aa86bbf3cdc3103cf88a7d853ffd3",
+    "error": ""
+  },
+  "Eris_20260813_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260813_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260813_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-08-13",
+    "retrieved_utc": "2026-09-27T00:20:39.475395+00:00",
+    "bytes": 1263741,
+    "sha256": "4800dcb83675f18feb5bfc447ca0e74393acb705f2a1ca331a389e34af815d77",
+    "error": ""
+  },
+  "Eris_20260813_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260813_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260813_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-08-13",
+    "retrieved_utc": "2026-09-27T00:20:40.242569+00:00",
+    "bytes": 4396,
+    "sha256": "bd4209693d6a628de6994e0dc8d842328b2ad6bb022d257da898dc30aafc6332",
+    "error": ""
+  },
+  "Eris_20260814_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260814_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260814_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-08-14",
+    "retrieved_utc": "2026-09-27T00:20:41.568319+00:00",
+    "bytes": 1263662,
+    "sha256": "f87b7f266167740b16987f5508be0ec87b26121260a9c4677aa0fb3b12634a74",
+    "error": ""
+  },
+  "Eris_20260814_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260814_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260814_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-08-14",
+    "retrieved_utc": "2026-09-27T00:20:42.301677+00:00",
+    "bytes": 4396,
+    "sha256": "a18cfc579d66a994d1a976d3ec678a1e74651a2be73fe49fb5ca709173a75c64",
+    "error": ""
+  },
+  "Eris_20260818_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260818_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260818_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-08-18",
+    "retrieved_utc": "2026-09-27T00:20:43.606330+00:00",
+    "bytes": 1263489,
+    "sha256": "5b8aad28fab98193ccb4530575355321b50aeb3953f6807a378a89802f69d76d",
+    "error": ""
+  },
+  "Eris_20260818_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260818_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260818_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-08-18",
+    "retrieved_utc": "2026-09-27T00:20:44.351727+00:00",
+    "bytes": 4396,
+    "sha256": "fe0f9f5d38d8e4434cfc54d707bdd65d7a0d30b9ddafaae00a6b04b97304a8f7",
+    "error": ""
+  },
+  "Eris_20260820_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260820_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260820_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-08-20",
+    "retrieved_utc": "2026-09-27T00:20:45.658553+00:00",
+    "bytes": 1263709,
+    "sha256": "400ba1e9a15f1de283d91eb20b098eddba82fcdac34d2a6f3e81c279b59d7379",
+    "error": ""
+  },
+  "Eris_20260820_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260820_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260820_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-08-20",
+    "retrieved_utc": "2026-09-27T00:20:46.420627+00:00",
+    "bytes": 4396,
+    "sha256": "e024194afef1338d3ad1483360852d2e90fecb5d01c7704f5c359cbc73b6fe4e",
+    "error": ""
+  },
+  "Eris_20260824_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260824_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260824_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-08-24",
+    "retrieved_utc": "2026-09-27T00:20:47.742537+00:00",
+    "bytes": 1263457,
+    "sha256": "7278bc95878e72c08376c52a8f9d5bf9101425f0df2e281993bd16df174d0db7",
+    "error": ""
+  },
+  "Eris_20260824_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260824_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260824_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-08-24",
+    "retrieved_utc": "2026-09-27T00:20:48.503589+00:00",
+    "bytes": 4396,
+    "sha256": "70db310382056d4a1c78d9c0750cd1a8e0ca3b16c85e42281df59f9b23e2e158",
+    "error": ""
+  },
+  "Eris_20260825_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260825_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260825_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-08-25",
+    "retrieved_utc": "2026-09-27T00:20:49.786965+00:00",
+    "bytes": 1263457,
+    "sha256": "fa8d4045ab8b455c06650a9f5dac7ffbdc695f9f64341746350381fb23d4e271",
+    "error": ""
+  },
+  "Eris_20260825_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260825_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260825_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-08-25",
+    "retrieved_utc": "2026-09-27T00:20:50.565495+00:00",
+    "bytes": 4396,
+    "sha256": "c3aa92a1312528a546d34be3f54e68153b740044e62244cb796ded0dda3d5855",
+    "error": ""
+  },
+  "Eris_20260827_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260827_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260827_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-08-27",
+    "retrieved_utc": "2026-09-27T00:20:51.887067+00:00",
+    "bytes": 1263472,
+    "sha256": "549958484f801c32a33b1cd310b98b53746b0e64955379df36d37aecd7bf7619",
+    "error": ""
+  },
+  "Eris_20260827_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260827_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260827_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-08-27",
+    "retrieved_utc": "2026-09-27T00:20:52.728826+00:00",
+    "bytes": 4396,
+    "sha256": "5269f36f5944830a21d13f3ddb554bf313312434305b18a091b27117d5a35466",
+    "error": ""
+  },
+  "Eris_20260828_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260828_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260828_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-08-28",
+    "retrieved_utc": "2026-09-27T00:20:54.065138+00:00",
+    "bytes": 1263630,
+    "sha256": "bf8383d59dc54a5f215b18f2486906a3099767c399541849a3d60f126432fa35",
+    "error": ""
+  },
+  "Eris_20260828_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260828_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260828_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-08-28",
+    "retrieved_utc": "2026-09-27T00:20:54.795448+00:00",
+    "bytes": 4396,
+    "sha256": "c0df0a2347d8a7317dbde4b830704d3b5db1f2bc0c260fe57c1fb758039d51c6",
+    "error": ""
+  },
+  "Eris_20260901_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260901_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260901_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-09-01",
+    "retrieved_utc": "2026-09-27T00:20:56.074777+00:00",
+    "bytes": 1263378,
+    "sha256": "47df18877854834cb6f8eb329c8ba2138f372c19342775c1cfc7af72716063f2",
+    "error": ""
+  },
+  "Eris_20260901_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260901_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260901_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-09-01",
+    "retrieved_utc": "2026-09-27T00:20:56.876509+00:00",
+    "bytes": 4396,
+    "sha256": "d971fa831f215e336d51c17926901eca3dbade1c043cb4cbc848717400021717",
+    "error": ""
+  },
+  "Eris_20260902_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260902_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260902_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-09-02",
+    "retrieved_utc": "2026-09-27T00:20:58.183550+00:00",
+    "bytes": 1263378,
+    "sha256": "18f97eb005f43893fbb7553ea0a9be54f450cd91e47f6af7379c369714de7bf7",
+    "error": ""
+  },
+  "Eris_20260902_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260902_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260902_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-09-02",
+    "retrieved_utc": "2026-09-27T00:20:58.957501+00:00",
+    "bytes": 4396,
+    "sha256": "2647c8c3d20d401d7797488cbb468a110b50a600e2341d79192c91a8aa3c4eb7",
+    "error": ""
+  },
+  "Eris_20260903_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260903_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260903_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-09-03",
+    "retrieved_utc": "2026-09-27T00:21:00.269072+00:00",
+    "bytes": 1263630,
+    "sha256": "5de98fb67d786bd223a03aae57ce8dba2e98470051787b311cfef40291df8afc",
+    "error": ""
+  },
+  "Eris_20260903_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260903_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260903_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-09-03",
+    "retrieved_utc": "2026-09-27T00:21:01.035388+00:00",
+    "bytes": 4396,
+    "sha256": "9b39cd4959bd4f50133f2b4076b911990c0d4b196fa9fe865ed89c0ced3cd57d",
+    "error": ""
+  },
+  "Eris_20260904_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260904_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260904_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-09-04",
+    "retrieved_utc": "2026-09-27T00:21:02.344927+00:00",
+    "bytes": 1263551,
+    "sha256": "1f711d4705548452727e78c636afe4d9c0504c6cc3c6275c428e6331c924fc99",
+    "error": ""
+  },
+  "Eris_20260904_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260904_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260904_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-09-04",
+    "retrieved_utc": "2026-09-27T00:21:03.346974+00:00",
+    "bytes": 4396,
+    "sha256": "1d1b814da808a80d277ae48da5d4c3c3c0bd4c14072561a42c29cc595f56f1fb",
+    "error": ""
+  },
+  "Eris_20260908_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260908_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260908_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-09-08",
+    "retrieved_utc": "2026-09-27T00:21:04.937652+00:00",
+    "bytes": 1263410,
+    "sha256": "a0d222a893e04d115dcfd8064e5339f2863c34d8d768b01c7319374a173e764a",
+    "error": ""
+  },
+  "Eris_20260908_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260908_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260908_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-09-08",
+    "retrieved_utc": "2026-09-27T00:21:05.687598+00:00",
+    "bytes": 4396,
+    "sha256": "d3fb9d0f6eca56ad6ebac77e4582859a98079701f6d6656bcd6322eacd631e37",
+    "error": ""
+  },
+  "Eris_20260911_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260911_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260911_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-09-11",
+    "retrieved_utc": "2026-09-27T00:21:07.171856+00:00",
+    "bytes": 1263583,
+    "sha256": "52ba505c0cdeaab02384aa715b929a2c2292a6c6d22d2d2cbd2dfd56af7b4468",
+    "error": ""
+  },
+  "Eris_20260911_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260911_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260911_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-09-11",
+    "retrieved_utc": "2026-09-27T00:21:07.924563+00:00",
+    "bytes": 4396,
+    "sha256": "9a98fbe755d281f62b0ba9474a32a2aefcd01bd7e2e8b3c7b2b1a4a37978460a",
+    "error": ""
+  },
+  "Eris_20260914_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260914_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260914_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-09-14",
+    "retrieved_utc": "2026-09-27T00:21:09.278776+00:00",
+    "bytes": 1263410,
+    "sha256": "6cdfc45cb3828ae477974b2ab0fd4dbd9b42b062a898f449612f7ec276c0aced",
+    "error": ""
+  },
+  "Eris_20260914_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260914_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260914_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-09-14",
+    "retrieved_utc": "2026-09-27T00:21:10.007210+00:00",
+    "bytes": 4396,
+    "sha256": "0b052e9fb6ab236c1363493fe499bf340fb919ae57fa2021bd990251dbc8b0e1",
+    "error": ""
+  },
+  "Eris_20260924_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260924_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260924_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-09-24",
+    "retrieved_utc": "2026-09-27T00:21:11.367078+00:00",
+    "bytes": 1263630,
+    "sha256": "69b146adb8019f600cba9dce0b1607804159f2166ed82cfd0d9b9c8b35ef1f74",
+    "error": ""
+  },
+  "Eris_20260924_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260924_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260924_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-09-24",
+    "retrieved_utc": "2026-09-27T00:21:12.220947+00:00",
+    "bytes": 4396,
+    "sha256": "97e0aa9b09b7d807e13b2efffb736931335a88c3b89e2c49d9080cf4a79f2dff",
+    "error": ""
+  },
+  "Eris_20260924_EOD_Holidays.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260924_EOD_Holidays.csv",
+    "file": "raw/free_supplement/Eris_20260924_EOD_Holidays.csv",
+    "kind": "Holidays",
+    "expected_date": "2026-09-24",
+    "retrieved_utc": "2026-09-27T00:21:14.014093+00:00",
+    "bytes": 39934,
+    "sha256": "7b8a8672c580df5fd776d1a8dd3857b832b6377825fdd55a81bb3ba5c1ffb6fc",
+    "error": ""
+  },
+  "Eris_20260924_EOD_CurveSwapLegAnalysis_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260924_EOD_CurveSwapLegAnalysis_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260924_EOD_CurveSwapLegAnalysis_SOFR.csv",
+    "kind": "CurveSwapLegAnalysis_SOFR",
+    "expected_date": "2026-09-24",
+    "retrieved_utc": "2026-09-27T00:21:14.958311+00:00",
+    "bytes": 83997,
+    "sha256": "22610de11786d0043d05cf58d770de71d50b10c0d990cb54598dd2668e1579ce",
+    "error": ""
+  },
+  "Eris_20260804_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260804_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260804_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-08-04",
+    "error": "curl: (28) Operation timed out after 10658 milliseconds with 0 out of 0 bytes received"
+  },
+  "Eris_20260804_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260804_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260804_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-08-04",
+    "error": "curl: (28) Operation timed out after 10024 milliseconds with 0 out of 0 bytes received"
+  },
+  "Eris_20260817_EOD_DiscountFactors_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260817_EOD_DiscountFactors_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260817_EOD_DiscountFactors_SOFR.csv",
+    "kind": "DiscountFactors_SOFR",
+    "expected_date": "2026-08-17",
+    "error": "curl: (7) Failed connect to files.erisfutures.com:443; Operation now in progress"
+  },
+  "Eris_20260817_EOD_ParCouponCurve_SOFR.csv": {
+    "url": "https://files.erisfutures.com/ftp/Eris_20260817_EOD_ParCouponCurve_SOFR.csv",
+    "file": "raw/free_supplement/Eris_20260817_EOD_ParCouponCurve_SOFR.csv",
+    "kind": "ParCouponCurve_SOFR",
+    "expected_date": "2026-08-17",
+    "error": "curl: (7) Failed connect to files.erisfutures.com:443; Operation now in progress"
+  }
+}

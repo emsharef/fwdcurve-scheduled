@@ -1,0 +1,304 @@
+[
+  {
+    "paper": "structure",
+    "label": "lem:maturitynull",
+    "lab_results": [],
+    "declarations": [],
+    "scope": "Paper proof: countable dense maturities and absolute continuity. No separate Lean theorem asserted.",
+    "number": "2.3"
+  },
+  {
+    "paper": "structure",
+    "label": "prop:profile",
+    "lab_results": [
+      "Proposition 48"
+    ],
+    "declarations": [
+      "Standalone.JumpShapeAssembly.statement",
+      "Novel.JumpShapeAssemblyProof.jumpShapeAssembly"
+    ],
+    "scope": "Jump-law equivalence and profile restrictions; conditional expectations and Laplace transforms have the hypotheses in the standalone statements.",
+    "number": "3.1"
+  },
+  {
+    "paper": "structure",
+    "label": "thm:tilts",
+    "lab_results": [
+      "Proposition 9"
+    ],
+    "declarations": [
+      "Standalone.JumpLawTiltedGaussian.statement",
+      "Novel.JumpLawTiltedGaussianProof.jumpLawTiltedGaussian"
+    ],
+    "scope": "Successive conditional Gaussian tilts. Includes the separate normalization at each step; it is not a claim of independent announcements under the original measure.",
+    "number": "3.3"
+  },
+  {
+    "paper": "structure",
+    "label": "thm:realization",
+    "lab_results": [
+      "Proposition 30",
+      "Lemma 32",
+      "Proposition 33",
+      "Proposition 31"
+    ],
+    "declarations": [
+      "Standalone.MeetingLoadingObstruction.statement",
+      "Novel.MeetingLoadingObstructionProof.meetingLoadingObstruction",
+      "Standalone.RecurrenceNecessityAssembly.statement",
+      "Novel.RecurrenceNecessityAssemblyProof.recurrenceNecessityAssembly",
+      "Standalone.RecurrentLoadingAssembly.statement",
+      "Novel.RecurrentLoadingAssemblyProof.recurrentLoadingAssembly",
+      "Standalone.ExternalScaleAssembly.statement",
+      "Novel.ExternalScaleAssemblyProof.externalScaleAssembly"
+    ],
+    "scope": "Uniform finite dimension over varying finite calendars under the stated regularity assumptions. Lean necessity assumes a Brownian driver; the recurrence/rank algebra is unconditional.",
+    "number": "4.2"
+  },
+  {
+    "paper": "structure",
+    "label": "prop:scaledconstruction",
+    "lab_results": [
+      "Proposition 31"
+    ],
+    "declarations": [
+      "Standalone.ExternalScaleAssembly.statement",
+      "Novel.ExternalScaleAssemblyProof.externalScaleAssembly"
+    ],
+    "scope": "Construction given an existing external-scale diffusion and the supplied calculus. Version and integrability assumptions are explicit.",
+    "number": "4.3"
+  },
+  {
+    "paper": "structure",
+    "label": "prop:varianceexample",
+    "lab_results": [
+      "Proposition 27"
+    ],
+    "declarations": [
+      "Standalone.BoundedVarianceCompletion.statement",
+      "Novel.BoundedVarianceCompletionProof.boundedVarianceCompletion"
+    ],
+    "scope": "Conditional on compatible single- and two-driver calculus, SDE, integral-comparison and exponential-martingale interfaces. Lean does not construct a nontrivial Brownian instance of those interfaces.",
+    "number": "4.5"
+  },
+  {
+    "paper": "structure",
+    "label": "thm:approximation",
+    "lab_results": [
+      "Proposition 51"
+    ],
+    "declarations": [
+      "Standalone.RecurrentApproxAssembly.statement",
+      "Novel.RecurrentApproxAssemblyProof.recurrentApproxAssembly"
+    ],
+    "scope": "Partial correspondence: the original loading-to-curve and bond bounds and realization are formalized. Sharper constants and pointwise price bounds in this publication are paper-only.",
+    "number": "5.1"
+  },
+  {
+    "paper": "structure",
+    "label": "thm:splice",
+    "lab_results": [
+      "Proposition 52",
+      "Proposition 53"
+    ],
+    "declarations": [
+      "Standalone.UnifiedSpliceAssembly.statement",
+      "Novel.UnifiedSpliceAssemblyProof.unifiedSpliceAssembly",
+      "Standalone.SpliceLocalizationAssembly.statement",
+      "Novel.SpliceLocalizationAssemblyProof.spliceLocalizationAssembly"
+    ],
+    "scope": "Coefficient-level equivalence with AX-01 and locally integrable drift/noise bounds. Given an existing block; suitable front-end drifts are constructed. The stochastic processes and joint progressive measurability are paper arguments.",
+    "number": "6.1"
+  },
+  {
+    "paper": "structure",
+    "label": "cor:diagonal",
+    "lab_results": [
+      "Proposition 52"
+    ],
+    "declarations": [
+      "Standalone.UnifiedSpliceAssembly.statement",
+      "Novel.UnifiedSpliceAssemblyProof.unifiedSpliceAssembly",
+      "Standalone.UnifiedSpliceDiag.statement",
+      "Novel.UnifiedSpliceDiagProof.unifiedSpliceDiag"
+    ],
+    "scope": "Diagonalizable specialization of the effective-level covariance condition.",
+    "number": "6.2"
+  },
+  {
+    "paper": "structure",
+    "label": "cor:svensson",
+    "lab_results": [
+      "Proposition 40"
+    ],
+    "declarations": [
+      "Standalone.SvenssonSplice.statement",
+      "Novel.SvenssonSpliceProof.svenssonSplice"
+    ],
+    "scope": "Pointwise drift/covariance classification, with positivity and resonance conditions. No SDE-existence assertion.",
+    "number": "6.3"
+  },
+  {
+    "paper": "structure",
+    "label": "thm:varyingexponents",
+    "lab_results": [
+      "Proposition 46"
+    ],
+    "declarations": [
+      "Standalone.SpliceVaryingExponentsAssembly.statement",
+      "Novel.SpliceVaryingExponentsAssemblyProof.spliceVaryingExponentsAssembly"
+    ],
+    "scope": "Positive varying decays and uncorrelated front end only. Reduction is proved; classical exponent restrictions enter through AX-16 / Upstream.ExpPolyConsistency. Its consistency instance is vacuous with separate convention checks.",
+    "number": "6.4"
+  },
+  {
+    "paper": "identification",
+    "label": "prop:bond",
+    "lab_results": [
+      "Proposition 49"
+    ],
+    "declarations": [
+      "Standalone.DiffusionMeetingAssembly.statement",
+      "Novel.DiffusionMeetingAssemblyProof.diffusionMeetingAssembly"
+    ],
+    "scope": "Conditional on GaussLaw; Lean has no constructed nonzero-diffusion instance. The paper uses ordinary Brownian stochastic calculus.",
+    "number": "2.1"
+  },
+  {
+    "paper": "identification",
+    "label": "prop:pricing",
+    "lab_results": [
+      "Proposition 49"
+    ],
+    "declarations": [
+      "Standalone.DiffusionMeetingAssembly.statement",
+      "Novel.DiffusionMeetingAssemblyProof.diffusionMeetingAssembly"
+    ],
+    "scope": "Exact ideal futures/cash prices under GaussLaw. Known maturity-shaped extension uses ShapeGaussLaw (original Proposition 50); neither is a listed-American calibration theorem.",
+    "number": "2.2"
+  },
+  {
+    "paper": "identification",
+    "label": "prop:finitequotes",
+    "lab_results": [
+      "Lemma 18",
+      "Proposition 19"
+    ],
+    "declarations": [
+      "Standalone.CompoundedFuturesIdentification.statement",
+      "Novel.CompoundedFuturesIdentificationProof.compoundedFuturesIdentification"
+    ],
+    "scope": "Partial correspondence: original two-strike identification is formalized. Rescaling to the publication's arbitrary initial curve and deterministic background is paper-only.",
+    "number": "2.3"
+  },
+  {
+    "paper": "identification",
+    "label": "thm:rank",
+    "lab_results": [
+      "Proposition 49"
+    ],
+    "declarations": [
+      "Standalone.DiffusionMeetingAssembly.statement",
+      "Novel.DiffusionMeetingAssemblyProof.diffusionMeetingAssembly"
+    ],
+    "scope": "Finite calendar rank and inversion are formalized without stochastic-calculus assumptions. Identification is for the stated ideal variance observations.",
+    "number": "3.1"
+  },
+  {
+    "paper": "identification",
+    "label": "cor:shape",
+    "lab_results": [
+      "Proposition 50"
+    ],
+    "declarations": [
+      "Standalone.MaturityShapeAssembly.statement",
+      "Novel.MaturityShapeAssemblyProof.maturityShapeAssembly"
+    ],
+    "scope": "Known maturity-shape rank algebra is formalized. Conditional pricing uses ShapeGaussLaw. Critical decay numerics and numerical conditioning are not formalized.",
+    "number": "3.2"
+  },
+  {
+    "paper": "identification",
+    "label": "thm:aggregate",
+    "lab_results": [
+      "Proposition 20"
+    ],
+    "declarations": [
+      "Standalone.PreWindowVarianceAggregates.statement",
+      "Novel.PreWindowVarianceAggregatesProof.preWindowVarianceAggregates"
+    ],
+    "scope": "Partial correspondence: state-rule direction, residual independence and product representation are formalized. The general reverse stopping-time inequality and full continuous-exercise equality are proved in the paper only.",
+    "number": "4.1"
+  },
+  {
+    "paper": "identification",
+    "label": "cor:generalaggregate",
+    "lab_results": [
+      "Proposition 20",
+      "Proposition 49"
+    ],
+    "declarations": [],
+    "scope": "Paper-only extension of original Proposition 20 using the model in Proposition 49: arbitrary deterministic initial curve and continuous pre-cutoff risk. No corresponding Lean extension asserted.",
+    "number": "4.2"
+  },
+  {
+    "paper": "identification",
+    "label": "prop:cumulative",
+    "lab_results": [
+      "Proposition 17"
+    ],
+    "declarations": [
+      "Standalone.BondOptionPriceIntervals.statement",
+      "Novel.BondOptionPriceIntervalsProof.bondOptionPriceIntervals"
+    ],
+    "scope": "Sharp cumulative interval bounds in the ideal pure-jump model; the publication uses finite upper bounds.",
+    "number": "5.1"
+  },
+  {
+    "paper": "identification",
+    "label": "thm:scales",
+    "lab_results": [
+      "Proposition 13",
+      "Proposition 25"
+    ],
+    "declarations": [
+      "Standalone.GaussianMeetingVarianceCone.statement",
+      "Novel.GaussianMeetingVarianceConeProof.gaussianMeetingVarianceCone",
+      "Standalone.SurvivingScaleRestrictions.statement",
+      "Novel.SurvivingScaleRestrictionsProof.survivingScaleRestrictions"
+    ],
+    "scope": "Exact deterministic cone, dual inequalities and ratio restrictions. The variance-integral representation is assumed by the Lean deterministic theorem; the stochastic derivation is a paper argument.",
+    "number": "6.1"
+  },
+  {
+    "paper": "identification",
+    "label": "thm:svsupport",
+    "lab_results": [
+      "Proposition 16",
+      "Proposition 26"
+    ],
+    "declarations": [
+      "Standalone.ZeroMeanReversionUpstreamBridge.statement",
+      "Standalone.ZeroMeanReversionVarianceSupport.statement",
+      "Novel.ZeroMeanReversionUpstreamBridgeProof.zeroMeanReversionUpstreamBridge",
+      "Novel.ZeroMeanReversionVarianceSupportProof.zeroMeanReversionVarianceSupport",
+      "Standalone.PositiveMeanReversionSupport.statement",
+      "Novel.PositiveMeanReversionSupportProof.positiveMeanReversionSupport"
+    ],
+    "scope": "Exact support conditional on the stated SDE solutions, moments and integrand admissibility, with upstream calculus/predictability interfaces. No numerical column independence of the three-factor example is asserted.",
+    "number": "6.2"
+  },
+  {
+    "paper": "identification",
+    "label": "prop:svmap",
+    "lab_results": [
+      "Proposition 14"
+    ],
+    "declarations": [
+      "Standalone.StochasticMeetingVariance.statement",
+      "Novel.StochasticMeetingVarianceProof.stochasticMeetingVariance"
+    ],
+    "scope": "Conditional variance formula: stochastic representation, isometry, orthogonality and moment identities are explicit Lean premises.",
+    "number": "B.1"
+  }
+]

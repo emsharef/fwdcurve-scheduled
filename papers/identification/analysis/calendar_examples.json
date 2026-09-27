@@ -1,0 +1,29 @@
+{
+  "kappa_star": 0.8527105108946779,
+  "rank_examples": {
+    "eight_cells": {
+      "variance_rank": 24,
+      "stacked_rank": 24,
+      "columns": 24
+    },
+    "quarters": {
+      "variance_rank": 23,
+      "stacked_rank": 24,
+      "columns": 24
+    },
+    "meeting_dates": {
+      "variance_rank": 24,
+      "stacked_rank": 33,
+      "columns": 33
+    },
+    "expiry_gaps": {
+      "variance_rank": 24,
+      "stacked_rank": 40,
+      "columns": 40
+    }
+  },
+  "max_z_change": 1.8572145061728401e-09,
+  "listed_rank": 10,
+  "listed_columns": 17,
+  "parallel_ranks_checked_with_exact_rationals": true
+}

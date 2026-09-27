@@ -1,0 +1,2932 @@
+{
+  "source_commit": "5ad42b0bed20ddf929e305f867a91067cee345a4",
+  "snapshot_date": "2026-09-27",
+  "note": "Publication directories were untracked in the source lab. Per-file source hashes identify the actual inputs; release scripts/docs and documented packaging changes have their own Git history.",
+  "files": [
+    {
+      "source": "paper_pub2/main.tex",
+      "path": "papers/structure/main.tex",
+      "source_sha256": "e517e1c69e9b83bd72f92d2dc5d1768a863bbb789e7795eb2e90e034c4107d74"
+    },
+    {
+      "source": "paper_pub2/refs.bib",
+      "path": "papers/structure/refs.bib",
+      "source_sha256": "a8df1482d1fc7a99a07212d21d0c95aa2f14af893ee7ab6d5613978a87370da7"
+    },
+    {
+      "source": "paper_pub2/sections/notation.tex",
+      "path": "papers/structure/sections/notation.tex",
+      "source_sha256": "33e8f51002b77a14b97539fd8accab2206fd9675f50e633ed9a060c49f45213e"
+    },
+    {
+      "source": "paper_pub2/sections/08_conclusion.tex",
+      "path": "papers/structure/sections/08_conclusion.tex",
+      "source_sha256": "39353537f1eb0c9dd74b3d56d363cd278ea0908e334e89af2886960258e64f51"
+    },
+    {
+      "source": "paper_pub2/sections/04_realizations.tex",
+      "path": "papers/structure/sections/04_realizations.tex",
+      "source_sha256": "5e0aa9804c9dc5842b9e50c10adf6a667d6b350dff2693e0a97fda6f166f69ec"
+    },
+    {
+      "source": "paper_pub2/sections/d_variance_example.tex",
+      "path": "papers/structure/sections/d_variance_example.tex",
+      "source_sha256": "294bf87cd3a68b4c7099768fb04ed8fb5e04caaf1b01d43f615c2f846ee90f85"
+    },
+    {
+      "source": "paper_pub2/sections/03_jumps.tex",
+      "path": "papers/structure/sections/03_jumps.tex",
+      "source_sha256": "55539cb5bd5a66deac52b4f24f513d0d12b41b64c45576eabd339e033003a3c8"
+    },
+    {
+      "source": "paper_pub2/sections/01_introduction.tex",
+      "path": "papers/structure/sections/01_introduction.tex",
+      "source_sha256": "9162b209ae3e6ef86b2e49700451394192a0b923769f22a9da4fd31180112a1d"
+    },
+    {
+      "source": "paper_pub2/sections/e_varying_exponents.tex",
+      "path": "papers/structure/sections/e_varying_exponents.tex",
+      "source_sha256": "225d50a2c8ce072e6faa7b83a3abd9c03c0baa1ba3a64b076c0e7a162c082903"
+    },
+    {
+      "source": "paper_pub2/sections/02_setting.tex",
+      "path": "papers/structure/sections/02_setting.tex",
+      "source_sha256": "c29725febe5429192417bfd475576646f5a06d9ffd43c4ed77f4f9bcd8e8f267"
+    },
+    {
+      "source": "paper_pub2/sections/c_verification.tex",
+      "path": "papers/structure/sections/c_verification.tex",
+      "source_sha256": "be273ff6ffc29f5a1ddd2bbe9446c19570513327ef93dc67e585fb875dcbda01"
+    },
+    {
+      "source": "paper_pub2/sections/07_examples.tex",
+      "path": "papers/structure/sections/07_examples.tex",
+      "source_sha256": "a3f5827ad8f4cedf30509e02aac068e5c644dc47422cfab269c8780ad3e9e4ef"
+    },
+    {
+      "source": "paper_pub2/sections/06_splice.tex",
+      "path": "papers/structure/sections/06_splice.tex",
+      "source_sha256": "074500aa698831f1442da0e5d9ff782c98f5afcdc96a80dd9ed23b6974782dcb"
+    },
+    {
+      "source": "paper_pub2/sections/05_approximation.tex",
+      "path": "papers/structure/sections/05_approximation.tex",
+      "source_sha256": "670fed2fe4095d0ea7f908f00704f2846438fc1d586a2448ae3d123028bd9e7f"
+    },
+    {
+      "source": "paper_pub2/sections/b_blocks.tex",
+      "path": "papers/structure/sections/b_blocks.tex",
+      "source_sha256": "f88240bd2eb57a91a83caf11ef721bacc5c53e2314cf91686e6c01b1c6f37d16"
+    },
+    {
+      "source": "paper_pub2/sections/a_proofs.tex",
+      "path": "papers/structure/sections/a_proofs.tex",
+      "source_sha256": "507184749ad361d11ce1c87c6a6c80d7a40db1187cb6a105f85fb00aa1a81bdf"
+    },
+    {
+      "source": "paper_pub2/figures/jump_profiles.pdf",
+      "path": "papers/structure/figures/jump_profiles.pdf",
+      "source_sha256": "1d14fc88add7b2652b97d408b52db997bd85162f09d27c7d7226d89f21db7261"
+    },
+    {
+      "source": "paper_pub2/figures/jump_profiles.png",
+      "path": "papers/structure/figures/jump_profiles.png",
+      "source_sha256": "8833346b0f157f446ba72278fe7252ba82fe031186319f2379b654bd897f402c"
+    },
+    {
+      "source": "paper_pub2/figures/hankel.png",
+      "path": "papers/structure/figures/hankel.png",
+      "source_sha256": "36d0fd4a35f2388cddfe0a9b01ee4ad26e5844b696dd40e01f544baf6737853e"
+    },
+    {
+      "source": "paper_pub2/figures/hankel.pdf",
+      "path": "papers/structure/figures/hankel.pdf",
+      "source_sha256": "c41b15c12c3b3f054c628278bec4da838aed10e59f4be698139fee3c0dfc8b8c"
+    },
+    {
+      "source": "paper_pub2/figures/approximation.png",
+      "path": "papers/structure/figures/approximation.png",
+      "source_sha256": "f19af1eb704ce5079d6f7804149332d6eb222240fa2769b351b40bc46b2f15b0"
+    },
+    {
+      "source": "paper_pub2/figures/approximation.pdf",
+      "path": "papers/structure/figures/approximation.pdf",
+      "source_sha256": "790bcab5a9b883f1a71a098963e65eaf2bb6a860442d2c2964e72842687c4f17"
+    },
+    {
+      "source": "paper_pub2/figures/splice_correlation.png",
+      "path": "papers/structure/figures/splice_correlation.png",
+      "source_sha256": "e94bd0a482e8f13333285cef4f9a17c2fc69d9808fdebc56a08fc0d4611d9c90"
+    },
+    {
+      "source": "paper_pub2/figures/splice_correlation.pdf",
+      "path": "papers/structure/figures/splice_correlation.pdf",
+      "source_sha256": "eadc7a5e8bc0986c721997f448a888a68f723ec01e6d99fe4597e9be56c1c0d2"
+    },
+    {
+      "source": "paper_pub2/figures/two_discontinuities.pdf",
+      "path": "papers/structure/figures/two_discontinuities.pdf",
+      "source_sha256": "11d557e4e79fc97111a626bd74bd72d61561c1803e95d76aaddcec21438e306c"
+    },
+    {
+      "source": "paper_pub2/figures/two_discontinuities.png",
+      "path": "papers/structure/figures/two_discontinuities.png",
+      "source_sha256": "eaf34cb8d7a274c30abdf74ffc1bfb6dc59c8235a3a1e5b7caaaeb185057456e"
+    },
+    {
+      "source": "paper_pub2/examples/check_structural_additions.py",
+      "path": "papers/structure/examples/check_structural_additions.py",
+      "source_sha256": "be88488b407e813e76246cb9526236775f48eefa4d2c3887463b1060a03ee711"
+    },
+    {
+      "source": "paper_pub2/examples/make_figures.py",
+      "path": "papers/structure/examples/make_figures.py",
+      "source_sha256": "cc69acd3ab667059c04b354f9d59c116e890fef3ff46d03de10745b7defa39f2"
+    },
+    {
+      "source": "paper_pub2/examples/results.json",
+      "path": "papers/structure/examples/results.json",
+      "source_sha256": "10a64429ec34be609de7e05c4b71ddba955d6c63fbd066457bc9ae383a95c438"
+    },
+    {
+      "source": "paper_pub2/examples/results.tex",
+      "path": "papers/structure/examples/results.tex",
+      "source_sha256": "f945d6aa444532fa0deff09a4b9ab252be57f2093c9b3e6a7ed1de8024d9cc4f"
+    },
+    {
+      "source": "paper_pub2/examples/structural_additions_checks.json",
+      "path": "papers/structure/examples/structural_additions_checks.json",
+      "source_sha256": "d88eda611662076b8276b7c81481cee632b62ffa645f6f802630891c642dc3e8"
+    },
+    {
+      "source": "paper_pub2/build/main.pdf",
+      "path": "papers/structure/paper.pdf",
+      "source_sha256": "679fa38b05c6bfccae32ba1550748d94663840d8cf2a32d0b57d1b32345cb7e1"
+    },
+    {
+      "source": "paper_pub3/main.tex",
+      "path": "papers/identification/main.tex",
+      "source_sha256": "501755c1861c6b505eb3617d2fe7acc2379e40f06aeda00ea95f4ff3a4c39ccb"
+    },
+    {
+      "source": "paper_pub3/refs.bib",
+      "path": "papers/identification/refs.bib",
+      "source_sha256": "d34182a5bd5a32adcde9fed58d56e29f82cf61cf015e825b2c7f98e88c929027"
+    },
+    {
+      "source": "paper_pub3/sections/f_empirical_extensions.tex",
+      "path": "papers/identification/sections/f_empirical_extensions.tex",
+      "source_sha256": "e3744c8c65e36d9054f4f0f1466a7085e32725457f571418fe0717affe8604c6"
+    },
+    {
+      "source": "paper_pub3/sections/04_aggregation.tex",
+      "path": "papers/identification/sections/04_aggregation.tex",
+      "source_sha256": "be8772c323b7003bcbed3d825b1ed2a89f9a11b8b92e8fb1ea700d7f11ff32c1"
+    },
+    {
+      "source": "paper_pub3/sections/08_conclusion.tex",
+      "path": "papers/identification/sections/08_conclusion.tex",
+      "source_sha256": "3460e6390e805c2bdcff6c9219e847319eb6adf140959f23c784c4b37557bdd9"
+    },
+    {
+      "source": "paper_pub3/sections/09_usecases.tex",
+      "path": "papers/identification/sections/09_usecases.tex",
+      "source_sha256": "e49e82be829661e14fd5c473535fe1016e6a2a91dfa007dfca0b582ee21d71c9"
+    },
+    {
+      "source": "paper_pub3/sections/01_introduction.tex",
+      "path": "papers/identification/sections/01_introduction.tex",
+      "source_sha256": "2117b0f08965425f439e66886a8739acc66a8b4b55340b026c6e3fb37bb02974"
+    },
+    {
+      "source": "paper_pub3/sections/h_bgs_mapping.tex",
+      "path": "papers/identification/sections/h_bgs_mapping.tex",
+      "source_sha256": "a2de4223c1cdad5aa078e2ac0be793763a6e4392ed59e887f14716064fb7cd4d"
+    },
+    {
+      "source": "paper_pub3/sections/i_shape_profile.tex",
+      "path": "papers/identification/sections/i_shape_profile.tex",
+      "source_sha256": "378cc37e40014cd6a3f5768c39e97805ae9cd462cafc978e1f9a6f092d0d3375"
+    },
+    {
+      "source": "paper_pub3/sections/b_implementation.tex",
+      "path": "papers/identification/sections/b_implementation.tex",
+      "source_sha256": "2c9293511239a07da7f42f7c8d770d77234d35f79497e4e4a35bdc909c3d5f09"
+    },
+    {
+      "source": "paper_pub3/sections/d_exercise.tex",
+      "path": "papers/identification/sections/d_exercise.tex",
+      "source_sha256": "83c5de6eeb2917a0a02c884c605ef0d610d6a042a0865608b0299e2cb5297349"
+    },
+    {
+      "source": "paper_pub3/sections/08_empirical.tex",
+      "path": "papers/identification/sections/08_empirical.tex",
+      "source_sha256": "7928b7fb0fe31444a48de6e52f0c41d45896f424ac96dbeae1dd3c4889cf977a"
+    },
+    {
+      "source": "paper_pub3/sections/j_atm_additivity.tex",
+      "path": "papers/identification/sections/j_atm_additivity.tex",
+      "source_sha256": "5263f3e75586f13433d8e5a2f09d57af2e367b8506678342b24dbd0135627559"
+    },
+    {
+      "source": "paper_pub3/sections/05_precision.tex",
+      "path": "papers/identification/sections/05_precision.tex",
+      "source_sha256": "e85dcaa223d0d6ec5ed902957207fc53bb30dd36fd0b2d4052cd54131a3aded5"
+    },
+    {
+      "source": "paper_pub3/sections/06_restrictions.tex",
+      "path": "papers/identification/sections/06_restrictions.tex",
+      "source_sha256": "09dfea1d44e8d818172c04496601281d38fbf6d1920bfb17a2ecc62e4c7cb4d2"
+    },
+    {
+      "source": "paper_pub3/sections/g_baseline.tex",
+      "path": "papers/identification/sections/g_baseline.tex",
+      "source_sha256": "488d74a7b06f61a58f822c5b677160990c9f93cad3b80f119b425da1454549c5"
+    },
+    {
+      "source": "paper_pub3/sections/e_calendar_examples.tex",
+      "path": "papers/identification/sections/e_calendar_examples.tex",
+      "source_sha256": "30f42118dd19ed0c0acc2873d5dcc21ceae16426d991d8be8a4308d6db607bc2"
+    },
+    {
+      "source": "paper_pub3/sections/c_support.tex",
+      "path": "papers/identification/sections/c_support.tex",
+      "source_sha256": "eed64ab6972a3908839af75e91f5c765a0e4a9683b87b82c3d5a5bc0003bf4df"
+    },
+    {
+      "source": "paper_pub3/sections/03_calendar.tex",
+      "path": "papers/identification/sections/03_calendar.tex",
+      "source_sha256": "f77e4587b329e564879dafd8ffb4f1fc9381c6fbcba5e2fc868e694fa29eff7a"
+    },
+    {
+      "source": "paper_pub3/sections/k_final_sensitivities.tex",
+      "path": "papers/identification/sections/k_final_sensitivities.tex",
+      "source_sha256": "59cfbee0f5ae83c026885ff35c6e25965a8d1dae3229b56b374e209230def055"
+    },
+    {
+      "source": "paper_pub3/sections/02_prices.tex",
+      "path": "papers/identification/sections/02_prices.tex",
+      "source_sha256": "251796bdefa1cdef2cbd3f65b6b1854d7c434108d183e6400b08b6600d67d0d9"
+    },
+    {
+      "source": "paper_pub3/sections/a_proofs.tex",
+      "path": "papers/identification/sections/a_proofs.tex",
+      "source_sha256": "2009e7c0dddbe20bcd163480657f3cfad61048e8c5f7b93b0b4588e32bdc85d8"
+    },
+    {
+      "source": "paper_pub3/sections/07_calibration.tex",
+      "path": "papers/identification/sections/07_calibration.tex",
+      "source_sha256": "c06665cb5ddab029bb318f3c97ee689b8ac94e27e14e102428749943aa5f9a39"
+    },
+    {
+      "source": "paper_pub3/figures/empirical_ranges.pdf",
+      "path": "papers/identification/figures/empirical_ranges.pdf",
+      "source_sha256": "5370179dc2c20b8432195dccee4a1583c29567c9d2e567f8dedac73e5a2895b3"
+    },
+    {
+      "source": "paper_pub3/figures/empirical_price_checks.pdf",
+      "path": "papers/identification/figures/empirical_price_checks.pdf",
+      "source_sha256": "6b5c321f153e8332b864888c22ef0b0524687c8a735fbb225bba32d1cc1ad6d7"
+    },
+    {
+      "source": "paper_pub3/figures/cme_proxy.pdf",
+      "path": "papers/identification/figures/cme_proxy.pdf",
+      "source_sha256": "4fa5692f8015bda0300f4742dc8788d8906e184b3716271de077675f2f1ee99c"
+    },
+    {
+      "source": "paper_pub3/figures/critical_shape.pdf",
+      "path": "papers/identification/figures/critical_shape.pdf",
+      "source_sha256": "c04eee66891781590064ef341ecd1e1e00868d6994a1a3d105bc4d4cb4e7a085"
+    },
+    {
+      "source": "paper_pub3/figures/empirical_convexity.pdf",
+      "path": "papers/identification/figures/empirical_convexity.pdf",
+      "source_sha256": "386e724121e8c09ad33b44e98813f9242d6bce83552c05e4d667a082f667ac4c"
+    },
+    {
+      "source": "paper_pub3/figures/precision.pdf",
+      "path": "papers/identification/figures/precision.pdf",
+      "source_sha256": "667c19f40f9a05c2a20d0d852e9a5088f9f984dc47589de2525a2447ad4bf137"
+    },
+    {
+      "source": "paper_pub3/figures/empirical_calendar_fit.pdf",
+      "path": "papers/identification/figures/empirical_calendar_fit.pdf",
+      "source_sha256": "774b4338f42c8314ec83eed39de028159f192f606b61d934d3b5fac80bfb362c"
+    },
+    {
+      "source": "paper_pub3/figures/calendar.pdf",
+      "path": "papers/identification/figures/calendar.pdf",
+      "source_sha256": "fc48df8896b0c897668bd8c807474c6c22e8cddf639ddcb02fa17d69a74c176a"
+    },
+    {
+      "source": "paper_pub3/figures/aggregation.pdf",
+      "path": "papers/identification/figures/aggregation.pdf",
+      "source_sha256": "a9f439c88714bb69174418790b18dc7dfa7f87c956da7e2279ac2249755675dd"
+    },
+    {
+      "source": "paper_pub3/figures/empirical_extensions.pdf",
+      "path": "papers/identification/figures/empirical_extensions.pdf",
+      "source_sha256": "893fc0d533780b5180c3e446dd846069e084e9cdacfef98c12cc88afc15885ee"
+    },
+    {
+      "source": "paper_pub3/figures/atm_additivity.pdf",
+      "path": "papers/identification/figures/atm_additivity.pdf",
+      "source_sha256": "703b113aeb8aa9b0baf0b88634d6a039aacce67bf643a6d55ddd30f766eff290"
+    },
+    {
+      "source": "paper_pub3/examples/results.json",
+      "path": "papers/identification/examples/results.json",
+      "source_sha256": "ff74751a85233d8c594d10d19f2f2e75ab04d2e544e37d7facf7cf5cc8991f19"
+    },
+    {
+      "source": "paper_pub3/examples/make_examples.py",
+      "path": "papers/identification/examples/make_examples.py",
+      "source_sha256": "c47c27376ff8140e129b1c116bd3ffdb97057e46f1e7a78e3007ba65d5351bf8"
+    },
+    {
+      "source": "paper_pub3/examples/market_table.tex",
+      "path": "papers/identification/examples/market_table.tex",
+      "source_sha256": "e33d3ac125a9cfe8f65b0a6c609d0a965b77622a95c1d52363922a8b57e63f0c"
+    },
+    {
+      "source": "paper_pub3/examples/market_bounds.tex",
+      "path": "papers/identification/examples/market_bounds.tex",
+      "source_sha256": "2d7a51b4f7b73b3f0e7b7a24aee4f1ba567aab460b4a147de2ab424ddd5f5750"
+    },
+    {
+      "source": "paper_pub3/analysis/range_figure_date.json",
+      "path": "papers/identification/analysis/range_figure_date.json",
+      "source_sha256": "cdc6718f89c552f941b30fa6469d9b8b88fce51a26aa45d3dc054a73dab9c47b"
+    },
+    {
+      "source": "paper_pub3/analysis/summary.json",
+      "path": "papers/identification/analysis/summary.json",
+      "source_sha256": "5b5f9a239e7f267549701f374922d28f78a2c0f66a2f338607823b2963cdcc94"
+    },
+    {
+      "source": "paper_pub3/analysis/extensions_summary.json",
+      "path": "papers/identification/analysis/extensions_summary.json",
+      "source_sha256": "1e54ba23087c934e17c6026179f81a402cf62a0dbb9c061eb1783b5476743c5d"
+    },
+    {
+      "source": "paper_pub3/analysis/fit_decomposition.json",
+      "path": "papers/identification/analysis/fit_decomposition.json",
+      "source_sha256": "63d29adbcbcb2e44d2030209e67dad1e3c3b7d58ba4767765be5e7e55525dd8a"
+    },
+    {
+      "source": "paper_pub3/analysis/run_analysis.py",
+      "path": "papers/identification/analysis/run_analysis.py",
+      "source_sha256": "2c4f029d85fb8cd2fb897283aeddfd554c74dbed9b59894894d22751199eed29"
+    },
+    {
+      "source": "paper_pub3/analysis/decompose_fit.py",
+      "path": "papers/identification/analysis/decompose_fit.py",
+      "source_sha256": "e6803e1608f61691dec2d23e12e5cbac64304ca9fcc7111d4b51da9711d26445"
+    },
+    {
+      "source": "paper_pub3/analysis/calendar_examples.py",
+      "path": "papers/identification/analysis/calendar_examples.py",
+      "source_sha256": "8a3a7b7a8f768a8d823ade58b25e30e5c00a27e2bdd55eddfee112c5153ace9e"
+    },
+    {
+      "source": "paper_pub3/analysis/round3_moment_ranges.csv",
+      "path": "papers/identification/analysis/round3_moment_ranges.csv",
+      "source_sha256": "07a9cb6d029cadd46ee1e1ad032b1d48a1fedf54f73f1557fc747fa05a0feaad"
+    },
+    {
+      "source": "paper_pub3/analysis/fit_decomposition.csv",
+      "path": "papers/identification/analysis/fit_decomposition.csv",
+      "source_sha256": "d10e7aec3052a26e88b3f3f6896640253b0d1fb69c7a04a9b220ea1508a853e2"
+    },
+    {
+      "source": "paper_pub3/analysis/round2_robust_ranges.csv",
+      "path": "papers/identification/analysis/round2_robust_ranges.csv",
+      "source_sha256": "685fd2a33aa8bf0ca521dbed4ba35aeca6924ebd6ee6089e11efb8e8ae0e3210"
+    },
+    {
+      "source": "paper_pub3/analysis/futures_curve_gaps.csv",
+      "path": "papers/identification/analysis/futures_curve_gaps.csv",
+      "source_sha256": "ee6e7cc0d538ec22017a080cfbb26876a1bb050d974eb7587f17470fe9202ee1"
+    },
+    {
+      "source": "paper_pub3/analysis/round2_loading_predictions.csv",
+      "path": "papers/identification/analysis/round2_loading_predictions.csv",
+      "source_sha256": "3c7173b6b0f663a1c412117bcc7dd8a38cd232ca7397f7949cdfbf6b80109e2b"
+    },
+    {
+      "source": "paper_pub3/analysis/round2_allowances.csv",
+      "path": "papers/identification/analysis/round2_allowances.csv",
+      "source_sha256": "13132cf5528abfd1e077c1b5658c8e2229eeacfd4572ade79c3bcc7b214a1578"
+    },
+    {
+      "source": "paper_pub3/analysis/round2_loading_boundary.csv",
+      "path": "papers/identification/analysis/round2_loading_boundary.csv",
+      "source_sha256": "96b23e3a3333fb18c0d63edf7d4119e770cf8b1d83b2c4293ce1432feb1d569c"
+    },
+    {
+      "source": "paper_pub3/analysis/round3_moment_observations.csv",
+      "path": "papers/identification/analysis/round3_moment_observations.csv",
+      "source_sha256": "829164b3431c33e0d3f617f0b8e4d355462fd89daa7b40a5348c527cb2b5b3bf"
+    },
+    {
+      "source": "paper_pub3/analysis/critical_shape.csv",
+      "path": "papers/identification/analysis/critical_shape.csv",
+      "source_sha256": "325f6d0f94d78416dcc1b58e232179b8042e3fc953e952815316fe2aac49abae"
+    },
+    {
+      "source": "paper_pub3/analysis/extensions_input_hashes.json",
+      "path": "papers/identification/analysis/extensions_input_hashes.json",
+      "source_sha256": "f3da26b630652ee17daa2bcdd35e74e41fd8904543d02232431fcc42aa60a37d"
+    },
+    {
+      "source": "paper_pub3/analysis/mixture_ranges.csv",
+      "path": "papers/identification/analysis/mixture_ranges.csv",
+      "source_sha256": "7f6ca6dae24a12cf7f6260784696e55388eb1729687a19c78123a213c0ad775f"
+    },
+    {
+      "source": "paper_pub3/analysis/round3_summary.json",
+      "path": "papers/identification/analysis/round3_summary.json",
+      "source_sha256": "2badf0867cc133eac65dd62fd9cbc634ef94ee05f7eccc426cda96b1e152b636"
+    },
+    {
+      "source": "paper_pub3/analysis/calendar_examples.json",
+      "path": "papers/identification/analysis/calendar_examples.json",
+      "source_sha256": "f80a7fe4a970d2427faa8162d176706e32062683890ccbb5e8ff6bf89e01637e"
+    },
+    {
+      "source": "paper_pub3/analysis/local_hedge_example.json",
+      "path": "papers/identification/analysis/local_hedge_example.json",
+      "source_sha256": "29e1b39fe4f98038fda7c543ed1b6d1d55b2fa0a1c8230e234a3bf8fbc0ec185"
+    },
+    {
+      "source": "paper_pub3/analysis/chain_diagnostics.csv",
+      "path": "papers/identification/analysis/chain_diagnostics.csv",
+      "source_sha256": "e042685a716529bc255c8cb479019f5b48c878132699213088568db32d414c99"
+    },
+    {
+      "source": "paper_pub3/analysis/round2_summary.json",
+      "path": "papers/identification/analysis/round2_summary.json",
+      "source_sha256": "9b5ff347aa9e16693d297d3cddb2c6f2f8a283c7f905c8ab33b8d5064c0a28b4"
+    },
+    {
+      "source": "paper_pub3/analysis/round2_checks.json",
+      "path": "papers/identification/analysis/round2_checks.json",
+      "source_sha256": "4f494e5865cc854e68d2b12838c757be2b0a4216724e79dd4c0ae139a3e410ad"
+    },
+    {
+      "source": "paper_pub3/analysis/extensions_checks.json",
+      "path": "papers/identification/analysis/extensions_checks.json",
+      "source_sha256": "b9ef0c7df5c32ded69a0e6feff8db40cec56c180f46206f005a41a7dcddc1a10"
+    },
+    {
+      "source": "paper_pub3/analysis/round2_window_bands.csv",
+      "path": "papers/identification/analysis/round2_window_bands.csv",
+      "source_sha256": "2c6539a61f638d7c27bd0c1b4cd499ef538cb08f0a0b2d613510339deb616e90"
+    },
+    {
+      "source": "paper_pub3/analysis/shape_grid.csv",
+      "path": "papers/identification/analysis/shape_grid.csv",
+      "source_sha256": "f2221c78f1d27e3f8e165af514c82bbc81da7814e4501c0b6499113a527950c7"
+    },
+    {
+      "source": "paper_pub3/analysis/round3_analysis.py",
+      "path": "papers/identification/analysis/round3_analysis.py",
+      "source_sha256": "c514fac4531ea3dcd4269c53d9896d396145049d2dff3538f970136a778d8fbd"
+    },
+    {
+      "source": "paper_pub3/analysis/calendar.csv",
+      "path": "papers/identification/analysis/calendar.csv",
+      "source_sha256": "4bd0a9e4cf23900709ca1c525acd7eee2a006104c76c0c385e430a5475329196"
+    },
+    {
+      "source": "paper_pub3/analysis/fit_table.tex",
+      "path": "papers/identification/analysis/fit_table.tex",
+      "source_sha256": "b4d4c9d5a30e1ac7291f19176565379165c4eb7070675b3e2b6dedbd982023b3"
+    },
+    {
+      "source": "paper_pub3/analysis/round2_atm_additivity.csv",
+      "path": "papers/identification/analysis/round2_atm_additivity.csv",
+      "source_sha256": "2c7f7ac5d1e0c7a2a474e5d2e0ffa139f0054f8da1f4d74447ae5b4f12faafce"
+    },
+    {
+      "source": "paper_pub3/analysis/fit_tolerances.csv",
+      "path": "papers/identification/analysis/fit_tolerances.csv",
+      "source_sha256": "7fa135c9a84a7651c15881619f685e27cdbb435c35bed5b61252a03a956faa23"
+    },
+    {
+      "source": "paper_pub3/analysis/extend_empirics.py",
+      "path": "papers/identification/analysis/extend_empirics.py",
+      "source_sha256": "258be7810a26dec5dcde9a167ebb71debbd853916ba4b366fc2a7624c9703fdf"
+    },
+    {
+      "source": "paper_pub3/analysis/round2_loading_grid.csv",
+      "path": "papers/identification/analysis/round2_loading_grid.csv",
+      "source_sha256": "a846fe7cdf92369d2c195beea85fb8872aaa48bbb610db59b5fff288d932ae2d"
+    },
+    {
+      "source": "paper_pub3/analysis/mean_sensitivity.csv",
+      "path": "papers/identification/analysis/mean_sensitivity.csv",
+      "source_sha256": "a351133c37d887066f05adb59096ebfca2d36ed75297e4597b827ce668c5d716"
+    },
+    {
+      "source": "paper_pub3/analysis/mixture_calendar.csv",
+      "path": "papers/identification/analysis/mixture_calendar.csv",
+      "source_sha256": "2e2fdccd2fe953391c830efa01747bef719e09995e71a1632493d4b4d6112c9d"
+    },
+    {
+      "source": "paper_pub3/analysis/risk_ranges.csv",
+      "path": "papers/identification/analysis/risk_ranges.csv",
+      "source_sha256": "f4a4ef6f3bd4b849fd7e55b01c222b2ece5c709be18a3ed223752db36e072769"
+    },
+    {
+      "source": "paper_pub3/analysis/midcurve_transport.csv",
+      "path": "papers/identification/analysis/midcurve_transport.csv",
+      "source_sha256": "f0bd2cff5958aaae7f3b4559b64a828cb7e2036e0c05d51c6d4edcc1c62413f2"
+    },
+    {
+      "source": "paper_pub3/analysis/coverage_diagnostics.json",
+      "path": "papers/identification/analysis/coverage_diagnostics.json",
+      "source_sha256": "1982d4800a7b8d2e12c5649411b6496ce9a0fd703152ecbae9496cd62e276681"
+    },
+    {
+      "source": "paper_pub3/analysis/shape_ranges.csv",
+      "path": "papers/identification/analysis/shape_ranges.csv",
+      "source_sha256": "db7ae15de2cb101f6e4c6b08a39b16cba89b187809c6215ba315bcb8dd6df53b"
+    },
+    {
+      "source": "paper_pub3/analysis/activity_screen.csv",
+      "path": "papers/identification/analysis/activity_screen.csv",
+      "source_sha256": "ff4a4063ebbf0730d344b76a6e823e59f0cc5572b4a33ec4036999831da09f20"
+    },
+    {
+      "source": "paper_pub3/analysis/round3_front_sensitivity.csv",
+      "path": "papers/identification/analysis/round3_front_sensitivity.csv",
+      "source_sha256": "04c62e0381c4142034948e69c1b2ece69bbe148fa6332b424225b86ddb07885b"
+    },
+    {
+      "source": "paper_pub3/analysis/shape_profile.csv",
+      "path": "papers/identification/analysis/shape_profile.csv",
+      "source_sha256": "978bc114a4106888cea978c6b6ab90c5da8c0f7c3801603fc61d9aa319be073f"
+    },
+    {
+      "source": "paper_pub3/analysis/round2_analysis.py",
+      "path": "papers/identification/analysis/round2_analysis.py",
+      "source_sha256": "458311b6129d10ddbb9bca4a2997dabea04f888ee54c4bb725b48c49bc55fb1f"
+    },
+    {
+      "source": "paper_pub3/analysis/shape_calendars.csv",
+      "path": "papers/identification/analysis/shape_calendars.csv",
+      "source_sha256": "03fa9dbd39d3162aa57aaa287d7dd4ce8276c529b5b46e3c8f718b24c575b434"
+    },
+    {
+      "source": "paper_pub3/analysis/mixture_chains.json",
+      "path": "papers/identification/analysis/mixture_chains.json",
+      "source_sha256": "de565fc7a4b642fb616b328826f4bfb3fe885a2795ee085c0b064428846e9872"
+    },
+    {
+      "source": "paper_pub3/analysis/held_expiry.csv",
+      "path": "papers/identification/analysis/held_expiry.csv",
+      "source_sha256": "212c3bbd266d40796fc2943fb2205e658676bc67d4705504b43a6b541cc5e191"
+    },
+    {
+      "source": "paper_pub3/analysis/input_hashes.json",
+      "path": "papers/identification/analysis/input_hashes.json",
+      "source_sha256": "f3da26b630652ee17daa2bcdd35e74e41fd8904543d02232431fcc42aa60a37d"
+    },
+    {
+      "source": "paper_pub3/analysis/round3_input_hashes.json",
+      "path": "papers/identification/analysis/round3_input_hashes.json",
+      "source_sha256": "ce7b340b33032f3863a4ca90908970f7360cb929c220af518ebbcab647c9ea32"
+    },
+    {
+      "source": "paper_pub3/analysis/exercise_sensitivity.csv",
+      "path": "papers/identification/analysis/exercise_sensitivity.csv",
+      "source_sha256": "8a926fe19655a55c647570ae2ed918daf2b5875e95787ba31fb38cae88107440"
+    },
+    {
+      "source": "paper_pub3/build/main.pdf",
+      "path": "papers/identification/paper.pdf",
+      "source_sha256": "e0874287b1382317b7e44a60611851a4fe1d0dc87a78849777091d9570e328f9"
+    },
+    {
+      "source": "paper_pub2/verification.tex",
+      "path": "papers/structure/verification.tex",
+      "source_sha256": "adb583837952c7a49353e24f9d99ded3622a5b2658028cca7526f1fb71aed9d6"
+    },
+    {
+      "source": "paper_pub2/build/verification.pdf",
+      "path": "papers/structure/verification.pdf",
+      "source_sha256": "4b2d2e7109cb2e03b74a0e3d064f39b7f3df229f163149270c1be80a8a082edb"
+    },
+    {
+      "source": "paper/PAPER.md",
+      "path": "papers/lab/PAPER.md",
+      "source_sha256": "d331a78798f40d50a41dca11b0c594030a88de85657197363dd013f411104f62"
+    },
+    {
+      "source": "paper/build/main.tex",
+      "path": "papers/lab/main.tex",
+      "source_sha256": "b03eb21de669d46e8ef5c3b6401c8e2cd87620ef2b3328862d60ff8ee6ba8e8b"
+    },
+    {
+      "source": "paper/build/refs.bib",
+      "path": "papers/lab/refs.bib",
+      "source_sha256": "407c1094f3608edb4bcd34401382bfd8bc4292054e92e23d5d54ad7c8583ad4e"
+    },
+    {
+      "source": "paper/build/main.pdf",
+      "path": "papers/lab/paper.pdf",
+      "source_sha256": "1ec93eff337a487b7f0656e9fd3a15333b3f4c303dfd952e0298e811d90c3338"
+    },
+    {
+      "source": "lean/Upstream.lean",
+      "path": "lean/Upstream.lean",
+      "source_sha256": "71a326d10932e26081acaab085af96a3b5ccbef4d952c6daa9d3f4cefcc61834"
+    },
+    {
+      "source": "lean/lean-toolchain",
+      "path": "lean/lean-toolchain",
+      "source_sha256": "8dc8d6f560141069d9073e370611716ef77ada0da8ffa37e2149f44b2e63ac7a"
+    },
+    {
+      "source": "lean/Novel.lean",
+      "path": "lean/Novel.lean",
+      "source_sha256": "aab3d004edf4827b88ecfd7a61def8fc892beac372e2809d2a49f64456708d6b"
+    },
+    {
+      "source": "lean/lake-manifest.json",
+      "path": "lean/lake-manifest.json",
+      "source_sha256": "6674acc5fadde9dceb86c56a25362f627d2651ac0574a0a5c3e8b6b43fa3d483"
+    },
+    {
+      "source": "lean/Audit.lean",
+      "path": "lean/Audit.lean",
+      "source_sha256": "22d300f6a1a8856c8a49396e9a16eecce928a216b277ec806b42dfccb948144b"
+    },
+    {
+      "source": "lean/lakefile.toml",
+      "path": "lean/lakefile.toml",
+      "source_sha256": "0d576601e3921e732a0a46643572147e058b58db7d1cd42a4a7a2c8059c0459c"
+    },
+    {
+      "source": "lean/Standalone.lean",
+      "path": "lean/Standalone.lean",
+      "source_sha256": "3d4c8bed2edf71c24e04b03ccb51ecfa0662fa281ed6702489a54bd0e71af4b3"
+    },
+    {
+      "source": "lean/Standalone/CorrelatedFactorsSign.lean",
+      "path": "lean/Standalone/CorrelatedFactorsSign.lean",
+      "source_sha256": "554fda72262ea75e1c38a6865df3d2166ffd5a552ca54eeb19103b554a819504"
+    },
+    {
+      "source": "lean/Standalone/CorrelatedFactorsSmall.lean",
+      "path": "lean/Standalone/CorrelatedFactorsSmall.lean",
+      "source_sha256": "544f13b28c5d7d9ac3f702086d085be801375646101f3b19302c8b069e9fb24b"
+    },
+    {
+      "source": "lean/Standalone/SpliceCrossTermOpen.lean",
+      "path": "lean/Standalone/SpliceCrossTermOpen.lean",
+      "source_sha256": "30d69fd4b32e8e63b612e2c8b55edef0f2da111337b6a3fdd8da77dec1d0c121"
+    },
+    {
+      "source": "lean/Standalone/SpliceRandomScalesNecessity.lean",
+      "path": "lean/Standalone/SpliceRandomScalesNecessity.lean",
+      "source_sha256": "8f984466e06895ba07fa5a13e0cd2ede1b043a27f8df962ab4ac0a1a88515914"
+    },
+    {
+      "source": "lean/Standalone/SpliceStateBlockObservability.lean",
+      "path": "lean/Standalone/SpliceStateBlockObservability.lean",
+      "source_sha256": "22e8644463b3c2d598dea1d434ea2a80d5e27c88c1196d4e0ba910ca833e0cf4"
+    },
+    {
+      "source": "lean/Standalone/StepJumpsVanish.lean",
+      "path": "lean/Standalone/StepJumpsVanish.lean",
+      "source_sha256": "c2afd24df60c3daa7b5d50e6795381f5e58893cc6008b6362d9908007641f744"
+    },
+    {
+      "source": "lean/Standalone/MaturityShapeListing.lean",
+      "path": "lean/Standalone/MaturityShapeListing.lean",
+      "source_sha256": "91299f3d49fbc3b6010d5369bd522970e0b5e21391b119e0618375bf10851bc1"
+    },
+    {
+      "source": "lean/Standalone/JumpShapeCondB.lean",
+      "path": "lean/Standalone/JumpShapeCondB.lean",
+      "source_sha256": "991a703143e1be0686f59dd451a492a1d945dfb8730567072c5c19a7d06c0c7a"
+    },
+    {
+      "source": "lean/Standalone/SeparableMeetingRepresentation.lean",
+      "path": "lean/Standalone/SeparableMeetingRepresentation.lean",
+      "source_sha256": "1660d94671d2edff17ec06ff91c19958489a5ea5667022d7ed474768c7098a67"
+    },
+    {
+      "source": "lean/Standalone/MaturityShapeIdentities.lean",
+      "path": "lean/Standalone/MaturityShapeIdentities.lean",
+      "source_sha256": "e4dee4f21b6d7eee672dafdd7ebaf02d10eb4c869d4508d19458a108627ed9af"
+    },
+    {
+      "source": "lean/Standalone/RecurrentLoadingDiffusion.lean",
+      "path": "lean/Standalone/RecurrentLoadingDiffusion.lean",
+      "source_sha256": "9b7d212bc70807a6deb1a364ac9cae6417f063fee4e97f49d658616676446b0c"
+    },
+    {
+      "source": "lean/Standalone/SpliceLocalizationRegularity.lean",
+      "path": "lean/Standalone/SpliceLocalizationRegularity.lean",
+      "source_sha256": "37c50564864cf1a9253badb1a164b86b49f6afe4ed79a9ef1c142d1d1600ae52"
+    },
+    {
+      "source": "lean/Standalone/SpliceStateBlockCross.lean",
+      "path": "lean/Standalone/SpliceStateBlockCross.lean",
+      "source_sha256": "980798ef515d56054c7bd47943ecca7516bc271b28e9ed1a188d14a6201abeaa"
+    },
+    {
+      "source": "lean/Standalone/SpliceQuasiExponentialKey.lean",
+      "path": "lean/Standalone/SpliceQuasiExponentialKey.lean",
+      "source_sha256": "0356b508e1cfd2e50e5da44d7e5cb0f537a26871a223daa548d0f6040d61853d"
+    },
+    {
+      "source": "lean/Standalone/SeparableMeetingShapes.lean",
+      "path": "lean/Standalone/SeparableMeetingShapes.lean",
+      "source_sha256": "10dce4d038af4fb72912cb146cb17237089031eb25a8797b3fbfe838919d77da"
+    },
+    {
+      "source": "lean/Standalone/SvenssonSplice.lean",
+      "path": "lean/Standalone/SvenssonSplice.lean",
+      "source_sha256": "13487848813dedf5eb4f51c9e6a426a4539582a275430cf9ef0fe9ff2ad857c7"
+    },
+    {
+      "source": "lean/Standalone/SeparableMeetingMarkovCoefficients.lean",
+      "path": "lean/Standalone/SeparableMeetingMarkovCoefficients.lean",
+      "source_sha256": "448b60308c28da1414ac473cd06b47f3ffe469c59158f7c95771f47505bbdba0"
+    },
+    {
+      "source": "lean/Standalone/SpliceStateBlockAX01.lean",
+      "path": "lean/Standalone/SpliceStateBlockAX01.lean",
+      "source_sha256": "881b1ea61f707edbd2e2a637c1effe73f317c7ef68ce78a07a57fe0e987dafac"
+    },
+    {
+      "source": "lean/Standalone/BoundedVarianceState.lean",
+      "path": "lean/Standalone/BoundedVarianceState.lean",
+      "source_sha256": "13323cdb463ee4a31920822f572e57f2497e753a7ba56044ba52a600db7df6e0"
+    },
+    {
+      "source": "lean/Standalone/D2Instance.lean",
+      "path": "lean/Standalone/D2Instance.lean",
+      "source_sha256": "dd621200708a508ed17795f5967248f94e218b3e5edafc758f580068ab789e94"
+    },
+    {
+      "source": "lean/Standalone/MaturityShapeAssembly.lean",
+      "path": "lean/Standalone/MaturityShapeAssembly.lean",
+      "source_sha256": "21c969d6b3a061f2719e71c702b1a575661eb50e65a97dae38caf2806c96ab1b"
+    },
+    {
+      "source": "lean/Standalone/PreWindowVarianceAggregates.lean",
+      "path": "lean/Standalone/PreWindowVarianceAggregates.lean",
+      "source_sha256": "8d7951b09661dbfa0f1d479180266bf1482e06dfc57b5bde3eac89c7a9fa3c67"
+    },
+    {
+      "source": "lean/Standalone/SpliceQuasiExponentialConsistency.lean",
+      "path": "lean/Standalone/SpliceQuasiExponentialConsistency.lean",
+      "source_sha256": "eadec598e86ade565dce86cd3aedd19c559f9d4def943ed98c87c9dc571d4f53"
+    },
+    {
+      "source": "lean/Standalone/SpliceCrossTermSufficiency.lean",
+      "path": "lean/Standalone/SpliceCrossTermSufficiency.lean",
+      "source_sha256": "6a9ac8f69a6fccef6ef20852527b021a3f5f4e483962e3e1691decd2b283d4ac"
+    },
+    {
+      "source": "lean/Standalone/MaturityShapePricing.lean",
+      "path": "lean/Standalone/MaturityShapePricing.lean",
+      "source_sha256": "b28c728da3d5a0ee6119e05f14aac7cd230e5cb5ed6c98940f8dc46d983e222b"
+    },
+    {
+      "source": "lean/Standalone/SpliceCrossTermUncorrelated.lean",
+      "path": "lean/Standalone/SpliceCrossTermUncorrelated.lean",
+      "source_sha256": "9db2268ba6a40e2ea507de7d64d8d866d7cb97962a0489e24897d4bd30c504d2"
+    },
+    {
+      "source": "lean/Standalone/BoundedVarianceCompletion.lean",
+      "path": "lean/Standalone/BoundedVarianceCompletion.lean",
+      "source_sha256": "9466dc1d79d129303b0905a800f43782b0eba4dcbe43b489b5bb2d045b7b21a9"
+    },
+    {
+      "source": "lean/Standalone/CorrelatedFactorsReduction.lean",
+      "path": "lean/Standalone/CorrelatedFactorsReduction.lean",
+      "source_sha256": "ee8ae0683bf2c863d726c4c6eeed8ab1f65e1703773e74e781562fd43f4d23a6"
+    },
+    {
+      "source": "lean/Standalone/RecurrentApproxBond.lean",
+      "path": "lean/Standalone/RecurrentApproxBond.lean",
+      "source_sha256": "9ca4e4f2156f91a971551187b6ddbb102c4d20bc7792d13ce5897ddfa90644e0"
+    },
+    {
+      "source": "lean/Standalone/BoundedVarianceUniqueness.lean",
+      "path": "lean/Standalone/BoundedVarianceUniqueness.lean",
+      "source_sha256": "7cdefe4e71d69c0fc2b1083f834d5805daf7026185bd06e664756c23e7c63598"
+    },
+    {
+      "source": "lean/Standalone/SpliceLocalizationAssembly.lean",
+      "path": "lean/Standalone/SpliceLocalizationAssembly.lean",
+      "source_sha256": "74de0bc787a1a697ab976c6aca1365a4051a9541ac5a42c55ba9635683719f52"
+    },
+    {
+      "source": "lean/Standalone/SpliceVaryingExponents.lean",
+      "path": "lean/Standalone/SpliceVaryingExponents.lean",
+      "source_sha256": "4b111485630a6a3f3b061391149d8a8b43b7a0089c35ee66caa45937630d3b62"
+    },
+    {
+      "source": "lean/Standalone/DiffusionMeetingAssembly.lean",
+      "path": "lean/Standalone/DiffusionMeetingAssembly.lean",
+      "source_sha256": "9c967754a82823cc77f4d8b4df35b0c42ccdd2ccb52fb956ed4ae9f1712c9fc2"
+    },
+    {
+      "source": "lean/Standalone/UnifiedSpliceQuantifiers.lean",
+      "path": "lean/Standalone/UnifiedSpliceQuantifiers.lean",
+      "source_sha256": "382f491650e008180b71551f6e6b61934dc5006131e4e9d04435e225d91daa58"
+    },
+    {
+      "source": "lean/Standalone/CrossMeetingAmerican.lean",
+      "path": "lean/Standalone/CrossMeetingAmerican.lean",
+      "source_sha256": "9636d9e847ff679d1c4c36417df13fa6c844f3b0acc456c3ab7b37a50833d6b8"
+    },
+    {
+      "source": "lean/Standalone/SeparableMeetingIntegrals.lean",
+      "path": "lean/Standalone/SeparableMeetingIntegrals.lean",
+      "source_sha256": "6c4d66744113aa251f4ce7f8baf5ae98b07f4460d34c6d203c12f6d53d330d5d"
+    },
+    {
+      "source": "lean/Standalone/JumpShapeGeneral.lean",
+      "path": "lean/Standalone/JumpShapeGeneral.lean",
+      "source_sha256": "ce0b167e893728fc21e9f07481c2cc95c73ce99f9742ae1692491ebb431526e2"
+    },
+    {
+      "source": "lean/Standalone/SharefFilipovicAssembly.lean",
+      "path": "lean/Standalone/SharefFilipovicAssembly.lean",
+      "source_sha256": "7d83872832d543a7ee6caad077753abecd8e9a5875e6535ea711dd5677fff4e9"
+    },
+    {
+      "source": "lean/Standalone/ExternalScaleConditions.lean",
+      "path": "lean/Standalone/ExternalScaleConditions.lean",
+      "source_sha256": "0235ebeb3c59d3ad6ba2bf53f99280911652d837c7a7d3c45ea296bfb0947f3a"
+    },
+    {
+      "source": "lean/Standalone/LateAmericanExercise.lean",
+      "path": "lean/Standalone/LateAmericanExercise.lean",
+      "source_sha256": "2fde171b31379ab9eb2a96038d034ac1cb535e2e4579494e119e3a557d89488a"
+    },
+    {
+      "source": "lean/Standalone/MaturityShapeS2.lean",
+      "path": "lean/Standalone/MaturityShapeS2.lean",
+      "source_sha256": "62c74c77773ef60cc0f93d486187c63bf264b5ae4a29b9dc39cae100b72f98fe"
+    },
+    {
+      "source": "lean/Standalone/BoundedVarianceIndependence.lean",
+      "path": "lean/Standalone/BoundedVarianceIndependence.lean",
+      "source_sha256": "841001f1926939e7d80e550c724d488fe7072ff1a52be2b622869bff679fa4f1"
+    },
+    {
+      "source": "lean/Standalone/JumpShapeOrigin.lean",
+      "path": "lean/Standalone/JumpShapeOrigin.lean",
+      "source_sha256": "c4e4d3bd5c5cc1107a427997f86b5768a6b29f52193ba222ffa4470b39bfeb5b"
+    },
+    {
+      "source": "lean/Standalone/DiffusionMeetingRank.lean",
+      "path": "lean/Standalone/DiffusionMeetingRank.lean",
+      "source_sha256": "647f163e1bd15b951f2eac69de3e617780af062deb4f2f04b7fc267b11cbade4"
+    },
+    {
+      "source": "lean/Standalone/RecurrenceNecessityRank.lean",
+      "path": "lean/Standalone/RecurrenceNecessityRank.lean",
+      "source_sha256": "dcbe735c29e4ea9994aa81752422ca46af79d7852ef081945b5c7ff904d146ec"
+    },
+    {
+      "source": "lean/Standalone/RecurrentApproxRealization.lean",
+      "path": "lean/Standalone/RecurrentApproxRealization.lean",
+      "source_sha256": "f7fbc4be22dc469ab72a78edb876c86197044da0cc63e190ca5812b7039759d4"
+    },
+    {
+      "source": "lean/Standalone/CorrelatedFactorsGram.lean",
+      "path": "lean/Standalone/CorrelatedFactorsGram.lean",
+      "source_sha256": "c8535187656988aa97c0f8f8b70c66f1b036d04ea5a3b63e811b7fb8b20b9bba"
+    },
+    {
+      "source": "lean/Standalone/RecurrentLoadingStateQ.lean",
+      "path": "lean/Standalone/RecurrentLoadingStateQ.lean",
+      "source_sha256": "e6d4fb17a9cc54e941eab53e840d97f4a34589b4d132ed32bd0a27c3e69ef62b"
+    },
+    {
+      "source": "lean/Standalone/ExternalScaleDrift.lean",
+      "path": "lean/Standalone/ExternalScaleDrift.lean",
+      "source_sha256": "e45a2a5a6f1ad75e5c824819e1b92fe3a94b15cd8e5c6000645a3fc82d5456a3"
+    },
+    {
+      "source": "lean/Standalone/MaturityShapeInstance.lean",
+      "path": "lean/Standalone/MaturityShapeInstance.lean",
+      "source_sha256": "0691f4355d9f1d52d13e2ca301dcb5868df85a168462f2c141ea63afd06beab7"
+    },
+    {
+      "source": "lean/Standalone/RecurrenceNecessityGaussian.lean",
+      "path": "lean/Standalone/RecurrenceNecessityGaussian.lean",
+      "source_sha256": "445b9f4a5b59dbd9dedc8cb3d81c8c2e2f014a329adad51a7114c0cfcd4ce966"
+    },
+    {
+      "source": "lean/Standalone/FuturesStyleExercise.lean",
+      "path": "lean/Standalone/FuturesStyleExercise.lean",
+      "source_sha256": "17335e812d24cb7646c07a2669ae39bc7d98c9c6548cfc3ab0378fed40296340"
+    },
+    {
+      "source": "lean/Standalone/SpliceExponentZeroQuasiPoly.lean",
+      "path": "lean/Standalone/SpliceExponentZeroQuasiPoly.lean",
+      "source_sha256": "b84501baa36862e8570fad1246fe861d6519664be29c55fb4e868d5c82b3528f"
+    },
+    {
+      "source": "lean/Standalone/SpliceSeveralFactorsBlocks.lean",
+      "path": "lean/Standalone/SpliceSeveralFactorsBlocks.lean",
+      "source_sha256": "1b42739b0617aef5def9da3e96e6b6039cae6ab4d76755d5ad13dc6f155f3ae9"
+    },
+    {
+      "source": "lean/Standalone/BoundedVarianceMartingale.lean",
+      "path": "lean/Standalone/BoundedVarianceMartingale.lean",
+      "source_sha256": "8e601eec8acafbdbdfc1b610734221dabaaabf30b373c7d0fba833dfd3a84270"
+    },
+    {
+      "source": "lean/Standalone/JumpShapeAffine.lean",
+      "path": "lean/Standalone/JumpShapeAffine.lean",
+      "source_sha256": "e13852be9f49d4e6e626fc27f27e5b504a30684c0a101ffad06e590c9fd56876"
+    },
+    {
+      "source": "lean/Standalone/DiffusionMeetingInversion.lean",
+      "path": "lean/Standalone/DiffusionMeetingInversion.lean",
+      "source_sha256": "013710ca7f2fb7d9aa2e605fb4c14a3aebf047f35a882d7537766221b3d498ed"
+    },
+    {
+      "source": "lean/Standalone/SpliceQuasiExponentialBlock.lean",
+      "path": "lean/Standalone/SpliceQuasiExponentialBlock.lean",
+      "source_sha256": "b9197deee644803b45815198e7e1de3f468dd26491f2148aa91f8f14f3d95367"
+    },
+    {
+      "source": "lean/Standalone/RecurrentLoadingAssembly.lean",
+      "path": "lean/Standalone/RecurrentLoadingAssembly.lean",
+      "source_sha256": "d3c1ae0817390093e3e3299c4f7e80ad99ee7ba59025225007b53447d0e06b3a"
+    },
+    {
+      "source": "lean/Standalone/MeetingLoadingLaw.lean",
+      "path": "lean/Standalone/MeetingLoadingLaw.lean",
+      "source_sha256": "016b1c239c7ae31ad320036a6cea3c78909bb9efd3ecdc84b03c0c4ff874052a"
+    },
+    {
+      "source": "lean/Standalone/UnifiedSpliceAssembly.lean",
+      "path": "lean/Standalone/UnifiedSpliceAssembly.lean",
+      "source_sha256": "ad3be626c169ded95e21e1291762afbb8ac05781d9b09f16c0398afb450e32c7"
+    },
+    {
+      "source": "lean/Standalone/PositiveMeanReversionSupport.lean",
+      "path": "lean/Standalone/PositiveMeanReversionSupport.lean",
+      "source_sha256": "0f8ef0ccd95b59d96330266c138571ee4bfeb317b18e37a2f3e5396bfa8e39c3"
+    },
+    {
+      "source": "lean/Standalone/JumpShapeKernel.lean",
+      "path": "lean/Standalone/JumpShapeKernel.lean",
+      "source_sha256": "2aabd2e01af6c5ca5efa97d11ae87aeb5b2777a2d4053e4f4fa8f3b0baad5f9c"
+    },
+    {
+      "source": "lean/Standalone/JumpLawTiltedGaussian.lean",
+      "path": "lean/Standalone/JumpLawTiltedGaussian.lean",
+      "source_sha256": "7072af98782db2916a041fb8f9c03f27cb4b8565c014ded949b2cf22f56e4690"
+    },
+    {
+      "source": "lean/Standalone/SurvivingScaleRestrictions.lean",
+      "path": "lean/Standalone/SurvivingScaleRestrictions.lean",
+      "source_sha256": "8133a50a6dda260a7525a394c24916911f1b41caf5bf4f68a88c5c117ffdf90b"
+    },
+    {
+      "source": "lean/Standalone/LemmaA.lean",
+      "path": "lean/Standalone/LemmaA.lean",
+      "source_sha256": "0239340e4a9addb2759b058db3301500b5a241c23a7c548202ddb87d042881cf"
+    },
+    {
+      "source": "lean/Standalone/SharefFilipovicPartA.lean",
+      "path": "lean/Standalone/SharefFilipovicPartA.lean",
+      "source_sha256": "69544879cefe78d895f55e884f22c52d19c7def9d97fd228f9daa3d62098da43"
+    },
+    {
+      "source": "lean/Standalone/UnifiedSpliceExpPoly.lean",
+      "path": "lean/Standalone/UnifiedSpliceExpPoly.lean",
+      "source_sha256": "5508e2fc89f1ff7456891b2fcb7e3c033b098625904b4a7f9cec88e772c72697"
+    },
+    {
+      "source": "lean/Standalone/SharefFilipovicSplit.lean",
+      "path": "lean/Standalone/SharefFilipovicSplit.lean",
+      "source_sha256": "7a3c9fd3c47e2d40a33da94c0b5b1f9f17f9226b88fdfb35186c996b349d8850"
+    },
+    {
+      "source": "lean/Standalone/SharefFilipovicIto.lean",
+      "path": "lean/Standalone/SharefFilipovicIto.lean",
+      "source_sha256": "44ff9f5fda75f06eb0c9b91c9938e1a689b4da689913f3bbb2faf9bf2d3406b9"
+    },
+    {
+      "source": "lean/Standalone/RecurrenceNecessityAlgebra.lean",
+      "path": "lean/Standalone/RecurrenceNecessityAlgebra.lean",
+      "source_sha256": "c061d9d5ba082fa94ca3fc8d25c6df979f8538ca0948637cc6db888e6a84d4da"
+    },
+    {
+      "source": "lean/Standalone/JumpShapeTwoPoint.lean",
+      "path": "lean/Standalone/JumpShapeTwoPoint.lean",
+      "source_sha256": "af6091faaedba38d72e1b27ea8e938ef3dcf2724c06490c06917f0aa38041062"
+    },
+    {
+      "source": "lean/Standalone/CompoundedFuturesIdentification.lean",
+      "path": "lean/Standalone/CompoundedFuturesIdentification.lean",
+      "source_sha256": "0ac826150c5920bea4002cff49f5a223636ba3d54ff948d00e4822e59410d225"
+    },
+    {
+      "source": "lean/Standalone/SpliceSeveralFactorsAssembly.lean",
+      "path": "lean/Standalone/SpliceSeveralFactorsAssembly.lean",
+      "source_sha256": "7f99a583032ece3c8da2ab18857de19d807743e4ac5e19602f11d32f054b9f43"
+    },
+    {
+      "source": "lean/Standalone/DiffusionMeetingRankValue.lean",
+      "path": "lean/Standalone/DiffusionMeetingRankValue.lean",
+      "source_sha256": "4c578ddb752266ff379d3adecd630fb6cf36d9b3823e317127fd06da50accd6b"
+    },
+    {
+      "source": "lean/Standalone/SpliceExponentZeroAX01.lean",
+      "path": "lean/Standalone/SpliceExponentZeroAX01.lean",
+      "source_sha256": "e9b7d706babed14cfb31d984cbf032ef8dccea859275baaa5e704e8e37b57793"
+    },
+    {
+      "source": "lean/Standalone/SeparableMeetingMarkovSolution.lean",
+      "path": "lean/Standalone/SeparableMeetingMarkovSolution.lean",
+      "source_sha256": "9ebda79bcdef26387a0c6861f0e17c071443a40b1f0e8811cf41382b8253aa78"
+    },
+    {
+      "source": "lean/Standalone/SharefFilipovicResidual.lean",
+      "path": "lean/Standalone/SharefFilipovicResidual.lean",
+      "source_sha256": "e43440e77da8f24621a5cec5924a57988961938bce683dad20c9c59c143148bd"
+    },
+    {
+      "source": "lean/Standalone/ExternalScaleAssembly.lean",
+      "path": "lean/Standalone/ExternalScaleAssembly.lean",
+      "source_sha256": "7eb2b5998c0057f5ab4eeab7ba4b40a27c2e83c8e0e800310d8f9c050e50479f"
+    },
+    {
+      "source": "lean/Standalone/SpliceAffineOverlapAbsorb.lean",
+      "path": "lean/Standalone/SpliceAffineOverlapAbsorb.lean",
+      "source_sha256": "21711f38199885abc2e0baf8f38515deeec634b926ae207cf37d4bc4307d71f3"
+    },
+    {
+      "source": "lean/Standalone/MeetingLoadingDimension.lean",
+      "path": "lean/Standalone/MeetingLoadingDimension.lean",
+      "source_sha256": "ffd95c530544b00f4fb251c2a46336e21db11a35e84070fd11fc8f327eee1f5d"
+    },
+    {
+      "source": "lean/Standalone/SpliceCrossTermAssembly.lean",
+      "path": "lean/Standalone/SpliceCrossTermAssembly.lean",
+      "source_sha256": "7559c848fcdf056ba492b9b0bef46fba5e1c334eb834990798236420a8d60d2b"
+    },
+    {
+      "source": "lean/Standalone/SpliceQuasiExponentialCurve.lean",
+      "path": "lean/Standalone/SpliceQuasiExponentialCurve.lean",
+      "source_sha256": "7864771c1333232dfabdaa4e588e18e632403e9413e445519f0bb9a6a296eaf5"
+    },
+    {
+      "source": "lean/Standalone/SharefFilipovicMaxFactors.lean",
+      "path": "lean/Standalone/SharefFilipovicMaxFactors.lean",
+      "source_sha256": "05a63a0e389c1db25a7fd7bcfd5d01b6d4eba3b2e0b3ab809aefa04a31e0ee57"
+    },
+    {
+      "source": "lean/Standalone/SplicePolynomialParts.lean",
+      "path": "lean/Standalone/SplicePolynomialParts.lean",
+      "source_sha256": "e684cb0949fc7956dbfb27a24ddf4d5478a15b8a76b74ddcba616e1b582e11a0"
+    },
+    {
+      "source": "lean/Standalone/JumpShapeCond.lean",
+      "path": "lean/Standalone/JumpShapeCond.lean",
+      "source_sha256": "73619e66811880629117b92e9f09f1da6caf701f872ea16e6ac0015f8f8fedb1"
+    },
+    {
+      "source": "lean/Standalone/UnifiedSpliceConverseAX01.lean",
+      "path": "lean/Standalone/UnifiedSpliceConverseAX01.lean",
+      "source_sha256": "a232df85f39e8c149e5532346b8281c91348c569c9e360b78f5b8b99dfaa3f6a"
+    },
+    {
+      "source": "lean/Standalone/SpliceCrossTermNecessity.lean",
+      "path": "lean/Standalone/SpliceCrossTermNecessity.lean",
+      "source_sha256": "862aaea5f2084a7430cf75b89e330c89fa852b36032a69e31695bfbf8018fbb3"
+    },
+    {
+      "source": "lean/Standalone/SpliceLocalization.lean",
+      "path": "lean/Standalone/SpliceLocalization.lean",
+      "source_sha256": "7532307ff720f727a78c13bc22c56504f48adc5efa9de8818c58d35555e04fc4"
+    },
+    {
+      "source": "lean/Standalone/RecurrentApproxMeanSquare.lean",
+      "path": "lean/Standalone/RecurrentApproxMeanSquare.lean",
+      "source_sha256": "be97d586e0f565c3f4af1153d27dc5230ed6a06ad1fbf8fdea5ad8a5d5978c14"
+    },
+    {
+      "source": "lean/Standalone/SpliceRandomScalesCurve.lean",
+      "path": "lean/Standalone/SpliceRandomScalesCurve.lean",
+      "source_sha256": "db6bbcb68b1a6547e65b525ce4a8500d9a9c92cecde6255db9c9baca92d3a289"
+    },
+    {
+      "source": "lean/Standalone/MeetingLoadingRank.lean",
+      "path": "lean/Standalone/MeetingLoadingRank.lean",
+      "source_sha256": "df8213d205a83d79597e36db4a0ca9998aff743b68252bbcc612297cc79ba8bb"
+    },
+    {
+      "source": "lean/Standalone/SpliceVaryingExponentsRestrictions.lean",
+      "path": "lean/Standalone/SpliceVaryingExponentsRestrictions.lean",
+      "source_sha256": "2bcca28d073a99f3b0424582111f2e98d2ddb979940b551c83e53bd181fff883"
+    },
+    {
+      "source": "lean/Standalone/SpliceSeveralFactorsCore.lean",
+      "path": "lean/Standalone/SpliceSeveralFactorsCore.lean",
+      "source_sha256": "4681565a7221b4bc1da64304840cae5beb6ae906a61aa780e35c640795dfee04"
+    },
+    {
+      "source": "lean/Standalone/SpliceSeveralFactorsAX01.lean",
+      "path": "lean/Standalone/SpliceSeveralFactorsAX01.lean",
+      "source_sha256": "bc7c6ff5e4d450167de3c0f058e724b1ab87710d8055610a168509472d89eaa6"
+    },
+    {
+      "source": "lean/Standalone/RecurrentLoadingCharacterization.lean",
+      "path": "lean/Standalone/RecurrentLoadingCharacterization.lean",
+      "source_sha256": "1ed618dd7448a5b11e81ab89f9a131765a4cd7c44754812d199d36590bd5568e"
+    },
+    {
+      "source": "lean/Standalone/DiffusionMeetingFutures.lean",
+      "path": "lean/Standalone/DiffusionMeetingFutures.lean",
+      "source_sha256": "7521e4b1ba40aac3d258100baa497abdd453f0f43ca39db71cbd4335a2e5b8d7"
+    },
+    {
+      "source": "lean/Standalone/ZeroMeanReversionUpstreamBridge.lean",
+      "path": "lean/Standalone/ZeroMeanReversionUpstreamBridge.lean",
+      "source_sha256": "e0cfa7692bdc8b10849e5f1fe3be390241088d8c7d5565775a8456a86eb35be9"
+    },
+    {
+      "source": "lean/Standalone/ListedSr3Identification.lean",
+      "path": "lean/Standalone/ListedSr3Identification.lean",
+      "source_sha256": "b7c3c87bf7f1b58765140da35f61c6df511a18bd753045ae3236fecdcc9b1c6f"
+    },
+    {
+      "source": "lean/Standalone/SpliceStateBlockAssembly.lean",
+      "path": "lean/Standalone/SpliceStateBlockAssembly.lean",
+      "source_sha256": "37043d8188cfdd34df21883e6184869a829123f004665277600394d3989b4ba4"
+    },
+    {
+      "source": "lean/Standalone/SeparableMeetingScaleVersion.lean",
+      "path": "lean/Standalone/SeparableMeetingScaleVersion.lean",
+      "source_sha256": "2026d4f60e77a2ee02e28f505b8e923587e10c837c6a91ecaea442eefb1fe926"
+    },
+    {
+      "source": "lean/Standalone/SeparableMeetingAssembly.lean",
+      "path": "lean/Standalone/SeparableMeetingAssembly.lean",
+      "source_sha256": "aea9bdb4bc0d5b45f38030566927292fe6ed8b76b34060d2b6edd16dc0c3c76b"
+    },
+    {
+      "source": "lean/Standalone/DiffusionMeetingGauss.lean",
+      "path": "lean/Standalone/DiffusionMeetingGauss.lean",
+      "source_sha256": "df476a91335b99980dc54b09de3543b971fb4eb51f6c4911a52c7c3730a17f92"
+    },
+    {
+      "source": "lean/Standalone/BoundedVarianceIntegralComparison.lean",
+      "path": "lean/Standalone/BoundedVarianceIntegralComparison.lean",
+      "source_sha256": "63d53d83b1175a6eb51841bd8bed1232c2b6273eb745faa1d5bcad931e74b028"
+    },
+    {
+      "source": "lean/Standalone/SeparableMeetingMarkovProperty.lean",
+      "path": "lean/Standalone/SeparableMeetingMarkovProperty.lean",
+      "source_sha256": "b771c7386eb44ee8d163b59c173de93d5475f75b18d156f4acbc39fa052b3302"
+    },
+    {
+      "source": "lean/Standalone/SeparableMeetingMarkovSeveral.lean",
+      "path": "lean/Standalone/SeparableMeetingMarkovSeveral.lean",
+      "source_sha256": "ec8d7846fa4c270a5f5ceec242a7cedb306bcd632c396c75a03eda9713edb4fe"
+    },
+    {
+      "source": "lean/Standalone/SpliceSeveralFactorsSufficiency.lean",
+      "path": "lean/Standalone/SpliceSeveralFactorsSufficiency.lean",
+      "source_sha256": "1b3b5d32593044c5781a7fe35733504ea6f93889ea416c654f4457e295bdcd89"
+    },
+    {
+      "source": "lean/Standalone/RecurrentLoadingAlgebra.lean",
+      "path": "lean/Standalone/RecurrentLoadingAlgebra.lean",
+      "source_sha256": "747504dc048b1c04bdd6b2bc3933d401a5ded09bdb91f3f72c1f22e8dc8afaec"
+    },
+    {
+      "source": "lean/Standalone/SpliceCrossTermAlpha.lean",
+      "path": "lean/Standalone/SpliceCrossTermAlpha.lean",
+      "source_sha256": "1009c9e4ecd7f567a602f60acd496972552511f933c86e135383861e95057aff"
+    },
+    {
+      "source": "lean/Standalone/RecurrentLoadingStateP.lean",
+      "path": "lean/Standalone/RecurrentLoadingStateP.lean",
+      "source_sha256": "78ac2adbc347eb2886b4bd93e6074bceac3184e4d94158d4b313b97195a887b0"
+    },
+    {
+      "source": "lean/Standalone/CorrelatedFactorsAssembly.lean",
+      "path": "lean/Standalone/CorrelatedFactorsAssembly.lean",
+      "source_sha256": "adfc20b3e93daefc51fd6e9098e5d3e41d918e468b6783df42bc0fff911636c7"
+    },
+    {
+      "source": "lean/Standalone/JumpShapeForward.lean",
+      "path": "lean/Standalone/JumpShapeForward.lean",
+      "source_sha256": "22b645217e2a07bfb1a93f94a48c8fbfd1ad1ecd41739aad66cc4d53867625b3"
+    },
+    {
+      "source": "lean/Standalone/DiffusionMeetingInstance.lean",
+      "path": "lean/Standalone/DiffusionMeetingInstance.lean",
+      "source_sha256": "3c8496b24c97467a25e7edabdc0704e7e3fe237a9d45da366e3291513853e461"
+    },
+    {
+      "source": "lean/Standalone/SpliceExponentZeroCross.lean",
+      "path": "lean/Standalone/SpliceExponentZeroCross.lean",
+      "source_sha256": "6aba38388378b60af73609bf4659bf85709437c38dae20a819b21a474e539d9f"
+    },
+    {
+      "source": "lean/Standalone/SpliceRandomScalesPath.lean",
+      "path": "lean/Standalone/SpliceRandomScalesPath.lean",
+      "source_sha256": "7f4a97f1479576f61bba0131dd1cfe3adb315556b682f42f14e7a15deec4a1da"
+    },
+    {
+      "source": "lean/Standalone/RecurrentLoadingXiEquation.lean",
+      "path": "lean/Standalone/RecurrentLoadingXiEquation.lean",
+      "source_sha256": "1e219ad3b4665b1a4b834fb0251e5ceeb39a81e463280024a4a55392321dac92"
+    },
+    {
+      "source": "lean/Standalone/Theorem1.lean",
+      "path": "lean/Standalone/Theorem1.lean",
+      "source_sha256": "99bf32ce282b8c5b15e98169e96f3573585539dd9188593f0d073842f62168d2"
+    },
+    {
+      "source": "lean/Standalone/JumpShapeLater.lean",
+      "path": "lean/Standalone/JumpShapeLater.lean",
+      "source_sha256": "3a076cf74f6d0d97ba75a2cc26b1c4833c0bbc20f18a25ec14a5a3eb602f2ea7"
+    },
+    {
+      "source": "lean/Standalone/BoundedVarianceBond.lean",
+      "path": "lean/Standalone/BoundedVarianceBond.lean",
+      "source_sha256": "7412532b59b700f58b8273eccd4de56e3a617de6d04e796bf3ad115e58feb6bb"
+    },
+    {
+      "source": "lean/Standalone/PiecewiseAffineIntegral.lean",
+      "path": "lean/Standalone/PiecewiseAffineIntegral.lean",
+      "source_sha256": "83969d41c9274d93c661f000ca6f6c604500533d8330f06ec2c4090cf4aef268"
+    },
+    {
+      "source": "lean/Standalone/MaturityShapeConsistency.lean",
+      "path": "lean/Standalone/MaturityShapeConsistency.lean",
+      "source_sha256": "59dafae9154d1a413119e90a0bed2715703beb55b1014ba6a8d09a0e2ebce7fd"
+    },
+    {
+      "source": "lean/Standalone/RecurrentApproxEstimates.lean",
+      "path": "lean/Standalone/RecurrentApproxEstimates.lean",
+      "source_sha256": "5b747fed5229c73cffb38cfaffa2e6abb654c57c85445a6a95fc7d67d1fd1407"
+    },
+    {
+      "source": "lean/Standalone/AnalyticPrimitive.lean",
+      "path": "lean/Standalone/AnalyticPrimitive.lean",
+      "source_sha256": "f516d5262fa8daa56d5e20891cc5d33904ab68cb8e12d1349144668a938aa4db"
+    },
+    {
+      "source": "lean/Standalone/SpliceQuasiExponentialCross.lean",
+      "path": "lean/Standalone/SpliceQuasiExponentialCross.lean",
+      "source_sha256": "71b809e304b55390f9dd8e33e5065d092d082b321c4a00799420db372f1cd89b"
+    },
+    {
+      "source": "lean/Standalone/UnifiedSpliceDiag.lean",
+      "path": "lean/Standalone/UnifiedSpliceDiag.lean",
+      "source_sha256": "e0bebd1e41cbd7c4299fcd3f34df702a4ea1eccbc4dc68481086b09b2295af96"
+    },
+    {
+      "source": "lean/Standalone/RecurrentApproxAssembly.lean",
+      "path": "lean/Standalone/RecurrentApproxAssembly.lean",
+      "source_sha256": "e07ac836ef0121fb947fa238ef310375ff0d224e9dcd0b76a2d0fc3bf0bd7514"
+    },
+    {
+      "source": "lean/Standalone/SpliceAffineOverlapNS.lean",
+      "path": "lean/Standalone/SpliceAffineOverlapNS.lean",
+      "source_sha256": "859a0159413e2c88e77e1d963bded4231b535503357f4e947b4683d72352b0ee"
+    },
+    {
+      "source": "lean/Standalone/ExternalScaleStateP.lean",
+      "path": "lean/Standalone/ExternalScaleStateP.lean",
+      "source_sha256": "f6ae8eca37d63be078de12c95060ed94cae3109b0d092afbf760d264854fcf5d"
+    },
+    {
+      "source": "lean/Standalone/MaturityShapeGauss.lean",
+      "path": "lean/Standalone/MaturityShapeGauss.lean",
+      "source_sha256": "8bf8ac6886ea6436b8324210334a6e4b55cdbd7a26c3b3e231b27c4ab51bc8ca"
+    },
+    {
+      "source": "lean/Standalone/ExternalScaleStateQ.lean",
+      "path": "lean/Standalone/ExternalScaleStateQ.lean",
+      "source_sha256": "bb838f67d05e03fd5e1b457d67c717dfa0972edf3633d128fafaafb4f4ee6ea2"
+    },
+    {
+      "source": "lean/Standalone/SpliceCrossTermDrift.lean",
+      "path": "lean/Standalone/SpliceCrossTermDrift.lean",
+      "source_sha256": "0e77d1aff189ad93f1ab2e160131fc135c583c8bd87738f101d17946c3b89f57"
+    },
+    {
+      "source": "lean/Standalone/JumpShapeAssembly.lean",
+      "path": "lean/Standalone/JumpShapeAssembly.lean",
+      "source_sha256": "18d0cf56ba877aae673773373143e94509dd1415743e29e282f1b19c749e3dc1"
+    },
+    {
+      "source": "lean/Standalone/CorrelatedFactorsExists.lean",
+      "path": "lean/Standalone/CorrelatedFactorsExists.lean",
+      "source_sha256": "e5d7b0355434a40c57931efeae63b4799101958a36b883c6e6035fc4458c342b"
+    },
+    {
+      "source": "lean/Standalone/CorrelatedFactorsProcess.lean",
+      "path": "lean/Standalone/CorrelatedFactorsProcess.lean",
+      "source_sha256": "ff9db8e7637490c73501da907a7a49af46e92e36306d99bc453bd5ef80680c46"
+    },
+    {
+      "source": "lean/Standalone/CorrelatedFactorsAlways.lean",
+      "path": "lean/Standalone/CorrelatedFactorsAlways.lean",
+      "source_sha256": "f949b118f0ac36f043731a8feccb476db6c323d43fbf735792664a6735586159"
+    },
+    {
+      "source": "lean/Standalone/RecurrentApproxPriceBounds.lean",
+      "path": "lean/Standalone/RecurrentApproxPriceBounds.lean",
+      "source_sha256": "bf81753a93238e4718a7d518b059194756f17dc41ac38d7982efa33120ab49ae"
+    },
+    {
+      "source": "lean/Standalone/SeparableMeetingCoefficients.lean",
+      "path": "lean/Standalone/SeparableMeetingCoefficients.lean",
+      "source_sha256": "0e29c7d12de4f5cb1b0ddf0173ae7a6d4c8950dc2399612d713ee0f27855f23d"
+    },
+    {
+      "source": "lean/Standalone/SpliceCrossTermConsistency.lean",
+      "path": "lean/Standalone/SpliceCrossTermConsistency.lean",
+      "source_sha256": "a38cf6adc67a95fff5aa3177fa6c2ca232e17580b7eaa569c624069697b32947"
+    },
+    {
+      "source": "lean/Standalone/BoundedVarianceIto.lean",
+      "path": "lean/Standalone/BoundedVarianceIto.lean",
+      "source_sha256": "1c21aba739ec9dda14c913f3fac07a98dc061778e66b71b787402484c5985eb1"
+    },
+    {
+      "source": "lean/Standalone/GaussianMeetingVarianceCone.lean",
+      "path": "lean/Standalone/GaussianMeetingVarianceCone.lean",
+      "source_sha256": "910326bc076ede3c24f7c7086a6231bad778faf96392d2fc03bd0fff7c244dc4"
+    },
+    {
+      "source": "lean/Standalone/BondOptionMeetingVariances.lean",
+      "path": "lean/Standalone/BondOptionMeetingVariances.lean",
+      "source_sha256": "a68d2383d9ddab9bf4937a107cd2bcb27604e8e7fe2f88e20a55ae0b2ba85d33"
+    },
+    {
+      "source": "lean/Standalone/NonnegPolySOS.lean",
+      "path": "lean/Standalone/NonnegPolySOS.lean",
+      "source_sha256": "de871e407f0dce95a4c123c854089915397df323333159c3361862d3f57d1eca"
+    },
+    {
+      "source": "lean/Standalone/StepDriftVanish.lean",
+      "path": "lean/Standalone/StepDriftVanish.lean",
+      "source_sha256": "366ac61098666cbc099e317b719dc1354812bcca6390936cc3e6b56ff8672996"
+    },
+    {
+      "source": "lean/Standalone/MeetingLoadingCurve.lean",
+      "path": "lean/Standalone/MeetingLoadingCurve.lean",
+      "source_sha256": "03527d3649bc2ff31ff4a5413c07448006166669fe4b69dc41f2a00e104437b4"
+    },
+    {
+      "source": "lean/Standalone/SpliceQuasiExponentialAlgebra.lean",
+      "path": "lean/Standalone/SpliceQuasiExponentialAlgebra.lean",
+      "source_sha256": "6c749598f6fe5c0d5df79535f25d45c3b410c4f4dbaa90c83da800b5c25f680e"
+    },
+    {
+      "source": "lean/Standalone/SpliceRandomScalesSufficiency.lean",
+      "path": "lean/Standalone/SpliceRandomScalesSufficiency.lean",
+      "source_sha256": "a228ecbf321db8df830ad34b02816972511a4eb53a6ae64b292b1c20dfbe6aa0"
+    },
+    {
+      "source": "lean/Standalone/SpliceExponentZeroAssembly.lean",
+      "path": "lean/Standalone/SpliceExponentZeroAssembly.lean",
+      "source_sha256": "75270acf085df062d5caaeeb70db1d9c5f4a12e8231365afe057ba89bd411539"
+    },
+    {
+      "source": "lean/Standalone/UnifiedSpliceConverse.lean",
+      "path": "lean/Standalone/UnifiedSpliceConverse.lean",
+      "source_sha256": "ae1a1d31f6a55d59a8206e7bd21d2a4c15ae01d4a6c3db1d1c7096505be7ac6d"
+    },
+    {
+      "source": "lean/Standalone/LemmaB.lean",
+      "path": "lean/Standalone/LemmaB.lean",
+      "source_sha256": "62f8587d7fa913e6d5093ed1e50a6c2ec3bf28022fa55935b27f1a4950b1be64"
+    },
+    {
+      "source": "lean/Standalone/UnifiedSpliceNecessity.lean",
+      "path": "lean/Standalone/UnifiedSpliceNecessity.lean",
+      "source_sha256": "4bccda6c8b1399fd5853562805ea2c10679a12e64de5bc3fb90f701f991c16a3"
+    },
+    {
+      "source": "lean/Standalone/MeetingLoadingObstruction.lean",
+      "path": "lean/Standalone/MeetingLoadingObstruction.lean",
+      "source_sha256": "e298969af38bd13b93450f54f16796b45f0e301b2c1b3b8edad7b6846fb1831c"
+    },
+    {
+      "source": "lean/Standalone/SharefFilipovicPartB.lean",
+      "path": "lean/Standalone/SharefFilipovicPartB.lean",
+      "source_sha256": "a88b466babd8d0521f55e2da57c338ba0b5293bc53259b73d50fbfd5254c098a"
+    },
+    {
+      "source": "lean/Standalone/D3EventVariances.lean",
+      "path": "lean/Standalone/D3EventVariances.lean",
+      "source_sha256": "8c51a5041848599094853e7c24f62345f0fd64271c9c679f3ad43c22b01ebd7c"
+    },
+    {
+      "source": "lean/Standalone/MaturityShapeCalendar.lean",
+      "path": "lean/Standalone/MaturityShapeCalendar.lean",
+      "source_sha256": "f349a62f07c5dce0832c13b57015674f98fd4571b6330647f31319dd7ee71c11"
+    },
+    {
+      "source": "lean/Standalone/JumpShapeExist.lean",
+      "path": "lean/Standalone/JumpShapeExist.lean",
+      "source_sha256": "473cb0cfdddfe114ff269b4dbf1be6123cb0302bfcf7524a5e1c35d7b29c5195"
+    },
+    {
+      "source": "lean/Standalone/RecurrentLoadingRestartP.lean",
+      "path": "lean/Standalone/RecurrentLoadingRestartP.lean",
+      "source_sha256": "8f89b0be38ef306d415c06d9568e012555ba5090394986f4230ecdf3adf9363d"
+    },
+    {
+      "source": "lean/Standalone/RecurrenceNecessityCurve.lean",
+      "path": "lean/Standalone/RecurrenceNecessityCurve.lean",
+      "source_sha256": "d2770216f9f12a7c8a954de9dc6da8eb08eb0eab3174d799de534505b11680dc"
+    },
+    {
+      "source": "lean/Standalone/MaturityShapeS1.lean",
+      "path": "lean/Standalone/MaturityShapeS1.lean",
+      "source_sha256": "f003fb3830fc21822a9498d32a23224613493511f456f50c542597247e6c4220"
+    },
+    {
+      "source": "lean/Standalone/StochasticMeetingVariance.lean",
+      "path": "lean/Standalone/StochasticMeetingVariance.lean",
+      "source_sha256": "e030557f225d7e6e04373c82a025a9accc2d8cb7e93bcbbf5c1b76e3d6b2b0b9"
+    },
+    {
+      "source": "lean/Standalone/SpliceCrossTermAnalytic.lean",
+      "path": "lean/Standalone/SpliceCrossTermAnalytic.lean",
+      "source_sha256": "d7cd300f672e3789fef928389b7e63572db907bc6dd9a7fff91b864a1297adb5"
+    },
+    {
+      "source": "lean/Standalone/BondOptionPriceIntervals.lean",
+      "path": "lean/Standalone/BondOptionPriceIntervals.lean",
+      "source_sha256": "17cbe8a5b8fc642281b1f29352167eaa680bdffa83442f8fa70a31add4e98198"
+    },
+    {
+      "source": "lean/Standalone/SharefFilipovicIndependence.lean",
+      "path": "lean/Standalone/SharefFilipovicIndependence.lean",
+      "source_sha256": "220b48c30af3ab6730efb29356c99f5f07188d75fae0182680fc68b8023210c8"
+    },
+    {
+      "source": "lean/Standalone/JumpShapeProfile.lean",
+      "path": "lean/Standalone/JumpShapeProfile.lean",
+      "source_sha256": "387ec25e00ddf2dfc25ec9c9410855c3e5bfd63ea5abd5d88d4ad32366b2d3f5"
+    },
+    {
+      "source": "lean/Standalone/RecurrenceNecessityReduction.lean",
+      "path": "lean/Standalone/RecurrenceNecessityReduction.lean",
+      "source_sha256": "d1d5955f5a9c8a68a25365e27ce849b4dbeac15c09e218c915bb18737a70bbe4"
+    },
+    {
+      "source": "lean/Standalone/SpliceQuasiExponentialAssembly.lean",
+      "path": "lean/Standalone/SpliceQuasiExponentialAssembly.lean",
+      "source_sha256": "5d4026eb1fbd8533ee20b24b2934a93b839c7bcbb06c05fea4c59e6182c2b2de"
+    },
+    {
+      "source": "lean/Standalone/SpliceLocalizationConverse.lean",
+      "path": "lean/Standalone/SpliceLocalizationConverse.lean",
+      "source_sha256": "81cf4c764b72671995b096969c0fa931b82df5d838c7637992e1ef0948c1250c"
+    },
+    {
+      "source": "lean/Standalone/RecurrentLoadingXi.lean",
+      "path": "lean/Standalone/RecurrentLoadingXi.lean",
+      "source_sha256": "f44bf33f2f2c28457481b0c1a95d120c44d15897fe6f217032bce3648d56470c"
+    },
+    {
+      "source": "lean/Standalone/DiffusionMeetingPrecision.lean",
+      "path": "lean/Standalone/DiffusionMeetingPrecision.lean",
+      "source_sha256": "aaa13a33cfe210f2023b29a7a97e75fb74e72016ee9a2e07408bd24816a81d93"
+    },
+    {
+      "source": "lean/Standalone/SpliceExponentZeroResidual.lean",
+      "path": "lean/Standalone/SpliceExponentZeroResidual.lean",
+      "source_sha256": "160e1b038ecee60a57ac00ae5e727143c3e4e95c0aedc6e4b9e65bf037529711"
+    },
+    {
+      "source": "lean/Standalone/BoundedVarianceExistence.lean",
+      "path": "lean/Standalone/BoundedVarianceExistence.lean",
+      "source_sha256": "d289bbe4e2bee5a5189648e739e13b9c8852c0d6471608bcb3eba94b03e0f7d4"
+    },
+    {
+      "source": "lean/Standalone/UnifiedSpliceStep0.lean",
+      "path": "lean/Standalone/UnifiedSpliceStep0.lean",
+      "source_sha256": "0f9869f5ec08ae96a660d709ed3a7e6761b972e6d8eed332f8a361e21d369b28"
+    },
+    {
+      "source": "lean/Standalone/UnifiedSpliceAlgebra.lean",
+      "path": "lean/Standalone/UnifiedSpliceAlgebra.lean",
+      "source_sha256": "0147811976185b8a93a8e7086f8cd658fbc5291869aa85be292a3d2f983b39f2"
+    },
+    {
+      "source": "lean/Standalone/RecurrenceNecessityAssembly.lean",
+      "path": "lean/Standalone/RecurrenceNecessityAssembly.lean",
+      "source_sha256": "7fbcbd2e4f21e347fbcffb561a308021aa466e9d980a8a543b8d25155b532b63"
+    },
+    {
+      "source": "lean/Standalone/SpliceAffineOverlapAssembly.lean",
+      "path": "lean/Standalone/SpliceAffineOverlapAssembly.lean",
+      "source_sha256": "8ec9f5274536c800e28e198c33cf22402ad5dfee81579831bfc300eda8f5c93f"
+    },
+    {
+      "source": "lean/Standalone/RampDriftIdentified.lean",
+      "path": "lean/Standalone/RampDriftIdentified.lean",
+      "source_sha256": "1d892abb80f1ee44f21da11f811c1ef51ea4cfb3b4edc2ff610abf55b654c900"
+    },
+    {
+      "source": "lean/Standalone/SpliceCrossTermCurve.lean",
+      "path": "lean/Standalone/SpliceCrossTermCurve.lean",
+      "source_sha256": "d4304b12cccafb0dd3afca1f840329d633b435ff01c63e104b60ab25ad417141"
+    },
+    {
+      "source": "lean/Standalone/SpliceVaryingExponentsAssembly.lean",
+      "path": "lean/Standalone/SpliceVaryingExponentsAssembly.lean",
+      "source_sha256": "8d66228189320ff114943314294e9a867757ca76b48789f56afbeb32af2c250e"
+    },
+    {
+      "source": "lean/Standalone/RecurrentLoadingDrift.lean",
+      "path": "lean/Standalone/RecurrentLoadingDrift.lean",
+      "source_sha256": "baa72508df0c771585afa69458876c03167263ce4ea35289b700f8cc93e4c007"
+    },
+    {
+      "source": "lean/Standalone/ZeroMeanReversionVarianceSupport.lean",
+      "path": "lean/Standalone/ZeroMeanReversionVarianceSupport.lean",
+      "source_sha256": "ea09e75595e3049608f4d6d3def96af5c4530f493c6a685f49a82a26038c132b"
+    },
+    {
+      "source": "lean/Standalone/CorrelatedFactorsHankel.lean",
+      "path": "lean/Standalone/CorrelatedFactorsHankel.lean",
+      "source_sha256": "d33f624d46eb9c9064f942d7907a59b0ea62c47cde04388829cd7e323dfa04d9"
+    },
+    {
+      "source": "lean/Standalone/MeetingLoadingHankel.lean",
+      "path": "lean/Standalone/MeetingLoadingHankel.lean",
+      "source_sha256": "2268bff31c7808b9e24e11aa6d396601823b148dd00f3ccd3a3b40c283894ae4"
+    },
+    {
+      "source": "lean/Standalone/DiffusionMeetingConsistency.lean",
+      "path": "lean/Standalone/DiffusionMeetingConsistency.lean",
+      "source_sha256": "b2c68d35f0de6eb031a6d5b6cbdf4eb04ade4690a75fc0dbfb34dbf747dc183c"
+    },
+    {
+      "source": "lean/Standalone/UnifiedSpliceSpecial.lean",
+      "path": "lean/Standalone/UnifiedSpliceSpecial.lean",
+      "source_sha256": "7aa518cb66d6a61d5ecc0a76d919783bc35e6203453d5627e68e95ab6cd48a51"
+    },
+    {
+      "source": "lean/Standalone/SeparableMeetingMarkovRealization.lean",
+      "path": "lean/Standalone/SeparableMeetingMarkovRealization.lean",
+      "source_sha256": "26e8e5b002547a28d87ad79edf20994fe80053b79ff84788fe4306e913cc21be"
+    },
+    {
+      "source": "lean/Standalone/SpliceSeveralFactorsMinimal.lean",
+      "path": "lean/Standalone/SpliceSeveralFactorsMinimal.lean",
+      "source_sha256": "3e05d0cda575a6fadaa47fc6484960ce313ef22ee1978795d29e8599540ecc11"
+    },
+    {
+      "source": "lean/Standalone/DiffusionMeetingPricing.lean",
+      "path": "lean/Standalone/DiffusionMeetingPricing.lean",
+      "source_sha256": "f10758829732affb66bd5ebe906c8b05b2e247bcf67656527ac39d62bc3a5300"
+    },
+    {
+      "source": "lean/Standalone/SpliceRandomScalesAssembly.lean",
+      "path": "lean/Standalone/SpliceRandomScalesAssembly.lean",
+      "source_sha256": "3103666bfd8e75174269100fc9a2d7f87c4c0cbb78159cb3f4402a0eadaae62d"
+    },
+    {
+      "source": "lean/Standalone/DiffusionMeetingIdentities.lean",
+      "path": "lean/Standalone/DiffusionMeetingIdentities.lean",
+      "source_sha256": "a23fcb472de916cba311dfda928b23f1664fb22e5fdd5e9d4ae597241113bf53"
+    },
+    {
+      "source": "lean/Standalone/RecurrentLoadingRestartQ.lean",
+      "path": "lean/Standalone/RecurrentLoadingRestartQ.lean",
+      "source_sha256": "d174fcd1fde2855159aa983d26695da9b5269c896e55da035dd62c878b998732"
+    },
+    {
+      "source": "lean/Standalone/MaturityShapeRank.lean",
+      "path": "lean/Standalone/MaturityShapeRank.lean",
+      "source_sha256": "c04b0c315b3dd069a53edfd371a635a8c683354434ccc04095fed0a552e09e95"
+    },
+    {
+      "source": "lean/Standalone/Theorem2a.lean",
+      "path": "lean/Standalone/Theorem2a.lean",
+      "source_sha256": "c59f387ae7edc26d47d3ec391701158e1e7f6f1b370e4d00416abf43b6324fec"
+    },
+    {
+      "source": "lean/Standalone/DiffusionMeetingCalendar.lean",
+      "path": "lean/Standalone/DiffusionMeetingCalendar.lean",
+      "source_sha256": "93e997c951845aabee8b24795333d3f048e1f7963c9bdaf98f4c497fcffae44e"
+    },
+    {
+      "source": "lean/Novel/SpliceExponentZeroAssemblyProof.lean",
+      "path": "lean/Novel/SpliceExponentZeroAssemblyProof.lean",
+      "source_sha256": "e9a9fd4121a20c9ed7cd5fbd6bf54d1ad5698eb35d83c499f4f47d9486c6cd26"
+    },
+    {
+      "source": "lean/Novel/SpliceSeveralFactorsMinimalProof.lean",
+      "path": "lean/Novel/SpliceSeveralFactorsMinimalProof.lean",
+      "source_sha256": "735af909775fb76e3dca8d68c78d7f6265cc33d8ed013fc8c7f3b0c9d72db868"
+    },
+    {
+      "source": "lean/Novel/SpliceCrossTermAnalyticProof.lean",
+      "path": "lean/Novel/SpliceCrossTermAnalyticProof.lean",
+      "source_sha256": "78f50c4a12682e692effcfde86d58bcd7e335f87153c24cfb97fff1f8a46c2c6"
+    },
+    {
+      "source": "lean/Novel/SpliceRandomScalesSufficiencyProof.lean",
+      "path": "lean/Novel/SpliceRandomScalesSufficiencyProof.lean",
+      "source_sha256": "17e94bbd48f17b2f6460516aec259ecda7c692c27d3098b2e886b978a05f2141"
+    },
+    {
+      "source": "lean/Novel/SpliceQuasiExponentialCrossProof.lean",
+      "path": "lean/Novel/SpliceQuasiExponentialCrossProof.lean",
+      "source_sha256": "acb57b8f7ad20f9c027eefa8c02c6a2af9a82614436bf49e697e7d959081702e"
+    },
+    {
+      "source": "lean/Novel/FuturesStyleExerciseProof.lean",
+      "path": "lean/Novel/FuturesStyleExerciseProof.lean",
+      "source_sha256": "6135c84cce02027b69650573e6b96a0b2b518dfbc657319e13031689476cd158"
+    },
+    {
+      "source": "lean/Novel/JumpShapeProfileProof.lean",
+      "path": "lean/Novel/JumpShapeProfileProof.lean",
+      "source_sha256": "a49d78ad47a70be9ec635d8ba434c5747761257b23a9670f21d4004229cd6876"
+    },
+    {
+      "source": "lean/Novel/DiffusionMeetingRankValueProof.lean",
+      "path": "lean/Novel/DiffusionMeetingRankValueProof.lean",
+      "source_sha256": "2abf0eaeb3db8f2cc15b89a3633ece80de27111a2ae2faaa59b9bf778c4c712d"
+    },
+    {
+      "source": "lean/Novel/UnifiedSpliceExpPolyProof.lean",
+      "path": "lean/Novel/UnifiedSpliceExpPolyProof.lean",
+      "source_sha256": "cf26fc8c77a4b42be257b0d2d5e1707022b915c39d4e3acda1f9d41387523572"
+    },
+    {
+      "source": "lean/Novel/CorrelatedFactorsSmallProof.lean",
+      "path": "lean/Novel/CorrelatedFactorsSmallProof.lean",
+      "source_sha256": "6015f1010173b40afec18fafecb60f9113a41cbca2718c6bac8b974ec580f116"
+    },
+    {
+      "source": "lean/Novel/DiffusionMeetingConsistencyProof.lean",
+      "path": "lean/Novel/DiffusionMeetingConsistencyProof.lean",
+      "source_sha256": "1fb6e726ce3d226ee079beb62e5fdecd1ec1387cf68c5c82cf931161fecb68b5"
+    },
+    {
+      "source": "lean/Novel/SpliceSeveralFactorsSufficiencyProof.lean",
+      "path": "lean/Novel/SpliceSeveralFactorsSufficiencyProof.lean",
+      "source_sha256": "edb01b1dc175f38d817c9c23cc42ef591c28bc70aebf776c8d74db06c497cf1a"
+    },
+    {
+      "source": "lean/Novel/SharefFilipovicSplitProof.lean",
+      "path": "lean/Novel/SharefFilipovicSplitProof.lean",
+      "source_sha256": "30badf6f60265bba5fb1a4c3b35a5ef251ac8169a494a48e8ce6a1d78ec648ef"
+    },
+    {
+      "source": "lean/Novel/SpliceRandomScalesNecessityProof.lean",
+      "path": "lean/Novel/SpliceRandomScalesNecessityProof.lean",
+      "source_sha256": "575dab5c178e49be5d2aaf7caf8030eca600f99ef8fa635166e13beeee8ea4af"
+    },
+    {
+      "source": "lean/Novel/NonnegPolySOSProof.lean",
+      "path": "lean/Novel/NonnegPolySOSProof.lean",
+      "source_sha256": "de81ffbb8c2a5956b74d0a4fa5955e9a8190adea1ff07a78d11abd809985e8e3"
+    },
+    {
+      "source": "lean/Novel/SharefFilipovicPartBProof.lean",
+      "path": "lean/Novel/SharefFilipovicPartBProof.lean",
+      "source_sha256": "c3bbfc7ba2fb62d9e25c42bbb4a29457a6dd43190078a26b2da2dc0bb3c54af9"
+    },
+    {
+      "source": "lean/Novel/BoundedVarianceItoProof.lean",
+      "path": "lean/Novel/BoundedVarianceItoProof.lean",
+      "source_sha256": "7cab8dd69e3031bb05557fe229367ff086cb102c3e917c1593b100a3730e5249"
+    },
+    {
+      "source": "lean/Novel/BoundedVarianceUniquenessProof.lean",
+      "path": "lean/Novel/BoundedVarianceUniquenessProof.lean",
+      "source_sha256": "90e74b86a82a68882a70643415f598ec6c53a64870538dac765342bd418be53f"
+    },
+    {
+      "source": "lean/Novel/D3EventVariancesProof.lean",
+      "path": "lean/Novel/D3EventVariancesProof.lean",
+      "source_sha256": "4824197c0b3b4cf9b6949ccb2309fe1f1c2e00c996fa1a133f644e4fc1535ba8"
+    },
+    {
+      "source": "lean/Novel/SpliceSeveralFactorsAX01Proof.lean",
+      "path": "lean/Novel/SpliceSeveralFactorsAX01Proof.lean",
+      "source_sha256": "3a504854a69efb8fb36aef7795cbce7a76dc1cd27b53b5035e3b2f05fcc9641b"
+    },
+    {
+      "source": "lean/Novel/RecurrentLoadingCharacterizationProof.lean",
+      "path": "lean/Novel/RecurrentLoadingCharacterizationProof.lean",
+      "source_sha256": "04dab10d11ffcb2cabbc6a92c6f3184e040be8518b6a914cbf70098608ec4021"
+    },
+    {
+      "source": "lean/Novel/SpliceExponentZeroAX01Proof.lean",
+      "path": "lean/Novel/SpliceExponentZeroAX01Proof.lean",
+      "source_sha256": "cad17b70b37359671bc48a5efc1884ddc53f0a324b3b6b67d202eaee533d022d"
+    },
+    {
+      "source": "lean/Novel/BondOptionPriceIntervalsProof.lean",
+      "path": "lean/Novel/BondOptionPriceIntervalsProof.lean",
+      "source_sha256": "2e241f08decb323ae26563d81e0a27c9d676e9389daf1ecfe7a1695cf244c2b9"
+    },
+    {
+      "source": "lean/Novel/SharefFilipovicMaxFactorsProof.lean",
+      "path": "lean/Novel/SharefFilipovicMaxFactorsProof.lean",
+      "source_sha256": "b7dd44b5d4dd84a8b30cc76189aabc5fe62cb4302f6a130d1780c3e033a7b678"
+    },
+    {
+      "source": "lean/Novel/SpliceCrossTermCurveProof.lean",
+      "path": "lean/Novel/SpliceCrossTermCurveProof.lean",
+      "source_sha256": "4acf92ae873c73222f76d7112dd2e2519990944b010d290371064bf0a9ef2093"
+    },
+    {
+      "source": "lean/Novel/RecurrentLoadingAssemblyProof.lean",
+      "path": "lean/Novel/RecurrentLoadingAssemblyProof.lean",
+      "source_sha256": "e31abc4a634e6f93b25f6a36baebcb39b3ba1702d50ca4147f40c5ba08f11b54"
+    },
+    {
+      "source": "lean/Novel/StepDriftVanishProof.lean",
+      "path": "lean/Novel/StepDriftVanishProof.lean",
+      "source_sha256": "920821ffc5d245a6b3d8178c2a3353125f313b38f4a627392987f4ea3a1bc483"
+    },
+    {
+      "source": "lean/Novel/SpliceLocalizationConverseProof.lean",
+      "path": "lean/Novel/SpliceLocalizationConverseProof.lean",
+      "source_sha256": "5f24232c7180be4a91e4965068878b5137b269d058529f305db46d48b8c82bdf"
+    },
+    {
+      "source": "lean/Novel/SpliceLocalizationAssemblyProof.lean",
+      "path": "lean/Novel/SpliceLocalizationAssemblyProof.lean",
+      "source_sha256": "f8581bc0414614662a3bc6e7f74d314d2f98167a4986388ae824151a7862b5e8"
+    },
+    {
+      "source": "lean/Novel/PreWindowVarianceAggregatesProof.lean",
+      "path": "lean/Novel/PreWindowVarianceAggregatesProof.lean",
+      "source_sha256": "e64cafe9c507bde843e2bf282534b718043bd0baeafd677f36e4ddbe1ea4496a"
+    },
+    {
+      "source": "lean/Novel/CorrelatedFactorsSignProof.lean",
+      "path": "lean/Novel/CorrelatedFactorsSignProof.lean",
+      "source_sha256": "785cf39db69056919b4bc938a77c878512e22c2c69173f83f393354516b882d0"
+    },
+    {
+      "source": "lean/Novel/SpliceQuasiExponentialKeyProof.lean",
+      "path": "lean/Novel/SpliceQuasiExponentialKeyProof.lean",
+      "source_sha256": "a92a0334ad34bec6ce7f61609abed6ec0cd586f63816f9a97c2a8cd3cd52e515"
+    },
+    {
+      "source": "lean/Novel/SpliceAffineOverlapNSProof.lean",
+      "path": "lean/Novel/SpliceAffineOverlapNSProof.lean",
+      "source_sha256": "605a517033596f2676b789e3d4364ac6e4da9660bb7df26bf0a642a8fcdcb693"
+    },
+    {
+      "source": "lean/Novel/JumpShapeLaterProof.lean",
+      "path": "lean/Novel/JumpShapeLaterProof.lean",
+      "source_sha256": "802ae690d62261639560b72cad41f22d7ac1888ba9e9ffdecdfe508c3b4cfcea"
+    },
+    {
+      "source": "lean/Novel/SharefFilipovicIndependenceProof.lean",
+      "path": "lean/Novel/SharefFilipovicIndependenceProof.lean",
+      "source_sha256": "8440b04c81b913a7ea09abb864b793ea97dc653aa31c9c1439af54130487143a"
+    },
+    {
+      "source": "lean/Novel/RecurrentApproxBondProof.lean",
+      "path": "lean/Novel/RecurrentApproxBondProof.lean",
+      "source_sha256": "3fa0819ce0701f515a212f308d18e362e75adb692cb67c8916908254637f3455"
+    },
+    {
+      "source": "lean/Novel/StochasticMeetingVarianceProof.lean",
+      "path": "lean/Novel/StochasticMeetingVarianceProof.lean",
+      "source_sha256": "164a069b65545713e2696cd04df23da524f244ee4ccc7e64b5615986f82dbdad"
+    },
+    {
+      "source": "lean/Novel/UnifiedSpliceConverseAX01Proof.lean",
+      "path": "lean/Novel/UnifiedSpliceConverseAX01Proof.lean",
+      "source_sha256": "c363e514ff94a08727082ae7e162fc5a3c7865f66e0d46227bc950fdcec5f60f"
+    },
+    {
+      "source": "lean/Novel/SpliceQuasiExponentialConsistencyProof.lean",
+      "path": "lean/Novel/SpliceQuasiExponentialConsistencyProof.lean",
+      "source_sha256": "0f72cebd988eca060d8275a4ade989e084751dec55bc77424d952dc6538209b7"
+    },
+    {
+      "source": "lean/Novel/CorrelatedFactorsHankelProof.lean",
+      "path": "lean/Novel/CorrelatedFactorsHankelProof.lean",
+      "source_sha256": "7ab2bd0a67128a49f4003c0c68b08bb2802d78482a117671b3b4a4b50bd6a295"
+    },
+    {
+      "source": "lean/Novel/CorrelatedFactorsExistsProof.lean",
+      "path": "lean/Novel/CorrelatedFactorsExistsProof.lean",
+      "source_sha256": "36ee25afebc4e6aa62588be75813cc27a95257a3fc6dccaad5a4f5482d504748"
+    },
+    {
+      "source": "lean/Novel/SvenssonSpliceProof.lean",
+      "path": "lean/Novel/SvenssonSpliceProof.lean",
+      "source_sha256": "db03efe29ee0601e79f13b2f944baa55d05e3e6ba20625327906de92313ff740"
+    },
+    {
+      "source": "lean/Novel/D2InstanceProof.lean",
+      "path": "lean/Novel/D2InstanceProof.lean",
+      "source_sha256": "cd1093386048c2000e447a8717166e130b5f2715583011bc8bab84b4327a3a58"
+    },
+    {
+      "source": "lean/Novel/MGFUniqueness.lean",
+      "path": "lean/Novel/MGFUniqueness.lean",
+      "source_sha256": "80531e9c2e653ea9698de40af6312a5c05dc87c6f73d9db9a444ae61fa3e4d22"
+    },
+    {
+      "source": "lean/Novel/MaturityShapeS1Proof.lean",
+      "path": "lean/Novel/MaturityShapeS1Proof.lean",
+      "source_sha256": "a66ce4be74f444a79c0e2a287d5373b8c137230533d64e1c2d7e0a188cbb0a68"
+    },
+    {
+      "source": "lean/Novel/RecurrentLoadingRestartPProof.lean",
+      "path": "lean/Novel/RecurrentLoadingRestartPProof.lean",
+      "source_sha256": "b7b29a043e25160375f47df158c2a8624b6bb2e7cdb55d400dad0530753741c4"
+    },
+    {
+      "source": "lean/Novel/CrossMeetingAmericanProof.lean",
+      "path": "lean/Novel/CrossMeetingAmericanProof.lean",
+      "source_sha256": "b2a79e02dde2a3e2cfc9776cd63dccfcfaeec613f6dd0be30ab71043a5463b5b"
+    },
+    {
+      "source": "lean/Novel/RecurrenceNecessityRankProof.lean",
+      "path": "lean/Novel/RecurrenceNecessityRankProof.lean",
+      "source_sha256": "d5853228d4aeb24d876cef518d8be4ea413070a60174b7d2a5b0e0ef2837f83e"
+    },
+    {
+      "source": "lean/Novel/BoundedVarianceExistenceProof.lean",
+      "path": "lean/Novel/BoundedVarianceExistenceProof.lean",
+      "source_sha256": "fb831749349fc499559a51915e62cd84ba6ce7ea9890d4fb71fe7581d4b0c957"
+    },
+    {
+      "source": "lean/Novel/SurvivingScaleRestrictionsProof.lean",
+      "path": "lean/Novel/SurvivingScaleRestrictionsProof.lean",
+      "source_sha256": "2614c989c0ec84fc4987fec6630233df57e9ce0fbf220d354a546317c8996b00"
+    },
+    {
+      "source": "lean/Novel/RecurrenceNecessityAlgebraProof.lean",
+      "path": "lean/Novel/RecurrenceNecessityAlgebraProof.lean",
+      "source_sha256": "431affc6939c1a536d08451f467b0bdd0963b40d6ed4930fe75815b5120043bd"
+    },
+    {
+      "source": "lean/Novel/DiffusionMeetingInversionProof.lean",
+      "path": "lean/Novel/DiffusionMeetingInversionProof.lean",
+      "source_sha256": "cb102716ef16e7b275fb5b5647dfff67998bf55ef50c1827066f653d271f0fde"
+    },
+    {
+      "source": "lean/Novel/SeparableMeetingMarkovSolutionProof.lean",
+      "path": "lean/Novel/SeparableMeetingMarkovSolutionProof.lean",
+      "source_sha256": "1dea954430e298c0e7bf7359fbfe1155061a47150c36df4c7cbdbcaeb990e172"
+    },
+    {
+      "source": "lean/Novel/SpliceQuasiExponentialCurveProof.lean",
+      "path": "lean/Novel/SpliceQuasiExponentialCurveProof.lean",
+      "source_sha256": "5b5d1f10d6d993cc15477ad47a0c79ee7347b95add934d83ffd723fe2f40f752"
+    },
+    {
+      "source": "lean/Novel/MaturityShapeGaussProof.lean",
+      "path": "lean/Novel/MaturityShapeGaussProof.lean",
+      "source_sha256": "e76c456842cb140859fab21adfae25a69c0f7b3b4fc1ff355db94c618b4f1f46"
+    },
+    {
+      "source": "lean/Novel/SpliceCrossTermSufficiencyProof.lean",
+      "path": "lean/Novel/SpliceCrossTermSufficiencyProof.lean",
+      "source_sha256": "40cd7487ddec7b54f2eeb85ee003331e8458df929eceeed82715c84ecdbb2629"
+    },
+    {
+      "source": "lean/Novel/SpliceQuasiExponentialBlockProof.lean",
+      "path": "lean/Novel/SpliceQuasiExponentialBlockProof.lean",
+      "source_sha256": "dddc4989cd766726d034825ceaf6d43bea342753b0e9e7b282ee3e92d160cd4a"
+    },
+    {
+      "source": "lean/Novel/JumpLawCore.lean",
+      "path": "lean/Novel/JumpLawCore.lean",
+      "source_sha256": "1150b062acc780c9787b7381819dd84ad8535c0baec4e19c13a10feee4e5a4c1"
+    },
+    {
+      "source": "lean/Novel/ExternalScaleStatePProof.lean",
+      "path": "lean/Novel/ExternalScaleStatePProof.lean",
+      "source_sha256": "4a000d156ef2d23e155020edcd0860849fe035155b9db7987281669fea4e618c"
+    },
+    {
+      "source": "lean/Novel/CondCalculus.lean",
+      "path": "lean/Novel/CondCalculus.lean",
+      "source_sha256": "93c246d74f7f751f557a7bb5879fa1e57ff3c81b350627bbee1900fb828ac500"
+    },
+    {
+      "source": "lean/Novel/PositiveMeanReversionSupportProof.lean",
+      "path": "lean/Novel/PositiveMeanReversionSupportProof.lean",
+      "source_sha256": "9fc677727f57bb258baac913404e6d7c9abed3c2eaa97b3b8564c3fb552d2212"
+    },
+    {
+      "source": "lean/Novel/CorrelatedFactorsAlwaysProof.lean",
+      "path": "lean/Novel/CorrelatedFactorsAlwaysProof.lean",
+      "source_sha256": "608b1541af02d3198a637bd8ef5600e6beef11dc6912b2c36aa0b73794eff5b0"
+    },
+    {
+      "source": "lean/Novel/JumpShapeAffineProof.lean",
+      "path": "lean/Novel/JumpShapeAffineProof.lean",
+      "source_sha256": "710b045e5b62ec601e4de6c9ad9a300b8023f9786e534d591b4171b412fd5012"
+    },
+    {
+      "source": "lean/Novel/RecurrenceNecessityGaussianProof.lean",
+      "path": "lean/Novel/RecurrenceNecessityGaussianProof.lean",
+      "source_sha256": "7cf5d6c815c1880a806798aa417217ef841f3ac8445a8617024b91b4c03b34d3"
+    },
+    {
+      "source": "lean/Novel/RecurrentLoadingXiEquationProof.lean",
+      "path": "lean/Novel/RecurrentLoadingXiEquationProof.lean",
+      "source_sha256": "19215ace80489f4ea412cf373560fc9da8c8b45ec2a36afb5ca1e2e01bc6d5c3"
+    },
+    {
+      "source": "lean/Novel/ListedSr3IdentificationProof.lean",
+      "path": "lean/Novel/ListedSr3IdentificationProof.lean",
+      "source_sha256": "73e8b521f6b52406b147ca78b1708c6ab90dd4098585f5c4e9a3ab00837b29aa"
+    },
+    {
+      "source": "lean/Novel/SpliceVaryingExponentsRestrictionsProof.lean",
+      "path": "lean/Novel/SpliceVaryingExponentsRestrictionsProof.lean",
+      "source_sha256": "64ae6d45b2e6627cde9d010292c764f091fd946056ec9be16aaa2128d8c77b4f"
+    },
+    {
+      "source": "lean/Novel/SpliceCrossTermAssemblyProof.lean",
+      "path": "lean/Novel/SpliceCrossTermAssemblyProof.lean",
+      "source_sha256": "1403dc9f954c821ca17cfec5618177007c3cc421be3d5627822f9db9df1dc591"
+    },
+    {
+      "source": "lean/Novel/UnifiedSpliceAlgebraProof.lean",
+      "path": "lean/Novel/UnifiedSpliceAlgebraProof.lean",
+      "source_sha256": "dbbb526dd67168b0634de30def7b988689dbb95fec0b56ac1c0f2e935fac506e"
+    },
+    {
+      "source": "lean/Novel/SpliceExponentZeroQuasiPolyProof.lean",
+      "path": "lean/Novel/SpliceExponentZeroQuasiPolyProof.lean",
+      "source_sha256": "7ad042a19c909c71a87b93cdd67a88f46c65563f7a1e5f03f6bfd6d8ae44fdab"
+    },
+    {
+      "source": "lean/Novel/MaturityShapeConsistencyProof.lean",
+      "path": "lean/Novel/MaturityShapeConsistencyProof.lean",
+      "source_sha256": "d7ee091c2154e0fa1202267688746349abdf8ce1d8bdfcff914d8c2b5d4a1b8c"
+    },
+    {
+      "source": "lean/Novel/RecurrentLoadingAlgebraProof.lean",
+      "path": "lean/Novel/RecurrentLoadingAlgebraProof.lean",
+      "source_sha256": "22faae2d080ebb71ad96b3e891ec201548a1d535facaa0bf7399cb91e0e228c0"
+    },
+    {
+      "source": "lean/Novel/DiffusionMeetingCalendarProof.lean",
+      "path": "lean/Novel/DiffusionMeetingCalendarProof.lean",
+      "source_sha256": "6a297fd2413b13890295d3320baf7010279f7cd2e2eba1f38c00a1e24365d422"
+    },
+    {
+      "source": "lean/Novel/SpliceCrossTermNecessityProof.lean",
+      "path": "lean/Novel/SpliceCrossTermNecessityProof.lean",
+      "source_sha256": "4ec8b03c0407a356d139a5d52077302581043c243e38aea45093100347147810"
+    },
+    {
+      "source": "lean/Novel/UnifiedSpliceQuantifiersProof.lean",
+      "path": "lean/Novel/UnifiedSpliceQuantifiersProof.lean",
+      "source_sha256": "5718de0db4ce64d3b6cce439c8dbba308e28c50545f422b5e39879a71a7213da"
+    },
+    {
+      "source": "lean/Novel/LemmaAProof.lean",
+      "path": "lean/Novel/LemmaAProof.lean",
+      "source_sha256": "c3a3d63689b155b68eaad037cc5b6a4532de66cf9f76fcf18bbc485eaea43e81"
+    },
+    {
+      "source": "lean/Novel/RecurrentApproxEstimatesProof.lean",
+      "path": "lean/Novel/RecurrentApproxEstimatesProof.lean",
+      "source_sha256": "1937f1a9bdf54dc103d86bfde84101e09728278848f04801aa7c9dcdf335ff9f"
+    },
+    {
+      "source": "lean/Novel/DiffusionMeetingFuturesProof.lean",
+      "path": "lean/Novel/DiffusionMeetingFuturesProof.lean",
+      "source_sha256": "e0c68298787c78f003beb566ef290e5641c7f59ea3ea875d5ea43d94cf4702e0"
+    },
+    {
+      "source": "lean/Novel/SpliceCrossTermOpenProof.lean",
+      "path": "lean/Novel/SpliceCrossTermOpenProof.lean",
+      "source_sha256": "feb75778c74a1612de8d66b4f540c375aae39240752d79296c8c1174b346d3bf"
+    },
+    {
+      "source": "lean/Novel/SeparableMeetingScaleVersionProof.lean",
+      "path": "lean/Novel/SeparableMeetingScaleVersionProof.lean",
+      "source_sha256": "1392d393e6c06532912acaf9420b97eb5985a565d34559574a3f4a09c816d69a"
+    },
+    {
+      "source": "lean/Novel/MaturityShapeIdentitiesProof.lean",
+      "path": "lean/Novel/MaturityShapeIdentitiesProof.lean",
+      "source_sha256": "06e6d957f5b44f4f63f3e1e9234651843e16f45887074cbbcb6e864cda28c723"
+    },
+    {
+      "source": "lean/Novel/SeparableMeetingMarkovSeveralProof.lean",
+      "path": "lean/Novel/SeparableMeetingMarkovSeveralProof.lean",
+      "source_sha256": "af95660b9bc6a4e32b6e819a54090666eeec03c6bd6f7860929cb408b98e69d8"
+    },
+    {
+      "source": "lean/Novel/LateAmericanExerciseProof.lean",
+      "path": "lean/Novel/LateAmericanExerciseProof.lean",
+      "source_sha256": "325400c7bdf561cb829cec833efe24a8f67eac74c3c6cdce57b97214373ff115"
+    },
+    {
+      "source": "lean/Novel/RecurrentLoadingDriftProof.lean",
+      "path": "lean/Novel/RecurrentLoadingDriftProof.lean",
+      "source_sha256": "98f0df92a734c3f391f96686ea51f81bdab1769b8314030fe7971420db45c33b"
+    },
+    {
+      "source": "lean/Novel/SpliceQuasiExponentialAssemblyProof.lean",
+      "path": "lean/Novel/SpliceQuasiExponentialAssemblyProof.lean",
+      "source_sha256": "6bfdd1a8cb46f36ae692daeb93c69b95c1a1a143c79763192dc1002b93cd2739"
+    },
+    {
+      "source": "lean/Novel/SeparableMeetingShapesProof.lean",
+      "path": "lean/Novel/SeparableMeetingShapesProof.lean",
+      "source_sha256": "97508874bb6b3ef03714318dc95c38f64ff66fe27d1ebf534aeea33508030dd7"
+    },
+    {
+      "source": "lean/Novel/SeparableMeetingMarkovRealizationProof.lean",
+      "path": "lean/Novel/SeparableMeetingMarkovRealizationProof.lean",
+      "source_sha256": "8439ce638a188b4c2ec0ff5c7291092e29dc324e18fa350e66e9ede35a4fd770"
+    },
+    {
+      "source": "lean/Novel/BoundedVarianceCompletionProof.lean",
+      "path": "lean/Novel/BoundedVarianceCompletionProof.lean",
+      "source_sha256": "36252566709fa462e61a5ec55b656394b824d41826c482203af45f2c09f895cb"
+    },
+    {
+      "source": "lean/Novel/SpliceSeveralFactorsBlocksProof.lean",
+      "path": "lean/Novel/SpliceSeveralFactorsBlocksProof.lean",
+      "source_sha256": "95e635f2a8192a2b83ca339803fcdc5fcb39078430aeab878b6c19c0b79ed0e0"
+    },
+    {
+      "source": "lean/Novel/RecurrentLoadingRestartQProof.lean",
+      "path": "lean/Novel/RecurrentLoadingRestartQProof.lean",
+      "source_sha256": "da6603672f55923e15a91fd8f8ab55474c4acb155a17996b634e1a321d4815e1"
+    },
+    {
+      "source": "lean/Novel/UnifiedSpliceStep0Proof.lean",
+      "path": "lean/Novel/UnifiedSpliceStep0Proof.lean",
+      "source_sha256": "9e3b7d81cd1b3ddbe402ab14a154618591fd8ad5db2028fce6d595620f51b846"
+    },
+    {
+      "source": "lean/Novel/MaturityShapeCalendarProof.lean",
+      "path": "lean/Novel/MaturityShapeCalendarProof.lean",
+      "source_sha256": "bbd11da3be3516d81a65884e26a0c3e7bb62144f96a1826d2a7467d37d13d8f0"
+    },
+    {
+      "source": "lean/Novel/BoundedVarianceStateProof.lean",
+      "path": "lean/Novel/BoundedVarianceStateProof.lean",
+      "source_sha256": "e262c2cfd017961dd737d87167c4ca87277c4b63f3c4ce17d29dbe6c302249ea"
+    },
+    {
+      "source": "lean/Novel/MaturityShapePricingProof.lean",
+      "path": "lean/Novel/MaturityShapePricingProof.lean",
+      "source_sha256": "fc806ea3d583196aae54f69a4f79dac1d725994e7bb4a4cc37b55b6de9f5158e"
+    },
+    {
+      "source": "lean/Novel/StepJumpsVanishProof.lean",
+      "path": "lean/Novel/StepJumpsVanishProof.lean",
+      "source_sha256": "ac8c62eeb9438edda6a52ddb7c27296dd2e263388c6b01f58fb38fd6958db91c"
+    },
+    {
+      "source": "lean/Novel/SeparableMeetingRepresentationProof.lean",
+      "path": "lean/Novel/SeparableMeetingRepresentationProof.lean",
+      "source_sha256": "a4ec5ffc4062b5921257f99765f1bec6667449a49805c557ce945a7239998302"
+    },
+    {
+      "source": "lean/Novel/MeetingLoadingCurveProof.lean",
+      "path": "lean/Novel/MeetingLoadingCurveProof.lean",
+      "source_sha256": "01c32be44176544f5319fff69029d74bb1a425b64c5221755a47b234f363e399"
+    },
+    {
+      "source": "lean/Novel/CompoundedFuturesIdentificationProof.lean",
+      "path": "lean/Novel/CompoundedFuturesIdentificationProof.lean",
+      "source_sha256": "927aac10314730766296be312c8603b12909990f24fbc9ceb2849f81873f036a"
+    },
+    {
+      "source": "lean/Novel/SharefFilipovicAssemblyProof.lean",
+      "path": "lean/Novel/SharefFilipovicAssemblyProof.lean",
+      "source_sha256": "14b15c19d4b0ce529f6e5e9f79458084372d46dd87620364d468fb75bd094284"
+    },
+    {
+      "source": "lean/Novel/SpliceVaryingExponentsProof.lean",
+      "path": "lean/Novel/SpliceVaryingExponentsProof.lean",
+      "source_sha256": "e04046a759dc112897e92074e790c1b5883f92592f0d40f8848d6aa28b4fd075"
+    },
+    {
+      "source": "lean/Novel/SpliceLocalizationRegularityProof.lean",
+      "path": "lean/Novel/SpliceLocalizationRegularityProof.lean",
+      "source_sha256": "559bfbf31194dcb7d1925ae971e691cb29fd9611b7dda6e2a842a3ed65623860"
+    },
+    {
+      "source": "lean/Novel/ExternalScaleStateQProof.lean",
+      "path": "lean/Novel/ExternalScaleStateQProof.lean",
+      "source_sha256": "647f196a8ec3a739f0962698922c9d157a38cde46849f1b19963901222c9c951"
+    },
+    {
+      "source": "lean/Novel/JumpShapeCondBProof.lean",
+      "path": "lean/Novel/JumpShapeCondBProof.lean",
+      "source_sha256": "e5e331f89540a54d1013cda6f6402214119732399340729f327bef3bf0110bef"
+    },
+    {
+      "source": "lean/Novel/UnifiedSpliceNecessityProof.lean",
+      "path": "lean/Novel/UnifiedSpliceNecessityProof.lean",
+      "source_sha256": "02d2b35a8e6ae55aa6884557ea7da86e3ab059ceff345f0f8d4e873d444b7ed4"
+    },
+    {
+      "source": "lean/Novel/SpliceStateBlockCrossProof.lean",
+      "path": "lean/Novel/SpliceStateBlockCrossProof.lean",
+      "source_sha256": "6edbf38fd8740462b8c577783064fad61ea44fcd168db81230420f7d03bf20b2"
+    },
+    {
+      "source": "lean/Novel/RecurrentLoadingDiffusionProof.lean",
+      "path": "lean/Novel/RecurrentLoadingDiffusionProof.lean",
+      "source_sha256": "5f50d90bb4f4358cd5c4c3cafccf9541168f6fe97ffd93f18e9d5ddcf969ce75"
+    },
+    {
+      "source": "lean/Novel/JumpShapeGeneralProof.lean",
+      "path": "lean/Novel/JumpShapeGeneralProof.lean",
+      "source_sha256": "d5da218339d2e6c19cc3a2e9aac0ba43bbe3cb9a3907d6bc56737efd4b371112"
+    },
+    {
+      "source": "lean/Novel/RecurrentLoadingStatePProof.lean",
+      "path": "lean/Novel/RecurrentLoadingStatePProof.lean",
+      "source_sha256": "1e7e6233be1af7680cf8c025790c6384e45ddfc1b95414a4dd4fb4eb024fdc37"
+    },
+    {
+      "source": "lean/Novel/RecurrentApproxRealizationProof.lean",
+      "path": "lean/Novel/RecurrentApproxRealizationProof.lean",
+      "source_sha256": "c703e3c9c30432c7962be05c6af2229bebe00e0dbb71cb2f9becf3f469d58365"
+    },
+    {
+      "source": "lean/Novel/LemmaBProof.lean",
+      "path": "lean/Novel/LemmaBProof.lean",
+      "source_sha256": "8eae5fdf750b4b81aefbc41062d2256ffb8886a11e15d3b6d0f17abfa67c1e97"
+    },
+    {
+      "source": "lean/Novel/SpliceAffineOverlapAssemblyProof.lean",
+      "path": "lean/Novel/SpliceAffineOverlapAssemblyProof.lean",
+      "source_sha256": "ce8b0fe44c96e5de59a8e6735b9cfbbfe6cf173ded48db8a196a67b34392708f"
+    },
+    {
+      "source": "lean/Novel/MeetingLoadingHankelProof.lean",
+      "path": "lean/Novel/MeetingLoadingHankelProof.lean",
+      "source_sha256": "725af87fded5d7a9df3bfa74f0990bf2c23d7a2b7ea979b518db96a6823f34f1"
+    },
+    {
+      "source": "lean/Novel/MeetingLoadingRankProof.lean",
+      "path": "lean/Novel/MeetingLoadingRankProof.lean",
+      "source_sha256": "6f5b4fbfe8c0261f49263b517ef54b67feb02e38055bf1bb704da0c8c4636895"
+    },
+    {
+      "source": "lean/Novel/JumpShapeAssemblyProof.lean",
+      "path": "lean/Novel/JumpShapeAssemblyProof.lean",
+      "source_sha256": "c390dea0b365c6873d5069e4a9e232df2be0b26a5f4794a041eb9e007833f422"
+    },
+    {
+      "source": "lean/Novel/SeparableMeetingCoefficientsProof.lean",
+      "path": "lean/Novel/SeparableMeetingCoefficientsProof.lean",
+      "source_sha256": "9bff65a9635b64dd49e5fbbea73ae7b2d910ed39134b3dca1e38210a0c7fb104"
+    },
+    {
+      "source": "lean/Novel/SeparableMeetingAssemblyProof.lean",
+      "path": "lean/Novel/SeparableMeetingAssemblyProof.lean",
+      "source_sha256": "c3527845185b459bdbd02d7e5da3e749d4701174cdfde5a253e7a93fe98a95ef"
+    },
+    {
+      "source": "lean/Novel/DiffusionMeetingInstanceProof.lean",
+      "path": "lean/Novel/DiffusionMeetingInstanceProof.lean",
+      "source_sha256": "3d87316b650750ea4568522fb9d179e533aeff3d1135e3348a7e074929aebb94"
+    },
+    {
+      "source": "lean/Novel/SpliceExponentZeroCrossProof.lean",
+      "path": "lean/Novel/SpliceExponentZeroCrossProof.lean",
+      "source_sha256": "afad698c4d8760ec68ea3a2d22d480bb637563589832a2393057a1d1688cf880"
+    },
+    {
+      "source": "lean/Novel/DiffusionMeetingRankProof.lean",
+      "path": "lean/Novel/DiffusionMeetingRankProof.lean",
+      "source_sha256": "83e0aa512c1191fe299df0406565a913de2dad34b45bff8420e3ab5bbcfbeaad"
+    },
+    {
+      "source": "lean/Novel/SpliceRandomScalesAssemblyProof.lean",
+      "path": "lean/Novel/SpliceRandomScalesAssemblyProof.lean",
+      "source_sha256": "60bf9e5cf7a3c0184363340dee3da57e99045bc08c81831672671f9b4f7a1642"
+    },
+    {
+      "source": "lean/Novel/SpliceVaryingExponentsAssemblyProof.lean",
+      "path": "lean/Novel/SpliceVaryingExponentsAssemblyProof.lean",
+      "source_sha256": "57b4a8a33b210df2a0d89d919d8487776349f4dacb2693c4fe26c941923bfe9b"
+    },
+    {
+      "source": "lean/Novel/SpliceLocalizationProof.lean",
+      "path": "lean/Novel/SpliceLocalizationProof.lean",
+      "source_sha256": "193ca27bbcfd3820abe0a5987c625ac8b0561875a617de0e59abdd065b2dc228"
+    },
+    {
+      "source": "lean/Novel/SpliceStateBlockAX01Proof.lean",
+      "path": "lean/Novel/SpliceStateBlockAX01Proof.lean",
+      "source_sha256": "2e7bd75b110b45d8ad7a983e1d6c21355f438912f2012356e199e7d66cfc853d"
+    },
+    {
+      "source": "lean/Novel/ZeroMeanReversionUpstreamBridgeProof.lean",
+      "path": "lean/Novel/ZeroMeanReversionUpstreamBridgeProof.lean",
+      "source_sha256": "72bfd3fe6ef522589e957f76144376e528611a67cb9f8cea8c5c0ab4645592f6"
+    },
+    {
+      "source": "lean/Novel/SharefFilipovicResidualProof.lean",
+      "path": "lean/Novel/SharefFilipovicResidualProof.lean",
+      "source_sha256": "2f6f08bb51d0e7a7193b6932582eba77c67746d6d20d6a8a67c1df048a7f2440"
+    },
+    {
+      "source": "lean/Novel/JumpShapeForwardProof.lean",
+      "path": "lean/Novel/JumpShapeForwardProof.lean",
+      "source_sha256": "a1b01bba214eff846db83f52458d32ea1c8084326c044fe5ce316c3fa0885e29"
+    },
+    {
+      "source": "lean/Novel/JumpShapeExistProof.lean",
+      "path": "lean/Novel/JumpShapeExistProof.lean",
+      "source_sha256": "1cea5e76547b4bdb1e3b5c3d9f9eec540cd2315002de4795444bda26bc464465"
+    },
+    {
+      "source": "lean/Novel/SpliceCrossTermAlphaProof.lean",
+      "path": "lean/Novel/SpliceCrossTermAlphaProof.lean",
+      "source_sha256": "c737a1abaa65d7521746ad1bd08744700694cfa086f37a54bacb7ade569e6aef"
+    },
+    {
+      "source": "lean/Novel/BoundedVarianceBondProof.lean",
+      "path": "lean/Novel/BoundedVarianceBondProof.lean",
+      "source_sha256": "e88dcf1e7b0c218d2f13394617aa1778979412126c494a7ca1afbcb75a4cba52"
+    },
+    {
+      "source": "lean/Novel/UnifiedSpliceSpecialProof.lean",
+      "path": "lean/Novel/UnifiedSpliceSpecialProof.lean",
+      "source_sha256": "ac935914544104220b33f4d0b56940a1a4ec5db2f7a152876972bc4253a9e477"
+    },
+    {
+      "source": "lean/Novel/BoundedVarianceIntegralComparisonProof.lean",
+      "path": "lean/Novel/BoundedVarianceIntegralComparisonProof.lean",
+      "source_sha256": "52de71ca879b8674a07f79a71e4a47c93cbc135b36c8828a0d9bde1e504aa13e"
+    },
+    {
+      "source": "lean/Novel/RecurrentApproxMeanSquareProof.lean",
+      "path": "lean/Novel/RecurrentApproxMeanSquareProof.lean",
+      "source_sha256": "092a68b41165c2213c7d785e0e59e2a2540c07dacb185267c20000bf2d7b465a"
+    },
+    {
+      "source": "lean/Novel/DiffusionMeetingIdentitiesProof.lean",
+      "path": "lean/Novel/DiffusionMeetingIdentitiesProof.lean",
+      "source_sha256": "3e2d7839e9730a7ff5dc3fe5f7b5312e877c4caaba5ef8b7776cdcb9b22c0be9"
+    },
+    {
+      "source": "lean/Novel/MaturityShapeRankProof.lean",
+      "path": "lean/Novel/MaturityShapeRankProof.lean",
+      "source_sha256": "3be843b1e58783a026f587e6a6571021a9a0d69766e44e47778fa7c62384b859"
+    },
+    {
+      "source": "lean/Novel/SpliceQuasiExponentialAlgebraProof.lean",
+      "path": "lean/Novel/SpliceQuasiExponentialAlgebraProof.lean",
+      "source_sha256": "9d8fcfdc859e24c056673845231e0254fb1f6a9b09d4108f4a9c1a35fee79080"
+    },
+    {
+      "source": "lean/Novel/Theorem2aProof.lean",
+      "path": "lean/Novel/Theorem2aProof.lean",
+      "source_sha256": "355042777328926624ae221f9c4a52d5ddcb97f6faec7e39a58f855640b7cf1e"
+    },
+    {
+      "source": "lean/Novel/RecurrenceNecessityAssemblyProof.lean",
+      "path": "lean/Novel/RecurrenceNecessityAssemblyProof.lean",
+      "source_sha256": "933e7d8bccdbabf20c77b508024936134521cac64044d3342751ed6eeb050301"
+    },
+    {
+      "source": "lean/Novel/RecurrenceNecessityCurveProof.lean",
+      "path": "lean/Novel/RecurrenceNecessityCurveProof.lean",
+      "source_sha256": "c0b5c3858a3fe2532011ed85eef9a92aa3545c6d522e26d126bec5cf1619b2ac"
+    },
+    {
+      "source": "lean/Novel/SharefFilipovicItoProof.lean",
+      "path": "lean/Novel/SharefFilipovicItoProof.lean",
+      "source_sha256": "57bdcec4aa3117e9e320725eded75f248a6b6782bf4a5bd35a602abdc4d8aa0b"
+    },
+    {
+      "source": "lean/Novel/SplicePolynomialPartsProof.lean",
+      "path": "lean/Novel/SplicePolynomialPartsProof.lean",
+      "source_sha256": "142773685796762632f4e8f90a0ba79dc61a851bc2960047f65551611c7a4e06"
+    },
+    {
+      "source": "lean/Novel/CorrelatedFactorsReductionProof.lean",
+      "path": "lean/Novel/CorrelatedFactorsReductionProof.lean",
+      "source_sha256": "ddddb9214b33564b70f79172b9ddfa39cd7b4ca7e4d03e03ec3ae5d8ef5d114e"
+    },
+    {
+      "source": "lean/Novel/CorrelatedFactorsProcessProof.lean",
+      "path": "lean/Novel/CorrelatedFactorsProcessProof.lean",
+      "source_sha256": "749bdb16424fc5835b94adba64917bdbbe5cc71aaf32ddbc54f89ba9df6c206f"
+    },
+    {
+      "source": "lean/Novel/DiffusionMeetingPrecisionProof.lean",
+      "path": "lean/Novel/DiffusionMeetingPrecisionProof.lean",
+      "source_sha256": "a45cc6bc7d1a0bf4f9467e817d0c9a41525e94016b83a241d0051e328717820c"
+    },
+    {
+      "source": "lean/Novel/ExternalScaleDriftProof.lean",
+      "path": "lean/Novel/ExternalScaleDriftProof.lean",
+      "source_sha256": "1d9b10f11062a9b4a0668acc537daa52f17a03a08ea48d60592b72f13401fd1b"
+    },
+    {
+      "source": "lean/Novel/MaturityShapeInstanceProof.lean",
+      "path": "lean/Novel/MaturityShapeInstanceProof.lean",
+      "source_sha256": "d428901ba28f41fbcad904e3bc4e0432c2dbee42ad2bb526daa70ddd90e802d3"
+    },
+    {
+      "source": "lean/Novel/JumpShapeCondProof.lean",
+      "path": "lean/Novel/JumpShapeCondProof.lean",
+      "source_sha256": "73c0d45bcb059c9d29f434718985de896b85085932004a2779f1db2572a906fc"
+    },
+    {
+      "source": "lean/Novel/MeetingLoadingLawProof.lean",
+      "path": "lean/Novel/MeetingLoadingLawProof.lean",
+      "source_sha256": "c23f8c7cdb486f183139009c599c3dc916241b418e71f5a2579213ec169d678d"
+    },
+    {
+      "source": "lean/Novel/SpliceCrossTermConsistencyProof.lean",
+      "path": "lean/Novel/SpliceCrossTermConsistencyProof.lean",
+      "source_sha256": "8d9eafc9f1c149e28bfaa5021e80db66c5f1bd511414360e0fe8172377b0f3a4"
+    },
+    {
+      "source": "lean/Novel/UnifiedSpliceDiagProof.lean",
+      "path": "lean/Novel/UnifiedSpliceDiagProof.lean",
+      "source_sha256": "88eab8de99d7ee8040f02172c645827d19fd8afe5fd1c9d04facc352f2fa8420"
+    },
+    {
+      "source": "lean/Novel/MeetingLoadingDimensionProof.lean",
+      "path": "lean/Novel/MeetingLoadingDimensionProof.lean",
+      "source_sha256": "5542857e70d73860b09eede7367babba803f4e5ab8be88006b59efdab2f3e192"
+    },
+    {
+      "source": "lean/Novel/SpliceAffineOverlapAbsorbProof.lean",
+      "path": "lean/Novel/SpliceAffineOverlapAbsorbProof.lean",
+      "source_sha256": "85d7eab81cba322de5601a760773df0ada170eca64ae315d32822c272a6f01f4"
+    },
+    {
+      "source": "lean/Novel/MGF.lean",
+      "path": "lean/Novel/MGF.lean",
+      "source_sha256": "7ecdef0f02a6c67956a46328ed26c0e82d40cd9f1c0d02982d966a7677fc9912"
+    },
+    {
+      "source": "lean/Novel/BoundedVarianceMartingaleProof.lean",
+      "path": "lean/Novel/BoundedVarianceMartingaleProof.lean",
+      "source_sha256": "dec5001aa299d14a16bb5115015fa1d4de1bf71f7a92a2bae06dde1d3868efb6"
+    },
+    {
+      "source": "lean/Novel/JumpShapeKernelProof.lean",
+      "path": "lean/Novel/JumpShapeKernelProof.lean",
+      "source_sha256": "4111fb0be7e0dddff7c57c8494e8f833709f038ee97ea44d8f33cb965068db60"
+    },
+    {
+      "source": "lean/Novel/SpliceRandomScalesPathProof.lean",
+      "path": "lean/Novel/SpliceRandomScalesPathProof.lean",
+      "source_sha256": "db394bdccfa2669d98511175bff05a895c4b4c157bf6ab1d6a1df2d266a20b81"
+    },
+    {
+      "source": "lean/Novel/MaturityShapeListingProof.lean",
+      "path": "lean/Novel/MaturityShapeListingProof.lean",
+      "source_sha256": "0ab53650dc1f8d0727084bab34dcc71bacdb6ba1b9369c95a889a67ee1caacd3"
+    },
+    {
+      "source": "lean/Novel/SharefFilipovicPartAProof.lean",
+      "path": "lean/Novel/SharefFilipovicPartAProof.lean",
+      "source_sha256": "fb07b4fb2f6f903a20df40cec19de6aae095974bdc358765dac0ce9245798e15"
+    },
+    {
+      "source": "lean/Novel/BondOptionMeetingVariancesProof.lean",
+      "path": "lean/Novel/BondOptionMeetingVariancesProof.lean",
+      "source_sha256": "390fbe29a627c4ec0fa0438a70f37c2fb92273b5c5d55ae0863c0f4d4e84191f"
+    },
+    {
+      "source": "lean/Novel/RecurrentLoadingXiProof.lean",
+      "path": "lean/Novel/RecurrentLoadingXiProof.lean",
+      "source_sha256": "d779f256864ea0efba1b6858ab3a7b38970d7cdef6cae65b63475406ed44c50a"
+    },
+    {
+      "source": "lean/Novel/RecurrentLoadingStateQProof.lean",
+      "path": "lean/Novel/RecurrentLoadingStateQProof.lean",
+      "source_sha256": "1e3cb04458c523ca70e0390df637a7884a9e2d950b494cfb097df465e13c5f82"
+    },
+    {
+      "source": "lean/Novel/AnalyticPrimitiveProof.lean",
+      "path": "lean/Novel/AnalyticPrimitiveProof.lean",
+      "source_sha256": "d402aeac84c9d22a6c742d3fe4706fda2812762a8db3ac0718646065ab7f9b80"
+    },
+    {
+      "source": "lean/Novel/DiffusionMeetingGaussProof.lean",
+      "path": "lean/Novel/DiffusionMeetingGaussProof.lean",
+      "source_sha256": "1208d920af5560a91bfcfeb8d1a8a6a5567f116391c0e8477b5496f67bf08795"
+    },
+    {
+      "source": "lean/Novel/RampDriftIdentifiedProof.lean",
+      "path": "lean/Novel/RampDriftIdentifiedProof.lean",
+      "source_sha256": "8be188ea682ce6d8af29979f4258b8817ca2fcca17376dfb2a9510225495513b"
+    },
+    {
+      "source": "lean/Novel/SpliceStateBlockAssemblyProof.lean",
+      "path": "lean/Novel/SpliceStateBlockAssemblyProof.lean",
+      "source_sha256": "bfa0fb53e607aa57ba0517970ec6d5378b93f5e96afaec21193a78447983ea5b"
+    },
+    {
+      "source": "lean/Novel/CorrelatedFactorsGramProof.lean",
+      "path": "lean/Novel/CorrelatedFactorsGramProof.lean",
+      "source_sha256": "0db4f10cd4b3b7e7f7035710be142ad3e385ac8dbb8fc5c030ee534621ef5d25"
+    },
+    {
+      "source": "lean/Novel/MeetingLoadingObstructionProof.lean",
+      "path": "lean/Novel/MeetingLoadingObstructionProof.lean",
+      "source_sha256": "d20241683996c887f4c499cde0b59236981517655e1bf198d20179d62ce35667"
+    },
+    {
+      "source": "lean/Novel/ZeroMeanReversionVarianceSupportProof.lean",
+      "path": "lean/Novel/ZeroMeanReversionVarianceSupportProof.lean",
+      "source_sha256": "974bc7f6492b0c6ac0aed3bd46d1c98467a90608dfe5e7d1249981ae094ce4fc"
+    },
+    {
+      "source": "lean/Novel/JumpLawTiltedGaussianProof.lean",
+      "path": "lean/Novel/JumpLawTiltedGaussianProof.lean",
+      "source_sha256": "2da61b415d5237f3e5bf825c1be9720e4b88f7e3f0b5581d395d58e8c80fd65e"
+    },
+    {
+      "source": "lean/Novel/RecurrenceNecessityReductionProof.lean",
+      "path": "lean/Novel/RecurrenceNecessityReductionProof.lean",
+      "source_sha256": "bd2f81b8ff8dc5cebaf29ac1a5c5096244c349d3ef797443f1c6bcd41ec2c592"
+    },
+    {
+      "source": "lean/Novel/SeparableMeetingMarkovCoefficientsProof.lean",
+      "path": "lean/Novel/SeparableMeetingMarkovCoefficientsProof.lean",
+      "source_sha256": "62cf7d9a5ea14f177c6db4837d65f9fdc59c39b13c66a4603072a804c165d5f5"
+    },
+    {
+      "source": "lean/Novel/UnifiedSpliceAssemblyProof.lean",
+      "path": "lean/Novel/UnifiedSpliceAssemblyProof.lean",
+      "source_sha256": "ac861fcbfa16e891526ccd50b4b1985bb429cccdaf20d01021179ca67807a547"
+    },
+    {
+      "source": "lean/Novel/JumpShapeTwoPointProof.lean",
+      "path": "lean/Novel/JumpShapeTwoPointProof.lean",
+      "source_sha256": "b76f1e38576b5793380c7b44b5ddd1bcaf9bb1d93cddf548e1ab4686b42e60f3"
+    },
+    {
+      "source": "lean/Novel/PiecewiseAffineIntegralProof.lean",
+      "path": "lean/Novel/PiecewiseAffineIntegralProof.lean",
+      "source_sha256": "11e72a44bdc9ee00906816f40e1c3c2b4ab236c161434a0efe1d94619ee6e272"
+    },
+    {
+      "source": "lean/Novel/UnifiedSpliceConverseProof.lean",
+      "path": "lean/Novel/UnifiedSpliceConverseProof.lean",
+      "source_sha256": "071170054f0707fcf5f66f12f1022abac758b143ab772affdac6ebdc93e03aa8"
+    },
+    {
+      "source": "lean/Novel/JumpShapeOriginProof.lean",
+      "path": "lean/Novel/JumpShapeOriginProof.lean",
+      "source_sha256": "140fe91d079305d05459f4ddc7df89de319ac2f3a74a434d219e599e72cb030b"
+    },
+    {
+      "source": "lean/Novel/BoundedVarianceIndependenceProof.lean",
+      "path": "lean/Novel/BoundedVarianceIndependenceProof.lean",
+      "source_sha256": "b2fce0a4ef37d8f8f56abe347ff2e1e50ffe120f096ca6634921c52a6cb667e4"
+    },
+    {
+      "source": "lean/Novel/MaturityShapeAssemblyProof.lean",
+      "path": "lean/Novel/MaturityShapeAssemblyProof.lean",
+      "source_sha256": "dd92d4d5c4404692558a542daf2745de3e59483decf3b16025f04a685f4754e9"
+    },
+    {
+      "source": "lean/Novel/JumpLawExample.lean",
+      "path": "lean/Novel/JumpLawExample.lean",
+      "source_sha256": "1513cab7abd656a2f2c96d08204c35d95e381dcd2c8e50c70dd5da6b75c206f9"
+    },
+    {
+      "source": "lean/Novel/MaturityShapeS2Proof.lean",
+      "path": "lean/Novel/MaturityShapeS2Proof.lean",
+      "source_sha256": "964a8e359e3a607b139a3384f495be9b70307cc1a2d0b20ce532e2e62597d7c6"
+    },
+    {
+      "source": "lean/Novel/ExternalScaleAssemblyProof.lean",
+      "path": "lean/Novel/ExternalScaleAssemblyProof.lean",
+      "source_sha256": "756dca7c094545cefa23d06292fa3295963a5bd1945d54c6e99a681f44e5e0eb"
+    },
+    {
+      "source": "lean/Novel/RecurrentApproxPriceBoundsProof.lean",
+      "path": "lean/Novel/RecurrentApproxPriceBoundsProof.lean",
+      "source_sha256": "da758389e920f35fe4ec17ec3bee75f1d1e10399e1c18dc5bf1a09d0e10c092d"
+    },
+    {
+      "source": "lean/Novel/SpliceSeveralFactorsAssemblyProof.lean",
+      "path": "lean/Novel/SpliceSeveralFactorsAssemblyProof.lean",
+      "source_sha256": "6ae08cac1cb819cd6d7d53d27157dd903d8095f32ec0bd5324f8ac2f37a489c7"
+    },
+    {
+      "source": "lean/Novel/UnifiedSpliceDiagLemmas.lean",
+      "path": "lean/Novel/UnifiedSpliceDiagLemmas.lean",
+      "source_sha256": "5bf65276bf751a9844dbc31d22d14bb93fab99e6e712eece1ace5464e819da19"
+    },
+    {
+      "source": "lean/Novel/ExternalScaleConditionsProof.lean",
+      "path": "lean/Novel/ExternalScaleConditionsProof.lean",
+      "source_sha256": "2ebc6f00537e7190c847d18313cd70689432bf8b18de0e6ac0b8673a011ec5c7"
+    },
+    {
+      "source": "lean/Novel/SpliceExponentZeroResidualProof.lean",
+      "path": "lean/Novel/SpliceExponentZeroResidualProof.lean",
+      "source_sha256": "7aa7cc52e696d27bee1908e32c5e6f4682872f3d0953e9f587fffb2f5e23c37c"
+    },
+    {
+      "source": "lean/Novel/CorrelatedFactorsAssemblyProof.lean",
+      "path": "lean/Novel/CorrelatedFactorsAssemblyProof.lean",
+      "source_sha256": "d64d38b8192d7ec2a74102c053bea796a9bbc3d78fde3d2c58bee38a7ecc9f51"
+    },
+    {
+      "source": "lean/Novel/SpliceSeveralFactorsCoreProof.lean",
+      "path": "lean/Novel/SpliceSeveralFactorsCoreProof.lean",
+      "source_sha256": "5171b9c988769a7396eb1755a5d9e63e0997b0522baf94c75527b854f8363d7b"
+    },
+    {
+      "source": "lean/Novel/SpliceRandomScalesCurveProof.lean",
+      "path": "lean/Novel/SpliceRandomScalesCurveProof.lean",
+      "source_sha256": "798ae53364c2ad522899018c2dbb89b5fe5496aaf8fd99119f65e7ebd4f94bb9"
+    },
+    {
+      "source": "lean/Novel/SpliceStateBlockObservabilityProof.lean",
+      "path": "lean/Novel/SpliceStateBlockObservabilityProof.lean",
+      "source_sha256": "a84fdcce0bd3bac4e2dd1899ff75f1319e2ef27132bd899d0b177535006b7585"
+    },
+    {
+      "source": "lean/Novel/GaussianMeetingVarianceConeProof.lean",
+      "path": "lean/Novel/GaussianMeetingVarianceConeProof.lean",
+      "source_sha256": "e1409b64a9868d0741659cea25e38ad3267c39e053b33848f6c26c653116cbd3"
+    },
+    {
+      "source": "lean/Novel/SpliceCrossTermDriftProof.lean",
+      "path": "lean/Novel/SpliceCrossTermDriftProof.lean",
+      "source_sha256": "ce5a69898bd73680dd4bb346b408d530fb61f4c04a3eeb9decbf9fd91501e710"
+    },
+    {
+      "source": "lean/Novel/SeparableMeetingMarkovPropertyProof.lean",
+      "path": "lean/Novel/SeparableMeetingMarkovPropertyProof.lean",
+      "source_sha256": "4959b258ac5eb0cfe51a969c265d5ff7bb9f5a49d8c2dd8567f57f24a70f44ba"
+    },
+    {
+      "source": "lean/Novel/Theorem1Proof.lean",
+      "path": "lean/Novel/Theorem1Proof.lean",
+      "source_sha256": "2986c243a33672a68050d84c6c033ce7edcf79de3ee02e1d59d41b79560e714e"
+    },
+    {
+      "source": "lean/Novel/DiffusionMeetingPricingProof.lean",
+      "path": "lean/Novel/DiffusionMeetingPricingProof.lean",
+      "source_sha256": "28bc02b794921df5e59752ff8bafc962d99f089e2bc04c3154472c824ea18669"
+    },
+    {
+      "source": "lean/Novel/SeparableMeetingIntegralsProof.lean",
+      "path": "lean/Novel/SeparableMeetingIntegralsProof.lean",
+      "source_sha256": "1fa461cab4bdf4ee4c5b1f1a4f899109080d8e59ed31f25a5cd12a1901dbdfec"
+    },
+    {
+      "source": "lean/Novel/DiffusionMeetingAssemblyProof.lean",
+      "path": "lean/Novel/DiffusionMeetingAssemblyProof.lean",
+      "source_sha256": "971ccc38bd7b46de6ce8785044aaba6b232093d8b630a03e47779600b4eb1966"
+    },
+    {
+      "source": "lean/Novel/RecurrentApproxAssemblyProof.lean",
+      "path": "lean/Novel/RecurrentApproxAssemblyProof.lean",
+      "source_sha256": "38f003fd25978dcd9436d34c1bbf12188f1ace2dcb018aa9e370217c6799d11a"
+    },
+    {
+      "source": "lean/Novel/SpliceCrossTermUncorrelatedProof.lean",
+      "path": "lean/Novel/SpliceCrossTermUncorrelatedProof.lean",
+      "source_sha256": "3fbc6d4a23d4e18639e943710e7b760f1817f56b93a38dae181d3846703fb564"
+    },
+    {
+      "source": "lean/Upstream/ItoCalculus.lean",
+      "path": "lean/Upstream/ItoCalculus.lean",
+      "source_sha256": "b8d7c22d7b06e5b8d5c78e4328685c1915abe620e73775a164849bd5b15c6e16"
+    },
+    {
+      "source": "lean/Upstream/IntegralApproximation.lean",
+      "path": "lean/Upstream/IntegralApproximation.lean",
+      "source_sha256": "7e8d7acfa336b7aaa8dc4ba239de5adf0c5ad444fa69ec2d1e6ad83ac7258e7b"
+    },
+    {
+      "source": "lean/Upstream/Predictability.lean",
+      "path": "lean/Upstream/Predictability.lean",
+      "source_sha256": "758b8bfb8aa5163df5e2e1e86fa84a4827349c634e118151f1f9a986d13e561c"
+    },
+    {
+      "source": "lean/Upstream/ExponentialMartingale.lean",
+      "path": "lean/Upstream/ExponentialMartingale.lean",
+      "source_sha256": "d0b2c4ac1ee90fb6add8940dd9e80d7ac39ce5916e20dd31f55f18f030df3a29"
+    },
+    {
+      "source": "lean/Upstream/HJMScheduled.lean",
+      "path": "lean/Upstream/HJMScheduled.lean",
+      "source_sha256": "31f1e54074cff0ceaa583da2093e5ceecb4582466cda89f97e7432e11ba105d7"
+    },
+    {
+      "source": "lean/Upstream/LipschitzMarkov.lean",
+      "path": "lean/Upstream/LipschitzMarkov.lean",
+      "source_sha256": "467d3924014e9b525ab133c86992ce7a8d91d9279523ee17f3aa1db1c0f9bf60"
+    },
+    {
+      "source": "lean/Upstream/LipschitzSDE.lean",
+      "path": "lean/Upstream/LipschitzSDE.lean",
+      "source_sha256": "a86a56a5e09e04595f3a9eca8498e737f7a6a1fc9e2e66cdc9539bc50385bbe5"
+    },
+    {
+      "source": "lean/Upstream/ExpPolyConsistency.lean",
+      "path": "lean/Upstream/ExpPolyConsistency.lean",
+      "source_sha256": "13d8990e4f5f50fed129e6e4e3d95fc2f34d1666d3cce9dd48e3c2c21bec4534"
+    },
+    {
+      "source": "lean/Upstream/LipschitzMarkovTime.lean",
+      "path": "lean/Upstream/LipschitzMarkovTime.lean",
+      "source_sha256": "988da97ed2744edba1091e0c14acc26248a51c6ecfa12be7091eecfde0232367"
+    },
+    {
+      "source": "paper_pub3/data/midcurve_call_replay_manifest.csv",
+      "path": "papers/identification/data/midcurve_call_replay_manifest.csv",
+      "source_sha256": "dc7b0456606d99106d6c424342d7148d7aff026e44464da10488ebcd91468a38"
+    },
+    {
+      "source": "paper_pub3/data/prepare_calendar_vintage.py",
+      "path": "papers/identification/data/prepare_calendar_vintage.py",
+      "source_sha256": "e08708e8821152880ce9681f1583118c316e7e89163f56ed84de94f1841f60bd"
+    },
+    {
+      "source": "paper_pub3/data/download_manifest.csv",
+      "path": "papers/identification/data/download_manifest.csv",
+      "source_sha256": "8e6b285dc2563b4d0b12e748bc32f8c0830196c51517792952f2649229b2a2af"
+    },
+    {
+      "source": "paper_pub3/data/prepare_bulletins.py",
+      "path": "papers/identification/data/prepare_bulletins.py",
+      "source_sha256": "cc2da815460fdb58db273cc58ffebb7134e93a10e5a0a85ba66afbc9f9ce63b4"
+    },
+    {
+      "source": "paper_pub3/data/prepare_free_supplement.py",
+      "path": "papers/identification/data/prepare_free_supplement.py",
+      "source_sha256": "e9a652ce534b8d417cb5c4e43a45ef01309700488444d63d1c93ed7f006841fd"
+    },
+    {
+      "source": "paper_pub3/data/free_supplement_manifest.json",
+      "path": "papers/identification/data/free_supplement_manifest.json",
+      "source_sha256": "be78bc236fd3cd5118364336efe7c7f7f038c18d466833b0562824e3f0b349ba"
+    },
+    {
+      "source": "paper_pub3/data/midcurve_download_manifest.csv",
+      "path": "papers/identification/data/midcurve_download_manifest.csv",
+      "source_sha256": "23be0195ef80edf706e4953a0c23a0664faabe77de9f624724a6c10186076586"
+    },
+    {
+      "source": "paper_pub3/data/prepare_midcurves.py",
+      "path": "papers/identification/data/prepare_midcurves.py",
+      "source_sha256": "e0ecaf56010428b40d63f63301e720568d44df1950d8b24f6960f74b43da3307"
+    },
+    {
+      "source": "paper_pub3/data/fetch_bulletins.py",
+      "path": "papers/identification/data/fetch_bulletins.py",
+      "source_sha256": "425a7ff11fb6641bd2e326ee277cd20cf29fe6b325341c419e784648aa877061"
+    },
+    {
+      "source": "paper_pub3/data/fetch_midcurves.py",
+      "path": "papers/identification/data/fetch_midcurves.py",
+      "source_sha256": "7865be2cfd8d93d97f8c2a61559d2f38dafd54c8f8c24735c3ec4891ff0cfbfa"
+    },
+    {
+      "source": "paper_pub3/data/fetch_free_supplement.py",
+      "path": "papers/identification/data/fetch_free_supplement.py",
+      "source_sha256": "b8ed3305e25dd90c7296a369bcea081b015abd8f73d3322f727d8da3215b8b8b"
+    },
+    {
+      "source": "paper_pub3/data/processed/midcurve_contract_total_checks.csv",
+      "path": "papers/identification/data/processed/midcurve_contract_total_checks.csv",
+      "source_sha256": "098061b38b563005cc76907d47d20f87ec2c95693340ec45a137f1d2ddbef6fd"
+    },
+    {
+      "source": "paper_pub3/data/processed/midcurve_date_coverage.csv",
+      "path": "papers/identification/data/processed/midcurve_date_coverage.csv",
+      "source_sha256": "1f6af92de8e40c216aeaf133761e41b9b0b7eaca02ded43efcb449dc64e45b67"
+    },
+    {
+      "source": "paper_pub3/data/processed/summary.json",
+      "path": "papers/identification/data/processed/summary.json",
+      "source_sha256": "750945aefd55581cb259424c8bcaa3dc0b5fbed14153d4e9e134dde2f04844e2"
+    },
+    {
+      "source": "paper_pub3/data/processed/fomc_meetings_asof_2026-03-30.csv",
+      "path": "papers/identification/data/processed/fomc_meetings_asof_2026-03-30.csv",
+      "source_sha256": "679591d925a363722d243cc090777660a518096b94ae41c0c95d43e3d2fb9afa"
+    },
+    {
+      "source": "paper_pub3/data/processed/eris_missing_panel_rows.csv",
+      "path": "papers/identification/data/processed/eris_missing_panel_rows.csv",
+      "source_sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "source": "paper_pub3/data/processed/midcurve_summary.json",
+      "path": "papers/identification/data/processed/midcurve_summary.json",
+      "source_sha256": "6728b14f9190ea5a400d26142e81bd4cd9a69fcce454e36f3c60fce86eb2f495"
+    },
+    {
+      "source": "paper_pub3/data/processed/options_all.csv",
+      "path": "papers/identification/data/processed/options_all.csv",
+      "source_sha256": "0fb3ed9a0db25b2615b1264fdf98fde423cb3cd612a2e45dfb5c0b92d7815190"
+    },
+    {
+      "source": "paper_pub3/data/processed/midcurve_monthly_panel.csv",
+      "path": "papers/identification/data/processed/midcurve_monthly_panel.csv",
+      "source_sha256": "2b1b2ee3d78aca74dbb443ef42a5113ba8eb16a21dc32fb903314001e1e88a90"
+    },
+    {
+      "source": "paper_pub3/data/processed/futures_all.csv",
+      "path": "papers/identification/data/processed/futures_all.csv",
+      "source_sha256": "3ac96e5236f7e83811486921ce78fded2e917a304e3ef43b42359512ec2d2506"
+    },
+    {
+      "source": "paper_pub3/data/processed/contract_total_checks.csv",
+      "path": "papers/identification/data/processed/contract_total_checks.csv",
+      "source_sha256": "100398d039c0445fe3845932746cd6c464ddaf9a9a8d07d46b8303a6e1e6e5d9"
+    },
+    {
+      "source": "paper_pub3/data/processed/source_manifest.csv",
+      "path": "papers/identification/data/processed/source_manifest.csv",
+      "source_sha256": "ee7043e23725d41ee1652a01d480212d7951cb67bf31b7446bfa13b2103f78e3"
+    },
+    {
+      "source": "paper_pub3/data/processed/midcurve_source_manifest.csv",
+      "path": "papers/identification/data/processed/midcurve_source_manifest.csv",
+      "source_sha256": "824ab5f31d622cd8cd863b28ad00cbb3183988fbc8e04ea35011e92a027cf572"
+    },
+    {
+      "source": "paper_pub3/data/processed/calibration_panel_with_discount.csv",
+      "path": "papers/identification/data/processed/calibration_panel_with_discount.csv",
+      "source_sha256": "fad566fff1f89b240c8f4550ededb2b5eafd0d1f4464a1421032c1d92aff693f"
+    },
+    {
+      "source": "paper_pub3/data/processed/calibration_panel.csv",
+      "path": "papers/identification/data/processed/calibration_panel.csv",
+      "source_sha256": "15413e99563e8b0b1faf5a07caf60debd813a23e14b2786d16a1c264b440b595"
+    },
+    {
+      "source": "paper_pub3/data/processed/sofr_fixings.csv",
+      "path": "papers/identification/data/processed/sofr_fixings.csv",
+      "source_sha256": "90cd72fc1af5fd50979e09384268c292a8faa133b0453114209c092be10f16de"
+    },
+    {
+      "source": "paper_pub3/data/processed/parse_issues.csv",
+      "path": "papers/identification/data/processed/parse_issues.csv",
+      "source_sha256": "afcf36383b30706fcbcbe2c44ba6f827b60e0ad2ec0d5df3bf482b1a965f9b11"
+    },
+    {
+      "source": "paper_pub3/data/processed/eris_curve_checks.csv",
+      "path": "papers/identification/data/processed/eris_curve_checks.csv",
+      "source_sha256": "c6306eab249fcebff7415d9d8d8ab0d1bd1fd885a38cc65817393aa4bd377605"
+    },
+    {
+      "source": "paper_pub3/data/processed/date_coverage.csv",
+      "path": "papers/identification/data/processed/date_coverage.csv",
+      "source_sha256": "7e642eae56ff5e03741bf24c23018b782608314659d2699a006ca8769bfc80f0"
+    },
+    {
+      "source": "paper_pub3/data/processed/fomc_vintage_summary.json",
+      "path": "papers/identification/data/processed/fomc_vintage_summary.json",
+      "source_sha256": "799fce914417db9e42db43db13e110894d5ac7f7be17eb1b59c668928be57de0"
+    },
+    {
+      "source": "paper_pub3/data/processed/free_supplement_summary.json",
+      "path": "papers/identification/data/processed/free_supplement_summary.json",
+      "source_sha256": "14203d536b797746b782e1bc377a5ec61cc2a6befba3dcb51e6e28edcb7649ba"
+    },
+    {
+      "source": "paper_pub3/data/processed/eris_discount_factors_3y.csv",
+      "path": "papers/identification/data/processed/eris_discount_factors_3y.csv",
+      "source_sha256": "37c2fd273a39a774745c5edbf5e5714f37f1d404c866726aa648e82ba43e45f1"
+    },
+    {
+      "source": "paper_pub3/data/processed/midcurve_quotes_unmapped.csv",
+      "path": "papers/identification/data/processed/midcurve_quotes_unmapped.csv",
+      "source_sha256": "136fb7ff56051bb8ef68c5ec39287210834bb282482bd439a0a14967291abb5c"
+    },
+    {
+      "source": "paper_pub3/data/processed/eris_par_rates.csv",
+      "path": "papers/identification/data/processed/eris_par_rates.csv",
+      "source_sha256": "7b37f2f26e88b9bcb8e5f40bc589c5dbb349e99004c2b803f4e70923b9135877"
+    },
+    {
+      "source": "paper_pub3/data/processed/calibration_near_money.csv",
+      "path": "papers/identification/data/processed/calibration_near_money.csv",
+      "source_sha256": "2fce1d62c001e0e60051c0f034bbe0163a8987ab9fff0a5c7d85f955ba8ddb0b"
+    },
+    {
+      "source": "paper_pub3/data/processed/midcurve_monthly_panel_with_discount.csv",
+      "path": "papers/identification/data/processed/midcurve_monthly_panel_with_discount.csv",
+      "source_sha256": "83c36bbadb3bbb476cb96ed6c4beced7b00dd872c695a105a6f957ed3e5753d2"
+    },
+    {
+      "source": "paper_pub3/data/processed/fomc_meetings.csv",
+      "path": "papers/identification/data/processed/fomc_meetings.csv",
+      "source_sha256": "e92e79d749461cc81a7c06cf6a479ccdfbef75b4189aa5a5ba73fae6ded316a7"
+    },
+    {
+      "source": "paper_pub3/data/raw/eris_directory.html",
+      "path": "papers/identification/data/raw/eris_directory.html",
+      "source_sha256": "84a1449474f8686fc06926a3cd7cfb3aafb52f286230bbcdf1dfffc5c965c9f6"
+    },
+    {
+      "source": "paper_pub3/data/raw/wayback_midcurve54_2026_index.json",
+      "path": "papers/identification/data/raw/wayback_midcurve54_2026_index.json",
+      "source_sha256": "c3bbe4093d6405a6ad5d37dbcbcd1fe1b2ab2c2b0c0e2b825b59f05b6a9f78b9"
+    },
+    {
+      "source": "paper_pub3/data/raw/fomc_calendar_near_2026-03-30.html.gz",
+      "path": "papers/identification/data/raw/fomc_calendar_near_2026-03-30.html.gz",
+      "source_sha256": "273fb89b908e3960e9f1b3db9e4c6eecddc7551c36827b043b3e68910a5167d3"
+    },
+    {
+      "source": "paper_pub3/data/raw/nyfed_sofr_2026.json",
+      "path": "papers/identification/data/raw/nyfed_sofr_2026.json",
+      "source_sha256": "4ce5e4cbe2e07f8a615f763e2f2f7cbfd9404d5b9c3fe43031564c918f222b87"
+    },
+    {
+      "source": "paper_pub3/data/raw/wayback_calls_2026_index.json",
+      "path": "papers/identification/data/raw/wayback_calls_2026_index.json",
+      "source_sha256": "fcdc2908647542e07e2bebabb2a8e78862fe25861486e6020ba0e95e4272e27b"
+    },
+    {
+      "source": "paper_pub3/data/raw/wayback_puts_2026_index.json",
+      "path": "papers/identification/data/raw/wayback_puts_2026_index.json",
+      "source_sha256": "d5e23c66abb871f573f0a0f8f77d71dc193f1166ff45e0b763f79c0c0be76904"
+    },
+    {
+      "source": "paper_pub3/data/raw/fomc_calendar_near_2026-03-30.html",
+      "path": "papers/identification/data/raw/fomc_calendar_near_2026-03-30.html",
+      "source_sha256": "d8d629ab977d6c969ddd5e138a049cf40bea3e0d55f96c2c31c13383c52f63b1"
+    },
+    {
+      "source": "paper_pub3/data/raw/fomc_calendar_retrieved_2026-09-26.html",
+      "path": "papers/identification/data/raw/fomc_calendar_retrieved_2026-09-26.html",
+      "source_sha256": "e3e69d065ceac36368e16044b78cefb943446336e9feccc69c8ce5b70aa4f58e"
+    },
+    {
+      "source": "paper/PROOFMAP.md",
+      "path": "docs/archive/lab-proofmap.md",
+      "source_sha256": "914a4d1b8df94784e372f508247ad894c1536e1908a8482c7592937faf931b5a"
+    },
+    {
+      "source": "ledger/AXIOMS.md",
+      "path": "docs/archive/AXIOMS.md",
+      "source_sha256": "e99688324dfdae7881e5309e4c36f777d9aea2cf390327af9b6fd96cfd34968a"
+    },
+    {
+      "source": "ledger/TERMS.md",
+      "path": "docs/archive/TERMS.md",
+      "source_sha256": "0c385fbdcdd1a690b72c6d52a0b67596326bd17ee3475057de3e53ec2e18c7c2"
+    },
+    {
+      "source": "refs/BIBLIOGRAPHY.md",
+      "path": "docs/archive/BIBLIOGRAPHY.md",
+      "source_sha256": "0e7c17263ce0a18079f64a94ba36078dc813f0f67e36d8f036c5296a4a94aa3d"
+    },
+    {
+      "source": "paper_pub3/analysis/README.md",
+      "path": "papers/identification/analysis/README.md",
+      "source_sha256": "ebf36a4207a3c1ad393c55a54677aabc10412f7cfa8e6353a1f13be1d6467f35"
+    },
+    {
+      "source": "paper_pub3/data/README.md",
+      "path": "papers/identification/data/README.md",
+      "source_sha256": "bb02e8faca2977cb72aa8f866925df1b3fc412aa4a6b00f73a095062d25bd773"
+    },
+    {
+      "source": "paper_pub3/data/PROVENANCE.md",
+      "path": "papers/identification/data/PROVENANCE.md",
+      "source_sha256": "67dcaa706b2043af7d528813922e0ba0bc41600fad7cda90f058e3ee95e4991b"
+    }
+  ]
+}

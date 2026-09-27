@@ -1,0 +1,22 @@
+{
+  "raw_pdfs": 133,
+  "selected_editions": 121,
+  "printed_dates": 99,
+  "final_call_put_dates": 22,
+  "first_trade_date": "2026-03-25",
+  "last_trade_date": "2026-09-24",
+  "rows": 50690,
+  "numeric_rows": 45721,
+  "weekly_rows": 464,
+  "monthly_matched_pairs": 3139,
+  "monthly_matched_dates": 17,
+  "products": {
+    "S0": 24442,
+    "S0W": 464,
+    "S2": 16561,
+    "S3": 9211,
+    "S4": 12
+  },
+  "contract_total_checks": 2951,
+  "contract_total_mismatches": 0
+}

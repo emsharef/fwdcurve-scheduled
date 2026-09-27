@@ -1,0 +1,3 @@
+# Only needed for extracting source PDFs; analysis of prepared inputs is offline.
+-r requirements.txt
+PyMuPDF==1.28.2

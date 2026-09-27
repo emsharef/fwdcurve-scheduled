@@ -1,0 +1,10 @@
+import Standalone.SpliceLocalizationAssembly
+import Novel.SpliceLocalizationProof
+import Novel.SpliceLocalizationConverseProof
+import Novel.SpliceLocalizationRegularityProof
+
+namespace Novel.SpliceLocalizationAssemblyProof
+
+theorem spliceLocalizationAssembly : Standalone.SpliceLocalizationAssembly.statement := ⟨Novel.SpliceLocalizationProof.spliceLocalization, Novel.SpliceLocalizationConverseProof.spliceLocalizationConverse, Novel.SpliceLocalizationRegularityProof.spliceLocalizationRegularity⟩
+
+end Novel.SpliceLocalizationAssemblyProof

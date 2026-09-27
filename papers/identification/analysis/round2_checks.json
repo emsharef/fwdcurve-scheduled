@@ -1,0 +1,6 @@
+{
+  "quadrature20_40_exposure_error": 3.8968828164342995e-14,
+  "nested_original_hump_exposure_error": 1.7763568394002505e-15,
+  "independent_double_quadrature_error": 2.842170943040401e-14,
+  "gaussian_control_variance_error": 3.637978807091713e-12
+}

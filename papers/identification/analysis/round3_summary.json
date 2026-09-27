@@ -1,0 +1,318 @@
+{
+  "moments": {
+    "atm_scaling_error": 3.552713678800501e-15,
+    "nested_ranges_checked": true,
+    "ratio_min": 0.8921583716429848,
+    "ratio_max": 1.39217873160173,
+    "feasibility": [
+      {
+        "eta": 0.0,
+        "background": "constant",
+        "feasible": false
+      },
+      {
+        "eta": 0.0,
+        "background": "90day",
+        "feasible": false
+      },
+      {
+        "eta": 0.0,
+        "background": "gap",
+        "feasible": true
+      },
+      {
+        "eta": 0.1,
+        "background": "constant",
+        "feasible": true
+      },
+      {
+        "eta": 0.1,
+        "background": "90day",
+        "feasible": true
+      },
+      {
+        "eta": 0.1,
+        "background": "gap",
+        "feasible": true
+      },
+      {
+        "eta": 0.25,
+        "background": "constant",
+        "feasible": true
+      },
+      {
+        "eta": 0.25,
+        "background": "90day",
+        "feasible": true
+      },
+      {
+        "eta": 0.25,
+        "background": "gap",
+        "feasible": true
+      },
+      {
+        "eta": 0.5,
+        "background": "constant",
+        "feasible": true
+      },
+      {
+        "eta": 0.5,
+        "background": "90day",
+        "feasible": true
+      },
+      {
+        "eta": 0.5,
+        "background": "gap",
+        "feasible": true
+      }
+    ],
+    "headline_ranges": [
+      {
+        "eta": 0.0,
+        "background": "constant",
+        "meeting": "2026-09-16",
+        "feasible": false,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "eta": 0.0,
+        "background": "constant",
+        "meeting": "2027-01-27",
+        "feasible": false,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "eta": 0.0,
+        "background": "90day",
+        "meeting": "2026-09-16",
+        "feasible": false,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "eta": 0.0,
+        "background": "90day",
+        "meeting": "2027-01-27",
+        "feasible": false,
+        "lower": null,
+        "upper": null
+      },
+      {
+        "eta": 0.0,
+        "background": "gap",
+        "meeting": "2026-09-16",
+        "feasible": true,
+        "lower": 0,
+        "upper": 1186.0253907787392
+      },
+      {
+        "eta": 0.0,
+        "background": "gap",
+        "meeting": "2027-01-27",
+        "feasible": true,
+        "lower": 0,
+        "upper": 4217.4717780549645
+      },
+      {
+        "eta": 0.1,
+        "background": "constant",
+        "meeting": "2026-09-16",
+        "feasible": true,
+        "lower": 274.9141439145157,
+        "upper": 1057.8929822282835
+      },
+      {
+        "eta": 0.1,
+        "background": "constant",
+        "meeting": "2027-01-27",
+        "feasible": true,
+        "lower": 1549.1648560040924,
+        "upper": 4229.11382339546
+      },
+      {
+        "eta": 0.1,
+        "background": "90day",
+        "meeting": "2026-09-16",
+        "feasible": true,
+        "lower": 0,
+        "upper": 1342.7625361765215
+      },
+      {
+        "eta": 0.1,
+        "background": "90day",
+        "meeting": "2027-01-27",
+        "feasible": true,
+        "lower": 0,
+        "upper": 5125.107622088404
+      },
+      {
+        "eta": 0.1,
+        "background": "gap",
+        "meeting": "2026-09-16",
+        "feasible": true,
+        "lower": 0,
+        "upper": 1469.5666129196902
+      },
+      {
+        "eta": 0.1,
+        "background": "gap",
+        "meeting": "2027-01-27",
+        "feasible": true,
+        "lower": 0,
+        "upper": 5125.107622088405
+      },
+      {
+        "eta": 0.25,
+        "background": "constant",
+        "meeting": "2026-09-16",
+        "feasible": true,
+        "lower": 0,
+        "upper": 1551.8170872216115
+      },
+      {
+        "eta": 0.25,
+        "background": "constant",
+        "meeting": "2027-01-27",
+        "feasible": true,
+        "lower": 91.39814199595594,
+        "upper": 5739.89988922778
+      },
+      {
+        "eta": 0.25,
+        "background": "90day",
+        "meeting": "2026-09-16",
+        "feasible": true,
+        "lower": 0,
+        "upper": 1789.2083821784763
+      },
+      {
+        "eta": 0.25,
+        "background": "90day",
+        "meeting": "2027-01-27",
+        "feasible": true,
+        "lower": 0,
+        "upper": 6486.561388138566
+      },
+      {
+        "eta": 0.25,
+        "background": "gap",
+        "meeting": "2026-09-16",
+        "feasible": true,
+        "lower": 0,
+        "upper": 1894.8784461311175
+      },
+      {
+        "eta": 0.25,
+        "background": "gap",
+        "meeting": "2027-01-27",
+        "feasible": true,
+        "lower": 0,
+        "upper": 6486.561388138566
+      },
+      {
+        "eta": 0.5,
+        "background": "constant",
+        "meeting": "2026-09-16",
+        "feasible": true,
+        "lower": 0,
+        "upper": 2375.023928877158
+      },
+      {
+        "eta": 0.5,
+        "background": "constant",
+        "meeting": "2027-01-27",
+        "feasible": true,
+        "lower": 0,
+        "upper": 8257.876665614976
+      },
+      {
+        "eta": 0.5,
+        "background": "90day",
+        "meeting": "2026-09-16",
+        "feasible": true,
+        "lower": 0,
+        "upper": 2533.2847921817347
+      },
+      {
+        "eta": 0.5,
+        "background": "90day",
+        "meeting": "2027-01-27",
+        "feasible": true,
+        "lower": 0,
+        "upper": 8755.650998222167
+      },
+      {
+        "eta": 0.5,
+        "background": "gap",
+        "meeting": "2026-09-16",
+        "feasible": true,
+        "lower": 0,
+        "upper": 2603.731501483496
+      },
+      {
+        "eta": 0.5,
+        "background": "gap",
+        "meeting": "2027-01-27",
+        "feasible": true,
+        "lower": 0,
+        "upper": 8755.650998222169
+      }
+    ]
+  },
+  "front": {
+    "normalized_at_zero": 0.08903687528681829,
+    "normalized_at_half": 0.8433899194274307,
+    "quadrature_error": 2.7755575615628914e-16,
+    "original_loading_exposure_error": 3.3306690738754696e-16,
+    "parallel_control_rank": 7,
+    "results": [
+      {
+        "flatten_through_years": 0.0,
+        "rows": 17,
+        "columns": 15,
+        "rank": 12,
+        "smallest_nonzero_singular": 0.0024534675399827334,
+        "largest_singular": 6.050814787147957,
+        "ratio": 0.00040547721691861134
+      },
+      {
+        "flatten_through_years": 0.5,
+        "rows": 17,
+        "columns": 15,
+        "rank": 12,
+        "smallest_nonzero_singular": 0.00046238815898294876,
+        "largest_singular": 6.054334540927626,
+        "ratio": 7.637307714946705e-05
+      },
+      {
+        "flatten_through_years": 1.0,
+        "rows": 17,
+        "columns": 15,
+        "rank": 12,
+        "smallest_nonzero_singular": 0.00043289847809043516,
+        "largest_singular": 6.060515570470494,
+        "ratio": 7.142931538691321e-05
+      },
+      {
+        "flatten_through_years": 1.5,
+        "rows": 17,
+        "columns": 15,
+        "rank": 12,
+        "smallest_nonzero_singular": 9.152871749234322e-06,
+        "largest_singular": 6.061192654016991,
+        "ratio": 1.5100776813567135e-06
+      },
+      {
+        "flatten_through_years": 4.0,
+        "rows": 17,
+        "columns": 15,
+        "rank": 7,
+        "smallest_nonzero_singular": 0.1016788619248556,
+        "largest_singular": 6.064195796105928,
+        "ratio": 0.01676708096894692
+      }
+    ]
+  }
+}

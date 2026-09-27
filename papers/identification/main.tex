@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{libertinus-otf}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,booktabs,array,longtable}
+\usepackage{placeins}
+\usepackage{microtype}
+\usepackage[round,authoryear]{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\setlist{itemsep=3pt,topsep=5pt}
+\setlength{\emergencystretch}{2em}
+\allowdisplaybreaks[2]
+\numberwithin{equation}{section}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Q}{Q}
+\newcommand{\cV}{\mathcal V}
+\newcommand{\F}{\mathcal F}
+\newcommand{\ind}{\mathbf 1}
+\newcommand{\dd}{\,\mathrm d}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\row}{row}
+\DeclareMathOperator{\diag}{diag}
+\newcommand{\pos}[1]{(#1)^+}
+\hypersetup{pdftitle={What options reveal about policy-meeting risk}}
+\title{What options reveal about policy-meeting risk:\\ identification and factor-model restrictions}
+\date{September 27, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We characterize the meeting-risk allocations that derivative prices distinguish and the restrictions that factor specifications impose. In a Gaussian rate model, fixed post-cutoff cash claims, including American exercise, depend on earlier meeting and continuous variance only through their total; later-accruing futures retain one additional time-weighted moment. We give an exact calendar criterion for separating meeting risk from deterministic background volatility, and sharp conditional bounds from premium intervals. For scheduled-rate factor models, we characterize all variance vectors attainable under arbitrary deterministic scale recalibration and derive their exact support under square-root stochastic volatility, including the random drift and leverage terms. The published three-factor specifications of \citet{brace2024sofr} imply different active support dimensions. In 555 SOFR option chains on 78 dates, a smile fit reduces the median maximum strike error to 0.161 bp, but meeting-risk lower bounds remain sensitive to background assumptions. A loading with a free long-end level improves three-year-midcurve predictions. A discrete-outcome example quantifies the limits of an additive ATM-variance interpretation.
+\end{abstract}
+\noindent\textbf{Keywords:} SOFR options; scheduled policy meetings; identification; calibration; background volatility; partial identification.
+
+\input{sections/01_introduction}
+\input{sections/02_prices}
+\input{sections/03_calendar}
+\input{sections/04_aggregation}
+\input{sections/05_precision}
+\input{sections/06_restrictions}
+\input{sections/07_calibration}
+\input{sections/08_empirical}
+\FloatBarrier
+\input{sections/09_usecases}
+\FloatBarrier
+\input{sections/08_conclusion}
+\appendix
+\input{sections/a_proofs}
+\input{sections/c_support}
+\input{sections/d_exercise}
+\input{sections/e_calendar_examples}
+\input{sections/g_baseline}
+\input{sections/b_implementation}
+\bibliographystyle{plainnat}
+\bibliography{refs}
+\end{document}

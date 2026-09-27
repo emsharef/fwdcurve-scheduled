@@ -1,0 +1,109 @@
+\section{Proofs}
+\subsection{Bond and option pricing}\label{app:pricing}
+\begin{proof}[Proof of Proposition~\ref{prop:bond}]
+Integration of \eqref{eq:curve}, followed by deterministic and stochastic Fubini, gives
+\begin{align}\label{eq:discountbond}
+\frac{P(t,T)}{B_t}=P(0,T)&\exp\left\{-\int_0^t(T-s)\sigma(s)\,\dd W_s
+                        -\frac12\int_0^t(T-s)^2\sigma(s)^2\,\dd s\right\}\nonumber\\
+&\times\prod_{T_i\leq t}\exp\{- (T-T_i)X_i-\tfrac12(T-T_i)^2v_i\}.
+\end{align}
+All deterministic integrands are bounded on the finite horizon. The Brownian factor is a true exponential martingale. Each meeting factor has conditional expectation one when it is revealed, since $X_i$ is an independent centred Gaussian of variance $v_i$. Brownian increments and unrevealed meeting variables are jointly independent of the past. Conditioning the product between any two times therefore preserves its value. It is integrable with expectation $P(0,T)$ and is a true martingale. Since $P(T,T)=1$, conditioning its terminal value gives the stated bond valuation identity.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:pricing}]
+Write
+\[
+L_t=\sum_{T_i\leq t}w(T_i)X_i+\int_0^t\sigma(s)w(s)\,\dd W_s,\qquad
+q_t=\sum_{T_i\leq t}w(T_i)^2v_i+\int_0^t\sigma(s)^2w(s)^2\,\dd s
+\]
+for $0\leq t\leq b$. Integrating the short rate over $[a,b]$ yields
+\[
+\log R(a,b)=A_0+L_b+\sum_i d(T_i)v_i+\int_0^b\sigma(s)^2d(s)\,\dd s.
+\]
+The unrevealed portion of $L_b$ is independent centred Gaussian with variance $q_b-q_t$. Taking its exponential expectation gives
+\begin{equation}\label{eq:Gmart}
+G_t=\exp\{A_0+p+L_t-q_t/2\}.
+\end{equation}
+This also proves integrability and the martingale property of $G$.
+
+At time $S$, Proposition~\ref{prop:bond} shows that $B_S^{-1}/P(0,S)$ is a probability density. Its random logarithm has coefficients $-(S-T_i)$ on $X_i$ for $T_i\leq S$, and $-(S-s)\sigma(s)$ on Brownian increments. Exponential tilting of a jointly Gaussian vector shifts the mean of $L_S$ by $\Cov(L_S,\log B_S^{-1})=-z$ and leaves its variance $q=q_S$ unchanged. Consequently $\log G_S$ under this density has law
+\[
+N(\log G_0-z-q/2,\ q).
+\]
+Integrating $(G_S-K)^+$ gives \eqref{eq:price} and \eqref{eq:black}, including the deterministic limit at $q=0$.
+
+For completeness, the complete positive-strike surface recovers its parameters without presuming that they are already known. Because $G_S>0$ almost surely,
+\[
+\lim_{K\downarrow0}\frac{C(S,K)-C(S,0)}{K}=-P(0,S),\qquad
+C(S,0):=\lim_{K\downarrow0}C(S,K)=P(0,S)m.
+\]
+The first equality follows by dominated convergence from the difference quotient of the call payoff, which is bounded between $-1$ and zero. The second follows by monotone convergence or integrability. Thus the surface determines $P(0,S)$ and $m$. At strike $K=m$,
+\[
+\frac{C(S,m)}{P(0,S)m}=2\Phi(\sqrt q/2)-1,
+\]
+which is strictly increasing from zero to one as $q$ ranges from zero to infinity. This determines $q$. The formulas for $z$ and $p$ then follow from $m=G_0e^{-z}$ and $G_0=e^{A_0+p}$. For $S<a$, $w=\delta$ on $[0,S]$. Fubini in \eqref{eq:Q} gives $\int_0^S\cV(x)\,\dd x=\sum_{T_i\leq S}(S-T_i)v_i+\int_0^S(S-s)\sigma(s)^2\,\dd s$, proving \eqref{eq:Qz}.
+\end{proof}
+
+\paragraph{The maturity-dependent extension.}
+Let $\Psi(s,T)=\int_s^T\phi(s,x)\,\dd x$. For the curve in \eqref{eq:shapecurve}, the continuous discounted-bond factor in \eqref{eq:discountbond} becomes
+\[
+\exp\left\{-\int_0^t\sigma(s)\Psi(s,T)\,\dd W_s
+            -\tfrac12\int_0^t\sigma(s)^2\Psi(s,T)^2\,\dd s\right\}.
+\]
+Indeed, $\int_s^T\phi(s,x)\Psi(s,x)\,\dd x=\Psi(s,T)^2/2$, since $\Psi(s,\cdot)$ is absolutely continuous. Boundedness ensures square integrability and permits stochastic Fubini, with a jointly measurable version. Integrating the short rate over $[a_\ell,b_\ell]$ gives the Brownian weight $\int_{a_\ell}^{b_\ell}\phi(s,x)\,\dd x=\delta_\ell\beta_\ell(s)$ for $s\leq S_\ell<a_\ell$. Gaussian conditioning and discount tilting preserve its variance. Dividing that variance by $\delta_\ell^2$ proves \eqref{eq:shapeD}. This argument supplies the required normalized variance formula; the special time-integral identity for $z$ in \eqref{eq:Qz} need not survive a change in $\phi$.
+
+\subsection{Rank and identified linear quantities}\label{app:rank}
+\begin{proof}[Proof of Theorem~\ref{thm:rank} and Corollary~\ref{cor:shape}]
+Use the general matrix with meeting columns $\ind_{\{T_i\leq S_\ell\}}$ and background columns $\mathsf D_{\ell j}$. Invertible row differencing, with a zero initial row, changes its $\ell$th row to
+\[
+\left((\ind_{\{S_{\ell-1}<T_i\leq S_\ell\}})_{i=1}^N,
+                                  (\Delta \mathsf D_{\ell j})_{j=1}^{n_b}\right).
+\]
+A meeting later than $S_L$ has a zero column. Two meetings in the same gap have identical columns. Either event prevents full column rank.
+
+Suppose every meeting is covered and no gap contains two meetings. A vector $(x,y)\in\R^N\times\R^{n_b}$ lies in the kernel if and only if, on each meeting-free gap, $\Delta \mathsf D_{\ell,\cdot}y=0$, and on the gap containing meeting $i$, $x_i=-\Delta \mathsf D_{\ell,\cdot}y$. If the meeting-free block has full column rank, the first equations force $y=0$ and the second force $x=0$. If it does not, choose a nonzero $y$ in its kernel and define each $x_i$ by the second equations. This gives a nonzero kernel vector of the full matrix. The rank criterion follows. The parallel case has $\mathsf D_{\ell j}=\mathfrak l_j((0,S_\ell])$ and $\Delta \mathsf D_{\ell j}=\mathfrak l_j((S_{\ell-1},S_\ell])$.
+
+Full column rank implies injectivity on every subset. Conversely, let $d\ne0$ lie in the kernel and let $\theta$ be strictly positive. For sufficiently small nonzero real $\epsilon$, both $\theta$ and $\theta+\epsilon d$ are strictly positive and give the same observations. This proves failure of injectivity on the orthant and the stated interior conclusion.
+\end{proof}
+
+The linear-functional claim follows from the same argument. If $c=\mathsf A^\top a$, then $c^\top\theta=a^\top\boldsymbol{\cV}$ is determined. If $c$ is outside the row space, the identity $\row(\mathsf A)=(\ker\mathsf A)^\perp$ gives a $d\in\ker\mathsf A$ with $c^\top d\ne0$. Perturbing any positive $\theta$ along $d$ changes the functional while preserving the panel. This is an elementary finite-dimensional statement and requires no stochastic assumptions.
+
+\subsection{Aggregation and the compatible polytope}\label{app:aggregation}
+\begin{proof}[Proof of Theorem~\ref{thm:aggregate}]
+In the pure-jump model,
+\[
+y=\sum_{i\leq k}(X_i+v_i (A-T_i)),\qquad
+B_A^{-1}=\exp\left\{-\sum_{i\leq k}((A-T_i)X_i+\tfrac12v_i (A-T_i)^2)\right\}.
+\]
+The Gaussian exponential formula gives $\E[B_A^{-1}]=1$. Under this density the early coordinates are independent $N(-v_i (A-T_i),v_i)$ variables, and the later coordinates retain their independent $N(0,v_i)$ laws. Hence $y\sim N(0,V)$ and is independent of the later coordinates. Substitution in the forward curve gives \eqref{eq:postcurve}. Every post-$A$ bond, bank-account ratio, and bond-implied fixing is a fixed function of $y$, the later coordinates, and the total $V$.
+
+Let $Y_S$ be the cash flow in part 2. Factor its discount as $B_S^{-1}=B_A^{-1}\exp(-\int_A^S r_t\,\dd t)$. Under the tilted measure, its value is an expectation of a fixed function of $y$ and the later coordinates. Their joint law depends on the early variances only through $V$. This proves the European assertion under the stated integrability assumption.
+
+For American exercise, first assume $V>0$ and define early residuals
+\[
+\epsilon_i=X_i+v_i (A-T_i)-\frac{v_i}{V}y,\qquad i\leq k.
+\]
+Under the tilted measure, their covariances with $y$ are zero, and their covariances with every later coordinate are zero. Joint Gaussianity implies independence of the residual vector from $(y,X_{k+1},\ldots,X_N)$. Also the early information is exactly the information generated by $y$ and the residuals, since the displayed formula can be inverted. First restrict exercise to a finite deterministic grid containing $A$ and $S$. On the canonical product space, the sections of each full-history stopping event, after fixing the residual vector, are measurable in the reduced history generated by $y$ and the later coordinates revealed by that grid time. For almost every residual value, the resulting events define a reduced stopping rule. Completed filtrations cause no difficulty on a finite grid: choose raw measurable representatives of its finitely many stopping events, modifying them on a common null set if needed. Each section has expected reward at most the supremum over reduced grid stopping rules. Independence and Fubini give the same bound after averaging over residuals. The reverse inequality holds because every reduced rule is a full-history rule. The grid suprema are therefore equal.
+
+For any full-history stopping time $\tau$, round it upwards to the next point of a sequence of nested grids with mesh tending to zero, retaining $S$ as an endpoint. The rounded time $\tau_n$ is a grid stopping time and decreases to $\tau$. Right continuity gives $\widehat Y_{\tau_n}\to \widehat Y_\tau$, and the integrable envelope gives convergence of expectations under the tilted measure. Thus the supremum over all stopping times is the limit of the grid suprema. The same argument applies to the reduced filtration, proving equality for continuous exercise. The reduced state law and payoff rule depend on the earlier variances only through $V$. If $V=0$, all early variances and variables vanish and no residual information is present. This proves part 3 without a claim that the optimal stopping time is an expiry time or even that an optimum is attained.
+
+For part 4, when $T_i\leq A\leq a$, the weight in \eqref{eq:p} is $h(T_i)=\delta(b-T_i)$. Summing these contributions yields $\delta(bV-M_1)$. All later-meeting terms are held fixed. If two windows have distinct terminal dates $b_1,b_2$, subtract their known contributions and divide each logarithmic futures quote by its own $\delta$. The resulting values are $b_1V-M_1$ and $b_2V-M_1$, which determine $V$ and $M_1$ uniquely.
+\end{proof}
+
+For the polytope, divide \eqref{eq:polytope}'s second equation by $V>0$. The ratio $M_1/V$ is a convex combination of the meeting dates. This gives the feasibility criterion, whose converse follows by mixing the first and last dates. Compactness follows from $0\leq x_i\leq V$. If a feasible vector has at least three positive coordinates, the corresponding two-row matrix, whose columns are $(1,T_i)^\top$, has a nonzero kernel vector supported on those coordinates. A sufficiently small perturbation in either direction remains feasible and nonnegative. The original vector is not an extreme point. A linear objective on a nonempty compact polytope attains its extrema at extreme points; these therefore have at most two positive coordinates. Solving the two equations gives \eqref{eq:vertices}.
+
+\subsection{Interval inversion and cumulative bounds}
+Strict monotonicity of \eqref{eq:atm} and algebra give \eqref{eq:inverse}. Differentiating for $\cV>0$ gives
+\[
+\frac{\partial c}{\partial \cV}=\frac{Dm}{2\sqrt{\cV}}
+                         \varphi(\delta\sqrt{\cV}/2),
+\]
+which proves the local relation \eqref{eq:eta}. For a linear estimator, its error is $a^\top e$. On the box $|e_\ell|\leq\eta_\ell$, its maximum absolute value is $\sum|a_\ell|\eta_\ell$, attained by aligning the error signs. Applying this to the coefficients of the differenced estimator proves \eqref{eq:differror}.
+
+\begin{proof}[Proof of Proposition~\ref{prop:cumulative}]
+Any feasible cumulative vector is nondecreasing. Hence $\cV_n\geq\max_{i\leq n}\ell_i=L_n$ and $\cV_n\leq\min_{j\geq n}r_j=R_n$. These inequalities imply necessity. Conversely, if $L_n\leq R_n$ for every $n$, the nondecreasing choice $\cV_n=L_n$ satisfies every original interval and proves feasibility.
+
+For any consecutive pair, $\cV_{n-1}\geq L_{n-1}$ and $\cV_n\leq R_n$ give the upper bound in \eqref{eq:cumbounds}. Also $\cV_n\geq L_n$ and $\cV_{n-1}\leq R_{n-1}$ give its lower bound, together with nonnegativity. To attain the upper bound, set $\cV_{n-1}=L_{n-1}$ and $\cV_n=R_n$. Fill earlier coordinates with $L_j$ and later coordinates with $\max\{L_j,R_n\}$. For $j>n$, $R_j\geq R_n$, so these choices remain within their effective intervals and are nondecreasing.
+
+For the lower bound, if $L_n>R_{n-1}$, choose the pair $(R_{n-1},L_n)$. Otherwise choose both coordinates equal to $\max\{L_{n-1},L_n\}=L_n$, which belongs to both effective intervals because $L_n\leq R_{n-1}\leq R_n$. Fill earlier coordinates with their lower envelopes and later coordinates with the maximum of their lower envelope and the chosen $\cV_n$. All interval and monotonicity constraints hold. For $n=1$, use the fixed value $\cV_0=0$, giving the same formulas. This proves sharpness.
+\end{proof}

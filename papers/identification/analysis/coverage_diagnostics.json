@@ -1,0 +1,7 @@
+{
+  "near_meeting_calendar_day_radius": 3,
+  "sample_near": 10,
+  "sample_dates": 78,
+  "weekday_near": 16,
+  "weekdays": 121
+}

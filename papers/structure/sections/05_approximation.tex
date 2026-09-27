@@ -1,0 +1,97 @@
+\section{Approximation on a finite horizon}\label{sec:approximation}
+Suppose a desired sequence of meeting loadings has no finite recurrence. Theorem~\ref{thm:realization} rules out an exact state of fixed size across all calendars. For pricing over a specified horizon, however, only finitely many loadings are used. We can approximate those entries by a recurrent sequence and then use the state equations of the preceding section. The question is how an error in the loadings propagates to forward rates and bond prices.
+
+Fix a horizon $H$ with $N$ meetings. Let $a_i$ be the target loadings and $\widetilde a_i$ their approximations. Use the same bounded maturity function $\lambda$ in both models and put $\Lambda=\sup_{0\le x\le H}|\lambda(x)|$. The largest loading error and the largest loading magnitude on this calendar are
+\begin{equation}
+\varepsilon=\max_{0\le i\le N}|a_i-\widetilde a_i|,\qquad
+\bar a=\max_{0\le i\le N}\max(|a_i|,|\widetilde a_i|).\label{eq:loaderror}
+\end{equation}
+The volatility functions are $\sigma(s,T)=a_{i(s,T)}\lambda(T-s)$ and $\widetilde\sigma(s,T)=\widetilde a_{i(s,T)}\lambda(T-s)$. Compute their drifts separately using \eqref{eq:diffdrift}. Let $f,\widetilde f$ be the resulting forward curves, driven by the same Brownian motion and starting from the same bounded Borel curve $f_0$. Write $F_0=\sup_{T\le H}|f_0(T)|$. Neither model has announcement jumps. Their bond prices, obtained from \eqref{eq:bonddefinition}, are $P$ and $\widetilde P$.
+
+Using the same driver compares the models under the same shocks. The squared difference therefore measures the effect of replacing the loadings. The next theorem bounds its expectation by a constant times $\varepsilon^2$; root-mean-square errors are proportional to the loading error.
+
+\begin{theorem}[Curve and price stability]\label{thm:approximation}
+For $0\le t\le T\le H$,
+\begin{align}
+\E|f(t,T)-\widetilde f(t,T)|^2
+&\le\varepsilon^2\left[\Lambda^2t+4\bar a^2\Lambda^4(tT-t^2/2)^2\right],\label{eq:pointbound}\\
+\sup_{0\le t\le T\le H}\E|f(t,T)-\widetilde f(t,T)|^2
+&\le\varepsilon^2(\Lambda^2H+\bar a^2\Lambda^4H^4).\label{eq:uniformbound}
+\end{align}
+If $\lambda$ has the representation \eqref{eq:shape}, the models have jointly measurable maturity versions defining their bond prices, and
+\begin{align}
+\E|\log P(t,T)-\log\widetilde P(t,T)|^2&\le\varepsilon^2 C_H,\label{eq:logbound}\\
+\E|P(t,T)-\widetilde P(t,T)|^2&\le\sqrt6\,e^{2HF_0+\bar a^2\Lambda^2H^3}\varepsilon^2 C_H,\label{eq:pricebound}\\
+C_H&=\tfrac4{27}\Lambda^2H^3+\tfrac1{16}\bar a^2\Lambda^4H^6.\notag
+\end{align}
+At a specified $(t,T)$, the sharper bounds are obtained by defining
+\begin{align}
+B_{t,T}&=\Lambda^2t(T-t)^2+\bar a^2\Lambda^4t^2T^2(T-t)^2,\notag\\
+E_{t,T}&=\bar a^2\Lambda^2\{tT(T-t)+4t(T-t)^2\}.\notag
+\end{align}
+Then
+\begin{align}
+\E|\log P-\log\widetilde P|^2&\le\varepsilon^2B_{t,T},\label{eq:pointlog}\\
+\E|P-\widetilde P|^2&\le\sqrt6\,e^{2F_0(T-t)+E_{t,T}}\varepsilon^2B_{t,T}.\label{eq:pointprice}
+\end{align}
+\end{theorem}
+\begin{remark}[Realizing the approximation]
+If $\widetilde a_i=uM^iv$ and $f_0=0$, Proposition~\ref{prop:scaledconstruction} with $\psi=1$ realizes the approximating model, including its own drift. Its recovered curve and bond prices therefore satisfy the bounds above.
+\end{remark}
+In \eqref{eq:pointbound}, the term $\varepsilon^2\Lambda^2t$ bounds the error from Brownian shocks. The other term bounds the accumulated drift error. Integrating the curve error over maturity gives the log-price estimate; Gaussian exponential moments then give the price estimate.
+
+The constants involve $H$, $\Lambda$, and $\bar a$, but no separate meeting count or minimum spacing. Thus adding closely spaced meetings does not worsen the bounds if the loading error and loading magnitudes remain fixed. For growing loadings, such as the harmonic sequence, $\bar a$ must be recomputed on the larger calendar. The supremum in \eqref{eq:uniformbound} is over expected squared errors at fixed observation times and maturities; it is not the expectation of the largest pathwise error.
+
+\begin{proof}
+Write $\mathcal V(s,T)=\int_s^T\sigma(s,u)\dd u$. Then
+\[
+|\sigma-\widetilde\sigma|\le\varepsilon\Lambda,\qquad
+|\mathcal V-\widetilde{\mathcal V}|\le\varepsilon\Lambda(T-s),\qquad |\mathcal V|\le\bar a\Lambda(T-s).
+\]
+Since $\alpha=\sigma \mathcal V$,
+\[
+|\alpha-\widetilde\alpha|\le2\varepsilon\bar a\Lambda^2(T-s).
+\]
+The forward difference is a deterministic mean $m_f=\int_0^t(\alpha-\widetilde\alpha)\dd s$ plus a centered stochastic integral. The It\^o isometry gives exactly
+\[
+\E|f-\widetilde f|^2=m_f^2+\int_0^t|\sigma-\widetilde\sigma|^2\dd s.
+\]
+This proves \eqref{eq:pointbound}; $tT-t^2/2\le H^2/2$ proves \eqref{eq:uniformbound}.
+
+For prices set $X=\int_t^T(f(t,u)-f_0(u))\dd u$ and similarly $\widetilde X$. Splitting the stochastic integral at the finitely many meetings and using \eqref{eq:shape} expresses the stochastic curve as finitely many Gaussian vectors times piecewise-continuous functions of maturity. This gives the required measurable, bounded maturity version. In particular, $X,\widetilde X$ are jointly Gaussian. With $U(s)=\int_t^T\sigma(s,u)\dd u$,
+\[
+\E X=\frac12\int_0^t[\mathcal V(s,T)^2-\mathcal V(s,t)^2]\dd s,\qquad
+\Var X=\int_0^t U(s)^2\dd s.
+\]
+For $\Delta_X=X-\widetilde X$, direct integration gives
+\[
+|\E \Delta_X|\le\varepsilon\bar a\Lambda^2tT(T-t),\qquad
+\Var \Delta_X\le\varepsilon^2\Lambda^2t(T-t)^2.
+\]
+For the mean bound, use
+$|\alpha-\widetilde\alpha|(s,u)\le2\varepsilon\bar a\Lambda^2(u-s)$ and integrate over $0\le s\le t$, $t\le u\le T$. The variance bound follows from $|U-\widetilde U|\le\varepsilon\Lambda(T-t)$. Thus $\E \Delta_X^2\le\varepsilon^2B_{t,T}$. Since
+\[
+tT(T-t)\le H^3/4,\qquad t(T-t)^2\le4H^3/27,
+\]
+we obtain $\E \Delta_X^2\le\varepsilon^2C_H$. The same estimates for one model give
+\[
+|\E X|\le\tfrac12\bar a^2\Lambda^2tT(T-t),\qquad
+\Var X\le\bar a^2\Lambda^2t(T-t)^2,
+\]
+and hence $\E e^{-4X}\le e^{2E_{t,T}}$, with the same bound for $\widetilde X$. Now
+\begin{align*}
+\E|e^{-X}-e^{-\widetilde X}|^2
+&\le (\E \Delta_X^4)^{1/2}
+\bigl(\E\max(e^{-4X},e^{-4\widetilde X})\bigr)^{1/2}\\
+&\le\sqrt6\,e^{E_{t,T}}\E \Delta_X^2.
+\end{align*}
+We used $\E \Delta_X^4\le3(\E \Delta_X^2)^2$ for a possibly noncentered Gaussian and bounded the maximum by the sum of its two arguments. Multiplication by the common initial-curve factor proves \eqref{eq:pointprice}. The preceding maxima imply $E_{t,T}\le(1/4+16/27)\bar a^2\Lambda^2H^3\le\bar a^2\Lambda^2H^3$, which gives \eqref{eq:pricebound}. Finally Proposition~\ref{prop:scaledconstruction} realizes the approximating volatility and its own drift. Agreement at each maturity and joint measurability give agreement of maturity integrals by Fubini.
+\end{proof}
+
+The leading forward estimate cannot generally be improved in its order or its drift constant: with constant shape $\Lambda$ and constant loadings $a_i=\bar a$, $\widetilde a_i=\bar a-\varepsilon$, the exact error is
+\[
+\varepsilon^2\{\Lambda^2t+(2\bar a-\varepsilon)^2\Lambda^4(tT-t^2/2)^2\}.
+\]
+It approaches \eqref{eq:pointbound} as $\varepsilon/\bar a\to0$.
+
+To use the result, choose a recurrent approximation, compute $\varepsilon$ on the required calendar, and insert it in the bounds. A useful approximation has recurrence order much smaller than the number of meetings. Section~\ref{sec:examples} constructs one for harmonic loadings and compares the bounds with the Gaussian errors calculated directly. The price estimates here apply to the deterministic-volatility models just defined.

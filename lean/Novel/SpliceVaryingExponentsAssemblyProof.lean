@@ -1,0 +1,10 @@
+import Standalone.SpliceVaryingExponentsAssembly
+import Novel.SpliceVaryingExponentsRestrictionsProof
+
+namespace Novel.SpliceVaryingExponentsAssemblyProof
+
+theorem spliceVaryingExponentsAssembly : Standalone.SpliceVaryingExponentsAssembly.statement :=
+  ⟨Novel.SpliceVaryingExponentsProof.spliceVaryingExponents,
+    Novel.SpliceVaryingExponentsRestrictionsProof.spliceVaryingExponentsRestrictions⟩
+
+end Novel.SpliceVaryingExponentsAssemblyProof

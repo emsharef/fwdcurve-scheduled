@@ -1,0 +1,41 @@
+\subsection{Second-moment and front-loading sensitivities}\label{app:finalsensitivities}
+\paragraph{Second moments.}
+The fitted mixture has mean zero and variance
+$\widehat{\cV}_{2,\ell}=d_\ell^2+(s_{1,\ell}^2+s_{2,\ell}^2)/2$.
+Unlike the ATM proxy, this is the variance of the fitted law. Its use still extrapolates that law beyond the observed strikes, and fitting separate expiry laws does not establish independent increments or a common pricing measure. We apply the parallel calendar equation to these moments as a companion sensitivity calculation.
+
+For comparability, retain the numerical ATM-price allowances $\varepsilon_\ell$ in \eqref{eq:robustallowance}. Multiplying the entire centred mixture displacement by a positive scalar multiplies its ATM price by that scalar and its second moment by its square. Thus an ATM-scale perturbation induces a moment interval. Widen that interval by an additional relative allowance $\zeta\in\{0,0.10,0.25,0.50\}$:
+\begin{equation}\label{eq:momentinterval}
+(1-\zeta)\widehat{\cV}_{2,\ell}
+ \left\{\left(1-\frac{\varepsilon_\ell}{\widehat c_{{\rm ATM},\ell}}\right)^+\right\}^2
+\ \leq\ (\mathsf A\theta)_\ell\ \leq\
+(1+\zeta)\widehat{\cV}_{2,\ell}
+ \left(1+\frac{\varepsilon_\ell}{\widehat c_{{\rm ATM},\ell}}\right)^2.
+\end{equation}
+The values of $\zeta$ are sensitivity scenarios, not estimated tail-error bounds or confidence levels. The numerical $\varepsilon_\ell$ are reused as scale allowances; their exercise and mean components are not recalculated under the mixture law. This experiment does not transfer the Gaussian seed-containment argument to a different pricing model.
+
+On 18 June the ratio $\widehat{\cV}_{2,\ell}/\widehat{\cV}_{{\rm ATM},\ell}$ ranges from 0.892 to 1.392 across seven expiries. With $\zeta=0$, constant and 90-day backgrounds are infeasible; expiry-gap background is feasible and permits zero for both headline meetings. Table~\ref{tab:momentcheck} reports the wider scenarios. At $\zeta=0.50$, all three specifications permit zero for both meetings. The positive constant-background bounds at $\zeta=0.10$ therefore demonstrate a conditional contrast between backgrounds, not distribution-free positive lower bounds.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{rlrr}
+\toprule
+Extra allowance & Background & 16 September 2026 & 27 January 2027\\
+\midrule
+10\% & Constant & $[275,1058]$ & $[1549,4229]$\\
+ & 90-day cells & $[0,1343]$ & $[0,5125]$\\
+ & Each expiry gap & $[0,1470]$ & $[0,5125]$\\
+25\% & Constant & $[0,1552]$ & $[91,5740]$\\
+ & 90-day cells & $[0,1789]$ & $[0,6487]$\\
+ & Each expiry gap & $[0,1895]$ & $[0,6487]$\\
+\bottomrule
+\end{tabular}
+\caption{Mixture-second-moment meeting-variance ranges on 18 June under \eqref{eq:momentinterval}, in bp$^2$, rounded to the nearest integer. These are sensitivity ranges for an extrapolated second moment.}\label{tab:momentcheck}
+\end{table}
+
+\paragraph{Flattening the front of the loading.}
+Write the selected free-level loading as a function of maturity distance,
+$\phi(\tau)=1+18\tau e^{-1.5\tau}+8(1-e^{-1.5\tau})$.
+For a cutoff $h\geq0$, replace it by $\phi(\max\{\tau,h\})$ and divide by its value at $\tau=1$. This keeps the tail unchanged up to a common scale and makes the front constant. We rebuild the 22 July all-product exposure matrix with expiry-gap background cells; there are 17 observations and 15 parameter columns. No coefficients are refitted. Maturity averaging is analytic, and shock-time integration is split where a window crosses the cutoff.
+
+The ranks for $h=0,0.5,1,1.5$ years are all 12. In the same ACT/360 parameter coordinates, the smallest nonzero singular value divided by the largest is respectively $4.05\times10^{-4}$, $7.64\times10^{-5}$, $7.14\times10^{-5}$, and $1.51\times10^{-6}$. Removing the first half-year's slope weakens this relative sensitivity by a factor of 5.3 without destroying exact rank. Setting $h=4$ years flattens the entire observed exposure domain, reproduces the parallel matrix, and reduces rank to 7. The rank increase therefore does not depend exclusively on the steep front, but its numerical strength is sensitive to that part of the curve. These singular values compare the stated coordinate scaling; they are not invariant measures of statistical precision.\FloatBarrier

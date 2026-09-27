@@ -1,0 +1,52 @@
+\clearpage
+\section{Notation}
+Symbols used only inside a proof are defined there. The principal model quantities are collected below. Polynomial powers use integer indices $j,k$; $\mu$ is reserved for drift coefficients and $\nu$ for block noise rows.
+
+{\small
+\begin{longtable}{p{.31\linewidth}p{.60\linewidth}}
+\toprule
+Symbol & Meaning\\
+\midrule
+\endfirsthead
+\toprule
+Symbol & Meaning (continued)\\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+$t,T,x=T-t$ & Observation time, maturity, and time to maturity.\\
+$H,T_n,I_m,j(t)$ & Horizon, meeting dates, maturity intervals, and current interval index.\\
+$Q,\E,W$ & Pricing measure, its expectation, and Brownian driver.\\
+$f,P,r,B$ & Forward rate, bond price, short rate, and bank account.\\
+$\alpha,\sigma,\xi_n$ & Forward drift, Brownian sensitivity, and announcement change.\\
+$h,h_0,\mathcal H$ & Jump correction, its affine intercept, and its maturity integral.\\
+$\mathcal L_X$ & Conditional log-Laplace transform of the level change.\\
+$\ell_k,X_k,y_k$ & Interval length, announcement level, and announcement slope.\\
+$\bar x_k,\Sigma$ & Jointly Gaussian announcement mean and covariance.\\
+$\mathcal U_k,\mathcal Z_k,Q_k$ & Earlier-interval jump integral, tilt density, and tilted measure.\\
+$s_k,\mu_k^L,\mu_k^C$ & Step volatility and required level and slope drifts.\\
+$\mathcal V_k^S$ & Volatility integrated up to the start of interval $I_k$, or zero on the current interval.\\
+$a_i,\lambda(x)$ & Meeting-loading sequence and smooth maturity function.\\
+$\mathcal D(t),i(t,T)$ & Remaining meeting distances and number of intervening meetings.\\
+$A,b,c;d_\lambda$ & Matrix-exponential representation of $\lambda$ and its dimension.\\
+$M,u,v;p$ & Matrix representation of the recurrence and its dimension.\\
+$\Xi,\Pi,\Theta;d_*=p d_\lambda$ & Realization states and combined vector size.\\
+$k,\mathcal I,\mathcal V_a$ & Curve-evaluation row, its maturity integral, and integrated unscaled volatility.\\
+$\mathsf H_{R,n},q$ & Finite loading Hankel section and total state dimension.\\
+$\varepsilon,\bar a,\Lambda$ & Maximum loading error, loading magnitude, and shape magnitude.\\
+$C_H,B_{t,T},E_{t,T}$ & Uniform log-price bound, pointwise log-price bound, and price-moment exponent.\\
+$L_m,C_m,V_m,G_m$ & Front-end level, slope, noise row, and maturity-step change of that row.\\
+$F,Z,\mathcal A,\mathcal C;d_B$ & Smooth block, coefficient process, exponential representation, and exponential block dimension.\\
+$\mu_k,\nu^k,\mathsf Q$ & Block coordinate drift, noise row, and covariance matrix.\\
+$\varphi_k,\Phi_k$ & Block coordinate function and its maturity integral.\\
+$\Sigma^S,\Sigma^B,\chi_m$ & Integrated front-end and block volatilities, and interval constant in $\Sigma^S=TV_m+\chi_m$.\\
+$\mathcal K_m,\bar\omega_k$ & Covariance cross term on $I_m$ and covariance of block coordinate $k$ with current front-end noise.\\
+$R,R_\sharp,\mathcal X$ & Block residual, adjusted residual, and common non-level cross term.\\
+$\mu_m^S$ & Required front-end drift on interval $I_m$.\\
+$\kappa,\theta,\rho,\pi,n_q$ & Exponential decay rate, geometric ratio, driver correlation, two-point probability, and quadrature-node count.\\
+$\ell_P,\delta_P,v_P,b_P$ & Log price, log-price difference, its variance, and exponent in the numerical Gaussian moment formula.\\
+$\tau,Z_1,Z_2,Z_4,v_t$ & Single scheduled date, three exponential coefficients, and variance $2+\tanh Z_2(t)$ in Section~\ref{sec:varianceexample}.\\
+$\beta_i,p_i,p_{[i]},R_{\rm var}$ & Decay parameters, their coefficient polynomials, sums for coinciding decays, and the nonlinear block residual in Section~\ref{sec:varyingexponents}.\\
+$\mathcal R_\rho,c_\rho$ & Integrated cross-term difference and its exponential coefficient in the correlation example.\\
+\end{longtable}
+}

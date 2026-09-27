@@ -1,0 +1,7 @@
+{
+  "arithmetic": "exact rational polynomial-exponential coefficients",
+  "svensson_cases": 6,
+  "variance_hjm_and_bond_cases": 9,
+  "curve_recovery_determinant": "-21/1024",
+  "passed": true
+}

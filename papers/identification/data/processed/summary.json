@@ -1,0 +1,25 @@
+{
+  "near_money_strikes": 8492,
+  "contract_total_checks": 3793,
+  "contract_total_mismatches": 0,
+  "downloaded_pdfs": 210,
+  "selected_pdfs": 201,
+  "first_trade_date": "2026-03-18",
+  "last_trade_date": "2026-09-24",
+  "trading_dates": 118,
+  "final_call_put_dates": 78,
+  "calibration_dates": 78,
+  "option_rows": 104329,
+  "numeric_option_rows": 92936,
+  "cabinet_rows": 11044,
+  "futures_rows": 5020,
+  "matched_call_put_strikes": 20498,
+  "manual_values_checked": 15,
+  "parse_issues": 349,
+  "publication_status_counts": {
+    "FINAL": 200,
+    "PRELIMINARY": 10
+  },
+  "archive_bytes": 29170373,
+  "sofr_fixings": 144
+}

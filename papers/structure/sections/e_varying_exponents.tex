@@ -1,0 +1,40 @@
+\subsection{Allowing the exponential decay rates to vary}\label{sec:varyingexponents}
+The preceding splice criterion fixes the exponential matrix. Could a model avoid smooth-family restrictions by allowing the decay rates themselves to move? For an uncorrelated splice with strictly positive decays, the entire smooth-block consistency equation survives. The meeting component cannot absorb any of its residual.
+
+Replace \eqref{eq:block} in this subsection by
+\begin{equation}\label{eq:varyingblock}
+F(x,z)=\sum_{i=1}^K p_i(x,z)e^{-\beta_i x},\qquad
+p_i(x,z)=\sum_{j=0}^{n_i}z_{i,j}x^j.
+\end{equation}
+Both the polynomial coefficients and the decay parameters $\beta_i$ are coordinates of a continuous It\^o process $Z$. Write their drift vector as $\mu$, their Brownian rows as $\nu^k$, and their covariance as $\mathsf Q$. Assume the block's noise is orthogonal to the front-end noise. There is no separate level or other exponent-zero term in \eqref{eq:varyingblock}. In this subsection the front-end slopes may also have Brownian noise: their covariance with every block coordinate must likewise vanish.
+
+Because $F$ is now nonlinear in its coordinates, its residual includes the parameter Hessian. With $F_k=\partial_{z_k}F$ and $F_{kl}=\partial_{z_k}\partial_{z_l}F$, define
+\begin{equation}\label{eq:varyingresidual}
+R_{\rm var}(x)=\sum_k\mu_kF_k(x,Z)
+ +\frac12\sum_{k,l}\mathsf Q_{kl}F_{kl}(x,Z)-\partial_xF(x,Z)
+ -\sum_{k,l}\mathsf Q_{kl}F_k(x,Z)\int_0^x F_l(y,Z)\dd y.
+\end{equation}
+For each $i$, let $p_{[i]}(x,z)$ be the sum of the polynomials $p_j(x,z)$ whose decay parameter equals $\beta_i$. This grouping accounts for cancellation between coinciding exponents.
+
+\begin{theorem}[Positive varying decays in an uncorrelated splice]\label{thm:varyingexponents}
+Suppose the combined curve satisfies the integrated drift condition, $Z$ stays in the parameter set of bounded exponential-polynomial curves, and every $\beta_i(t)>0$ for $dt\otimes dQ$-almost every $(t,\omega)$. Then
+\[
+R_{\rm var}(x)=0\qquad\text{for all }x\ge0,
+\]
+outside a time--probability null set. Thus $Z$ satisfies the smooth block's own consistency equation, not merely an affine-residual condition.
+
+Consequently the exponent restrictions of \citet{filipovic2000exponential} apply unchanged. In particular, almost everywhere,
+\begin{align*}
+|\nu^{\beta_i}|^2&=0&&\text{where }p_i(\cdot,Z)\not\equiv0,\\
+\mu_{\beta_i}&=0&&\text{where }p_i(\cdot,Z)\not\equiv0
+                    \text{ and }p_{[i]}(\cdot,Z)\not\equiv0.
+\end{align*}
+If both nonvanishing conditions hold almost everywhere for each $i$, every decay parameter is indistinguishable from its initial value.
+\end{theorem}
+\begin{proof}
+Use the common exceptional-set argument of Lemma~\ref{lem:maturitynull} and It\^o's formula for the representation. Orthogonality removes the covariance cross terms. On each maturity interval the negative block residual equals the front-end drift minus its own HJM drift. This is a polynomial in $x$ of degree at most three: the front-end noise is affine and its maturity primitive is quadratic. With finite-variation slopes the degree is at most one.
+
+Fix a point at which every $\beta_i>0$. Differentiating \eqref{eq:varyingblock} in any parameter only adds polynomial powers of $x$ to its exponential factor. Moreover, the integral of a polynomial times $e^{-\beta_i x}$ is a constant minus a polynomial times that same exponential. Every term of $R_{\rm var}$ therefore has a factor $e^{-\beta_i x}$ or $e^{-(\beta_i+\beta_j)x}$, with positive decay. Such a finite sum cannot equal a polynomial on a nonempty interval unless both vanish: analytic continuation extends the equality, and the exponential sum tends to zero as $x\to\infty$. This proves the block consistency equation. The cited exponent restrictions use that equation, the bounded-family support condition, and the It\^o dynamics of $Z$; these hypotheses now hold. Finally, vanishing drift and noise almost everywhere make each exponent constant in time.
+\end{proof}
+
+The transfer to the scheduled splice is the additional result here; the exponent restrictions themselves are classical. Positivity is required even where a coefficient polynomial vanishes. Zero decays can supply a polynomial residual, as the level examples show. Correlated splices with moving decays require additional cross terms and are not covered by this theorem.

@@ -1,0 +1,97 @@
+\section{From a meeting model to observable option quantities}\label{sec:prices}
+\subsection{Dates, rates, and units}
+Time zero is the valuation date; time is measured in years. We use $t$ for observation time, $T$ for maturity, and $H$ for a fixed finite horizon containing all dates considered. The known future meeting dates are $0<T_1<\cdots<T_N<H$. At meeting $n$, a centred Gaussian surprise $X_n$ with variance $v_n\geq0$ is revealed. The $X_n$ are independent under the pricing measure $\Q$, the probability law used for valuation rather than a forecast of realized policy outcomes. They are also independent of a Brownian motion $W$, which represents information arriving between meetings. The information $\F_t$ available at time $t$ consists of the Brownian history and precisely those surprises whose dates have passed, with the usual augmentation. In particular, it contains no advance information about an unrevealed $X_n$.
+
+The function $f_0(T)$ is the deterministic initial instantaneous forward rate for maturity $T$. The deterministic function $\sigma(s)$ is the volatility of the continuous component at time $s$. On a finite horizon, take $f_0$ bounded and piecewise continuous and $\sigma$ bounded and piecewise constant. For $0\leq t\leq T$, define
+\begin{equation}\label{eq:curve}
+f(t,T)=f_0(T)+\int_0^t\sigma(s)\,\dd W_s
+ +\int_0^t\sigma(s)^2(T-s)\,\dd s
+ +\sum_{T_i\leq t}\{X_i+v_i(T-T_i)\}.
+\end{equation}
+For clarity, $\alpha(t,T)$ is the forward drift, $\sigma(t,T)$ is the Brownian sensitivity, and $\xi_n(T)=f(T_n,T)-f(T_n-,T)$ is the announcement change. The present model is the specialization
+\begin{equation}\label{eq:companion}
+\alpha(t,T)=\sigma(t)^2(T-t),\qquad
+\sigma(t,T)=\sigma(t),\qquad
+\xi_n(T)=X_n+v_n(T-T_n).
+\end{equation}
+Here $X_n$ denotes the random level revealed at meeting $n$; the index labels separate announcements, rather than different maturity intervals within one announcement. The correction $v_n(T-T_n)$ is the affine correction required for a centred Gaussian level of variance $v_n$.
+
+Each random surprise moves all remaining forward maturities by the same amount. The deterministic terms accompanying the diffusion and the surprises enforce bond-pricing consistency. They cannot be dropped without changing the pricing model.
+
+The short rate is $r_t=f(t,t)$, the bank account is $B_t=\exp(\int_0^t r_s\,\dd s)$, and the zero-coupon bond price is $P(t,T)=\exp(-\int_t^T f(t,x)\,\dd x)$. Thus $P(0,T)=\exp(-\int_0^T f_0(x)\,\dd x)$ fits the initial curve exactly. Rates are decimals in formulas: ten basis points is $10^{-3}$, so a ten-basis-point meeting standard deviation corresponds to $v_i=10^{-6}$. Numerical tables rescale variances to squared basis points. A constant $\sigma=50$ bp per square-root year has variance rate $2{,}500$ bp$^2$ per year.
+
+\begin{proposition}[Bond-pricing consistency]\label{prop:bond}
+For each maturity $T$, the process $P(t,T)/B_t$, $0\leq t\leq T$, is a true martingale. Consequently $P(t,T)=\E[B_t/B_T\mid\F_t]$.
+\end{proposition}
+The proof in Appendix~\ref{app:pricing} writes the discounted bond as a product of Gaussian exponential martingales. This also specifies the stochastic assumptions behind the construction.
+
+\subsection{The ideal futures payoff and its option}
+Fix an accrual window $[a,b]$, with length $\delta=b-a>0$. The continuously compounded accumulation over this window and its futures expectation are
+\begin{equation}\label{eq:futures}
+R(a,b)=\exp\left(\int_a^b r_s\,\dd s\right),\qquad
+G_t(a,b)=\E[R(a,b)\mid\F_t].
+\end{equation}
+The associated futures rate is $F_t=(G_t-1)/\delta$; this is a quoted rate, not the value of a futures position entered at time $t$. The distinction between $G$ and $F$ only changes the strike and scale. A European option expiring at $S\leq b$ with cash payoff $(G_S-K)^+$ has time-zero price
+\begin{equation}\label{eq:cashcall}
+C(S,K;a,b)=\E[B_S^{-1}(G_S-K)^+],\qquad K>0.
+\end{equation}
+A cash call on $F$ with rate strike $k$ has price $C(S,1+\delta k;a,b)/\delta$, provided $1+\delta k>0$.
+
+These definitions specify the instruments in the theorems. A listed SOFR option is an option to enter a futures position, with exchange exercise, settlement, and daily-fixing conventions. Equation~\eqref{eq:cashcall} is a European cash contract. Section~\ref{sec:market} labels the approximation used when applying a simpler diagnostic to listed prices.
+
+To state the pricing formula, let $\Phi$ and $\varphi$ denote the standard normal distribution and density. For a mean $m>0$ and a log variance $q>0$, write
+\begin{equation}\label{eq:black}
+\mathcal B(m,K,q)=m\Phi(d_+)-K\Phi(d_-),\qquad
+ d_\pm=\frac{\log(m/K)}{\sqrt q}\pm\frac{\sqrt q}{2}.
+\end{equation}
+At $q=0$, define $\mathcal B(m,K,0)=(m-K)^+$. Thus $\mathcal B(m,K,q)=\E[(X-K)^+]$ when $\log X$ has mean $\log m-q/2$ and variance $q$. Here $m$ is the mean of $X$, while $q$ is the variance of its logarithm. The next proposition derives this distribution from the rate model.
+
+\begin{proposition}[Price and information at one expiry]\label{prop:pricing}
+For $s\geq0$, define the deterministic window weights
+\begin{align}
+w(s)&=(b-s)^+-(a-s)^+,\nonumber\\
+d(s)&=\tfrac12\{((b-s)^+)^2-((a-s)^+)^2\},\qquad
+h(s)=d(s)+\tfrac12 w(s)^2.\label{eq:weights}
+\end{align}
+Put $A_0=\int_a^b f_0(x)\,\dd x$ and
+\begin{align}
+p&=\sum_{i=1}^N h(T_i)v_i+\int_0^b\sigma(s)^2h(s)\,\dd s,\label{eq:p}\\
+z&=\sum_{T_i\leq S}w(T_i)(S-T_i)v_i
+       +\int_0^S\sigma(s)^2w(s)(S-s)\,\dd s,\label{eq:z}\\
+q&=\sum_{T_i\leq S}w(T_i)^2v_i
+       +\int_0^S\sigma(s)^2w(s)^2\,\dd s.\label{eq:q}
+\end{align}
+Then
+\begin{equation}\label{eq:price}
+G_0=e^{A_0+p},\qquad m=G_0e^{-z},\qquad
+C(S,K;a,b)=P(0,S)\mathcal B(m,K,q).
+\end{equation}
+Knowing the entire function $K\mapsto C(S,K;a,b)$ for $K>0$ determines exactly the three price parameters $P(0,S)$, $m$, and $q$. Adding $G_0$ determines $z$. Adding the initial bond curve determines $p$.
+\end{proposition}
+The expiry-forward measure weights each outcome by its discount factor: for an expiry payoff $X$ with integrable discounted absolute value, its expectation is $\E^{S}[X]=\E[B_S^{-1}X]/P(0,S)$. Hence $m=\E^{S}[G_S]$ differs from the futures expectation $G_0=\E[G_S]$ because discounting changes the weights assigned to outcomes. This distinction is small numerically in some examples but essential to the identification argument.
+
+A complete surface means prices at every positive strike with exact precision. It is a mathematical observation scheme. A few listed strikes do not automatically reveal all three parameters without error. In practice one fits or bounds them, keeping discount and mean uncertainty when material.
+
+\begin{proposition}[Two fixed strikes suffice in the exact experiment]\label{prop:finitequotes}
+Suppose the initial bond curve is known and $S\leq b$. Set $K_0=e^{A_0}$ and choose any fixed $K_1>K_0$. The two cash call prices at $K_0,K_1$ determine $(m,q)$ uniquely. Together with the underlying futures quote they determine $(p,z,q)$. This includes $q=0$.
+\end{proposition}
+The reason for choosing the first strike from the initial curve is that $m\geq K_0$ in this model. After scaling by $K_0$ and the known discount factor, the price at strike one fixes a curve of possible means and volatilities; the higher-strike price varies strictly along it. Appendix~\ref{app:finitecalendar} proves the assertion. It is an exact identification result, not a claim of a stable two-quote estimator. The chosen strikes may be illiquid or unlisted, and close price pairs can imply poorly determined parameters. Nevertheless, an entire strike surface is not required for the model's positive identification result.
+
+\subsection{Why expiry intervals matter}
+The particularly useful case is an option that expires before its underlying accrual begins: $S<a$. Every source of uncertainty revealed by $S$ then affects the entire window, so $w(s)=\delta$ for $s\leq S$. Define the accumulated rate variance
+\begin{equation}\label{eq:Q}
+\cV(S)=\sum_{T_i\leq S}v_i+\int_0^S\sigma(s)^2\,\dd s.
+\end{equation}
+Proposition~\ref{prop:pricing} gives
+\begin{equation}\label{eq:Qz}
+q=\delta^2 \cV(S),\qquad
+\frac{z}{\delta}=\int_0^S \cV(x)\,\dd x.
+\end{equation}
+The normalized option log variance measures accumulated risk; the mean adjustment measures its time integral. Neither expression contains $f_0$. The whole option price still depends on the initial curve through $P(0,S)$ and $G_0$.
+
+The variance difference between two expiries is especially transparent:
+\begin{equation}\label{eq:increment}
+\cV(S_2)-\cV(S_1)=\sum_{S_1<T_i\leq S_2}v_i
+                         +\int_{S_1}^{S_2}\sigma(s)^2\,\dd s.
+\end{equation}
+It measures the meeting risks inside that interval plus the background variance accumulated over the same interval. It does not tell the two contributions apart by itself.

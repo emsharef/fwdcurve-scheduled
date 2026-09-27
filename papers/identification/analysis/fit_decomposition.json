@@ -1,0 +1,14 @@
+{
+  "dates": 78,
+  "median_independent_chain_bp": 1.4108619689941406,
+  "median_cross_chain_increment_bp": 0.0,
+  "max_cross_chain_increment_bp": 5.0544738769753295e-05,
+  "dates_cross_chain_increment_gt_00002": 0,
+  "median_constant_increment_bp": 0.0,
+  "max_constant_increment_bp": 1.7986335754394531,
+  "dates_constant_increment_gt_00002": 30,
+  "dates_cell90_increment_gt_00002": 9,
+  "median_cell90_increment_bp": 0.0,
+  "independent_feasible_050": 5,
+  "independent_feasible_100": 30
+}

@@ -1,0 +1,75 @@
+\section{Price precision and sharp risk ranges}\label{sec:precision}
+\subsection{Invert prices before differencing variances}
+Even an identifying calendar can produce unstable estimates. A meeting variance is obtained by subtracting accumulated variances at two expiries and subtracting estimated background variance. Each term can be much larger than their difference.
+
+For a pre-accrual expiry $S<a$, there is a simple exact inversion for a cash option struck at its forward-measure mean $K=m$. Keep its discount factor $D=P(0,S)>0$, mean $m$, and window length $\delta$ fixed. The premium per unit rate, $c=C/\delta$, satisfies
+\begin{equation}\label{eq:atm}
+c=\frac{Dm}{\delta}\left[2\Phi\left(\frac{\delta\sqrt{\cV}}{2}\right)-1\right].
+\end{equation}
+This is strictly increasing in $\cV\geq0$. Its inverse is
+\begin{equation}\label{eq:inverse}
+\mathcal I(c;D,m,\delta)=\frac4{\delta^2}
+ \left[\Phi^{-1}\left(\frac{1+\delta c/(Dm)}2\right)\right]^2,
+ \quad 0\leq c<Dm/\delta.
+\end{equation}
+An admissible premium interval $[\underline c,\overline c]$ gives an exact variance interval $[\mathcal I(\underline c),\mathcal I(\overline c)]$. Clip a negative lower premium bound at zero. An upper premium bound at or above $Dm/\delta$ gives no finite upper bound on $\cV$, provided the interval contains an attainable premium. If its lower bound is at or above that ceiling, or its upper bound is negative, the interval is incompatible with every finite $\cV$.
+
+These are conditional bounds for the variance observation: $D$, $m$, and the strike $K=m$ are fixed inputs. A quoted strike near $m$ is not exactly at the money in this sense. For a fixed non-ATM strike one instead numerically inverts the monotone Black formula. When $D$ and $m$ are estimated, their uncertainty must be carried through the inversion or retained in a joint price-feasibility problem. The closed-form formula is not a justification for ignoring it.
+
+\subsection{A feasible set, rather than a single allocation}
+Suppose inversion or surface fitting supplies bounds $\underline{\cV}_\ell\leq \cV_\ell\leq\overline{\cV}_\ell$. Define
+\begin{equation}\label{eq:feasible}
+\Theta=\{\theta\geq0:\ \underline{\boldsymbol{\cV}}\leq\mathsf A\theta
+                                    \leq\overline{\boldsymbol{\cV}}\}.
+\end{equation}
+For any requested linear quantity $c^\top\theta$, calculate
+\begin{equation}\label{eq:LP}
+\underline r(c)=\inf_{\theta\in\Theta}c^\top\theta,\qquad
+\overline r(c)=\sup_{\theta\in\Theta}c^\top\theta.
+\end{equation}
+These are linear programs. They give sharp bounds for the stated observation intervals and model: every feasible value respects all inequalities, and no narrower bounds can contain the feasible set. Infinite endpoints signal a genuinely unbounded exposure. If $\Theta$ is nonempty and bounded, both endpoints are attained. Additional linear observations, including bounds on $z$ and $p$, can be stacked with the variance rows. Box bounds obtained separately from correlated observations remain valid outer bounds, but may then be conservative relative to their joint price information. In particular, fixing $m$ in the inversion does not enforce its structural identity $m=G_0e^{-z(\theta)}$. If $G_0$ and $m$ are both treated as observed, their implied $z$ restriction must also be imposed. Without it, \eqref{eq:LP} is sharp for the retained variance intervals, not necessarily for all observed cash and futures prices.
+
+A point estimate can still be useful. For example, nonnegative weighted least squares minimizes
+\begin{equation}\label{eq:fit}
+\sum_{\ell=1}^L w_\ell((\mathsf A\theta)_\ell-\widehat{\cV}_\ell)^2,
+\qquad \theta\geq0,\quad w_\ell>0.
+\end{equation}
+It selects a representative fit. It does not turn a non-identifying panel into an identifying one. A smoothness penalty or a prior supplies additional information from the modeller. Report its effect by comparing the feasible ranges before and after imposing it.
+
+An empty feasible set also has an interpretation: the chosen observations, tolerances, and model are incompatible. It does not identify which input is wrong. Check units, underlying-contract mappings, exercise conventions, and distributional fit before enlarging tolerances. Silently forcing negative meeting variances to zero can hide this diagnosis.
+
+\subsection{Exact bounds in a cumulative special case}
+When background variance is zero and exactly one new meeting occurs between consecutive observed expiries, the problem admits closed forms. Let $\cV_n=\sum_{i\leq n}v_i$, with $\cV_0=0$, and suppose finite intervals $\ell_n\leq \cV_n\leq r_n$ are given, where $0\leq\ell_n\leq r_n$. Define
+\begin{equation}\label{eq:envelopes}
+L_n=\max_{i\leq n}\ell_i,\qquad R_n=\min_{j\geq n}r_j,
+\qquad L_0=R_0=0.
+\end{equation}
+\begin{proposition}[Sharp cumulative bounds]\label{prop:cumulative}
+There exists a feasible nonnegative meeting-variance vector if and only if $L_n\leq R_n$ for every $n$. When feasible, the sharp interval for $v_n$ is
+\begin{equation}\label{eq:cumbounds}
+\max\{0,L_n-R_{n-1}\}\ \leq v_n\leq R_n-L_{n-1}.
+\end{equation}
+\end{proposition}
+Thus the information from later prices can tighten an earlier cumulative upper bound, and earlier prices can tighten a later cumulative lower bound. Inverting each price and independently differencing its endpoints without enforcing monotonicity can miss this tightening. The linear programs in \eqref{eq:LP} handle the general case with background variance and multiple meetings per gap.
+
+\subsection{A quick local precision calculation}
+Differentiating \eqref{eq:atm} gives the first-order response of $\cV>0$ to a premium error of size $\varepsilon$ in decimal rate units:
+\begin{equation}\label{eq:eta}
+\eta(\cV)=\frac{2\varepsilon\sqrt{\cV}}
+ {Dm\,\varphi(\delta\sqrt{\cV}/2)}.
+\end{equation}
+This is a local approximation; use \eqref{eq:inverse} for finite intervals. When $\delta\sqrt{\cV}$ is small, the denominator's normal density is close to $1/\sqrt{2\pi}$. Uncertainty in variance then grows roughly in proportion to the total accumulated standard deviation, even if the variance of the particular meeting of interest remains small.
+
+For one constant background variance rate, suppose the first gap is meeting-free and meeting $i$ is alone in gap $\ell\geq2$. With gap length $g_\ell=S_\ell-S_{\ell-1}$, the exact estimator is
+\[
+\widehat u=\widehat{\cV}_1/g_1,\qquad
+\widehat v_i=\widehat{\cV}_\ell-\widehat{\cV}_{\ell-1}-g_\ell\widehat u.
+\]
+If the variance errors range over the Cartesian box $|\Delta \cV_j|\leq\eta_j$, its sharp unrestricted linear error bound is
+\begin{equation}\label{eq:differror}
+|\Delta\widehat v_i|\leq\eta_\ell+\eta_{\ell-1}
+                                      +(g_\ell/g_1)\eta_1.
+\end{equation}
+For $\ell=2$, the two occurrences of the first observation combine with the same sign. Nonnegativity and additional observations can tighten this linear bound. A short first meeting-free gap creates a noisy estimate of $u$, and that error is multiplied by the length of each subsequent gap.
+
+More generally, a linear estimator $a^\top\widehat{\boldsymbol{\cV}}$ recovers $c^\top\theta$ exactly in the noiseless model if $\mathsf A^\top a=c$. Its worst-case box-error bound is $\sum_\ell|a_\ell|\eta_\ell$. Minimizing this expression subject to $\mathsf A^\top a=c$ is another linear program after splitting positive and negative parts. It compares linear estimators for an already identified quantity; it neither replaces the nonlinear price inversion nor supplies information about a quantity outside the row space.

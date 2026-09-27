@@ -1,0 +1,57 @@
+\subsection{Classical smooth-curve examples}\label{app:blocks}
+The residual condition connects the splice directly to the consistency program of \citet{bjork1999interest}, \citet{filipovic1999note,filipovic2000exponential}, and \citet{sharef2004conditions}. For a block alone the residual must vanish. For an uncorrelated scheduled splice it may be affine. For the correlated splice it is the residual at $\mathsf Q_\sharp$ that may be affine. These changes preserve restrictions coming from higher polynomial degrees and nonzero exponents.
+
+\subsubsection{A full polynomial block}
+For $F(x,z)=\sum_{j=0}^d z_j x^j$, $d\ge1$, the residual is
+\[
+R(x)=\sum_{j=0}^d \mu_j x^j-
+\sum_{j=1}^d j z_j x^{j-1}
+-\sum_{j,k=0}^d\frac{\mathsf Q_{jk}}{k+1}x^{j+k+1}.
+\]
+Let $j_*$ be the largest index with $\mathsf Q_{j_*j_*}>0$. Positive semidefiniteness makes every row with zero diagonal vanish. Thus the highest-degree covariance term is $-\mathsf Q_{j_*j_*}x^{2j_*+1}/(j_*+1)$. If $j_*\ge1$, an affine residual requires $2j_*+1\le d$. For $j_*=0$, the covariance term is already affine. Consequently for $d\ge1$ all noisy coordinates lie among
+\[
+0,\ldots,\left\lfloor\frac{d-1}{2}\right\rfloor,
+\]
+with at most $\lfloor(d+1)/2\rfloor$ independent directions. Conversely, with covariance supported on these indices, the remaining polynomial terms of degrees two through $d$ can be canceled by suitable drifts; the affine terms are absorbed by the front end. A degree-zero block has only a level and is treated separately.
+
+The same bound holds for the effective covariance. The substitution \eqref{eq:effective} changes only the level row and column, and leaves all entries with two positive-degree indices unchanged. For $d\ge1$, making an affine residual vanish requires changing only the level and linear-coordinate drifts. This explains exactly which part of the classical block-alone calculation carries over.
+
+\subsubsection{Nelson--Siegel as an affine-residual example}
+For fixed $\beta>0$, take
+\[
+F(x,z)=z_1+(z_2+z_3x)e^{-\beta x}.
+\]
+With an uncorrelated front end, coefficient comparison and positive semidefiniteness give
+\[
+\mathsf Q_{ij}=0\ \text{unless }i=j=1,\qquad
+\mu_2=z_3-\beta z_2,\quad \mu_3=-\beta z_3,
+\]
+while $\mu_1$ is unrestricted. The residual is $R(x)=\mu_1-\mathsf Q_{11}x$. To see the covariance restriction, the highest power at exponent $-2\beta$ first forces the slope-coordinate variance to vanish; its row then vanishes by positive semidefiniteness. The remaining squared exponential term forces the exponential-level variance to vanish, and its row vanishes as well. What remains is precisely the level variance.
+
+For a standalone block, $R=0$ would force both $\mathsf Q_{11}=0$ and $\mu_1=0$. The scheduled front end can instead absorb $\mu_1-\mathsf Q_{11}x$, allowing a stochastic level. This is the precise relaxation of the fixed-exponent Nelson--Siegel obstruction. It does not permit arbitrary diffusion of the Nelson--Siegel shape coordinates. For a correlated front end one must instead test $R_\sharp$; the Jordan term $xe^{-\beta x}$ prevents applying Corollary~\ref{cor:diagonal} as though this were a sum of pure exponentials.
+
+\subsubsection{Svensson: an additional level factor with restricted correlation}\label{sec:svensson}
+The Svensson family adds a second decaying slope term. Fix distinct positive decays $\beta_1,\beta_2$ and write
+\[
+F(x,z)=z_1+(z_2+z_3x)e^{-\beta_1x}+z_4xe^{-\beta_2x}.
+\]
+Keep the finite-variation front-end slopes, and make all front-end noise orthogonal to the block noise. Within the block, however, allow arbitrary covariance $\mathsf Q\ge0$ and drift $\mu$. The relevant test is that $R$ be affine. The following pointwise corollary states exactly what this permits; it does not construct a process with the specified coefficients.
+
+\begin{corollary}[Fixed-decay Svensson splice]\label{cor:svensson}
+If $z_4\ne0$ and $\beta_2\ne2\beta_1$, no positive-semidefinite covariance and drift make $R$ affine. In the resonant case $\beta_1=\beta$, $\beta_2=2\beta$, affinity holds if and only if
+\begin{align}
+\mathsf Q_{3k}=\mathsf Q_{4k}&=0\quad\text{for every }k,&
+\mathsf Q_{22}&=\beta z_4,\label{eq:svenssoncov}\\
+\mu_2&=z_3+z_4-\beta z_2-\mathsf Q_{12}/\beta,&
+\mu_3&=\mathsf Q_{12}-\beta z_3,\qquad
+\mu_4=-2\beta z_4,\nonumber
+\end{align}
+with $\mu_1$ free, $z_4\ge0$, $\mathsf Q_{11}\ge0$, and
+$\mathsf Q_{12}^2\le\mathsf Q_{11}\beta z_4$.
+The remaining residual is
+$R(x)=\mu_1-\mathsf Q_{12}/\beta-\mathsf Q_{11}x$.
+For the block alone, $R=0$ additionally forces
+$\mathsf Q_{11}=\mathsf Q_{12}=\mu_1=0$.
+\end{corollary}
+
+The front end therefore permits a noisy level correlated with the exponential-level coordinate $z_2$. That covariance changes the drifts of both $z_2$ and $z_3$. It does not free the two slope coordinates or remove the resonance requirement when $z_4\ne0$. The block-alone restriction is the classical Svensson calculation of \citet{filipovic2000exponential}; the corollary identifies the extra covariance allowed by the splice. The $xe^{-\beta x}$ term explains why the stronger pure-exponential restriction in Corollary~\ref{cor:diagonal} does not forbid this correlation. Appendix~\ref{app:svensson} gives the coefficient comparison, including the other possible exponent resonance.

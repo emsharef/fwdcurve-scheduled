@@ -1,0 +1,102 @@
+\section{Supporting proofs}\label{app:proofs}
+\subsection{Tilted Gaussian marginals without joint Gaussianity}
+Take two maturity intervals, lengths $\ell_1,\ell_2>0$, and deterministic $y_1,y_2>0$. Under an auxiliary measure $Q_*$ let $X_1\sim N(-\ell_1y_1,y_1)$ and let $Z\sim N(0,y_2)$ be independent. Define
+\[
+X_2=\operatorname{sign}(X_1+\ell_1y_1)|Z|,
+\qquad \frac{\dd Q}{\dd Q_*}=\exp(\ell_1X_1+\tfrac12\ell_1^2y_1).
+\]
+The density has expectation one. Under $Q$, $X_1\sim N(0,y_1)$. Tilting $Q$ by $\exp(-\ell_1X_1-\tfrac12\ell_1^2y_1)$ recovers $Q_*$, under which the sign in the definition of $X_2$ is an independent fair sign relative to $|Z|$. Consequently $X_2\sim N(0,y_2)$ under the second tilted measure, as required by Theorem~\ref{thm:tilts}.
+
+Under $Q$, however, $Q(X_2>0)=Q(X_1>-\ell_1y_1)>1/2$. The magnitude retains the half-normal distribution and is independent of that sign. Its density is different constant multiples of the same centered Gaussian density on the two half-lines, with a discontinuity at zero. It is not Gaussian, and the pair cannot be jointly Gaussian. This supplies a nontrivial example rather than merely observing that marginal normality need not imply joint normality.
+
+\subsection{The observability step in the splice proof}
+The following elementary argument is applied with $(C,A)=(\mathcal C,\mathcal A)$ in the splice proof.
+Let $A$ be invertible, $(C,A)$ observable, and suppose
+\[
+C e^{Ax}\{(x-a)I+A^{-1}\}v=0
+\]
+on an open interval. By real analyticity the identity holds for all real $x$. Put $g(x)=C e^{Ax}A^{-1}v$. The identity says $(x-a)g'(x)+g(x)=0$, so the derivative of $(x-a)g(x)$ vanishes. Its value at $x=a$ is zero. Thus $g(x)=0$ away from $a$, and by continuity also at $a$. Derivatives at zero give $CA^kA^{-1}v=0$ for all $k\ge0$. Observability implies $A^{-1}v=0$ and hence $v=0$.
+
+This proof does not require diagonalizability. Diagonalizability is needed only for the stronger polynomial--exponential orthogonality in Corollary~\ref{cor:diagonal}, where positive powers multiplying an eigen-exponential cannot already be supplied by the drift basis.
+
+\subsection{The three-exponent stochastic-volatility construction}\label{app:varianceexample}
+\begin{proof}[Proof of Proposition~\ref{prop:varianceexample}]
+First solve the scalar equation for $Z_2$ before stopping. Its drift and diffusion are
+\[
+b(z)=\frac{\tanh z}{2\kappa},\qquad a(z)=\sqrt{2+\tanh z}.
+\]
+Both are bounded and globally Lipschitz, since
+$|b'(z)|\le1/(2\kappa)$ and $|a'(z)|\le1/2$.
+Strong existence and pathwise uniqueness give a solution adapted to the natural filtration of $W^2$. Stop it at $\tau$ and define $Z_1,Z_4$ by their explicit formulas. This also proves uniqueness of the full stopped system in the joint Brownian filtration. The bound $1<v<3$ gives all required finite-horizon integrability.
+
+For $t<\tau\le T$, put $y=T-\tau$. The volatility integrals are
+\[
+\int_t^T\sigma_1(t,u)\dd u=\frac{1-e^{-\kappa y}}{\kappa},\qquad
+\int_t^T\sigma_2(t,u)\dd u=\sqrt{v_t}\frac{1-e^{-2\kappa y}}{2\kappa}.
+\]
+Their products with the respective volatilities give the drift displayed after the proposition. At fixed $T$, the drift of \eqref{eq:threeexpcurve} is
+\[
+\frac{e^{-\kappa y}}{\kappa}
+ +\frac{v_t-2}{2\kappa}e^{-2\kappa y}
+ -\frac{v_t}{2\kappa}e^{-4\kappa y},
+\]
+which agrees. For $T<\tau$ or $t\ge\tau$ the fixed-maturity coefficients have zero dynamics. There is no fixed-maturity curve jump at $\tau$, so the announcement condition is automatic.
+
+For $k\in\{1,2,4\}$ and $T\ge\tau$ define
+$A_k(T)=(1-e^{-k\kappa(T-\tau)})/(k\kappa)$.
+Before $\tau$, $B_t=1$ and $P(t,T)=\exp(-\sum_k Z_k(t)A_k(T))$.
+The integrated drift identity reads
+\[
+\frac{A_1}{\kappa}+\frac{v-2}{2\kappa}A_2-\frac{v}{2\kappa}A_4
+       =\frac12(A_1^2+vA_2^2).
+\]
+It\^o's formula therefore gives
+\[
+\frac{\dd(P(t,T)/B_t)}{P(t,T)/B_t}
+ =-\ind_{\{t<\tau\}}\{A_1(T)\dd W^1_t+\sqrt{v_t}A_2(T)\dd W^2_t\}.
+\]
+After $\tau$, direct integration of the frozen curve gives
+\[
+\log P(t,T)=-\sum_{k\in\{1,2,4\}}Z_k(\tau)
+  \frac{e^{-k\kappa(t-\tau)}-e^{-k\kappa(T-\tau)}}{k\kappa}.
+\]
+Its time derivative is $r_t$, so the discounted bond is constant there, with the same value at $\tau$ as the preceding formula. The driving martingale has quadratic variation bounded by
+$\tau(\kappa^{-2}+3/(4\kappa^2))=7\tau/(4\kappa^2)$.
+The exponential-martingale criterion consequently makes the discounted bond a true martingale. For $T<\tau$ it is identically one.
+
+The quadratic variation of $Z_2$ is $v_t\dd t$ before $\tau$; It\^o's formula for $2+\tanh Z_2$ gives the stated strictly positive density of $[v]$. The three curve evaluations have coefficient matrix
+\[
+\begin{pmatrix}
+1&1&1\\[2pt]
+1/2&1/4&1/16\\[2pt]
+1/4&1/16&1/256
+\end{pmatrix},\qquad \det=-21/1024.
+\]
+They therefore recover $Z_1,Z_2,Z_4$ and $v$.
+
+Finally $r_{\tau-}=0$, and summing the three state equations cancels their drift, giving \eqref{eq:varianceexamplejump}. The integral with respect to $W^2$ is measurable with respect to that Brownian path. Conditional on this path, the jump is a translate of the independent $N(0,\tau)$ variable $W^1_\tau$. Its probability of being zero is therefore zero. This proves the last assertion without assuming that the second integral is Gaussian.
+\end{proof}
+
+\subsection{The Svensson covariance calculation}\label{app:svensson}
+\begin{proof}[Proof of Corollary~\ref{cor:svensson}]
+Expand \eqref{eq:residual} using the four basis functions
+$1,e^{-\beta_1x},xe^{-\beta_1x},xe^{-\beta_2x}$.
+Distinct exponential factors multiplied by polynomials are linearly independent. Every coefficient at a nonzero exponent must therefore vanish if $R$ is affine.
+
+First consider the fourth covariance row. If $2\beta_2\ne\beta_1$, the coefficient of $x^2e^{-2\beta_2x}$ is $\mathsf Q_{44}/\beta_2$, hence $\mathsf Q_{44}=0$. If instead $2\beta_2=\beta_1$, the coefficient of $x^2e^{-2\beta_1x}$ first gives $\mathsf Q_{33}/\beta_1=0$. Positive semidefiniteness makes the third row zero. The coefficient of $x^2e^{-\beta_1x}$ is then $\mathsf Q_{44}/\beta_2-\mathsf Q_{13}=\mathsf Q_{44}/\beta_2$, again forcing zero. In both cases the fourth row vanishes by positive semidefiniteness.
+
+If $\beta_2\ne2\beta_1$, the constant coefficient at exponent $-\beta_2$ is now $-z_4$: the time-to-maturity derivative contributes it, but neither the drift basis nor the remaining covariance products can cancel it. Thus $z_4\ne0$ precludes affinity.
+
+In the resonant case $\beta_2=2\beta_1=2\beta$, the coefficient of $x^2e^{-2\beta x}$ is $\mathsf Q_{33}/\beta-\mathsf Q_{14}$. The fourth row is already zero, so the third row also vanishes. The constant and linear terms at exponent $-2\beta$ then give
+\[
+-z_4+\mathsf Q_{22}/\beta=0,\qquad \mu_4+2\beta z_4=0.
+\]
+The remaining coefficients at exponent $-\beta$ give
+\[
+\mu_2-z_3+\beta z_2+\mathsf Q_{12}/\beta-\mathsf Q_{22}/\beta=0,
+\qquad \mu_3+\beta z_3-\mathsf Q_{12}=0.
+\]
+These are exactly \eqref{eq:svenssoncov}. The only residual is
+$\mu_1-\mathsf Q_{12}/\beta-\mathsf Q_{11}x$.
+The surviving two-by-two covariance block is positive semidefinite exactly under the inequalities in the corollary. Conversely, substituting all these conditions cancels every nonzero-exponent term. If $R=0$ is required, its slope gives $\mathsf Q_{11}=0$, positive semidefiniteness gives $\mathsf Q_{12}=0$, and its constant gives $\mu_1=0$.
+\end{proof}

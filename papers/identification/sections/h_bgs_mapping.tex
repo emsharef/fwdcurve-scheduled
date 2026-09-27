@@ -1,0 +1,73 @@
+\subsection{Mapping to the published scheduled-rate specification}\label{app:bgsmapping}
+The mapping uses equations (3), (35)--(41), and (84) of \citet{brace2024sofr}, with their calibration Table~2. Superscript $\mathrm B$ below distinguishes a source symbol when its meaning differs from ours. Their meeting count is
+$A^{\mathrm B}_{s,T}=\#\{n:s<T_n\leq T\}=\nu(T)-\nu(s)$.
+Equations (36)--(38) give the forward-rate volatility
+\begin{align*}
+\sigma_j^{\mathrm B}(s,T)
+ &=\chi_j^{\mathrm B}(s)\phi_j^{\mathrm B}(T)
+       \sum_{i=1}^{A^{\mathrm B}_{s,T}}\gamma_{i,j},\\
+\phi_j^{\mathrm B}(T)&=\exp\left(-\int_0^T\lambda_j^{\mathrm B}(u)\,\dd u\right),\\
+\chi_j^{\mathrm B}(s)&=\sigma_j^{\mathrm B}(s)\sqrt{v_j^{\mathrm B}(s)}
+          \exp\left(\int_0^s\lambda_j^{\mathrm B}(u)\,\dd u\right).
+\end{align*}
+In the last line $\sigma_j^{\mathrm B}(s)$ is their scalar volatility scale, not their two-argument forward loading. In Table~2 these scales and the forward decay rates are constant in both columns; only the $\alpha_j$ coefficients have multiple time pieces. Thus their equation (84) becomes exactly
+\[
+\sigma_j^{\mathrm B}(s,T)
+=a_j(s)e^{-\kappa_j(T-s)}\Gamma_{\nu(T)-\nu(s),j}\sqrt{Z_j(s)}
+=h_j(s,T)\sqrt{Z_j(s)},
+\]
+with the following correspondence.
+
+\begin{center}\small
+\begin{tabular}{lll}
+\toprule
+This paper & Source symbol & Role\\
+\midrule
+$T_n$ & $x_n$ & Scheduled meeting date\\
+$\gamma_{i,j}$ & $\gamma_{i,j}$ & Ordinal loading, unchanged\\
+$\Gamma_{m,j}$ & $\sum_{i=1}^{m}\gamma_{i,j}$ & Cumulative ordinal loading\\
+$a_j(s)$ & $\sigma_j^{\mathrm B}(s)$ & Deterministic scale\\
+$\kappa_j$ & Constant $\lambda_j^{\mathrm B}$ & Forward-loading decay\\
+$Z_j(s)$ & $v_j^{\mathrm B}(s)$ & Variance state, initially one\\
+$\vartheta_j$ & Constant $\theta_j^{\mathrm B}$ & Variance-state mean reversion\\
+$\alpha_j(s),\rho_j$ & $\alpha_j^{\mathrm B}(s),\rho_j^{\mathrm B}$ & Volatility of volatility and leverage\\
+\bottomrule
+\end{tabular}
+\end{center}
+Their equations (39)--(41) give \eqref{eq:svstate} and the within-factor correlation. Their Section~3.6 and footnote~29 specify independent driving factors. The general source permits time-dependent $\lambda_j$ and $\theta_j$; our constant-decay and constant-speed assumptions specialize it exactly to the two printed calibrations.
+
+At a meeting maturity, the sum of ordinal loadings acquires exactly one term. Therefore, for $s<T_n$,
+\[
+h_j(s,T_n)-h_j(s,T_n-)
+=a_j(s)e^{-\kappa_j(T_n-s)}\gamma_{n-\nu(s),j}=g_{nj}(s).
+\]
+Their HJM drift, equation (35), has factor contribution
+$h_j(s,T)Z_j(s)\int_s^T h_j(s,x)\,\dd x$.
+The maturity integral is continuous at $T_n$, so its jump coefficient is exactly
+$b_{nj}(s)=g_{nj}(s)\int_s^{T_n}h_j(s,x)\,\dd x$.
+This proves the loading and drift correspondence used in Proposition~\ref{prop:svmap}; it is not an identification of their option prices with the announcement model's Gaussian cash formula.
+
+For direct comparison, the complete parameter columns are:
+\begin{center}\small
+\begin{tabular}{lll}
+\toprule
+Parameter & Constant column & Time-dependent column\\
+\midrule
+$(a_1,a_2,a_3)$ & $(0.0081,0.006,0.0041)$ & $(0.00663,0.00587,0.00447)$\\
+$(\kappa_1,\kappa_2,\kappa_3)$ & $(0.01,0,0.16)$ & $(0.02,0.004,0.35)$\\
+$\alpha_1$ & $1.57$ & $(3.142,1.35,3.2,0.86)$\\
+$\alpha_2$ & $0.82$ & $(0.76,0.66,0.6,0.22)$\\
+$\alpha_3$ & $0$ & $(3.0,0.6,0.5,4.1)$\\
+$(\rho_1,\rho_2,\rho_3)$ & $(-0.2,0,0)$ & $(-0.14,-0.025,-0.83)$\\
+$(\vartheta_1,\vartheta_2,\vartheta_3)$ & $(0,0,0)$ & $(0.1,0,11.0)$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The source's Section~4.2 places the four $\alpha_j$ values on successive option-expiry intervals. Each is positive in the time-dependent column, so their exact endpoints are unnecessary for the active-factor count on that calibrated horizon. They and the ordinal loadings would be necessary to compute the numerical columns of $\mathsf L$.
+
+In the constant column, $Z_3(t)=1$ and $\boldsymbol c(t)=0$. Consequently
+\[
+\operatorname{supp}\boldsymbol V(t)=\mathsf L_{\cdot3}(t)
+ +\operatorname{cone}\{\mathsf L_{\cdot1}(t),\mathsf L_{\cdot2}(t)\},
+\]
+of affine dimension at most two. In the time-dependent column all three states are active, so the support is $\boldsymbol c(t)+\mathsf L(t)\R_+^3$, with dimension $\rank\mathsf L(t)\leq3$. Three active states do not imply three linearly independent loading columns. With $m$ future meetings, the two specifications therefore have at least $m-2$ and $m-3$ affine equalities, respectively. These statements concern each fixed parameter specification, not a panel pooled over daily recalibrations.

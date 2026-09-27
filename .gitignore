@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+lean/.lake/
+papers/*/build/
+build/
+papers/identification/data/raw/wayback/
+papers/identification/data/raw/midcurves/
+papers/identification/data/raw/free_supplement/
+papers/identification/data/raw/midcurve5*_sample.pdf
+*.part

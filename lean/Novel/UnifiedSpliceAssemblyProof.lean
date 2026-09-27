@@ -1,0 +1,16 @@
+import Standalone.UnifiedSpliceAssembly
+import Novel.UnifiedSpliceAlgebraProof
+import Novel.UnifiedSpliceNecessityProof
+import Novel.UnifiedSpliceConverseProof
+import Novel.UnifiedSpliceStep0Proof
+import Novel.UnifiedSpliceQuantifiersProof
+import Novel.UnifiedSpliceExpPolyProof
+import Novel.UnifiedSpliceDiagProof
+import Novel.UnifiedSpliceSpecialProof
+import Novel.UnifiedSpliceConverseAX01Proof
+
+namespace Novel.UnifiedSpliceAssemblyProof
+
+theorem unifiedSpliceAssembly : Standalone.UnifiedSpliceAssembly.statement := ⟨Novel.UnifiedSpliceAlgebraProof.unifiedSpliceAlgebra, Novel.UnifiedSpliceNecessityProof.unifiedSpliceNecessity, Novel.UnifiedSpliceConverseProof.unifiedSpliceConverse, Novel.UnifiedSpliceStep0Proof.unifiedSpliceStep0, Novel.UnifiedSpliceQuantifiersProof.unifiedSpliceQuantifiers, Novel.UnifiedSpliceExpPolyProof.unifiedSpliceExpPoly, Novel.UnifiedSpliceDiagProof.unifiedSpliceDiag, Novel.UnifiedSpliceSpecialProof.unifiedSpliceSpecial, Novel.UnifiedSpliceConverseAX01Proof.unifiedSpliceConverseAX01⟩
+
+end Novel.UnifiedSpliceAssemblyProof
