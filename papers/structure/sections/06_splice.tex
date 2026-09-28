@@ -70,7 +70,7 @@ The right side consists of the negative block residual, the covariance cross ter
 The following theorem is a way to complete a model. Start with an existing block process $Z$ and proposed front-end noises $V_m$. Test the two stated conditions. If they hold, the theorem supplies front-end drifts that make the total curve consistent.
 
 \begin{theorem}[Correlated splice criterion]\label{thm:splice}
-Require the front-end slopes $C_m$ to have finite variation and no Brownian noise. Suppose the noises $V_m,\nu^k$ are predictable and square-integrable on each finite time horizon almost surely, the block drifts are progressively measurable and locally integrable, and $Z$ is a continuous semimartingale with those coefficients. There exist locally integrable front-end drifts for which \eqref{eq:splice} satisfies the integrated drift condition if and only if, for $dt\otimes dQ$-almost every $(t,\omega)$, both following conditions hold:
+For the block \eqref{eq:block}, assume $\mathcal A$ is invertible and $(\mathcal C,\mathcal A)$ is observable. Require the front-end slopes $C_m$ to have finite variation and no Brownian noise. Suppose the noises $V_m,\nu^k$ are predictable and square-integrable on each finite time horizon almost surely, the block drifts are progressively measurable and locally integrable, and $Z$ is a continuous semimartingale with those coefficients. There exist locally integrable front-end drifts for which \eqref{eq:splice} satisfies the integrated drift condition if and only if, for $dt\otimes dQ$-almost every $(t,\omega)$, both following conditions hold:
 \begin{align}
 \nu^{0,j}G_m^\top&=0\quad(1\le j\le d),&
 \nu^\zeta G_m^\top&=0 \quad\text{for every }m\text{ with }T_m>t,\label{eq:steporth}\\

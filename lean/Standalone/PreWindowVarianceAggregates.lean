@@ -10,7 +10,7 @@ import Standalone.LateAmericanExercise
 
 /-! # Claim 020: contracts settled after a date see the earlier variances only through their sum
 
-Partial target. It states, in Claim 011's explicit Gaussian model: (a) the post-window curve
+Every part (a)–(f) is stated. It states, in Claim 011's explicit Gaussian model: (a) the post-window curve
 identity (20.3) and the jump identity; (b) the discount density (20.5) has expectation one,
 the normalized earlier state has the centered Gaussian law of variance `V_k`, and the
 change-of-measure identity (20.6) for every measurable integrand of the earlier state and the
@@ -42,8 +42,14 @@ consulting only the post-window state is admissible with the auxiliary value of 
 state-rule value is a lower bound for the American value (20.9), and it depends on the
 revealed variances only through `V_k`; and, as the first step of the sectioning argument,
 the product realization of the discounted measure under `ω ↦ (ξ, (y, Z_{>k}))` with its
-measurable inverse. The reverse inequality of (20.10), the sectioning of exercise times
-along the residuals, is not yet asserted.
+measurable inverse. It also states the reverse inequality of (20.10), the sectioning of
+exercise times along the residuals: the American value (20.9) equals the state-rule value
+(20.10), for `V_k > 0` (`sectioningStatement`) and for every `V_k`, the residuals dropped when
+`V_k = 0` (`sectioningFullStatement`); hence, with a common unrevealed block and equal `V_k`,
+the American values agree (`americanFullStatement` for `V_k > 0`, `americanGeneralStatement`
+for every `V_k`). These are proved in `Novel.PreWindowVarianceAggregatesProof` by `sectioning`,
+`sectioningFull`, `americanFull` and `americanGeneral`, over the completed filtration of
+Claim 018, and assembled in `preWindowVarianceAggregates`.
 -/
 open MeasureTheory ProbabilityTheory Set
 namespace Standalone.PreWindowVarianceAggregates

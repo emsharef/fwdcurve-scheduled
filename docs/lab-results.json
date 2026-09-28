@@ -219,7 +219,7 @@
     "lab_results": [
       "Proposition 20"
     ],
-    "scope": "formalized for the stated payoffs of the post-window state",
+    "scope": "formalized for the stated payoffs of the post-window state; (d) in full, including the reverse inequality by sectioning: `sectioning`, `sectioningFull`, `americanFull`, `americanGeneral`; the inclusion of the cash calls of Corollaries 21 and 22 is text only",
     "declarations": [
       "Standalone.PreWindowVarianceAggregates.statement",
       "Novel.PreWindowVarianceAggregatesProof.preWindowVarianceAggregates"
@@ -475,7 +475,7 @@
     "lab_results": [
       "Proposition 49"
     ],
-    "scope": "formalized; (a) and (b) conditional on the explicit hypothesis `GaussLaw`, satisfiable only without diffusion; (c) to (e) unconditional; the practical-identification table and the size 1.9e-9 are not formalized",
+    "scope": "formalized; (a) and (b) conditional on the explicit hypothesis `GaussLaw`, its exhibited instance has zero diffusion, and no nonzero-diffusion instance was constructed; (c) to (e) unconditional; the practical-identification table and the size 1.9e-9 are not formalized",
     "declarations": [
       "Standalone.DiffusionMeetingAssembly.statement",
       "Novel.DiffusionMeetingAssemblyProof.diffusionMeetingAssembly"
@@ -486,7 +486,7 @@
     "lab_results": [
       "Proposition 50"
     ],
-    "scope": "formalized; (a) and (b) conditional on the explicit hypothesis `ShapeGaussLaw`, satisfiable only without diffusion; (c) and (d), with (d5), unconditional; the SIFMA-holiday fact behind (d5)'s effective dates, the value of kappa*, the precision table, the linear-programming comparison, the condition numbers and the remark on the identity z/delta = int Q are not formalized",
+    "scope": "formalized; (a) and (b) conditional on the explicit hypothesis `ShapeGaussLaw`, its exhibited instance has zero diffusion, and no nonzero-diffusion instance was constructed; (c) and (d), with (d5), unconditional; the SIFMA-holiday fact behind (d5)'s effective dates, the value of kappa*, the precision table, the linear-programming comparison, the condition numbers and the remark on the identity z/delta = int Q are not formalized",
     "declarations": [
       "Standalone.MaturityShapeAssembly.statement",
       "Novel.MaturityShapeAssemblyProof.maturityShapeAssembly"
@@ -508,7 +508,7 @@
     "lab_results": [
       "Proposition 52"
     ],
-    "scope": "formalized; AX-01 as an explicit hypothesis, no Upstream field; the representation's drift and volatility written out; processes not constructed; not formalized: the split of (c) into two conditions, existence of the minimal realization and the block-by-block form, Proposition 45's carry-over in (e) beyond the entries of a-sharp, the Jordan remark, the symbolic check",
+    "scope": "formalized; AX-01 as an explicit hypothesis, no Upstream field; the representation's drift and volatility written out; Z not constructed, L_m and C_m constructed under the cited calculus by Claim 055; not formalized: the split of (c) into two conditions, existence of the minimal realization and the block-by-block form, Proposition 45's carry-over in (e) beyond the entries of a-sharp, the Jordan remark, the symbolic check",
     "declarations": [
       "Standalone.UnifiedSpliceAssembly.statement",
       "Novel.UnifiedSpliceAssemblyProof.unifiedSpliceAssembly"
@@ -519,10 +519,67 @@
     "lab_results": [
       "Proposition 53"
     ],
-    "scope": "formalized; AX-01 explicit, no Upstream field; (a), (b) carry over verbatim from Claim 049's Lean statements; (c) drifts, integrability and maturity-uniform envelopes proved; not formalized: construction of L_m, C_m as stochastic integrals, progressive measurability in (t, T), the localizing times, the Heston remark, the checks",
+    "scope": "formalized; AX-01 explicit, no Upstream field; (a), (b) carry over verbatim from Claim 049's Lean statements; (c) drifts, integrability and maturity-uniform envelopes proved; the construction of L_m, C_m and (2.2) with progressive coefficients by Claim 055, under the cited calculus; not formalized: progressive measurability jointly in (t, T), the localizing times, the Heston remark, the checks",
     "declarations": [
       "Standalone.SpliceLocalizationAssembly.statement",
       "Novel.SpliceLocalizationAssemblyProof.spliceLocalizationAssembly"
+    ]
+  },
+  {
+    "claim": "051",
+    "lab_results": [
+      "Assumption 2.1"
+    ],
+    "scope": "formalized, with no hypothesis structure and no measurability; the bridge from the Section 2 regularity to the integrability hypothesis is not formalized; not a numbered result (Request 6: no new numbered results)",
+    "declarations": [
+      "Standalone.MaturityNull.statement",
+      "Novel.MaturityNullProof.maturityNull"
+    ]
+  },
+  {
+    "claim": "052",
+    "lab_results": [
+      "Proposition 49"
+    ],
+    "scope": "formalized; (a) and (b) unconditional; (c) to (e) conditional on `GaussLaw` through Proposition 49(b)'s pricing, whose exhibited instance has zero diffusion, and no nonzero-diffusion instance was constructed; the panel consequence of (e) is not stated separately; not a numbered result (Request 6: no new numbered results)",
+    "declarations": [
+      "Standalone.TwoStrikeInitialCurve.statement",
+      "Novel.TwoStrikeInitialCurveProof.twoStrikeInitialCurve"
+    ]
+  },
+  {
+    "claim": "053",
+    "lab_results": [
+      "Proposition 51"
+    ],
+    "scope": "formalized; (a) by citation of Claim 048's `meanSquareStatement`, no new proof; (b) to (d) under Claim 048(b)'s hypotheses, (H1), a Brownian driver in the cited calculus AX-03 (not constructed) and the maturity versions; (e) deterministic in its Gaussian hypotheses; suprema of expectations only; sharpness of the new constants not shown; not a numbered result (Request 6: no new numbered results)",
+    "declarations": [
+      "Standalone.ApproximationConstants.statement",
+      "Novel.ApproximationConstantsProof.approximationConstants",
+      "Novel.RecurrentApproxBondProof.laws"
+    ]
+  },
+  {
+    "claim": "054",
+    "lab_results": [
+      "Proposition 20",
+      "Proposition 49"
+    ],
+    "scope": "formalized; everything probabilistic conditional on `GaussLaw`, whose exhibited instance has zero diffusion, and no nonzero-diffusion instance was constructed; (c) for nonnegative payoffs as a lower-integral identity; (e) for the usual augmentation of the drivers' natural filtration, not a larger `GaussLaw` filtration; (54-S) unconditional; not a numbered result (Request 6: no new numbered results)",
+    "declarations": [
+      "Standalone.ContinuousAggregation.statement",
+      "Novel.ContinuousAggregationProof.continuousAggregation"
+    ]
+  },
+  {
+    "claim": "055",
+    "lab_results": [
+      "Proposition 53"
+    ],
+    "scope": "formalized; (a) to (c) conditional on the cited calculus AX-03 to AX-05 (degenerate instance), through the Standalone restatement; (d) to (f) with AX-01 as a hypothesis; the block Z is given, not constructed; initial values deterministic; no true-martingale property; progressive measurability jointly in (t, T) not given; the split of R-sharp affine not formalized; not a numbered result (Request 6: no new numbered results)",
+    "declarations": [
+      "Standalone.FrontEndConstruction.statement",
+      "Novel.FrontEndConstructionProof.frontEndConstruction"
     ]
   },
   {

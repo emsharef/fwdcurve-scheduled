@@ -4,7 +4,19 @@ Date: 2026-09-27. Revised following the human's instruction: **do not redo compl
 
 This revision supersedes the earlier, broader version of this file. The previous 22-result inventory was not a list of missing proofs and is withdrawn as a lab assignment. There is no request to re-audit the completed research programme, reproduce established proofs, or add new wrappers solely for publication numbering.
 
-The human will restart the lab. Preparing this file does not restart it.
+**Completed 2026-09-27. The lab has stopped.** All five assignments below are closed; this file preserves the request, not a new work queue.
+
+| Task | Completed claim | Lean statement / proof |
+|---|---|---|
+| 1: common maturity exceptional set | 051 | `Standalone.MaturityNull.statement` / `Novel.MaturityNullProof.maturityNull` |
+| 2: continuous-risk aggregation | 054 | `Standalone.ContinuousAggregation.statement` / `Novel.ContinuousAggregationProof.continuousAggregation` |
+| 3: exact approximation constants | 053 | `Standalone.ApproximationConstants.statement` / `Novel.ApproximationConstantsProof.approximationConstants` |
+| 4: two strikes with initial curve | 052 | `Standalone.TwoStrikeInitialCurve.statement` / `Novel.TwoStrikeInitialCurveProof.twoStrikeInitialCurve` |
+| 5: front-end process construction | 055 | `Standalone.FrontEndConstruction.statement` / `Novel.FrontEndConstructionProof.frontEndConstruction` |
+
+Existing proofs were reused. The publication now explicitly repeats the splice observability assumption and specifies the usual augmented natural filtration for continuous-risk American aggregation. The formal European aggregation identity is for nonnegative payoffs; the paper derives the signed integrable case by decomposition. Stochastic results retain their Gaussian/calculus hypotheses, and no nontrivial Brownian interface instance is claimed. See the publication proof maps and verification supplement for precise scope.
+
+## Original assignment (completed)
 
 ## Scope
 

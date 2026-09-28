@@ -87,7 +87,7 @@ In the diffusion models below, the levels have Brownian noise and the slopes hav
 Equality of stochastic curve representations means almost-sure equality at each fixed $t,T$. For bond prices we use a jointly measurable maturity version, constructed in Section~\ref{sec:approximation}. The following elementary observation specifies the exceptional-set convention used in the drift proofs.
 
 \begin{lemma}[A common exceptional set for maturities]\label{lem:maturitynull}
-Suppose the drift and volatility are locally integrable in maturity and satisfy \eqref{eq:drift} for every fixed $T$, almost everywhere in time and probability. Then there is one time--probability exceptional set outside which the integrated identity holds for every $T\ge t$. If the drift and volatility are continuous inside each maturity interval, \eqref{eq:diffdrift} holds at every interior maturity outside that set.
+Suppose the drift and volatility are locally integrable in maturity and satisfy \eqref{eq:drift} for every fixed $T$, almost everywhere in time and probability. Then there is one time--probability exceptional set outside which the integrated identity holds for every $T\ge t$. If the drift and volatility are continuous inside each maturity interval, then for $T>t$, \eqref{eq:diffdrift} holds at every interior maturity outside that set.
 \end{lemma}
 \begin{proof}
 Take the union of the exceptional sets for rational $T$, together with the set on which the maturity integrals fail to be defined. This is a null set. The primitives on both sides of \eqref{eq:drift} are continuous in $T$, so agreement on rational maturities extends to all maturities. On an interval with continuous coefficients, differentiation gives \eqref{eq:diffdrift} throughout its interior.

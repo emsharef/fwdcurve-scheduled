@@ -2,9 +2,14 @@
   {
     "paper": "structure",
     "label": "lem:maturitynull",
-    "lab_results": [],
-    "declarations": [],
-    "scope": "Paper proof: countable dense maturities and absolute continuity. No separate Lean theorem asserted.",
+    "lab_results": [
+      "Assumption 2.1"
+    ],
+    "declarations": [
+      "Standalone.MaturityNull.statement",
+      "Novel.MaturityNullProof.maturityNull"
+    ],
+    "scope": "Local maturity integrability is explicit; one null set for the integrated identity and the differentiated identity at interior T>t. The bridge from global joint integrability is not formalized.",
     "number": "2.3"
   },
   {
@@ -89,9 +94,11 @@
     ],
     "declarations": [
       "Standalone.RecurrentApproxAssembly.statement",
-      "Novel.RecurrentApproxAssemblyProof.recurrentApproxAssembly"
+      "Novel.RecurrentApproxAssemblyProof.recurrentApproxAssembly",
+      "Standalone.ApproximationConstants.statement",
+      "Novel.ApproximationConstantsProof.approximationConstants"
     ],
-    "scope": "Partial correspondence: the original loading-to-curve and bond bounds and realization are formalized. Sharper constants and pointwise price bounds in this publication are paper-only.",
+    "scope": "Exact publication constants and pointwise/uniform bounds are formalized, reusing the original forward bounds and recurrent realization. Price estimates assume the quasi-exponential shape, maturity versions, supplied calculus and Brownian driver (no witness constructed). Suprema of expectations only.",
     "number": "5.1"
   },
   {
@@ -105,9 +112,11 @@
       "Standalone.UnifiedSpliceAssembly.statement",
       "Novel.UnifiedSpliceAssemblyProof.unifiedSpliceAssembly",
       "Standalone.SpliceLocalizationAssembly.statement",
-      "Novel.SpliceLocalizationAssemblyProof.spliceLocalizationAssembly"
+      "Novel.SpliceLocalizationAssemblyProof.spliceLocalizationAssembly",
+      "Standalone.FrontEndConstruction.statement",
+      "Novel.FrontEndConstructionProof.frontEndConstruction"
     ],
-    "scope": "Coefficient-level equivalence with AX-01 and locally integrable drift/noise bounds. Given an existing block; suitable front-end drifts are constructed. The stochastic processes and joint progressive measurability are paper arguments.",
+    "scope": "Coefficient equivalence and locally integrable front-end process construction for a given block, with observability and deterministic initial values. The process stages use supplied calculus (degenerate instance); coefficients are progressive at each maturity and jointly Borel, not proved jointly progressive. No true-bond-martingale conclusion.",
     "number": "6.1"
   },
   {
@@ -182,13 +191,16 @@
     "label": "prop:finitequotes",
     "lab_results": [
       "Lemma 18",
-      "Proposition 19"
+      "Proposition 19",
+      "Proposition 49"
     ],
     "declarations": [
       "Standalone.CompoundedFuturesIdentification.statement",
-      "Novel.CompoundedFuturesIdentificationProof.compoundedFuturesIdentification"
+      "Novel.CompoundedFuturesIdentificationProof.compoundedFuturesIdentification",
+      "Standalone.TwoStrikeInitialCurve.statement",
+      "Novel.TwoStrikeInitialCurveProof.twoStrikeInitialCurve"
     ],
-    "scope": "Partial correspondence: original two-strike identification is formalized. Rescaling to the publication's arbitrary initial curve and deterministic background is paper-only.",
+    "scope": "Known-initial-curve rescaling and mean bound, two strikes including zero variance, futures-assisted recovery and surface determination. Pricing/identification parts use GaussLaw; no nonzero-diffusion instance is constructed.",
     "number": "2.3"
   },
   {
@@ -225,9 +237,11 @@
     ],
     "declarations": [
       "Standalone.PreWindowVarianceAggregates.statement",
-      "Novel.PreWindowVarianceAggregatesProof.preWindowVarianceAggregates"
+      "Novel.PreWindowVarianceAggregatesProof.preWindowVarianceAggregates",
+      "Novel.PreWindowVarianceAggregatesProof.sectioningFull",
+      "Novel.PreWindowVarianceAggregatesProof.americanGeneral"
     ],
-    "scope": "Partial correspondence: state-rule direction, residual independence and product representation are formalized. The general reverse stopping-time inequality and full continuous-exercise equality are proved in the paper only.",
+    "scope": "Full pure-jump aggregation, including the reverse stopping-time inequality and zero total variance, is already formalized on the finite Gaussian model. American claims use a Borel state-payoff rule and integrable state envelope. The source header formerly understated this coverage; the completed proof was reused.",
     "number": "4.1"
   },
   {
@@ -237,8 +251,11 @@
       "Proposition 20",
       "Proposition 49"
     ],
-    "declarations": [],
-    "scope": "Paper-only extension of original Proposition 20 using the model in Proposition 49: arbitrary deterministic initial curve and continuous pre-cutoff risk. No corresponding Lean extension asserted.",
+    "declarations": [
+      "Standalone.ContinuousAggregation.statement",
+      "Novel.ContinuousAggregationProof.continuousAggregation"
+    ],
+    "scope": "Continuous-risk extension, including zero total variance, conditional on GaussLaw (no nonzero-diffusion instance constructed). European identity: nonnegative Borel payoffs; signed integrable case follows by decomposition in the paper. American equality: usual augmented natural filtration of integrated diffusion and revealed meetings, Borel state-payoff rule and integrable state envelope; not an arbitrary larger filtration.",
     "number": "4.2"
   },
   {

@@ -58,19 +58,35 @@ The most consequential boundaries are:
   Gaussian integral laws, regularity and independence. A nonzero-diffusion
   instance is not constructed. Calendar/rank algebra is proved independently
   of those stochastic hypotheses.
-- **Recurrent approximation:** the source bounds are formalized; sharper
-  constants and pointwise bounds in the first paper are proved only in prose.
-- **Correlated splice:** the formal theorem matches coefficients under the
-  integrated drift condition, given an existing block. It does not construct
-  all processes and their joint progressive measurability.
+- **Recurrent approximation:** the exact publication constants, including the
+  pointwise price bounds, are formalized in `ApproximationConstants`. Price
+  estimates require the supplied calculus and a Brownian driver with no Lean
+  witness constructed. These are suprema of expectations, not pathwise suprema.
+- **Correlated splice:** `FrontEndConstruction` constructs the front-end
+  processes for an existing block and deterministic initial values, under the
+  supplied calculus. Observability is required for necessity. Coefficients are
+  progressive for each fixed maturity and jointly Borel measurable; joint
+  maturity-indexed progressivity is not proved. No true-martingale conclusion
+  follows from the local bounds alone.
 - **Three-exponent stochastic variance:** the construction derives its state
   and martingale conclusions using compatible calculus, SDE and exponential-
   martingale interfaces; a nontrivial instance of the full interface is not built.
 - **Varying decays:** the splice reduction is proved. The classical exponent
   restrictions are an explicit cited input in `Upstream.ExpPolyConsistency`.
-- **American exercise:** the source development proves the state-rule direction,
-  residual independence and product representation. The general reverse
-  stopping-time inequality is supplied in the edited paper, not in Lean.
+- **American exercise:** pure-jump aggregation already includes the full
+  sectioning and equality proofs. `ContinuousAggregation` extends these to
+  continuous pre-cutoff risk under `GaussLaw`, including zero total variance.
+  Exercise uses the usual augmentation of the natural filtration of the
+  integrated diffusion and revealed meeting surprises, a Borel state-payoff
+  rule and an integrable state envelope. An arbitrary larger filtration is
+  outside the claim. European aggregation is formalized for nonnegative Borel
+  payoffs; the paper obtains signed integrable payoffs by decomposition.
+- **Common maturity exceptional set:** `MaturityNull` assumes local maturity
+  integrability and differentiates only at interior maturities T>t. It does
+  not derive local integrability from the global joint-integrability assumption.
+- **Two strikes with an initial curve:** `TwoStrikeInitialCurve` proves the
+  rescaling and identification, including zero variance. Its stochastic parts
+  depend on the same Gaussian-law interface as the pricing model.
 - **Factor support:** SDE solutions, moments and integrand admissibility remain
   explicit hypotheses. A small support dimension does not show that a specific
   numerical loading matrix has independent columns.

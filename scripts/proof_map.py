@@ -61,9 +61,11 @@ declaration. Definition and example environments are not theorem claims.
 
 **Coverage is result-specific.** A corresponding Lean proof can cover a source
 result without covering every extension in the edited paper. Read the scope
-column and the hypotheses of the linked statement. In particular, general
-American exercise, the sharper approximation constants, and numerical fits
-are not fully formalized. See the [formalization guide](formalization.md).
+column and the hypotheses of the linked statement. All five requested
+formalizations are included: the maturity lemma, continuous-risk aggregation,
+exact approximation constants, initial-curve two-strike identification, and
+front-end process construction. Numerical fits remain outside Lean; stochastic
+results retain their explicit assumptions. See the [formalization guide](formalization.md).
 
 The map is generated from [proof-map.json](proof-map.json) and
 [lab-results.json](lab-results.json). `python scripts/proof_map.py --check`

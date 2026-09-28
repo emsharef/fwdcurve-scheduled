@@ -428,6 +428,74 @@ lemma WU (a₀ : ℕ → ℝ) {T : ℝ} (htT : (t:ℝ) ≤ T) (hTH : T ≤ H) {x
 
 end Main
 
+/-! ### The Gaussian laws of the log-prices -/
+
+/-- The Gaussian laws behind (48.6)–(48.7), exposed for Claim 053 (a refactoring of `bondS`, whose
+statement is unchanged). For `0 ≤ t ≤ T ≤ H`: `X` and `X̃` (`Xq`) are measurable, with laws
+`N(μ, ∫_0^t U²)` and `N(μ̃, ∫_0^t Ũ²)`; `D = X − X̃` has law `N(μ − μ̃, ∫_0^t (U − Ũ)²)`; and
+`P = e^{−∫_t^T f_0} e^{−X}`, likewise for `P̃`. -/
+theorem laws {Ω : Type} [MeasurableSpace Ω] (S : ItoCalculus Ω) (k : Fin S.m)
+    (hBr : IsPreBrownianReal (S.B k) S.μ) {c b : Fin r → ℝ} {A : Matrix (Fin r) (Fin r) ℝ}
+    {Tm : Finset ℝ} {a a' : ℕ → ℝ} {H Λ ε Abar : ℝ}
+    (h : Hyp048 Tm a a' (shape030 c b A) H Λ ε Abar) {f0 : ℝ → ℝ} {F0 : ℝ} (hf0 : Measurable f0)
+    (hF0 : ∀ x ∈ Icc 0 H, |f0 x| ≤ F0) (t : ℝ≥0) {T : ℝ} (htT : (t:ℝ) ≤ T) (hTH : T ≤ H) :
+    (∀ a₀ : ℕ → ℝ, Measurable (Xq S k t Tm a₀ c b A T)) ∧
+    (∀ a₀ : ℕ → ℝ, HasLaw (Xq S k t Tm a₀ c b A T)
+      (gaussianReal (mu048 Tm a₀ (shape030 c b A) t T)
+        (∫ s in (0:ℝ)..t, U048 Tm a₀ (shape030 c b A) t T s ^ 2).toNNReal) S.μ) ∧
+    HasLaw (fun ω => Xq S k t Tm a c b A T ω - Xq S k t Tm a' c b A T ω)
+      (gaussianReal (mu048 Tm a (shape030 c b A) t T - mu048 Tm a' (shape030 c b A) t T)
+        (∫ s in (0:ℝ)..t, (U048 Tm a (shape030 c b A) t T s -
+          U048 Tm a' (shape030 c b A) t T s) ^ 2).toNNReal) S.μ ∧
+    ∀ a₀ : ℕ → ℝ, (a₀ = a ∨ a₀ = a') → ∀ ω, P048 S k f0 Tm a₀ c b A t T ω =
+      Real.exp (-∫ u in (t:ℝ)..T, f0 u) * Real.exp (-Xq S k t Tm a₀ c b A T ω) := by
+  have ht : (0:ℝ) ≤ t := t.coe_nonneg
+  set lam := shape030 c b A
+  set κ : (ℕ → ℝ) → ℕ → Fin r → ℝ := fun a₀ n j => ∫ u in (t:ℝ)..T, gq048 Tm a₀ c A t n j u
+  set X := Xq S k t Tm a c b A T
+  set X' := Xq S k t Tm a' c b A T
+  have hXae : ∀ a₀ : ℕ → ℝ, Xq S k t Tm a₀ c b A T =ᵐ[S.μ]
+      fun ω => mu048 Tm a₀ lam t T + S.I k (fun x _ => Wq Tm b A t (κ a₀) x) t ω := fun a₀ => by
+    filter_upwards [sum_zeta Tm b A t (κ a₀) S k] with ω hω
+    simp only [Xq]; rw [hω]
+  have hvar : ∀ a₀ : ℕ → ℝ, ∫ s in (0:ℝ)..t, Wq Tm b A t (κ a₀) s ^ 2 =
+      ∫ s in (0:ℝ)..t, U048 Tm a₀ lam t T s ^ 2 := fun a₀ =>
+    intervalIntegral.integral_congr fun s hs => by
+      rw [uIcc_of_le ht] at hs
+      rw [show Wq Tm b A t (κ a₀) s = U048 Tm a₀ lam t T s from WU (c := c) t a₀ htT hTH hs]
+  have lawX : ∀ a₀ : ℕ → ℝ, HasLaw (Xq S k t Tm a₀ c b A T)
+      (gaussianReal (mu048 Tm a₀ lam t T)
+        (∫ s in (0:ℝ)..t, U048 Tm a₀ lam t T s ^ 2).toNNReal) S.μ := fun a₀ => by
+    have := gaussianReal_const_add (law_W Tm b A t (κ a₀) S k hBr) (mu048 Tm a₀ lam t T)
+    rw [hvar a₀, zero_add] at this
+    exact this.congr (hXae a₀)
+  set κd : ℕ → Fin r → ℝ := fun n j => κ a n j - κ a' n j
+  have hDae : (fun ω => X ω - X' ω) =ᵐ[S.μ] fun ω => (mu048 Tm a lam t T - mu048 Tm a' lam t T) +
+      S.I k (fun x _ => Wq Tm b A t κd x) t ω := by
+    filter_upwards [sum_zeta Tm b A t κd S k] with ω hω
+    rw [← hω]
+    simp only [X, X', Xq, κd, sub_mul, Finset.sum_sub_distrib]
+    ring
+  have lawD : HasLaw (fun ω => X ω - X' ω)
+      (gaussianReal (mu048 Tm a lam t T - mu048 Tm a' lam t T)
+        (∫ s in (0:ℝ)..t, (U048 Tm a lam t T s - U048 Tm a' lam t T s) ^ 2).toNNReal) S.μ := by
+    have := gaussianReal_const_add (law_W Tm b A t κd S k hBr)
+      (mu048 Tm a lam t T - mu048 Tm a' lam t T)
+    have e : ∫ s in (0:ℝ)..t, Wq Tm b A t κd s ^ 2 =
+        ∫ s in (0:ℝ)..t, (U048 Tm a lam t T s - U048 Tm a' lam t T s) ^ 2 :=
+      intervalIntegral.integral_congr fun s hs => by
+        rw [uIcc_of_le ht] at hs
+        have e1 : Wq Tm b A t κd s = Wq Tm b A t (κ a) s - Wq Tm b A t (κ a') s := by
+          simp only [Wq, κd, sub_mul, Finset.sum_sub_distrib]
+        rw [e1, show Wq Tm b A t (κ a) s = U048 Tm a lam t T s from WU (c := c) t a htT hTH hs,
+          show Wq Tm b A t (κ a') s = U048 Tm a' lam t T s from WU (c := c) t a' htT hTH hs]
+    rw [e, zero_add] at this
+    exact this.congr hDae
+  refine ⟨fun a₀ => measurable_const.add (Finset.measurable_sum _ fun n _ =>
+      Finset.measurable_sum _ fun j _ => (zeta_meas Tm b A t S k n j).const_mul _),
+    lawX, lawD, fun a₀ ha₀ ω => ?_⟩
+  rw [P048, VX S k h hf0 hF0 t a₀ ha₀ htT hTH ω, ← Real.exp_add, neg_add]
+
 /-! ### (48.6) and (48.7) -/
 
 theorem bondS : bondStatement := by
@@ -444,58 +512,17 @@ theorem bondS : bondStatement := by
   have hB0 : 0 ≤ B := by positivity
   obtain ⟨-, hUa, hUa', hmu, hmu', -, -, hfin⟩ :=
     Novel.RecurrentApproxPriceBoundsProof.boundS Tm a a' lam H Λ ε Abar h t T ht htT hTH
-  set κ : (ℕ → ℝ) → ℕ → Fin r → ℝ := fun a₀ n j => ∫ u in (t:ℝ)..T, gq048 Tm a₀ c A t n j u
+  obtain ⟨hXm, lawX, lawD, hP⟩ := laws S k hBr h hf0 hF0 t htT hTH
   set X := Xq S k t Tm a c b A T
   set X' := Xq S k t Tm a' c b A T
   set F := ∫ u in (t:ℝ)..T, f0 u
-  -- the laws
-  have hXae : ∀ a₀ : ℕ → ℝ, Xq S k t Tm a₀ c b A T =ᵐ[S.μ]
-      fun ω => mu048 Tm a₀ lam t T + S.I k (fun x _ => Wq Tm b A t (κ a₀) x) t ω := fun a₀ => by
-    filter_upwards [sum_zeta Tm b A t (κ a₀) S k] with ω hω
-    simp only [Xq]; rw [hω]
-  have hvar : ∀ a₀ : ℕ → ℝ, ∫ s in (0:ℝ)..t, Wq Tm b A t (κ a₀) s ^ 2 =
-      ∫ s in (0:ℝ)..t, U048 Tm a₀ lam t T s ^ 2 := fun a₀ =>
-    intervalIntegral.integral_congr fun s hs => by
-      rw [uIcc_of_le ht] at hs
-      rw [show Wq Tm b A t (κ a₀) s = U048 Tm a₀ lam t T s from WU (c := c) t a₀ htT hTH hs]
-  have lawX : ∀ a₀ : ℕ → ℝ, HasLaw (Xq S k t Tm a₀ c b A T)
-      (gaussianReal (0 + mu048 Tm a₀ lam t T)
-        (∫ s in (0:ℝ)..t, U048 Tm a₀ lam t T s ^ 2).toNNReal) S.μ := fun a₀ => by
-    have := gaussianReal_const_add (law_W Tm b A t (κ a₀) S k hBr) (mu048 Tm a₀ lam t T)
-    rw [hvar a₀] at this
-    exact this.congr (hXae a₀)
-  set κd : ℕ → Fin r → ℝ := fun n j => κ a n j - κ a' n j
-  have hDae : (fun ω => X ω - X' ω) =ᵐ[S.μ] fun ω => (mu048 Tm a lam t T - mu048 Tm a' lam t T) +
-      S.I k (fun x _ => Wq Tm b A t κd x) t ω := by
-    filter_upwards [sum_zeta Tm b A t κd S k] with ω hω
-    rw [← hω]
-    simp only [X, X', Xq, κd, sub_mul, Finset.sum_sub_distrib]
-    ring
   set w : ℝ := ∫ s in (0:ℝ)..t, (U048 Tm a lam t T s - U048 Tm a' lam t T s) ^ 2
   have hw0 : 0 ≤ w := intervalIntegral.integral_nonneg ht fun _ _ => sq_nonneg _
-  have lawD : HasLaw (fun ω => X ω - X' ω)
-      (gaussianReal (0 + (mu048 Tm a lam t T - mu048 Tm a' lam t T)) w.toNNReal) S.μ := by
-    have := gaussianReal_const_add (law_W Tm b A t κd S k hBr)
-      (mu048 Tm a lam t T - mu048 Tm a' lam t T)
-    have e : ∫ s in (0:ℝ)..t, Wq Tm b A t κd s ^ 2 = w :=
-      intervalIntegral.integral_congr fun s hs => by
-        rw [uIcc_of_le ht] at hs
-        have e1 : Wq Tm b A t κd s = Wq Tm b A t (κ a) s - Wq Tm b A t (κ a') s := by
-          simp only [Wq, κd, sub_mul, Finset.sum_sub_distrib]
-        rw [e1, show Wq Tm b A t (κ a) s = U048 Tm a lam t T s from WU (c := c) t a htT hTH hs,
-          show Wq Tm b A t (κ a') s = U048 Tm a' lam t T s from WU (c := c) t a' htT hTH hs]
-    rw [e] at this
-    exact this.congr hDae
   set m := mu048 Tm a lam t T - mu048 Tm a' lam t T
   have hED : ∫ ω, (X ω - X' ω) ^ 2 ∂S.μ = m ^ 2 + w := by
     rw [show (∫ ω, (X ω - X' ω) ^ 2 ∂S.μ) = S.μ[(fun x : ℝ => x ^ 2) ∘ fun ω => X ω - X' ω] from rfl,
-      lawD.integral_comp (by fun_prop), second_moment_gauss, Real.coe_toNNReal _ hw0, zero_add]
+      lawD.integral_comp (by fun_prop), second_moment_gauss, Real.coe_toNNReal _ hw0]
   have hmw : m ^ 2 + w ≤ ε ^ 2 * (Λ ^ 2 * H ^ 3 + Abar ^ 2 * Λ ^ 4 * H ^ 6 / 4) := hfin
-  -- the prices
-  have hP : ∀ a₀ : ℕ → ℝ, (a₀ = a ∨ a₀ = a') → ∀ ω,
-      P048 S k f0 Tm a₀ c b A t T ω = Real.exp (-F) * Real.exp (-Xq S k t Tm a₀ c b A T ω) :=
-    fun a₀ ha₀ ω => by
-      rw [P048, VX S k h hf0 hF0 t a₀ ha₀ htT hTH ω, ← Real.exp_add, neg_add]
   refine ⟨?_, ?_⟩
   · -- (48.6)
     have e : ∀ ω, (Real.log (P048 S k f0 Tm a c b A t T ω) -
@@ -511,15 +538,12 @@ theorem bondS : bondStatement := by
       rw [hP a (Or.inl rfl), hP a' (Or.inr rfl)]; ring
     simp only [e]
     rw [integral_const_mul]
-    have hXm : ∀ a₀ : ℕ → ℝ, Measurable (Xq S k t Tm a₀ c b A T) := fun a₀ =>
-      measurable_const.add (Finset.measurable_sum _ fun n _ => Finset.measurable_sum _ fun j _ =>
-        (zeta_meas Tm b A t S k n j).const_mul _)
     have hv : ∀ a₀ : ℕ → ℝ, ∫ s in (0:ℝ)..t, U048 Tm a₀ lam t T s ^ 2 ≤ B →
         (((∫ s in (0:ℝ)..t, U048 Tm a₀ lam t T s ^ 2).toNNReal : ℝ≥0) : ℝ) ≤ B := fun a₀ hle => by
       rw [Real.coe_toNNReal']; exact max_le hle hB0
     have hpr := Novel.RecurrentApproxPriceBoundsProof.price_ineq (hXm a) (hXm a') (lawX a) (lawX a')
-      lawD (by rw [zero_add]; exact hmu) (by rw [zero_add]; exact hmu') (hv a hUa) (hv a' hUa')
-    rw [zero_add, Real.coe_toNNReal _ hw0] at hpr
+      lawD hmu hmu' (hv a hUa) (hv a' hUa')
+    rw [Real.coe_toNNReal _ hw0] at hpr
     have hF : |F| ≤ F0 * H := by
       have := Novel.RecurrentApproxPriceBoundsProof.abs_int_le htT (f := f0) (C := F0)
         fun u hu => hF0 u ⟨ht.trans hu.1, hu.2.trans hTH⟩

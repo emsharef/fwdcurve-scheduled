@@ -20,7 +20,7 @@ bounds, factor restrictions, and SOFR option diagnostics.
 
 - **Read the mathematics:** the [consolidated proof map](docs/proof-map.md)
   links each numbered publication result to the original manuscript and exact
-  Lean statements and proofs. It records paper-only extensions and explicit
+  Lean statements and proofs. It records exact coverage and explicit
   hypotheses. The [formalization guide](docs/formalization.md) explains how to
   interpret and check these proofs.
 - **Reproduce an example:** install the numerical dependencies and run the
@@ -61,8 +61,8 @@ lake build
 
 The build includes an axiom audit. Lean proves the encoded statements under
 their explicit assumptions; it does not construct every stochastic-calculus
-interface used by the papers. Numerical fits and the general American-exercise
-extension are not Lean-verified. See the proof map for result-level coverage.
+interface used by the papers. The five requested formalizations are included;
+numerical fits remain outside Lean. See the proof map for result-level coverage.
 
 ## Repository contents
 
